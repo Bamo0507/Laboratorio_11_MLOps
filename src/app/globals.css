@@ -4,13 +4,19 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/*
+ * Paleta definida en el documento de diseño (sección "Paleta de Colores").
+ * Ningún componente debe usar hex directo: todo color se consume desde
+ * estos tokens (bg-primary, text-continente-norte, stroke-estimacion, etc.).
+ */
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-instrument-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-instrument-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
   --font-serif: Georgia, serif;
-  --font-heading: var(--font-geist-sans);
   --tracking-tighter: calc(var(--tracking-normal) - 0.05em);
   --tracking-tight: calc(var(--tracking-normal) - 0.025em);
   --tracking-wide: calc(var(--tracking-normal) + 0.025em);
@@ -33,7 +39,9 @@
   --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
   --color-sidebar-primary: var(--sidebar-primary);
   --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-muted-foreground: var(--sidebar-muted-foreground);
   --color-sidebar: var(--sidebar);
+  --color-chart-6: var(--chart-6);
   --color-chart-5: var(--chart-5);
   --color-chart-4: var(--chart-4);
   --color-chart-3: var(--chart-3);
@@ -55,6 +63,31 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+
+  /* Continentes (columna "Región dos"), paleta Okabe-Ito */
+  --color-continente-norte: var(--continente-norte);
+  --color-continente-centro: var(--continente-centro);
+  --color-continente-sur: var(--continente-sur);
+  --color-continente-europa: var(--continente-europa);
+  --color-continente-asia: var(--continente-asia);
+  --color-continente-resto: var(--continente-resto);
+
+  /* Vías de ingreso, paleta de Paul Tol */
+  --color-via-aerea: var(--via-aerea);
+  --color-via-maritima: var(--via-maritima);
+  --color-via-terrestre: var(--via-terrestre);
+
+  /* Contexto, divergente, observado vs. estimado, periodos y sin dato */
+  --color-contexto: var(--contexto);
+  --color-divergente-positivo: var(--divergente-positivo);
+  --color-divergente-neutro: var(--divergente-neutro);
+  --color-divergente-negativo: var(--divergente-negativo);
+  --color-observado: var(--observado);
+  --color-estimacion: var(--estimacion);
+  --color-periodo-pre: var(--periodo-pre);
+  --color-periodo-post: var(--periodo-post);
+  --color-sin-dato: var(--sin-dato);
+
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -66,114 +99,106 @@
 
 :root {
   --radius: 0.5rem;
-  --background: oklch(0.9900 0 0);
-  --foreground: oklch(0 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0 0 0);
-  --popover: oklch(0.9900 0 0);
-  --popover-foreground: oklch(0 0 0);
-  --primary: oklch(0 0 0);
-  --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.9400 0 0);
-  --secondary-foreground: oklch(0 0 0);
-  --muted: oklch(0.9700 0 0);
-  --muted-foreground: oklch(0.4400 0 0);
-  --accent: oklch(0.9400 0 0);
-  --accent-foreground: oklch(0 0 0);
-  --destructive: oklch(0.6300 0.1900 23.0300);
-  --border: oklch(0.9200 0 0);
-  --input: oklch(0.9400 0 0);
-  --ring: oklch(0 0 0);
-  --chart-1: oklch(0.8100 0.1700 75.3500);
-  --chart-2: oklch(0.5500 0.2200 264.5300);
-  --chart-3: oklch(0.7200 0 0);
-  --chart-4: oklch(0.9200 0 0);
-  --chart-5: oklch(0.5600 0 0);
-  --sidebar: oklch(0.9900 0 0);
-  --sidebar-foreground: oklch(0 0 0);
-  --sidebar-primary: oklch(0 0 0);
-  --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.9400 0 0);
-  --sidebar-accent-foreground: oklch(0 0 0);
-  --sidebar-border: oklch(0.9400 0 0);
-  --sidebar-ring: oklch(0 0 0);
-  --destructive-foreground: oklch(1 0 0);
-  --shadow-color: hsl(0 0% 0%);
-  --shadow-opacity: 0.18;
-  --shadow-blur: 2px;
-  --shadow-spread: 0px;
-  --shadow-offset-x: 0px;
-  --shadow-offset-y: 1px;
-  --shadow-2xs: 0px 1px 2px 0px hsl(0 0% 0% / 0.09);
-  --shadow-xs: 0px 1px 2px 0px hsl(0 0% 0% / 0.09);
-  --shadow-sm: 0px 1px 2px 0px hsl(0 0% 0% / 0.18), 0px 1px 2px -1px hsl(0 0% 0% / 0.18);
-  --shadow: 0px 1px 2px 0px hsl(0 0% 0% / 0.18), 0px 1px 2px -1px hsl(0 0% 0% / 0.18);
-  --shadow-md: 0px 1px 2px 0px hsl(0 0% 0% / 0.18), 0px 2px 4px -1px hsl(0 0% 0% / 0.18);
-  --shadow-lg: 0px 1px 2px 0px hsl(0 0% 0% / 0.18), 0px 4px 6px -1px hsl(0 0% 0% / 0.18);
-  --shadow-xl: 0px 1px 2px 0px hsl(0 0% 0% / 0.18), 0px 8px 10px -1px hsl(0 0% 0% / 0.18);
-  --shadow-2xl: 0px 1px 2px 0px hsl(0 0% 0% / 0.45);
-  --tracking-normal: 0em;
-}
 
-.dark {
-  --background: oklch(0 0 0);
-  --foreground: oklch(1 0 0);
-  --card: oklch(0.1400 0 0);
-  --card-foreground: oklch(1 0 0);
-  --popover: oklch(0.1800 0 0);
-  --popover-foreground: oklch(1 0 0);
-  --primary: oklch(1 0 0);
-  --primary-foreground: oklch(0 0 0);
-  --secondary: oklch(0.2500 0 0);
-  --secondary-foreground: oklch(1 0 0);
-  --muted: oklch(0.2300 0 0);
-  --muted-foreground: oklch(0.7200 0 0);
-  --accent: oklch(0.3200 0 0);
-  --accent-foreground: oklch(1 0 0);
-  --destructive: oklch(0.6900 0.2000 23.9100);
-  --border: oklch(0.2600 0 0);
-  --input: oklch(0.3200 0 0);
-  --ring: oklch(0.7200 0 0);
-  --chart-1: oklch(0.8100 0.1700 75.3500);
-  --chart-2: oklch(0.5800 0.2100 260.8400);
-  --chart-3: oklch(0.5600 0 0);
-  --chart-4: oklch(0.4400 0 0);
-  --chart-5: oklch(0.9200 0 0);
-  --sidebar: oklch(0.1800 0 0);
-  --sidebar-foreground: oklch(1 0 0);
-  --sidebar-primary: oklch(1 0 0);
-  --sidebar-primary-foreground: oklch(0 0 0);
-  --sidebar-accent: oklch(0.3200 0 0);
-  --sidebar-accent-foreground: oklch(1 0 0);
-  --sidebar-border: oklch(0.3200 0 0);
-  --sidebar-ring: oklch(0.7200 0 0);
-  --destructive-foreground: oklch(0 0 0);
-  --radius: 0.5rem;
-  --shadow-color: hsl(0 0% 0%);
-  --shadow-opacity: 0.18;
-  --shadow-blur: 2px;
+  /* Interfaz */
+  --background: #faf8f5; /* crema */
+  --foreground: #21272a; /* carbón */
+  --card: #ffffff;
+  --card-foreground: #21272a;
+  --popover: #ffffff;
+  --popover-foreground: #21272a;
+  --primary: #192854; /* azul marino INGUAT */
+  --primary-foreground: #ffffff;
+  --secondary: #eceff5;
+  --secondary-foreground: #192854;
+  --muted: #f1eee9;
+  --muted-foreground: #5b6470; /* gris pizarra */
+  --accent: #e6eaf3;
+  --accent-foreground: #192854;
+  --destructive: #b42318;
+  --destructive-foreground: #ffffff;
+  --border: #e3dfd7;
+  --input: #d9d4cb;
+  --ring: #192854;
+
+  /* Barra lateral */
+  --sidebar: #192854;
+  --sidebar-foreground: #e8ebf3;
+  --sidebar-muted-foreground: #a9b3cc;
+  --sidebar-primary: #ffffff;
+  --sidebar-primary-foreground: #192854;
+  --sidebar-accent: #24376b;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #2b3d75;
+  --sidebar-ring: #a9b3cc;
+
+  /* Datos */
+  --continente-norte: #0072b2;
+  --continente-centro: #e69f00;
+  --continente-sur: #009e73;
+  --continente-europa: #cc79a7;
+  --continente-asia: #d55e00;
+  --continente-resto: #56b4e9;
+
+  --via-aerea: #332288;
+  --via-maritima: #44aa99;
+  --via-terrestre: #999933;
+
+  --contexto: #b8bcc2;
+  --divergente-positivo: #2166ac;
+  --divergente-neutro: #f7f7f7;
+  --divergente-negativo: #b35806;
+  --observado: #21272a;
+  --estimacion: #882255;
+  --periodo-pre: #c9cdd3;
+  --periodo-post: #192854;
+  --sin-dato: #e5e7eb;
+
+  /* shadcn/ui charts consume chart-1..6: se alinean a los continentes */
+  --chart-1: var(--continente-norte);
+  --chart-2: var(--continente-centro);
+  --chart-3: var(--continente-sur);
+  --chart-4: var(--continente-europa);
+  --chart-5: var(--continente-asia);
+  --chart-6: var(--continente-resto);
+
+  --shadow-color: hsl(225 55% 21%);
+  --shadow-opacity: 0.08;
+  --shadow-blur: 3px;
   --shadow-spread: 0px;
   --shadow-offset-x: 0px;
   --shadow-offset-y: 1px;
-  --shadow-2xs: 0px 1px 2px 0px hsl(0 0% 0% / 0.09);
-  --shadow-xs: 0px 1px 2px 0px hsl(0 0% 0% / 0.09);
-  --shadow-sm: 0px 1px 2px 0px hsl(0 0% 0% / 0.18), 0px 1px 2px -1px hsl(0 0% 0% / 0.18);
-  --shadow: 0px 1px 2px 0px hsl(0 0% 0% / 0.18), 0px 1px 2px -1px hsl(0 0% 0% / 0.18);
-  --shadow-md: 0px 1px 2px 0px hsl(0 0% 0% / 0.18), 0px 2px 4px -1px hsl(0 0% 0% / 0.18);
-  --shadow-lg: 0px 1px 2px 0px hsl(0 0% 0% / 0.18), 0px 4px 6px -1px hsl(0 0% 0% / 0.18);
-  --shadow-xl: 0px 1px 2px 0px hsl(0 0% 0% / 0.18), 0px 8px 10px -1px hsl(0 0% 0% / 0.18);
-  --shadow-2xl: 0px 1px 2px 0px hsl(0 0% 0% / 0.45);
+  --shadow-2xs: 0px 1px 2px 0px hsl(225 55% 21% / 0.05);
+  --shadow-xs: 0px 1px 2px 0px hsl(225 55% 21% / 0.06);
+  --shadow-sm: 0px 1px 3px 0px hsl(225 55% 21% / 0.08), 0px 1px 2px -1px hsl(225 55% 21% / 0.08);
+  --shadow: 0px 1px 3px 0px hsl(225 55% 21% / 0.08), 0px 1px 2px -1px hsl(225 55% 21% / 0.08);
+  --shadow-md: 0px 2px 6px -1px hsl(225 55% 21% / 0.08), 0px 2px 4px -2px hsl(225 55% 21% / 0.06);
+  --shadow-lg: 0px 8px 16px -4px hsl(225 55% 21% / 0.1), 0px 4px 6px -4px hsl(225 55% 21% / 0.06);
+  --shadow-xl: 0px 16px 24px -6px hsl(225 55% 21% / 0.12), 0px 6px 10px -6px hsl(225 55% 21% / 0.08);
+  --shadow-2xl: 0px 24px 48px -12px hsl(225 55% 21% / 0.2);
+  --tracking-normal: 0em;
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    @apply font-sans;
+    scrollbar-color: var(--contexto) transparent;
+  }
   body {
     @apply bg-background text-foreground;
     letter-spacing: var(--tracking-normal);
   }
-  html {
-    @apply font-sans;
+  ::selection {
+    background-color: color-mix(in srgb, var(--primary) 18%, transparent);
+    color: var(--foreground);
   }
+}
+
+/* Cifras de KPIs, ejes y tablas: Inter con números tabulares */
+@utility font-data {
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
 }
