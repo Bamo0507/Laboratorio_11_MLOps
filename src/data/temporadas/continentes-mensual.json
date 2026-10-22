@@ -1,0 +1,8822 @@
+[
+  {
+    "fecha": "2009-01",
+    "anio": 2009,
+    "mes": 1,
+    "continente": "asia",
+    "viajeros": 1414
+  },
+  {
+    "fecha": "2009-01",
+    "anio": 2009,
+    "mes": 1,
+    "continente": "centro",
+    "viajeros": 93848
+  },
+  {
+    "fecha": "2009-01",
+    "anio": 2009,
+    "mes": 1,
+    "continente": "europa",
+    "viajeros": 12061
+  },
+  {
+    "fecha": "2009-01",
+    "anio": 2009,
+    "mes": 1,
+    "continente": "norte",
+    "viajeros": 36034
+  },
+  {
+    "fecha": "2009-01",
+    "anio": 2009,
+    "mes": 1,
+    "continente": "resto",
+    "viajeros": 1718
+  },
+  {
+    "fecha": "2009-01",
+    "anio": 2009,
+    "mes": 1,
+    "continente": "sur",
+    "viajeros": 4869
+  },
+  {
+    "fecha": "2009-02",
+    "anio": 2009,
+    "mes": 2,
+    "continente": "asia",
+    "viajeros": 1304
+  },
+  {
+    "fecha": "2009-02",
+    "anio": 2009,
+    "mes": 2,
+    "continente": "centro",
+    "viajeros": 73988
+  },
+  {
+    "fecha": "2009-02",
+    "anio": 2009,
+    "mes": 2,
+    "continente": "europa",
+    "viajeros": 12642
+  },
+  {
+    "fecha": "2009-02",
+    "anio": 2009,
+    "mes": 2,
+    "continente": "norte",
+    "viajeros": 33970
+  },
+  {
+    "fecha": "2009-02",
+    "anio": 2009,
+    "mes": 2,
+    "continente": "resto",
+    "viajeros": 1116
+  },
+  {
+    "fecha": "2009-02",
+    "anio": 2009,
+    "mes": 2,
+    "continente": "sur",
+    "viajeros": 4283
+  },
+  {
+    "fecha": "2009-03",
+    "anio": 2009,
+    "mes": 3,
+    "continente": "asia",
+    "viajeros": 1300
+  },
+  {
+    "fecha": "2009-03",
+    "anio": 2009,
+    "mes": 3,
+    "continente": "centro",
+    "viajeros": 96398
+  },
+  {
+    "fecha": "2009-03",
+    "anio": 2009,
+    "mes": 3,
+    "continente": "europa",
+    "viajeros": 13676
+  },
+  {
+    "fecha": "2009-03",
+    "anio": 2009,
+    "mes": 3,
+    "continente": "norte",
+    "viajeros": 41483
+  },
+  {
+    "fecha": "2009-03",
+    "anio": 2009,
+    "mes": 3,
+    "continente": "resto",
+    "viajeros": 1261
+  },
+  {
+    "fecha": "2009-03",
+    "anio": 2009,
+    "mes": 3,
+    "continente": "sur",
+    "viajeros": 4678
+  },
+  {
+    "fecha": "2009-04",
+    "anio": 2009,
+    "mes": 4,
+    "continente": "asia",
+    "viajeros": 1501
+  },
+  {
+    "fecha": "2009-04",
+    "anio": 2009,
+    "mes": 4,
+    "continente": "centro",
+    "viajeros": 114287
+  },
+  {
+    "fecha": "2009-04",
+    "anio": 2009,
+    "mes": 4,
+    "continente": "europa",
+    "viajeros": 10562
+  },
+  {
+    "fecha": "2009-04",
+    "anio": 2009,
+    "mes": 4,
+    "continente": "norte",
+    "viajeros": 39596
+  },
+  {
+    "fecha": "2009-04",
+    "anio": 2009,
+    "mes": 4,
+    "continente": "resto",
+    "viajeros": 1338
+  },
+  {
+    "fecha": "2009-04",
+    "anio": 2009,
+    "mes": 4,
+    "continente": "sur",
+    "viajeros": 4730
+  },
+  {
+    "fecha": "2009-05",
+    "anio": 2009,
+    "mes": 5,
+    "continente": "asia",
+    "viajeros": 1167
+  },
+  {
+    "fecha": "2009-05",
+    "anio": 2009,
+    "mes": 5,
+    "continente": "centro",
+    "viajeros": 83304
+  },
+  {
+    "fecha": "2009-05",
+    "anio": 2009,
+    "mes": 5,
+    "continente": "europa",
+    "viajeros": 6245
+  },
+  {
+    "fecha": "2009-05",
+    "anio": 2009,
+    "mes": 5,
+    "continente": "norte",
+    "viajeros": 29239
+  },
+  {
+    "fecha": "2009-05",
+    "anio": 2009,
+    "mes": 5,
+    "continente": "resto",
+    "viajeros": 1010
+  },
+  {
+    "fecha": "2009-05",
+    "anio": 2009,
+    "mes": 5,
+    "continente": "sur",
+    "viajeros": 3594
+  },
+  {
+    "fecha": "2009-06",
+    "anio": 2009,
+    "mes": 6,
+    "continente": "asia",
+    "viajeros": 971
+  },
+  {
+    "fecha": "2009-06",
+    "anio": 2009,
+    "mes": 6,
+    "continente": "centro",
+    "viajeros": 95701
+  },
+  {
+    "fecha": "2009-06",
+    "anio": 2009,
+    "mes": 6,
+    "continente": "europa",
+    "viajeros": 6653
+  },
+  {
+    "fecha": "2009-06",
+    "anio": 2009,
+    "mes": 6,
+    "continente": "norte",
+    "viajeros": 42018
+  },
+  {
+    "fecha": "2009-06",
+    "anio": 2009,
+    "mes": 6,
+    "continente": "resto",
+    "viajeros": 915
+  },
+  {
+    "fecha": "2009-06",
+    "anio": 2009,
+    "mes": 6,
+    "continente": "sur",
+    "viajeros": 5185
+  },
+  {
+    "fecha": "2009-07",
+    "anio": 2009,
+    "mes": 7,
+    "continente": "asia",
+    "viajeros": 1168
+  },
+  {
+    "fecha": "2009-07",
+    "anio": 2009,
+    "mes": 7,
+    "continente": "centro",
+    "viajeros": 96269
+  },
+  {
+    "fecha": "2009-07",
+    "anio": 2009,
+    "mes": 7,
+    "continente": "europa",
+    "viajeros": 6326
+  },
+  {
+    "fecha": "2009-07",
+    "anio": 2009,
+    "mes": 7,
+    "continente": "norte",
+    "viajeros": 29178
+  },
+  {
+    "fecha": "2009-07",
+    "anio": 2009,
+    "mes": 7,
+    "continente": "resto",
+    "viajeros": 1013
+  },
+  {
+    "fecha": "2009-07",
+    "anio": 2009,
+    "mes": 7,
+    "continente": "sur",
+    "viajeros": 3662
+  },
+  {
+    "fecha": "2009-08",
+    "anio": 2009,
+    "mes": 8,
+    "continente": "asia",
+    "viajeros": 1287
+  },
+  {
+    "fecha": "2009-08",
+    "anio": 2009,
+    "mes": 8,
+    "continente": "centro",
+    "viajeros": 125733
+  },
+  {
+    "fecha": "2009-08",
+    "anio": 2009,
+    "mes": 8,
+    "continente": "europa",
+    "viajeros": 10170
+  },
+  {
+    "fecha": "2009-08",
+    "anio": 2009,
+    "mes": 8,
+    "continente": "norte",
+    "viajeros": 36450
+  },
+  {
+    "fecha": "2009-08",
+    "anio": 2009,
+    "mes": 8,
+    "continente": "resto",
+    "viajeros": 1238
+  },
+  {
+    "fecha": "2009-08",
+    "anio": 2009,
+    "mes": 8,
+    "continente": "sur",
+    "viajeros": 4466
+  },
+  {
+    "fecha": "2009-09",
+    "anio": 2009,
+    "mes": 9,
+    "continente": "asia",
+    "viajeros": 1106
+  },
+  {
+    "fecha": "2009-09",
+    "anio": 2009,
+    "mes": 9,
+    "continente": "centro",
+    "viajeros": 98025
+  },
+  {
+    "fecha": "2009-09",
+    "anio": 2009,
+    "mes": 9,
+    "continente": "europa",
+    "viajeros": 6324
+  },
+  {
+    "fecha": "2009-09",
+    "anio": 2009,
+    "mes": 9,
+    "continente": "norte",
+    "viajeros": 22161
+  },
+  {
+    "fecha": "2009-09",
+    "anio": 2009,
+    "mes": 9,
+    "continente": "resto",
+    "viajeros": 1156
+  },
+  {
+    "fecha": "2009-09",
+    "anio": 2009,
+    "mes": 9,
+    "continente": "sur",
+    "viajeros": 4019
+  },
+  {
+    "fecha": "2009-10",
+    "anio": 2009,
+    "mes": 10,
+    "continente": "asia",
+    "viajeros": 966
+  },
+  {
+    "fecha": "2009-10",
+    "anio": 2009,
+    "mes": 10,
+    "continente": "centro",
+    "viajeros": 111261
+  },
+  {
+    "fecha": "2009-10",
+    "anio": 2009,
+    "mes": 10,
+    "continente": "europa",
+    "viajeros": 7377
+  },
+  {
+    "fecha": "2009-10",
+    "anio": 2009,
+    "mes": 10,
+    "continente": "norte",
+    "viajeros": 27973
+  },
+  {
+    "fecha": "2009-10",
+    "anio": 2009,
+    "mes": 10,
+    "continente": "resto",
+    "viajeros": 1001
+  },
+  {
+    "fecha": "2009-10",
+    "anio": 2009,
+    "mes": 10,
+    "continente": "sur",
+    "viajeros": 4575
+  },
+  {
+    "fecha": "2009-11",
+    "anio": 2009,
+    "mes": 11,
+    "continente": "asia",
+    "viajeros": 1078
+  },
+  {
+    "fecha": "2009-11",
+    "anio": 2009,
+    "mes": 11,
+    "continente": "centro",
+    "viajeros": 125806
+  },
+  {
+    "fecha": "2009-11",
+    "anio": 2009,
+    "mes": 11,
+    "continente": "europa",
+    "viajeros": 10931
+  },
+  {
+    "fecha": "2009-11",
+    "anio": 2009,
+    "mes": 11,
+    "continente": "norte",
+    "viajeros": 30074
+  },
+  {
+    "fecha": "2009-11",
+    "anio": 2009,
+    "mes": 11,
+    "continente": "resto",
+    "viajeros": 1159
+  },
+  {
+    "fecha": "2009-11",
+    "anio": 2009,
+    "mes": 11,
+    "continente": "sur",
+    "viajeros": 4575
+  },
+  {
+    "fecha": "2009-12",
+    "anio": 2009,
+    "mes": 12,
+    "continente": "asia",
+    "viajeros": 1462
+  },
+  {
+    "fecha": "2009-12",
+    "anio": 2009,
+    "mes": 12,
+    "continente": "centro",
+    "viajeros": 157418
+  },
+  {
+    "fecha": "2009-12",
+    "anio": 2009,
+    "mes": 12,
+    "continente": "europa",
+    "viajeros": 9223
+  },
+  {
+    "fecha": "2009-12",
+    "anio": 2009,
+    "mes": 12,
+    "continente": "norte",
+    "viajeros": 46425
+  },
+  {
+    "fecha": "2009-12",
+    "anio": 2009,
+    "mes": 12,
+    "continente": "resto",
+    "viajeros": 1266
+  },
+  {
+    "fecha": "2009-12",
+    "anio": 2009,
+    "mes": 12,
+    "continente": "sur",
+    "viajeros": 3800
+  },
+  {
+    "fecha": "2010-01",
+    "anio": 2010,
+    "mes": 1,
+    "continente": "asia",
+    "viajeros": 1472
+  },
+  {
+    "fecha": "2010-01",
+    "anio": 2010,
+    "mes": 1,
+    "continente": "centro",
+    "viajeros": 106483
+  },
+  {
+    "fecha": "2010-01",
+    "anio": 2010,
+    "mes": 1,
+    "continente": "europa",
+    "viajeros": 9873
+  },
+  {
+    "fecha": "2010-01",
+    "anio": 2010,
+    "mes": 1,
+    "continente": "norte",
+    "viajeros": 37862
+  },
+  {
+    "fecha": "2010-01",
+    "anio": 2010,
+    "mes": 1,
+    "continente": "resto",
+    "viajeros": 1440
+  },
+  {
+    "fecha": "2010-01",
+    "anio": 2010,
+    "mes": 1,
+    "continente": "sur",
+    "viajeros": 5203
+  },
+  {
+    "fecha": "2010-02",
+    "anio": 2010,
+    "mes": 2,
+    "continente": "asia",
+    "viajeros": 1492
+  },
+  {
+    "fecha": "2010-02",
+    "anio": 2010,
+    "mes": 2,
+    "continente": "centro",
+    "viajeros": 81072
+  },
+  {
+    "fecha": "2010-02",
+    "anio": 2010,
+    "mes": 2,
+    "continente": "europa",
+    "viajeros": 10714
+  },
+  {
+    "fecha": "2010-02",
+    "anio": 2010,
+    "mes": 2,
+    "continente": "norte",
+    "viajeros": 33685
+  },
+  {
+    "fecha": "2010-02",
+    "anio": 2010,
+    "mes": 2,
+    "continente": "resto",
+    "viajeros": 1068
+  },
+  {
+    "fecha": "2010-02",
+    "anio": 2010,
+    "mes": 2,
+    "continente": "sur",
+    "viajeros": 4496
+  },
+  {
+    "fecha": "2010-03",
+    "anio": 2010,
+    "mes": 3,
+    "continente": "asia",
+    "viajeros": 1646
+  },
+  {
+    "fecha": "2010-03",
+    "anio": 2010,
+    "mes": 3,
+    "continente": "centro",
+    "viajeros": 95843
+  },
+  {
+    "fecha": "2010-03",
+    "anio": 2010,
+    "mes": 3,
+    "continente": "europa",
+    "viajeros": 11484
+  },
+  {
+    "fecha": "2010-03",
+    "anio": 2010,
+    "mes": 3,
+    "continente": "norte",
+    "viajeros": 48436
+  },
+  {
+    "fecha": "2010-03",
+    "anio": 2010,
+    "mes": 3,
+    "continente": "resto",
+    "viajeros": 1210
+  },
+  {
+    "fecha": "2010-03",
+    "anio": 2010,
+    "mes": 3,
+    "continente": "sur",
+    "viajeros": 4732
+  },
+  {
+    "fecha": "2010-04",
+    "anio": 2010,
+    "mes": 4,
+    "continente": "asia",
+    "viajeros": 1519
+  },
+  {
+    "fecha": "2010-04",
+    "anio": 2010,
+    "mes": 4,
+    "continente": "centro",
+    "viajeros": 119646
+  },
+  {
+    "fecha": "2010-04",
+    "anio": 2010,
+    "mes": 4,
+    "continente": "europa",
+    "viajeros": 8727
+  },
+  {
+    "fecha": "2010-04",
+    "anio": 2010,
+    "mes": 4,
+    "continente": "norte",
+    "viajeros": 34913
+  },
+  {
+    "fecha": "2010-04",
+    "anio": 2010,
+    "mes": 4,
+    "continente": "resto",
+    "viajeros": 1158
+  },
+  {
+    "fecha": "2010-04",
+    "anio": 2010,
+    "mes": 4,
+    "continente": "sur",
+    "viajeros": 4908
+  },
+  {
+    "fecha": "2010-05",
+    "anio": 2010,
+    "mes": 5,
+    "continente": "asia",
+    "viajeros": 1316
+  },
+  {
+    "fecha": "2010-05",
+    "anio": 2010,
+    "mes": 5,
+    "continente": "centro",
+    "viajeros": 97354
+  },
+  {
+    "fecha": "2010-05",
+    "anio": 2010,
+    "mes": 5,
+    "continente": "europa",
+    "viajeros": 7041
+  },
+  {
+    "fecha": "2010-05",
+    "anio": 2010,
+    "mes": 5,
+    "continente": "norte",
+    "viajeros": 30032
+  },
+  {
+    "fecha": "2010-05",
+    "anio": 2010,
+    "mes": 5,
+    "continente": "resto",
+    "viajeros": 998
+  },
+  {
+    "fecha": "2010-05",
+    "anio": 2010,
+    "mes": 5,
+    "continente": "sur",
+    "viajeros": 4550
+  },
+  {
+    "fecha": "2010-06",
+    "anio": 2010,
+    "mes": 6,
+    "continente": "asia",
+    "viajeros": 1418
+  },
+  {
+    "fecha": "2010-06",
+    "anio": 2010,
+    "mes": 6,
+    "continente": "centro",
+    "viajeros": 99435
+  },
+  {
+    "fecha": "2010-06",
+    "anio": 2010,
+    "mes": 6,
+    "continente": "europa",
+    "viajeros": 6520
+  },
+  {
+    "fecha": "2010-06",
+    "anio": 2010,
+    "mes": 6,
+    "continente": "norte",
+    "viajeros": 42845
+  },
+  {
+    "fecha": "2010-06",
+    "anio": 2010,
+    "mes": 6,
+    "continente": "resto",
+    "viajeros": 1079
+  },
+  {
+    "fecha": "2010-06",
+    "anio": 2010,
+    "mes": 6,
+    "continente": "sur",
+    "viajeros": 4172
+  },
+  {
+    "fecha": "2010-07",
+    "anio": 2010,
+    "mes": 7,
+    "continente": "asia",
+    "viajeros": 1712
+  },
+  {
+    "fecha": "2010-07",
+    "anio": 2010,
+    "mes": 7,
+    "continente": "centro",
+    "viajeros": 125130
+  },
+  {
+    "fecha": "2010-07",
+    "anio": 2010,
+    "mes": 7,
+    "continente": "europa",
+    "viajeros": 12284
+  },
+  {
+    "fecha": "2010-07",
+    "anio": 2010,
+    "mes": 7,
+    "continente": "norte",
+    "viajeros": 54111
+  },
+  {
+    "fecha": "2010-07",
+    "anio": 2010,
+    "mes": 7,
+    "continente": "resto",
+    "viajeros": 1325
+  },
+  {
+    "fecha": "2010-07",
+    "anio": 2010,
+    "mes": 7,
+    "continente": "sur",
+    "viajeros": 5106
+  },
+  {
+    "fecha": "2010-08",
+    "anio": 2010,
+    "mes": 8,
+    "continente": "asia",
+    "viajeros": 1963
+  },
+  {
+    "fecha": "2010-08",
+    "anio": 2010,
+    "mes": 8,
+    "continente": "centro",
+    "viajeros": 127002
+  },
+  {
+    "fecha": "2010-08",
+    "anio": 2010,
+    "mes": 8,
+    "continente": "europa",
+    "viajeros": 11594
+  },
+  {
+    "fecha": "2010-08",
+    "anio": 2010,
+    "mes": 8,
+    "continente": "norte",
+    "viajeros": 37421
+  },
+  {
+    "fecha": "2010-08",
+    "anio": 2010,
+    "mes": 8,
+    "continente": "resto",
+    "viajeros": 1430
+  },
+  {
+    "fecha": "2010-08",
+    "anio": 2010,
+    "mes": 8,
+    "continente": "sur",
+    "viajeros": 4521
+  },
+  {
+    "fecha": "2010-09",
+    "anio": 2010,
+    "mes": 9,
+    "continente": "asia",
+    "viajeros": 2028
+  },
+  {
+    "fecha": "2010-09",
+    "anio": 2010,
+    "mes": 9,
+    "continente": "centro",
+    "viajeros": 95456
+  },
+  {
+    "fecha": "2010-09",
+    "anio": 2010,
+    "mes": 9,
+    "continente": "europa",
+    "viajeros": 6155
+  },
+  {
+    "fecha": "2010-09",
+    "anio": 2010,
+    "mes": 9,
+    "continente": "norte",
+    "viajeros": 21925
+  },
+  {
+    "fecha": "2010-09",
+    "anio": 2010,
+    "mes": 9,
+    "continente": "resto",
+    "viajeros": 1410
+  },
+  {
+    "fecha": "2010-09",
+    "anio": 2010,
+    "mes": 9,
+    "continente": "sur",
+    "viajeros": 3786
+  },
+  {
+    "fecha": "2010-10",
+    "anio": 2010,
+    "mes": 10,
+    "continente": "asia",
+    "viajeros": 1891
+  },
+  {
+    "fecha": "2010-10",
+    "anio": 2010,
+    "mes": 10,
+    "continente": "centro",
+    "viajeros": 114304
+  },
+  {
+    "fecha": "2010-10",
+    "anio": 2010,
+    "mes": 10,
+    "continente": "europa",
+    "viajeros": 7993
+  },
+  {
+    "fecha": "2010-10",
+    "anio": 2010,
+    "mes": 10,
+    "continente": "norte",
+    "viajeros": 27855
+  },
+  {
+    "fecha": "2010-10",
+    "anio": 2010,
+    "mes": 10,
+    "continente": "resto",
+    "viajeros": 1207
+  },
+  {
+    "fecha": "2010-10",
+    "anio": 2010,
+    "mes": 10,
+    "continente": "sur",
+    "viajeros": 4382
+  },
+  {
+    "fecha": "2010-11",
+    "anio": 2010,
+    "mes": 11,
+    "continente": "asia",
+    "viajeros": 1622
+  },
+  {
+    "fecha": "2010-11",
+    "anio": 2010,
+    "mes": 11,
+    "continente": "centro",
+    "viajeros": 129745
+  },
+  {
+    "fecha": "2010-11",
+    "anio": 2010,
+    "mes": 11,
+    "continente": "europa",
+    "viajeros": 11268
+  },
+  {
+    "fecha": "2010-11",
+    "anio": 2010,
+    "mes": 11,
+    "continente": "norte",
+    "viajeros": 31067
+  },
+  {
+    "fecha": "2010-11",
+    "anio": 2010,
+    "mes": 11,
+    "continente": "resto",
+    "viajeros": 1193
+  },
+  {
+    "fecha": "2010-11",
+    "anio": 2010,
+    "mes": 11,
+    "continente": "sur",
+    "viajeros": 4644
+  },
+  {
+    "fecha": "2010-12",
+    "anio": 2010,
+    "mes": 12,
+    "continente": "asia",
+    "viajeros": 1824
+  },
+  {
+    "fecha": "2010-12",
+    "anio": 2010,
+    "mes": 12,
+    "continente": "centro",
+    "viajeros": 166536
+  },
+  {
+    "fecha": "2010-12",
+    "anio": 2010,
+    "mes": 12,
+    "continente": "europa",
+    "viajeros": 9704
+  },
+  {
+    "fecha": "2010-12",
+    "anio": 2010,
+    "mes": 12,
+    "continente": "norte",
+    "viajeros": 44219
+  },
+  {
+    "fecha": "2010-12",
+    "anio": 2010,
+    "mes": 12,
+    "continente": "resto",
+    "viajeros": 1421
+  },
+  {
+    "fecha": "2010-12",
+    "anio": 2010,
+    "mes": 12,
+    "continente": "sur",
+    "viajeros": 3707
+  },
+  {
+    "fecha": "2011-01",
+    "anio": 2011,
+    "mes": 1,
+    "continente": "asia",
+    "viajeros": 1911
+  },
+  {
+    "fecha": "2011-01",
+    "anio": 2011,
+    "mes": 1,
+    "continente": "centro",
+    "viajeros": 115145
+  },
+  {
+    "fecha": "2011-01",
+    "anio": 2011,
+    "mes": 1,
+    "continente": "europa",
+    "viajeros": 10214
+  },
+  {
+    "fecha": "2011-01",
+    "anio": 2011,
+    "mes": 1,
+    "continente": "norte",
+    "viajeros": 35403
+  },
+  {
+    "fecha": "2011-01",
+    "anio": 2011,
+    "mes": 1,
+    "continente": "resto",
+    "viajeros": 1717
+  },
+  {
+    "fecha": "2011-01",
+    "anio": 2011,
+    "mes": 1,
+    "continente": "sur",
+    "viajeros": 5318
+  },
+  {
+    "fecha": "2011-02",
+    "anio": 2011,
+    "mes": 2,
+    "continente": "asia",
+    "viajeros": 1698
+  },
+  {
+    "fecha": "2011-02",
+    "anio": 2011,
+    "mes": 2,
+    "continente": "centro",
+    "viajeros": 88483
+  },
+  {
+    "fecha": "2011-02",
+    "anio": 2011,
+    "mes": 2,
+    "continente": "europa",
+    "viajeros": 10924
+  },
+  {
+    "fecha": "2011-02",
+    "anio": 2011,
+    "mes": 2,
+    "continente": "norte",
+    "viajeros": 32747
+  },
+  {
+    "fecha": "2011-02",
+    "anio": 2011,
+    "mes": 2,
+    "continente": "resto",
+    "viajeros": 1572
+  },
+  {
+    "fecha": "2011-02",
+    "anio": 2011,
+    "mes": 2,
+    "continente": "sur",
+    "viajeros": 4446
+  },
+  {
+    "fecha": "2011-03",
+    "anio": 2011,
+    "mes": 3,
+    "continente": "asia",
+    "viajeros": 1691
+  },
+  {
+    "fecha": "2011-03",
+    "anio": 2011,
+    "mes": 3,
+    "continente": "centro",
+    "viajeros": 111570
+  },
+  {
+    "fecha": "2011-03",
+    "anio": 2011,
+    "mes": 3,
+    "continente": "europa",
+    "viajeros": 10649
+  },
+  {
+    "fecha": "2011-03",
+    "anio": 2011,
+    "mes": 3,
+    "continente": "norte",
+    "viajeros": 39814
+  },
+  {
+    "fecha": "2011-03",
+    "anio": 2011,
+    "mes": 3,
+    "continente": "resto",
+    "viajeros": 1369
+  },
+  {
+    "fecha": "2011-03",
+    "anio": 2011,
+    "mes": 3,
+    "continente": "sur",
+    "viajeros": 4865
+  },
+  {
+    "fecha": "2011-04",
+    "anio": 2011,
+    "mes": 4,
+    "continente": "asia",
+    "viajeros": 1662
+  },
+  {
+    "fecha": "2011-04",
+    "anio": 2011,
+    "mes": 4,
+    "continente": "centro",
+    "viajeros": 138143
+  },
+  {
+    "fecha": "2011-04",
+    "anio": 2011,
+    "mes": 4,
+    "continente": "europa",
+    "viajeros": 9218
+  },
+  {
+    "fecha": "2011-04",
+    "anio": 2011,
+    "mes": 4,
+    "continente": "norte",
+    "viajeros": 37249
+  },
+  {
+    "fecha": "2011-04",
+    "anio": 2011,
+    "mes": 4,
+    "continente": "resto",
+    "viajeros": 1374
+  },
+  {
+    "fecha": "2011-04",
+    "anio": 2011,
+    "mes": 4,
+    "continente": "sur",
+    "viajeros": 4009
+  },
+  {
+    "fecha": "2011-05",
+    "anio": 2011,
+    "mes": 5,
+    "continente": "asia",
+    "viajeros": 1665
+  },
+  {
+    "fecha": "2011-05",
+    "anio": 2011,
+    "mes": 5,
+    "continente": "centro",
+    "viajeros": 102171
+  },
+  {
+    "fecha": "2011-05",
+    "anio": 2011,
+    "mes": 5,
+    "continente": "europa",
+    "viajeros": 6639
+  },
+  {
+    "fecha": "2011-05",
+    "anio": 2011,
+    "mes": 5,
+    "continente": "norte",
+    "viajeros": 30126
+  },
+  {
+    "fecha": "2011-05",
+    "anio": 2011,
+    "mes": 5,
+    "continente": "resto",
+    "viajeros": 1214
+  },
+  {
+    "fecha": "2011-05",
+    "anio": 2011,
+    "mes": 5,
+    "continente": "sur",
+    "viajeros": 4109
+  },
+  {
+    "fecha": "2011-06",
+    "anio": 2011,
+    "mes": 6,
+    "continente": "asia",
+    "viajeros": 1446
+  },
+  {
+    "fecha": "2011-06",
+    "anio": 2011,
+    "mes": 6,
+    "continente": "centro",
+    "viajeros": 108361
+  },
+  {
+    "fecha": "2011-06",
+    "anio": 2011,
+    "mes": 6,
+    "continente": "europa",
+    "viajeros": 6452
+  },
+  {
+    "fecha": "2011-06",
+    "anio": 2011,
+    "mes": 6,
+    "continente": "norte",
+    "viajeros": 41326
+  },
+  {
+    "fecha": "2011-06",
+    "anio": 2011,
+    "mes": 6,
+    "continente": "resto",
+    "viajeros": 1174
+  },
+  {
+    "fecha": "2011-06",
+    "anio": 2011,
+    "mes": 6,
+    "continente": "sur",
+    "viajeros": 4256
+  },
+  {
+    "fecha": "2011-07",
+    "anio": 2011,
+    "mes": 7,
+    "continente": "asia",
+    "viajeros": 1337
+  },
+  {
+    "fecha": "2011-07",
+    "anio": 2011,
+    "mes": 7,
+    "continente": "centro",
+    "viajeros": 131290
+  },
+  {
+    "fecha": "2011-07",
+    "anio": 2011,
+    "mes": 7,
+    "continente": "europa",
+    "viajeros": 10530
+  },
+  {
+    "fecha": "2011-07",
+    "anio": 2011,
+    "mes": 7,
+    "continente": "norte",
+    "viajeros": 51321
+  },
+  {
+    "fecha": "2011-07",
+    "anio": 2011,
+    "mes": 7,
+    "continente": "resto",
+    "viajeros": 1268
+  },
+  {
+    "fecha": "2011-07",
+    "anio": 2011,
+    "mes": 7,
+    "continente": "sur",
+    "viajeros": 4775
+  },
+  {
+    "fecha": "2011-08",
+    "anio": 2011,
+    "mes": 8,
+    "continente": "asia",
+    "viajeros": 1348
+  },
+  {
+    "fecha": "2011-08",
+    "anio": 2011,
+    "mes": 8,
+    "continente": "centro",
+    "viajeros": 124097
+  },
+  {
+    "fecha": "2011-08",
+    "anio": 2011,
+    "mes": 8,
+    "continente": "europa",
+    "viajeros": 10035
+  },
+  {
+    "fecha": "2011-08",
+    "anio": 2011,
+    "mes": 8,
+    "continente": "norte",
+    "viajeros": 33741
+  },
+  {
+    "fecha": "2011-08",
+    "anio": 2011,
+    "mes": 8,
+    "continente": "resto",
+    "viajeros": 1218
+  },
+  {
+    "fecha": "2011-08",
+    "anio": 2011,
+    "mes": 8,
+    "continente": "sur",
+    "viajeros": 4336
+  },
+  {
+    "fecha": "2011-09",
+    "anio": 2011,
+    "mes": 9,
+    "continente": "asia",
+    "viajeros": 1470
+  },
+  {
+    "fecha": "2011-09",
+    "anio": 2011,
+    "mes": 9,
+    "continente": "centro",
+    "viajeros": 105098
+  },
+  {
+    "fecha": "2011-09",
+    "anio": 2011,
+    "mes": 9,
+    "continente": "europa",
+    "viajeros": 5963
+  },
+  {
+    "fecha": "2011-09",
+    "anio": 2011,
+    "mes": 9,
+    "continente": "norte",
+    "viajeros": 23078
+  },
+  {
+    "fecha": "2011-09",
+    "anio": 2011,
+    "mes": 9,
+    "continente": "resto",
+    "viajeros": 1387
+  },
+  {
+    "fecha": "2011-09",
+    "anio": 2011,
+    "mes": 9,
+    "continente": "sur",
+    "viajeros": 4188
+  },
+  {
+    "fecha": "2011-10",
+    "anio": 2011,
+    "mes": 10,
+    "continente": "asia",
+    "viajeros": 1188
+  },
+  {
+    "fecha": "2011-10",
+    "anio": 2011,
+    "mes": 10,
+    "continente": "centro",
+    "viajeros": 110735
+  },
+  {
+    "fecha": "2011-10",
+    "anio": 2011,
+    "mes": 10,
+    "continente": "europa",
+    "viajeros": 7459
+  },
+  {
+    "fecha": "2011-10",
+    "anio": 2011,
+    "mes": 10,
+    "continente": "norte",
+    "viajeros": 26427
+  },
+  {
+    "fecha": "2011-10",
+    "anio": 2011,
+    "mes": 10,
+    "continente": "resto",
+    "viajeros": 1417
+  },
+  {
+    "fecha": "2011-10",
+    "anio": 2011,
+    "mes": 10,
+    "continente": "sur",
+    "viajeros": 4823
+  },
+  {
+    "fecha": "2011-11",
+    "anio": 2011,
+    "mes": 11,
+    "continente": "asia",
+    "viajeros": 1615
+  },
+  {
+    "fecha": "2011-11",
+    "anio": 2011,
+    "mes": 11,
+    "continente": "centro",
+    "viajeros": 136002
+  },
+  {
+    "fecha": "2011-11",
+    "anio": 2011,
+    "mes": 11,
+    "continente": "europa",
+    "viajeros": 11263
+  },
+  {
+    "fecha": "2011-11",
+    "anio": 2011,
+    "mes": 11,
+    "continente": "norte",
+    "viajeros": 31803
+  },
+  {
+    "fecha": "2011-11",
+    "anio": 2011,
+    "mes": 11,
+    "continente": "resto",
+    "viajeros": 1231
+  },
+  {
+    "fecha": "2011-11",
+    "anio": 2011,
+    "mes": 11,
+    "continente": "sur",
+    "viajeros": 5406
+  },
+  {
+    "fecha": "2011-12",
+    "anio": 2011,
+    "mes": 12,
+    "continente": "asia",
+    "viajeros": 1692
+  },
+  {
+    "fecha": "2011-12",
+    "anio": 2011,
+    "mes": 12,
+    "continente": "centro",
+    "viajeros": 181883
+  },
+  {
+    "fecha": "2011-12",
+    "anio": 2011,
+    "mes": 12,
+    "continente": "europa",
+    "viajeros": 9261
+  },
+  {
+    "fecha": "2011-12",
+    "anio": 2011,
+    "mes": 12,
+    "continente": "norte",
+    "viajeros": 45547
+  },
+  {
+    "fecha": "2011-12",
+    "anio": 2011,
+    "mes": 12,
+    "continente": "resto",
+    "viajeros": 1629
+  },
+  {
+    "fecha": "2011-12",
+    "anio": 2011,
+    "mes": 12,
+    "continente": "sur",
+    "viajeros": 3723
+  },
+  {
+    "fecha": "2012-01",
+    "anio": 2012,
+    "mes": 1,
+    "continente": "asia",
+    "viajeros": 1696
+  },
+  {
+    "fecha": "2012-01",
+    "anio": 2012,
+    "mes": 1,
+    "continente": "centro",
+    "viajeros": 122214
+  },
+  {
+    "fecha": "2012-01",
+    "anio": 2012,
+    "mes": 1,
+    "continente": "europa",
+    "viajeros": 9565
+  },
+  {
+    "fecha": "2012-01",
+    "anio": 2012,
+    "mes": 1,
+    "continente": "norte",
+    "viajeros": 36526
+  },
+  {
+    "fecha": "2012-01",
+    "anio": 2012,
+    "mes": 1,
+    "continente": "resto",
+    "viajeros": 1574
+  },
+  {
+    "fecha": "2012-01",
+    "anio": 2012,
+    "mes": 1,
+    "continente": "sur",
+    "viajeros": 5551
+  },
+  {
+    "fecha": "2012-02",
+    "anio": 2012,
+    "mes": 2,
+    "continente": "asia",
+    "viajeros": 1561
+  },
+  {
+    "fecha": "2012-02",
+    "anio": 2012,
+    "mes": 2,
+    "continente": "centro",
+    "viajeros": 93820
+  },
+  {
+    "fecha": "2012-02",
+    "anio": 2012,
+    "mes": 2,
+    "continente": "europa",
+    "viajeros": 10801
+  },
+  {
+    "fecha": "2012-02",
+    "anio": 2012,
+    "mes": 2,
+    "continente": "norte",
+    "viajeros": 35616
+  },
+  {
+    "fecha": "2012-02",
+    "anio": 2012,
+    "mes": 2,
+    "continente": "resto",
+    "viajeros": 1339
+  },
+  {
+    "fecha": "2012-02",
+    "anio": 2012,
+    "mes": 2,
+    "continente": "sur",
+    "viajeros": 4683
+  },
+  {
+    "fecha": "2012-03",
+    "anio": 2012,
+    "mes": 3,
+    "continente": "asia",
+    "viajeros": 1491
+  },
+  {
+    "fecha": "2012-03",
+    "anio": 2012,
+    "mes": 3,
+    "continente": "centro",
+    "viajeros": 122296
+  },
+  {
+    "fecha": "2012-03",
+    "anio": 2012,
+    "mes": 3,
+    "continente": "europa",
+    "viajeros": 11173
+  },
+  {
+    "fecha": "2012-03",
+    "anio": 2012,
+    "mes": 3,
+    "continente": "norte",
+    "viajeros": 44971
+  },
+  {
+    "fecha": "2012-03",
+    "anio": 2012,
+    "mes": 3,
+    "continente": "resto",
+    "viajeros": 1443
+  },
+  {
+    "fecha": "2012-03",
+    "anio": 2012,
+    "mes": 3,
+    "continente": "sur",
+    "viajeros": 4863
+  },
+  {
+    "fecha": "2012-04",
+    "anio": 2012,
+    "mes": 4,
+    "continente": "asia",
+    "viajeros": 1749
+  },
+  {
+    "fecha": "2012-04",
+    "anio": 2012,
+    "mes": 4,
+    "continente": "centro",
+    "viajeros": 132244
+  },
+  {
+    "fecha": "2012-04",
+    "anio": 2012,
+    "mes": 4,
+    "continente": "europa",
+    "viajeros": 8251
+  },
+  {
+    "fecha": "2012-04",
+    "anio": 2012,
+    "mes": 4,
+    "continente": "norte",
+    "viajeros": 34348
+  },
+  {
+    "fecha": "2012-04",
+    "anio": 2012,
+    "mes": 4,
+    "continente": "resto",
+    "viajeros": 1249
+  },
+  {
+    "fecha": "2012-04",
+    "anio": 2012,
+    "mes": 4,
+    "continente": "sur",
+    "viajeros": 5050
+  },
+  {
+    "fecha": "2012-05",
+    "anio": 2012,
+    "mes": 5,
+    "continente": "asia",
+    "viajeros": 1477
+  },
+  {
+    "fecha": "2012-05",
+    "anio": 2012,
+    "mes": 5,
+    "continente": "centro",
+    "viajeros": 105872
+  },
+  {
+    "fecha": "2012-05",
+    "anio": 2012,
+    "mes": 5,
+    "continente": "europa",
+    "viajeros": 6557
+  },
+  {
+    "fecha": "2012-05",
+    "anio": 2012,
+    "mes": 5,
+    "continente": "norte",
+    "viajeros": 32341
+  },
+  {
+    "fecha": "2012-05",
+    "anio": 2012,
+    "mes": 5,
+    "continente": "resto",
+    "viajeros": 1327
+  },
+  {
+    "fecha": "2012-05",
+    "anio": 2012,
+    "mes": 5,
+    "continente": "sur",
+    "viajeros": 4564
+  },
+  {
+    "fecha": "2012-06",
+    "anio": 2012,
+    "mes": 6,
+    "continente": "asia",
+    "viajeros": 1318
+  },
+  {
+    "fecha": "2012-06",
+    "anio": 2012,
+    "mes": 6,
+    "continente": "centro",
+    "viajeros": 112977
+  },
+  {
+    "fecha": "2012-06",
+    "anio": 2012,
+    "mes": 6,
+    "continente": "europa",
+    "viajeros": 6124
+  },
+  {
+    "fecha": "2012-06",
+    "anio": 2012,
+    "mes": 6,
+    "continente": "norte",
+    "viajeros": 46109
+  },
+  {
+    "fecha": "2012-06",
+    "anio": 2012,
+    "mes": 6,
+    "continente": "resto",
+    "viajeros": 1304
+  },
+  {
+    "fecha": "2012-06",
+    "anio": 2012,
+    "mes": 6,
+    "continente": "sur",
+    "viajeros": 5409
+  },
+  {
+    "fecha": "2012-07",
+    "anio": 2012,
+    "mes": 7,
+    "continente": "asia",
+    "viajeros": 1736
+  },
+  {
+    "fecha": "2012-07",
+    "anio": 2012,
+    "mes": 7,
+    "continente": "centro",
+    "viajeros": 129028
+  },
+  {
+    "fecha": "2012-07",
+    "anio": 2012,
+    "mes": 7,
+    "continente": "europa",
+    "viajeros": 9777
+  },
+  {
+    "fecha": "2012-07",
+    "anio": 2012,
+    "mes": 7,
+    "continente": "norte",
+    "viajeros": 52488
+  },
+  {
+    "fecha": "2012-07",
+    "anio": 2012,
+    "mes": 7,
+    "continente": "resto",
+    "viajeros": 1381
+  },
+  {
+    "fecha": "2012-07",
+    "anio": 2012,
+    "mes": 7,
+    "continente": "sur",
+    "viajeros": 4930
+  },
+  {
+    "fecha": "2012-08",
+    "anio": 2012,
+    "mes": 8,
+    "continente": "asia",
+    "viajeros": 1429
+  },
+  {
+    "fecha": "2012-08",
+    "anio": 2012,
+    "mes": 8,
+    "continente": "centro",
+    "viajeros": 119927
+  },
+  {
+    "fecha": "2012-08",
+    "anio": 2012,
+    "mes": 8,
+    "continente": "europa",
+    "viajeros": 9099
+  },
+  {
+    "fecha": "2012-08",
+    "anio": 2012,
+    "mes": 8,
+    "continente": "norte",
+    "viajeros": 34262
+  },
+  {
+    "fecha": "2012-08",
+    "anio": 2012,
+    "mes": 8,
+    "continente": "resto",
+    "viajeros": 1404
+  },
+  {
+    "fecha": "2012-08",
+    "anio": 2012,
+    "mes": 8,
+    "continente": "sur",
+    "viajeros": 4545
+  },
+  {
+    "fecha": "2012-09",
+    "anio": 2012,
+    "mes": 9,
+    "continente": "asia",
+    "viajeros": 1518
+  },
+  {
+    "fecha": "2012-09",
+    "anio": 2012,
+    "mes": 9,
+    "continente": "centro",
+    "viajeros": 109163
+  },
+  {
+    "fecha": "2012-09",
+    "anio": 2012,
+    "mes": 9,
+    "continente": "europa",
+    "viajeros": 5878
+  },
+  {
+    "fecha": "2012-09",
+    "anio": 2012,
+    "mes": 9,
+    "continente": "norte",
+    "viajeros": 25050
+  },
+  {
+    "fecha": "2012-09",
+    "anio": 2012,
+    "mes": 9,
+    "continente": "resto",
+    "viajeros": 1570
+  },
+  {
+    "fecha": "2012-09",
+    "anio": 2012,
+    "mes": 9,
+    "continente": "sur",
+    "viajeros": 4669
+  },
+  {
+    "fecha": "2012-10",
+    "anio": 2012,
+    "mes": 10,
+    "continente": "asia",
+    "viajeros": 1440
+  },
+  {
+    "fecha": "2012-10",
+    "anio": 2012,
+    "mes": 10,
+    "continente": "centro",
+    "viajeros": 122678
+  },
+  {
+    "fecha": "2012-10",
+    "anio": 2012,
+    "mes": 10,
+    "continente": "europa",
+    "viajeros": 7802
+  },
+  {
+    "fecha": "2012-10",
+    "anio": 2012,
+    "mes": 10,
+    "continente": "norte",
+    "viajeros": 30033
+  },
+  {
+    "fecha": "2012-10",
+    "anio": 2012,
+    "mes": 10,
+    "continente": "resto",
+    "viajeros": 1296
+  },
+  {
+    "fecha": "2012-10",
+    "anio": 2012,
+    "mes": 10,
+    "continente": "sur",
+    "viajeros": 4746
+  },
+  {
+    "fecha": "2012-11",
+    "anio": 2012,
+    "mes": 11,
+    "continente": "asia",
+    "viajeros": 1450
+  },
+  {
+    "fecha": "2012-11",
+    "anio": 2012,
+    "mes": 11,
+    "continente": "centro",
+    "viajeros": 140790
+  },
+  {
+    "fecha": "2012-11",
+    "anio": 2012,
+    "mes": 11,
+    "continente": "europa",
+    "viajeros": 12078
+  },
+  {
+    "fecha": "2012-11",
+    "anio": 2012,
+    "mes": 11,
+    "continente": "norte",
+    "viajeros": 34754
+  },
+  {
+    "fecha": "2012-11",
+    "anio": 2012,
+    "mes": 11,
+    "continente": "resto",
+    "viajeros": 1397
+  },
+  {
+    "fecha": "2012-11",
+    "anio": 2012,
+    "mes": 11,
+    "continente": "sur",
+    "viajeros": 4931
+  },
+  {
+    "fecha": "2012-12",
+    "anio": 2012,
+    "mes": 12,
+    "continente": "asia",
+    "viajeros": 2006
+  },
+  {
+    "fecha": "2012-12",
+    "anio": 2012,
+    "mes": 12,
+    "continente": "centro",
+    "viajeros": 169915
+  },
+  {
+    "fecha": "2012-12",
+    "anio": 2012,
+    "mes": 12,
+    "continente": "europa",
+    "viajeros": 10324
+  },
+  {
+    "fecha": "2012-12",
+    "anio": 2012,
+    "mes": 12,
+    "continente": "norte",
+    "viajeros": 50498
+  },
+  {
+    "fecha": "2012-12",
+    "anio": 2012,
+    "mes": 12,
+    "continente": "resto",
+    "viajeros": 1734
+  },
+  {
+    "fecha": "2012-12",
+    "anio": 2012,
+    "mes": 12,
+    "continente": "sur",
+    "viajeros": 4363
+  },
+  {
+    "fecha": "2013-01",
+    "anio": 2013,
+    "mes": 1,
+    "continente": "asia",
+    "viajeros": 1756
+  },
+  {
+    "fecha": "2013-01",
+    "anio": 2013,
+    "mes": 1,
+    "continente": "centro",
+    "viajeros": 114929
+  },
+  {
+    "fecha": "2013-01",
+    "anio": 2013,
+    "mes": 1,
+    "continente": "europa",
+    "viajeros": 10470
+  },
+  {
+    "fecha": "2013-01",
+    "anio": 2013,
+    "mes": 1,
+    "continente": "norte",
+    "viajeros": 36343
+  },
+  {
+    "fecha": "2013-01",
+    "anio": 2013,
+    "mes": 1,
+    "continente": "resto",
+    "viajeros": 1772
+  },
+  {
+    "fecha": "2013-01",
+    "anio": 2013,
+    "mes": 1,
+    "continente": "sur",
+    "viajeros": 5589
+  },
+  {
+    "fecha": "2013-02",
+    "anio": 2013,
+    "mes": 2,
+    "continente": "asia",
+    "viajeros": 1651
+  },
+  {
+    "fecha": "2013-02",
+    "anio": 2013,
+    "mes": 2,
+    "continente": "centro",
+    "viajeros": 85722
+  },
+  {
+    "fecha": "2013-02",
+    "anio": 2013,
+    "mes": 2,
+    "continente": "europa",
+    "viajeros": 11147
+  },
+  {
+    "fecha": "2013-02",
+    "anio": 2013,
+    "mes": 2,
+    "continente": "norte",
+    "viajeros": 35379
+  },
+  {
+    "fecha": "2013-02",
+    "anio": 2013,
+    "mes": 2,
+    "continente": "resto",
+    "viajeros": 1343
+  },
+  {
+    "fecha": "2013-02",
+    "anio": 2013,
+    "mes": 2,
+    "continente": "sur",
+    "viajeros": 4922
+  },
+  {
+    "fecha": "2013-03",
+    "anio": 2013,
+    "mes": 3,
+    "continente": "asia",
+    "viajeros": 1937
+  },
+  {
+    "fecha": "2013-03",
+    "anio": 2013,
+    "mes": 3,
+    "continente": "centro",
+    "viajeros": 146822
+  },
+  {
+    "fecha": "2013-03",
+    "anio": 2013,
+    "mes": 3,
+    "continente": "europa",
+    "viajeros": 10944
+  },
+  {
+    "fecha": "2013-03",
+    "anio": 2013,
+    "mes": 3,
+    "continente": "norte",
+    "viajeros": 50680
+  },
+  {
+    "fecha": "2013-03",
+    "anio": 2013,
+    "mes": 3,
+    "continente": "resto",
+    "viajeros": 1612
+  },
+  {
+    "fecha": "2013-03",
+    "anio": 2013,
+    "mes": 3,
+    "continente": "sur",
+    "viajeros": 5097
+  },
+  {
+    "fecha": "2013-04",
+    "anio": 2013,
+    "mes": 4,
+    "continente": "asia",
+    "viajeros": 1470
+  },
+  {
+    "fecha": "2013-04",
+    "anio": 2013,
+    "mes": 4,
+    "continente": "centro",
+    "viajeros": 127787
+  },
+  {
+    "fecha": "2013-04",
+    "anio": 2013,
+    "mes": 4,
+    "continente": "europa",
+    "viajeros": 8564
+  },
+  {
+    "fecha": "2013-04",
+    "anio": 2013,
+    "mes": 4,
+    "continente": "norte",
+    "viajeros": 33934
+  },
+  {
+    "fecha": "2013-04",
+    "anio": 2013,
+    "mes": 4,
+    "continente": "resto",
+    "viajeros": 1533
+  },
+  {
+    "fecha": "2013-04",
+    "anio": 2013,
+    "mes": 4,
+    "continente": "sur",
+    "viajeros": 6238
+  },
+  {
+    "fecha": "2013-05",
+    "anio": 2013,
+    "mes": 5,
+    "continente": "asia",
+    "viajeros": 1570
+  },
+  {
+    "fecha": "2013-05",
+    "anio": 2013,
+    "mes": 5,
+    "continente": "centro",
+    "viajeros": 130523
+  },
+  {
+    "fecha": "2013-05",
+    "anio": 2013,
+    "mes": 5,
+    "continente": "europa",
+    "viajeros": 6666
+  },
+  {
+    "fecha": "2013-05",
+    "anio": 2013,
+    "mes": 5,
+    "continente": "norte",
+    "viajeros": 33675
+  },
+  {
+    "fecha": "2013-05",
+    "anio": 2013,
+    "mes": 5,
+    "continente": "resto",
+    "viajeros": 1757
+  },
+  {
+    "fecha": "2013-05",
+    "anio": 2013,
+    "mes": 5,
+    "continente": "sur",
+    "viajeros": 5052
+  },
+  {
+    "fecha": "2013-06",
+    "anio": 2013,
+    "mes": 6,
+    "continente": "asia",
+    "viajeros": 1496
+  },
+  {
+    "fecha": "2013-06",
+    "anio": 2013,
+    "mes": 6,
+    "continente": "centro",
+    "viajeros": 132740
+  },
+  {
+    "fecha": "2013-06",
+    "anio": 2013,
+    "mes": 6,
+    "continente": "europa",
+    "viajeros": 6918
+  },
+  {
+    "fecha": "2013-06",
+    "anio": 2013,
+    "mes": 6,
+    "continente": "norte",
+    "viajeros": 49277
+  },
+  {
+    "fecha": "2013-06",
+    "anio": 2013,
+    "mes": 6,
+    "continente": "resto",
+    "viajeros": 1524
+  },
+  {
+    "fecha": "2013-06",
+    "anio": 2013,
+    "mes": 6,
+    "continente": "sur",
+    "viajeros": 5210
+  },
+  {
+    "fecha": "2013-07",
+    "anio": 2013,
+    "mes": 7,
+    "continente": "asia",
+    "viajeros": 1755
+  },
+  {
+    "fecha": "2013-07",
+    "anio": 2013,
+    "mes": 7,
+    "continente": "centro",
+    "viajeros": 137556
+  },
+  {
+    "fecha": "2013-07",
+    "anio": 2013,
+    "mes": 7,
+    "continente": "europa",
+    "viajeros": 10078
+  },
+  {
+    "fecha": "2013-07",
+    "anio": 2013,
+    "mes": 7,
+    "continente": "norte",
+    "viajeros": 54852
+  },
+  {
+    "fecha": "2013-07",
+    "anio": 2013,
+    "mes": 7,
+    "continente": "resto",
+    "viajeros": 1542
+  },
+  {
+    "fecha": "2013-07",
+    "anio": 2013,
+    "mes": 7,
+    "continente": "sur",
+    "viajeros": 5813
+  },
+  {
+    "fecha": "2013-08",
+    "anio": 2013,
+    "mes": 8,
+    "continente": "asia",
+    "viajeros": 1601
+  },
+  {
+    "fecha": "2013-08",
+    "anio": 2013,
+    "mes": 8,
+    "continente": "centro",
+    "viajeros": 141830
+  },
+  {
+    "fecha": "2013-08",
+    "anio": 2013,
+    "mes": 8,
+    "continente": "europa",
+    "viajeros": 9376
+  },
+  {
+    "fecha": "2013-08",
+    "anio": 2013,
+    "mes": 8,
+    "continente": "norte",
+    "viajeros": 37092
+  },
+  {
+    "fecha": "2013-08",
+    "anio": 2013,
+    "mes": 8,
+    "continente": "resto",
+    "viajeros": 1548
+  },
+  {
+    "fecha": "2013-08",
+    "anio": 2013,
+    "mes": 8,
+    "continente": "sur",
+    "viajeros": 5704
+  },
+  {
+    "fecha": "2013-09",
+    "anio": 2013,
+    "mes": 9,
+    "continente": "asia",
+    "viajeros": 1531
+  },
+  {
+    "fecha": "2013-09",
+    "anio": 2013,
+    "mes": 9,
+    "continente": "centro",
+    "viajeros": 124275
+  },
+  {
+    "fecha": "2013-09",
+    "anio": 2013,
+    "mes": 9,
+    "continente": "europa",
+    "viajeros": 6461
+  },
+  {
+    "fecha": "2013-09",
+    "anio": 2013,
+    "mes": 9,
+    "continente": "norte",
+    "viajeros": 24514
+  },
+  {
+    "fecha": "2013-09",
+    "anio": 2013,
+    "mes": 9,
+    "continente": "resto",
+    "viajeros": 1612
+  },
+  {
+    "fecha": "2013-09",
+    "anio": 2013,
+    "mes": 9,
+    "continente": "sur",
+    "viajeros": 5474
+  },
+  {
+    "fecha": "2013-10",
+    "anio": 2013,
+    "mes": 10,
+    "continente": "asia",
+    "viajeros": 1432
+  },
+  {
+    "fecha": "2013-10",
+    "anio": 2013,
+    "mes": 10,
+    "continente": "centro",
+    "viajeros": 120207
+  },
+  {
+    "fecha": "2013-10",
+    "anio": 2013,
+    "mes": 10,
+    "continente": "europa",
+    "viajeros": 8507
+  },
+  {
+    "fecha": "2013-10",
+    "anio": 2013,
+    "mes": 10,
+    "continente": "norte",
+    "viajeros": 30397
+  },
+  {
+    "fecha": "2013-10",
+    "anio": 2013,
+    "mes": 10,
+    "continente": "resto",
+    "viajeros": 1196
+  },
+  {
+    "fecha": "2013-10",
+    "anio": 2013,
+    "mes": 10,
+    "continente": "sur",
+    "viajeros": 5885
+  },
+  {
+    "fecha": "2013-11",
+    "anio": 2013,
+    "mes": 11,
+    "continente": "asia",
+    "viajeros": 1893
+  },
+  {
+    "fecha": "2013-11",
+    "anio": 2013,
+    "mes": 11,
+    "continente": "centro",
+    "viajeros": 145363
+  },
+  {
+    "fecha": "2013-11",
+    "anio": 2013,
+    "mes": 11,
+    "continente": "europa",
+    "viajeros": 12817
+  },
+  {
+    "fecha": "2013-11",
+    "anio": 2013,
+    "mes": 11,
+    "continente": "norte",
+    "viajeros": 34870
+  },
+  {
+    "fecha": "2013-11",
+    "anio": 2013,
+    "mes": 11,
+    "continente": "resto",
+    "viajeros": 1328
+  },
+  {
+    "fecha": "2013-11",
+    "anio": 2013,
+    "mes": 11,
+    "continente": "sur",
+    "viajeros": 6694
+  },
+  {
+    "fecha": "2013-12",
+    "anio": 2013,
+    "mes": 12,
+    "continente": "asia",
+    "viajeros": 1985
+  },
+  {
+    "fecha": "2013-12",
+    "anio": 2013,
+    "mes": 12,
+    "continente": "centro",
+    "viajeros": 192031
+  },
+  {
+    "fecha": "2013-12",
+    "anio": 2013,
+    "mes": 12,
+    "continente": "europa",
+    "viajeros": 10265
+  },
+  {
+    "fecha": "2013-12",
+    "anio": 2013,
+    "mes": 12,
+    "continente": "norte",
+    "viajeros": 51340
+  },
+  {
+    "fecha": "2013-12",
+    "anio": 2013,
+    "mes": 12,
+    "continente": "resto",
+    "viajeros": 1690
+  },
+  {
+    "fecha": "2013-12",
+    "anio": 2013,
+    "mes": 12,
+    "continente": "sur",
+    "viajeros": 5138
+  },
+  {
+    "fecha": "2014-01",
+    "anio": 2014,
+    "mes": 1,
+    "continente": "asia",
+    "viajeros": 1966
+  },
+  {
+    "fecha": "2014-01",
+    "anio": 2014,
+    "mes": 1,
+    "continente": "centro",
+    "viajeros": 155004
+  },
+  {
+    "fecha": "2014-01",
+    "anio": 2014,
+    "mes": 1,
+    "continente": "europa",
+    "viajeros": 12665
+  },
+  {
+    "fecha": "2014-01",
+    "anio": 2014,
+    "mes": 1,
+    "continente": "norte",
+    "viajeros": 41127
+  },
+  {
+    "fecha": "2014-01",
+    "anio": 2014,
+    "mes": 1,
+    "continente": "resto",
+    "viajeros": 2024
+  },
+  {
+    "fecha": "2014-01",
+    "anio": 2014,
+    "mes": 1,
+    "continente": "sur",
+    "viajeros": 6674
+  },
+  {
+    "fecha": "2014-02",
+    "anio": 2014,
+    "mes": 2,
+    "continente": "asia",
+    "viajeros": 1800
+  },
+  {
+    "fecha": "2014-02",
+    "anio": 2014,
+    "mes": 2,
+    "continente": "centro",
+    "viajeros": 113013
+  },
+  {
+    "fecha": "2014-02",
+    "anio": 2014,
+    "mes": 2,
+    "continente": "europa",
+    "viajeros": 13163
+  },
+  {
+    "fecha": "2014-02",
+    "anio": 2014,
+    "mes": 2,
+    "continente": "norte",
+    "viajeros": 37720
+  },
+  {
+    "fecha": "2014-02",
+    "anio": 2014,
+    "mes": 2,
+    "continente": "resto",
+    "viajeros": 1627
+  },
+  {
+    "fecha": "2014-02",
+    "anio": 2014,
+    "mes": 2,
+    "continente": "sur",
+    "viajeros": 6153
+  },
+  {
+    "fecha": "2014-03",
+    "anio": 2014,
+    "mes": 3,
+    "continente": "asia",
+    "viajeros": 1796
+  },
+  {
+    "fecha": "2014-03",
+    "anio": 2014,
+    "mes": 3,
+    "continente": "centro",
+    "viajeros": 128988
+  },
+  {
+    "fecha": "2014-03",
+    "anio": 2014,
+    "mes": 3,
+    "continente": "europa",
+    "viajeros": 13155
+  },
+  {
+    "fecha": "2014-03",
+    "anio": 2014,
+    "mes": 3,
+    "continente": "norte",
+    "viajeros": 48389
+  },
+  {
+    "fecha": "2014-03",
+    "anio": 2014,
+    "mes": 3,
+    "continente": "resto",
+    "viajeros": 1559
+  },
+  {
+    "fecha": "2014-03",
+    "anio": 2014,
+    "mes": 3,
+    "continente": "sur",
+    "viajeros": 6250
+  },
+  {
+    "fecha": "2014-04",
+    "anio": 2014,
+    "mes": 4,
+    "continente": "asia",
+    "viajeros": 1805
+  },
+  {
+    "fecha": "2014-04",
+    "anio": 2014,
+    "mes": 4,
+    "continente": "centro",
+    "viajeros": 165710
+  },
+  {
+    "fecha": "2014-04",
+    "anio": 2014,
+    "mes": 4,
+    "continente": "europa",
+    "viajeros": 10732
+  },
+  {
+    "fecha": "2014-04",
+    "anio": 2014,
+    "mes": 4,
+    "continente": "norte",
+    "viajeros": 43213
+  },
+  {
+    "fecha": "2014-04",
+    "anio": 2014,
+    "mes": 4,
+    "continente": "resto",
+    "viajeros": 2055
+  },
+  {
+    "fecha": "2014-04",
+    "anio": 2014,
+    "mes": 4,
+    "continente": "sur",
+    "viajeros": 5844
+  },
+  {
+    "fecha": "2014-05",
+    "anio": 2014,
+    "mes": 5,
+    "continente": "asia",
+    "viajeros": 1712
+  },
+  {
+    "fecha": "2014-05",
+    "anio": 2014,
+    "mes": 5,
+    "continente": "centro",
+    "viajeros": 135521
+  },
+  {
+    "fecha": "2014-05",
+    "anio": 2014,
+    "mes": 5,
+    "continente": "europa",
+    "viajeros": 8130
+  },
+  {
+    "fecha": "2014-05",
+    "anio": 2014,
+    "mes": 5,
+    "continente": "norte",
+    "viajeros": 36616
+  },
+  {
+    "fecha": "2014-05",
+    "anio": 2014,
+    "mes": 5,
+    "continente": "resto",
+    "viajeros": 2178
+  },
+  {
+    "fecha": "2014-05",
+    "anio": 2014,
+    "mes": 5,
+    "continente": "sur",
+    "viajeros": 6107
+  },
+  {
+    "fecha": "2014-06",
+    "anio": 2014,
+    "mes": 6,
+    "continente": "asia",
+    "viajeros": 1557
+  },
+  {
+    "fecha": "2014-06",
+    "anio": 2014,
+    "mes": 6,
+    "continente": "centro",
+    "viajeros": 134941
+  },
+  {
+    "fecha": "2014-06",
+    "anio": 2014,
+    "mes": 6,
+    "continente": "europa",
+    "viajeros": 6933
+  },
+  {
+    "fecha": "2014-06",
+    "anio": 2014,
+    "mes": 6,
+    "continente": "norte",
+    "viajeros": 49299
+  },
+  {
+    "fecha": "2014-06",
+    "anio": 2014,
+    "mes": 6,
+    "continente": "resto",
+    "viajeros": 1620
+  },
+  {
+    "fecha": "2014-06",
+    "anio": 2014,
+    "mes": 6,
+    "continente": "sur",
+    "viajeros": 5743
+  },
+  {
+    "fecha": "2014-07",
+    "anio": 2014,
+    "mes": 7,
+    "continente": "asia",
+    "viajeros": 1782
+  },
+  {
+    "fecha": "2014-07",
+    "anio": 2014,
+    "mes": 7,
+    "continente": "centro",
+    "viajeros": 162583
+  },
+  {
+    "fecha": "2014-07",
+    "anio": 2014,
+    "mes": 7,
+    "continente": "europa",
+    "viajeros": 10928
+  },
+  {
+    "fecha": "2014-07",
+    "anio": 2014,
+    "mes": 7,
+    "continente": "norte",
+    "viajeros": 53892
+  },
+  {
+    "fecha": "2014-07",
+    "anio": 2014,
+    "mes": 7,
+    "continente": "resto",
+    "viajeros": 1791
+  },
+  {
+    "fecha": "2014-07",
+    "anio": 2014,
+    "mes": 7,
+    "continente": "sur",
+    "viajeros": 6583
+  },
+  {
+    "fecha": "2014-08",
+    "anio": 2014,
+    "mes": 8,
+    "continente": "asia",
+    "viajeros": 2058
+  },
+  {
+    "fecha": "2014-08",
+    "anio": 2014,
+    "mes": 8,
+    "continente": "centro",
+    "viajeros": 164238
+  },
+  {
+    "fecha": "2014-08",
+    "anio": 2014,
+    "mes": 8,
+    "continente": "europa",
+    "viajeros": 11304
+  },
+  {
+    "fecha": "2014-08",
+    "anio": 2014,
+    "mes": 8,
+    "continente": "norte",
+    "viajeros": 39135
+  },
+  {
+    "fecha": "2014-08",
+    "anio": 2014,
+    "mes": 8,
+    "continente": "resto",
+    "viajeros": 1817
+  },
+  {
+    "fecha": "2014-08",
+    "anio": 2014,
+    "mes": 8,
+    "continente": "sur",
+    "viajeros": 6550
+  },
+  {
+    "fecha": "2014-09",
+    "anio": 2014,
+    "mes": 9,
+    "continente": "asia",
+    "viajeros": 1711
+  },
+  {
+    "fecha": "2014-09",
+    "anio": 2014,
+    "mes": 9,
+    "continente": "centro",
+    "viajeros": 144345
+  },
+  {
+    "fecha": "2014-09",
+    "anio": 2014,
+    "mes": 9,
+    "continente": "europa",
+    "viajeros": 7332
+  },
+  {
+    "fecha": "2014-09",
+    "anio": 2014,
+    "mes": 9,
+    "continente": "norte",
+    "viajeros": 26059
+  },
+  {
+    "fecha": "2014-09",
+    "anio": 2014,
+    "mes": 9,
+    "continente": "resto",
+    "viajeros": 1876
+  },
+  {
+    "fecha": "2014-09",
+    "anio": 2014,
+    "mes": 9,
+    "continente": "sur",
+    "viajeros": 6362
+  },
+  {
+    "fecha": "2014-10",
+    "anio": 2014,
+    "mes": 10,
+    "continente": "asia",
+    "viajeros": 1706
+  },
+  {
+    "fecha": "2014-10",
+    "anio": 2014,
+    "mes": 10,
+    "continente": "centro",
+    "viajeros": 170966
+  },
+  {
+    "fecha": "2014-10",
+    "anio": 2014,
+    "mes": 10,
+    "continente": "europa",
+    "viajeros": 9954
+  },
+  {
+    "fecha": "2014-10",
+    "anio": 2014,
+    "mes": 10,
+    "continente": "norte",
+    "viajeros": 32218
+  },
+  {
+    "fecha": "2014-10",
+    "anio": 2014,
+    "mes": 10,
+    "continente": "resto",
+    "viajeros": 2095
+  },
+  {
+    "fecha": "2014-10",
+    "anio": 2014,
+    "mes": 10,
+    "continente": "sur",
+    "viajeros": 6712
+  },
+  {
+    "fecha": "2014-11",
+    "anio": 2014,
+    "mes": 11,
+    "continente": "asia",
+    "viajeros": 1889
+  },
+  {
+    "fecha": "2014-11",
+    "anio": 2014,
+    "mes": 11,
+    "continente": "centro",
+    "viajeros": 187795
+  },
+  {
+    "fecha": "2014-11",
+    "anio": 2014,
+    "mes": 11,
+    "continente": "europa",
+    "viajeros": 12941
+  },
+  {
+    "fecha": "2014-11",
+    "anio": 2014,
+    "mes": 11,
+    "continente": "norte",
+    "viajeros": 36831
+  },
+  {
+    "fecha": "2014-11",
+    "anio": 2014,
+    "mes": 11,
+    "continente": "resto",
+    "viajeros": 1757
+  },
+  {
+    "fecha": "2014-11",
+    "anio": 2014,
+    "mes": 11,
+    "continente": "sur",
+    "viajeros": 6805
+  },
+  {
+    "fecha": "2014-12",
+    "anio": 2014,
+    "mes": 12,
+    "continente": "asia",
+    "viajeros": 2280
+  },
+  {
+    "fecha": "2014-12",
+    "anio": 2014,
+    "mes": 12,
+    "continente": "centro",
+    "viajeros": 249672
+  },
+  {
+    "fecha": "2014-12",
+    "anio": 2014,
+    "mes": 12,
+    "continente": "europa",
+    "viajeros": 12146
+  },
+  {
+    "fecha": "2014-12",
+    "anio": 2014,
+    "mes": 12,
+    "continente": "norte",
+    "viajeros": 53133
+  },
+  {
+    "fecha": "2014-12",
+    "anio": 2014,
+    "mes": 12,
+    "continente": "resto",
+    "viajeros": 1929
+  },
+  {
+    "fecha": "2014-12",
+    "anio": 2014,
+    "mes": 12,
+    "continente": "sur",
+    "viajeros": 6213
+  },
+  {
+    "fecha": "2015-01",
+    "anio": 2015,
+    "mes": 1,
+    "continente": "asia",
+    "viajeros": 2042
+  },
+  {
+    "fecha": "2015-01",
+    "anio": 2015,
+    "mes": 1,
+    "continente": "centro",
+    "viajeros": 177364
+  },
+  {
+    "fecha": "2015-01",
+    "anio": 2015,
+    "mes": 1,
+    "continente": "europa",
+    "viajeros": 13347
+  },
+  {
+    "fecha": "2015-01",
+    "anio": 2015,
+    "mes": 1,
+    "continente": "norte",
+    "viajeros": 41163
+  },
+  {
+    "fecha": "2015-01",
+    "anio": 2015,
+    "mes": 1,
+    "continente": "resto",
+    "viajeros": 2364
+  },
+  {
+    "fecha": "2015-01",
+    "anio": 2015,
+    "mes": 1,
+    "continente": "sur",
+    "viajeros": 7841
+  },
+  {
+    "fecha": "2015-02",
+    "anio": 2015,
+    "mes": 2,
+    "continente": "asia",
+    "viajeros": 1954
+  },
+  {
+    "fecha": "2015-02",
+    "anio": 2015,
+    "mes": 2,
+    "continente": "centro",
+    "viajeros": 132327
+  },
+  {
+    "fecha": "2015-02",
+    "anio": 2015,
+    "mes": 2,
+    "continente": "europa",
+    "viajeros": 13323
+  },
+  {
+    "fecha": "2015-02",
+    "anio": 2015,
+    "mes": 2,
+    "continente": "norte",
+    "viajeros": 40763
+  },
+  {
+    "fecha": "2015-02",
+    "anio": 2015,
+    "mes": 2,
+    "continente": "resto",
+    "viajeros": 1707
+  },
+  {
+    "fecha": "2015-02",
+    "anio": 2015,
+    "mes": 2,
+    "continente": "sur",
+    "viajeros": 7133
+  },
+  {
+    "fecha": "2015-03",
+    "anio": 2015,
+    "mes": 3,
+    "continente": "asia",
+    "viajeros": 2089
+  },
+  {
+    "fecha": "2015-03",
+    "anio": 2015,
+    "mes": 3,
+    "continente": "centro",
+    "viajeros": 172027
+  },
+  {
+    "fecha": "2015-03",
+    "anio": 2015,
+    "mes": 3,
+    "continente": "europa",
+    "viajeros": 13703
+  },
+  {
+    "fecha": "2015-03",
+    "anio": 2015,
+    "mes": 3,
+    "continente": "norte",
+    "viajeros": 52360
+  },
+  {
+    "fecha": "2015-03",
+    "anio": 2015,
+    "mes": 3,
+    "continente": "resto",
+    "viajeros": 1977
+  },
+  {
+    "fecha": "2015-03",
+    "anio": 2015,
+    "mes": 3,
+    "continente": "sur",
+    "viajeros": 7432
+  },
+  {
+    "fecha": "2015-04",
+    "anio": 2015,
+    "mes": 4,
+    "continente": "asia",
+    "viajeros": 2076
+  },
+  {
+    "fecha": "2015-04",
+    "anio": 2015,
+    "mes": 4,
+    "continente": "centro",
+    "viajeros": 184946
+  },
+  {
+    "fecha": "2015-04",
+    "anio": 2015,
+    "mes": 4,
+    "continente": "europa",
+    "viajeros": 10582
+  },
+  {
+    "fecha": "2015-04",
+    "anio": 2015,
+    "mes": 4,
+    "continente": "norte",
+    "viajeros": 40574
+  },
+  {
+    "fecha": "2015-04",
+    "anio": 2015,
+    "mes": 4,
+    "continente": "resto",
+    "viajeros": 2035
+  },
+  {
+    "fecha": "2015-04",
+    "anio": 2015,
+    "mes": 4,
+    "continente": "sur",
+    "viajeros": 7348
+  },
+  {
+    "fecha": "2015-05",
+    "anio": 2015,
+    "mes": 5,
+    "continente": "asia",
+    "viajeros": 1867
+  },
+  {
+    "fecha": "2015-05",
+    "anio": 2015,
+    "mes": 5,
+    "continente": "centro",
+    "viajeros": 169509
+  },
+  {
+    "fecha": "2015-05",
+    "anio": 2015,
+    "mes": 5,
+    "continente": "europa",
+    "viajeros": 7884
+  },
+  {
+    "fecha": "2015-05",
+    "anio": 2015,
+    "mes": 5,
+    "continente": "norte",
+    "viajeros": 38339
+  },
+  {
+    "fecha": "2015-05",
+    "anio": 2015,
+    "mes": 5,
+    "continente": "resto",
+    "viajeros": 2021
+  },
+  {
+    "fecha": "2015-05",
+    "anio": 2015,
+    "mes": 5,
+    "continente": "sur",
+    "viajeros": 6795
+  },
+  {
+    "fecha": "2015-06",
+    "anio": 2015,
+    "mes": 6,
+    "continente": "asia",
+    "viajeros": 1981
+  },
+  {
+    "fecha": "2015-06",
+    "anio": 2015,
+    "mes": 6,
+    "continente": "centro",
+    "viajeros": 173969
+  },
+  {
+    "fecha": "2015-06",
+    "anio": 2015,
+    "mes": 6,
+    "continente": "europa",
+    "viajeros": 7389
+  },
+  {
+    "fecha": "2015-06",
+    "anio": 2015,
+    "mes": 6,
+    "continente": "norte",
+    "viajeros": 53259
+  },
+  {
+    "fecha": "2015-06",
+    "anio": 2015,
+    "mes": 6,
+    "continente": "resto",
+    "viajeros": 1860
+  },
+  {
+    "fecha": "2015-06",
+    "anio": 2015,
+    "mes": 6,
+    "continente": "sur",
+    "viajeros": 6924
+  },
+  {
+    "fecha": "2015-07",
+    "anio": 2015,
+    "mes": 7,
+    "continente": "asia",
+    "viajeros": 1735
+  },
+  {
+    "fecha": "2015-07",
+    "anio": 2015,
+    "mes": 7,
+    "continente": "centro",
+    "viajeros": 176549
+  },
+  {
+    "fecha": "2015-07",
+    "anio": 2015,
+    "mes": 7,
+    "continente": "europa",
+    "viajeros": 10932
+  },
+  {
+    "fecha": "2015-07",
+    "anio": 2015,
+    "mes": 7,
+    "continente": "norte",
+    "viajeros": 55032
+  },
+  {
+    "fecha": "2015-07",
+    "anio": 2015,
+    "mes": 7,
+    "continente": "resto",
+    "viajeros": 1810
+  },
+  {
+    "fecha": "2015-07",
+    "anio": 2015,
+    "mes": 7,
+    "continente": "sur",
+    "viajeros": 6978
+  },
+  {
+    "fecha": "2015-08",
+    "anio": 2015,
+    "mes": 8,
+    "continente": "asia",
+    "viajeros": 1826
+  },
+  {
+    "fecha": "2015-08",
+    "anio": 2015,
+    "mes": 8,
+    "continente": "centro",
+    "viajeros": 182716
+  },
+  {
+    "fecha": "2015-08",
+    "anio": 2015,
+    "mes": 8,
+    "continente": "europa",
+    "viajeros": 11590
+  },
+  {
+    "fecha": "2015-08",
+    "anio": 2015,
+    "mes": 8,
+    "continente": "norte",
+    "viajeros": 40773
+  },
+  {
+    "fecha": "2015-08",
+    "anio": 2015,
+    "mes": 8,
+    "continente": "resto",
+    "viajeros": 1819
+  },
+  {
+    "fecha": "2015-08",
+    "anio": 2015,
+    "mes": 8,
+    "continente": "sur",
+    "viajeros": 6942
+  },
+  {
+    "fecha": "2015-09",
+    "anio": 2015,
+    "mes": 9,
+    "continente": "asia",
+    "viajeros": 1679
+  },
+  {
+    "fecha": "2015-09",
+    "anio": 2015,
+    "mes": 9,
+    "continente": "centro",
+    "viajeros": 159368
+  },
+  {
+    "fecha": "2015-09",
+    "anio": 2015,
+    "mes": 9,
+    "continente": "europa",
+    "viajeros": 7652
+  },
+  {
+    "fecha": "2015-09",
+    "anio": 2015,
+    "mes": 9,
+    "continente": "norte",
+    "viajeros": 28827
+  },
+  {
+    "fecha": "2015-09",
+    "anio": 2015,
+    "mes": 9,
+    "continente": "resto",
+    "viajeros": 2238
+  },
+  {
+    "fecha": "2015-09",
+    "anio": 2015,
+    "mes": 9,
+    "continente": "sur",
+    "viajeros": 6937
+  },
+  {
+    "fecha": "2015-10",
+    "anio": 2015,
+    "mes": 10,
+    "continente": "asia",
+    "viajeros": 1615
+  },
+  {
+    "fecha": "2015-10",
+    "anio": 2015,
+    "mes": 10,
+    "continente": "centro",
+    "viajeros": 172804
+  },
+  {
+    "fecha": "2015-10",
+    "anio": 2015,
+    "mes": 10,
+    "continente": "europa",
+    "viajeros": 9191
+  },
+  {
+    "fecha": "2015-10",
+    "anio": 2015,
+    "mes": 10,
+    "continente": "norte",
+    "viajeros": 35099
+  },
+  {
+    "fecha": "2015-10",
+    "anio": 2015,
+    "mes": 10,
+    "continente": "resto",
+    "viajeros": 1678
+  },
+  {
+    "fecha": "2015-10",
+    "anio": 2015,
+    "mes": 10,
+    "continente": "sur",
+    "viajeros": 7413
+  },
+  {
+    "fecha": "2015-11",
+    "anio": 2015,
+    "mes": 11,
+    "continente": "asia",
+    "viajeros": 1888
+  },
+  {
+    "fecha": "2015-11",
+    "anio": 2015,
+    "mes": 11,
+    "continente": "centro",
+    "viajeros": 180826
+  },
+  {
+    "fecha": "2015-11",
+    "anio": 2015,
+    "mes": 11,
+    "continente": "europa",
+    "viajeros": 12986
+  },
+  {
+    "fecha": "2015-11",
+    "anio": 2015,
+    "mes": 11,
+    "continente": "norte",
+    "viajeros": 40229
+  },
+  {
+    "fecha": "2015-11",
+    "anio": 2015,
+    "mes": 11,
+    "continente": "resto",
+    "viajeros": 1593
+  },
+  {
+    "fecha": "2015-11",
+    "anio": 2015,
+    "mes": 11,
+    "continente": "sur",
+    "viajeros": 7662
+  },
+  {
+    "fecha": "2015-12",
+    "anio": 2015,
+    "mes": 12,
+    "continente": "asia",
+    "viajeros": 2194
+  },
+  {
+    "fecha": "2015-12",
+    "anio": 2015,
+    "mes": 12,
+    "continente": "centro",
+    "viajeros": 250277
+  },
+  {
+    "fecha": "2015-12",
+    "anio": 2015,
+    "mes": 12,
+    "continente": "europa",
+    "viajeros": 11856
+  },
+  {
+    "fecha": "2015-12",
+    "anio": 2015,
+    "mes": 12,
+    "continente": "norte",
+    "viajeros": 56266
+  },
+  {
+    "fecha": "2015-12",
+    "anio": 2015,
+    "mes": 12,
+    "continente": "resto",
+    "viajeros": 2041
+  },
+  {
+    "fecha": "2015-12",
+    "anio": 2015,
+    "mes": 12,
+    "continente": "sur",
+    "viajeros": 6592
+  },
+  {
+    "fecha": "2016-01",
+    "anio": 2016,
+    "mes": 1,
+    "continente": "asia",
+    "viajeros": 2259
+  },
+  {
+    "fecha": "2016-01",
+    "anio": 2016,
+    "mes": 1,
+    "continente": "centro",
+    "viajeros": 192937
+  },
+  {
+    "fecha": "2016-01",
+    "anio": 2016,
+    "mes": 1,
+    "continente": "europa",
+    "viajeros": 13150
+  },
+  {
+    "fecha": "2016-01",
+    "anio": 2016,
+    "mes": 1,
+    "continente": "norte",
+    "viajeros": 42565
+  },
+  {
+    "fecha": "2016-01",
+    "anio": 2016,
+    "mes": 1,
+    "continente": "resto",
+    "viajeros": 2529
+  },
+  {
+    "fecha": "2016-01",
+    "anio": 2016,
+    "mes": 1,
+    "continente": "sur",
+    "viajeros": 8667
+  },
+  {
+    "fecha": "2016-02",
+    "anio": 2016,
+    "mes": 2,
+    "continente": "asia",
+    "viajeros": 1895
+  },
+  {
+    "fecha": "2016-02",
+    "anio": 2016,
+    "mes": 2,
+    "continente": "centro",
+    "viajeros": 147151
+  },
+  {
+    "fecha": "2016-02",
+    "anio": 2016,
+    "mes": 2,
+    "continente": "europa",
+    "viajeros": 13890
+  },
+  {
+    "fecha": "2016-02",
+    "anio": 2016,
+    "mes": 2,
+    "continente": "norte",
+    "viajeros": 41661
+  },
+  {
+    "fecha": "2016-02",
+    "anio": 2016,
+    "mes": 2,
+    "continente": "resto",
+    "viajeros": 1905
+  },
+  {
+    "fecha": "2016-02",
+    "anio": 2016,
+    "mes": 2,
+    "continente": "sur",
+    "viajeros": 8137
+  },
+  {
+    "fecha": "2016-03",
+    "anio": 2016,
+    "mes": 3,
+    "continente": "asia",
+    "viajeros": 2405
+  },
+  {
+    "fecha": "2016-03",
+    "anio": 2016,
+    "mes": 3,
+    "continente": "centro",
+    "viajeros": 238870
+  },
+  {
+    "fecha": "2016-03",
+    "anio": 2016,
+    "mes": 3,
+    "continente": "europa",
+    "viajeros": 14293
+  },
+  {
+    "fecha": "2016-03",
+    "anio": 2016,
+    "mes": 3,
+    "continente": "norte",
+    "viajeros": 56247
+  },
+  {
+    "fecha": "2016-03",
+    "anio": 2016,
+    "mes": 3,
+    "continente": "resto",
+    "viajeros": 2232
+  },
+  {
+    "fecha": "2016-03",
+    "anio": 2016,
+    "mes": 3,
+    "continente": "sur",
+    "viajeros": 7983
+  },
+  {
+    "fecha": "2016-04",
+    "anio": 2016,
+    "mes": 4,
+    "continente": "asia",
+    "viajeros": 1558
+  },
+  {
+    "fecha": "2016-04",
+    "anio": 2016,
+    "mes": 4,
+    "continente": "centro",
+    "viajeros": 157651
+  },
+  {
+    "fecha": "2016-04",
+    "anio": 2016,
+    "mes": 4,
+    "continente": "europa",
+    "viajeros": 9405
+  },
+  {
+    "fecha": "2016-04",
+    "anio": 2016,
+    "mes": 4,
+    "continente": "norte",
+    "viajeros": 34140
+  },
+  {
+    "fecha": "2016-04",
+    "anio": 2016,
+    "mes": 4,
+    "continente": "resto",
+    "viajeros": 1877
+  },
+  {
+    "fecha": "2016-04",
+    "anio": 2016,
+    "mes": 4,
+    "continente": "sur",
+    "viajeros": 6814
+  },
+  {
+    "fecha": "2016-05",
+    "anio": 2016,
+    "mes": 5,
+    "continente": "asia",
+    "viajeros": 1669
+  },
+  {
+    "fecha": "2016-05",
+    "anio": 2016,
+    "mes": 5,
+    "continente": "centro",
+    "viajeros": 169371
+  },
+  {
+    "fecha": "2016-05",
+    "anio": 2016,
+    "mes": 5,
+    "continente": "europa",
+    "viajeros": 7526
+  },
+  {
+    "fecha": "2016-05",
+    "anio": 2016,
+    "mes": 5,
+    "continente": "norte",
+    "viajeros": 36423
+  },
+  {
+    "fecha": "2016-05",
+    "anio": 2016,
+    "mes": 5,
+    "continente": "resto",
+    "viajeros": 1986
+  },
+  {
+    "fecha": "2016-05",
+    "anio": 2016,
+    "mes": 5,
+    "continente": "sur",
+    "viajeros": 6958
+  },
+  {
+    "fecha": "2016-06",
+    "anio": 2016,
+    "mes": 6,
+    "continente": "asia",
+    "viajeros": 1544
+  },
+  {
+    "fecha": "2016-06",
+    "anio": 2016,
+    "mes": 6,
+    "continente": "centro",
+    "viajeros": 159050
+  },
+  {
+    "fecha": "2016-06",
+    "anio": 2016,
+    "mes": 6,
+    "continente": "europa",
+    "viajeros": 6683
+  },
+  {
+    "fecha": "2016-06",
+    "anio": 2016,
+    "mes": 6,
+    "continente": "norte",
+    "viajeros": 50353
+  },
+  {
+    "fecha": "2016-06",
+    "anio": 2016,
+    "mes": 6,
+    "continente": "resto",
+    "viajeros": 1748
+  },
+  {
+    "fecha": "2016-06",
+    "anio": 2016,
+    "mes": 6,
+    "continente": "sur",
+    "viajeros": 6909
+  },
+  {
+    "fecha": "2016-07",
+    "anio": 2016,
+    "mes": 7,
+    "continente": "asia",
+    "viajeros": 2087
+  },
+  {
+    "fecha": "2016-07",
+    "anio": 2016,
+    "mes": 7,
+    "continente": "centro",
+    "viajeros": 188728
+  },
+  {
+    "fecha": "2016-07",
+    "anio": 2016,
+    "mes": 7,
+    "continente": "europa",
+    "viajeros": 11278
+  },
+  {
+    "fecha": "2016-07",
+    "anio": 2016,
+    "mes": 7,
+    "continente": "norte",
+    "viajeros": 57302
+  },
+  {
+    "fecha": "2016-07",
+    "anio": 2016,
+    "mes": 7,
+    "continente": "resto",
+    "viajeros": 1790
+  },
+  {
+    "fecha": "2016-07",
+    "anio": 2016,
+    "mes": 7,
+    "continente": "sur",
+    "viajeros": 7827
+  },
+  {
+    "fecha": "2016-08",
+    "anio": 2016,
+    "mes": 8,
+    "continente": "asia",
+    "viajeros": 1756
+  },
+  {
+    "fecha": "2016-08",
+    "anio": 2016,
+    "mes": 8,
+    "continente": "centro",
+    "viajeros": 200566
+  },
+  {
+    "fecha": "2016-08",
+    "anio": 2016,
+    "mes": 8,
+    "continente": "europa",
+    "viajeros": 10319
+  },
+  {
+    "fecha": "2016-08",
+    "anio": 2016,
+    "mes": 8,
+    "continente": "norte",
+    "viajeros": 37053
+  },
+  {
+    "fecha": "2016-08",
+    "anio": 2016,
+    "mes": 8,
+    "continente": "resto",
+    "viajeros": 1610
+  },
+  {
+    "fecha": "2016-08",
+    "anio": 2016,
+    "mes": 8,
+    "continente": "sur",
+    "viajeros": 7496
+  },
+  {
+    "fecha": "2016-09",
+    "anio": 2016,
+    "mes": 9,
+    "continente": "asia",
+    "viajeros": 1483
+  },
+  {
+    "fecha": "2016-09",
+    "anio": 2016,
+    "mes": 9,
+    "continente": "centro",
+    "viajeros": 143338
+  },
+  {
+    "fecha": "2016-09",
+    "anio": 2016,
+    "mes": 9,
+    "continente": "europa",
+    "viajeros": 7502
+  },
+  {
+    "fecha": "2016-09",
+    "anio": 2016,
+    "mes": 9,
+    "continente": "norte",
+    "viajeros": 25813
+  },
+  {
+    "fecha": "2016-09",
+    "anio": 2016,
+    "mes": 9,
+    "continente": "resto",
+    "viajeros": 2084
+  },
+  {
+    "fecha": "2016-09",
+    "anio": 2016,
+    "mes": 9,
+    "continente": "sur",
+    "viajeros": 6599
+  },
+  {
+    "fecha": "2016-10",
+    "anio": 2016,
+    "mes": 10,
+    "continente": "asia",
+    "viajeros": 1594
+  },
+  {
+    "fecha": "2016-10",
+    "anio": 2016,
+    "mes": 10,
+    "continente": "centro",
+    "viajeros": 194543
+  },
+  {
+    "fecha": "2016-10",
+    "anio": 2016,
+    "mes": 10,
+    "continente": "europa",
+    "viajeros": 9028
+  },
+  {
+    "fecha": "2016-10",
+    "anio": 2016,
+    "mes": 10,
+    "continente": "norte",
+    "viajeros": 33765
+  },
+  {
+    "fecha": "2016-10",
+    "anio": 2016,
+    "mes": 10,
+    "continente": "resto",
+    "viajeros": 1844
+  },
+  {
+    "fecha": "2016-10",
+    "anio": 2016,
+    "mes": 10,
+    "continente": "sur",
+    "viajeros": 8347
+  },
+  {
+    "fecha": "2016-11",
+    "anio": 2016,
+    "mes": 11,
+    "continente": "asia",
+    "viajeros": 1891
+  },
+  {
+    "fecha": "2016-11",
+    "anio": 2016,
+    "mes": 11,
+    "continente": "centro",
+    "viajeros": 191533
+  },
+  {
+    "fecha": "2016-11",
+    "anio": 2016,
+    "mes": 11,
+    "continente": "europa",
+    "viajeros": 12814
+  },
+  {
+    "fecha": "2016-11",
+    "anio": 2016,
+    "mes": 11,
+    "continente": "norte",
+    "viajeros": 35331
+  },
+  {
+    "fecha": "2016-11",
+    "anio": 2016,
+    "mes": 11,
+    "continente": "resto",
+    "viajeros": 1620
+  },
+  {
+    "fecha": "2016-11",
+    "anio": 2016,
+    "mes": 11,
+    "continente": "sur",
+    "viajeros": 8343
+  },
+  {
+    "fecha": "2016-12",
+    "anio": 2016,
+    "mes": 12,
+    "continente": "asia",
+    "viajeros": 1860
+  },
+  {
+    "fecha": "2016-12",
+    "anio": 2016,
+    "mes": 12,
+    "continente": "centro",
+    "viajeros": 262266
+  },
+  {
+    "fecha": "2016-12",
+    "anio": 2016,
+    "mes": 12,
+    "continente": "europa",
+    "viajeros": 9499
+  },
+  {
+    "fecha": "2016-12",
+    "anio": 2016,
+    "mes": 12,
+    "continente": "norte",
+    "viajeros": 40940
+  },
+  {
+    "fecha": "2016-12",
+    "anio": 2016,
+    "mes": 12,
+    "continente": "resto",
+    "viajeros": 1590
+  },
+  {
+    "fecha": "2016-12",
+    "anio": 2016,
+    "mes": 12,
+    "continente": "sur",
+    "viajeros": 5147
+  },
+  {
+    "fecha": "2017-01",
+    "anio": 2017,
+    "mes": 1,
+    "continente": "asia",
+    "viajeros": 2102
+  },
+  {
+    "fecha": "2017-01",
+    "anio": 2017,
+    "mes": 1,
+    "continente": "centro",
+    "viajeros": 197417
+  },
+  {
+    "fecha": "2017-01",
+    "anio": 2017,
+    "mes": 1,
+    "continente": "europa",
+    "viajeros": 13566
+  },
+  {
+    "fecha": "2017-01",
+    "anio": 2017,
+    "mes": 1,
+    "continente": "norte",
+    "viajeros": 35958
+  },
+  {
+    "fecha": "2017-01",
+    "anio": 2017,
+    "mes": 1,
+    "continente": "resto",
+    "viajeros": 2732
+  },
+  {
+    "fecha": "2017-01",
+    "anio": 2017,
+    "mes": 1,
+    "continente": "sur",
+    "viajeros": 7867
+  },
+  {
+    "fecha": "2017-02",
+    "anio": 2017,
+    "mes": 2,
+    "continente": "asia",
+    "viajeros": 1999
+  },
+  {
+    "fecha": "2017-02",
+    "anio": 2017,
+    "mes": 2,
+    "continente": "centro",
+    "viajeros": 166979
+  },
+  {
+    "fecha": "2017-02",
+    "anio": 2017,
+    "mes": 2,
+    "continente": "europa",
+    "viajeros": 14561
+  },
+  {
+    "fecha": "2017-02",
+    "anio": 2017,
+    "mes": 2,
+    "continente": "norte",
+    "viajeros": 40764
+  },
+  {
+    "fecha": "2017-02",
+    "anio": 2017,
+    "mes": 2,
+    "continente": "resto",
+    "viajeros": 1701
+  },
+  {
+    "fecha": "2017-02",
+    "anio": 2017,
+    "mes": 2,
+    "continente": "sur",
+    "viajeros": 7714
+  },
+  {
+    "fecha": "2017-03",
+    "anio": 2017,
+    "mes": 3,
+    "continente": "asia",
+    "viajeros": 2039
+  },
+  {
+    "fecha": "2017-03",
+    "anio": 2017,
+    "mes": 3,
+    "continente": "centro",
+    "viajeros": 219076
+  },
+  {
+    "fecha": "2017-03",
+    "anio": 2017,
+    "mes": 3,
+    "continente": "europa",
+    "viajeros": 15016
+  },
+  {
+    "fecha": "2017-03",
+    "anio": 2017,
+    "mes": 3,
+    "continente": "norte",
+    "viajeros": 48536
+  },
+  {
+    "fecha": "2017-03",
+    "anio": 2017,
+    "mes": 3,
+    "continente": "resto",
+    "viajeros": 1829
+  },
+  {
+    "fecha": "2017-03",
+    "anio": 2017,
+    "mes": 3,
+    "continente": "sur",
+    "viajeros": 7948
+  },
+  {
+    "fecha": "2017-04",
+    "anio": 2017,
+    "mes": 4,
+    "continente": "asia",
+    "viajeros": 2059
+  },
+  {
+    "fecha": "2017-04",
+    "anio": 2017,
+    "mes": 4,
+    "continente": "centro",
+    "viajeros": 309634
+  },
+  {
+    "fecha": "2017-04",
+    "anio": 2017,
+    "mes": 4,
+    "continente": "europa",
+    "viajeros": 11568
+  },
+  {
+    "fecha": "2017-04",
+    "anio": 2017,
+    "mes": 4,
+    "continente": "norte",
+    "viajeros": 44297
+  },
+  {
+    "fecha": "2017-04",
+    "anio": 2017,
+    "mes": 4,
+    "continente": "resto",
+    "viajeros": 2156
+  },
+  {
+    "fecha": "2017-04",
+    "anio": 2017,
+    "mes": 4,
+    "continente": "sur",
+    "viajeros": 8115
+  },
+  {
+    "fecha": "2017-05",
+    "anio": 2017,
+    "mes": 5,
+    "continente": "asia",
+    "viajeros": 1749
+  },
+  {
+    "fecha": "2017-05",
+    "anio": 2017,
+    "mes": 5,
+    "continente": "centro",
+    "viajeros": 189615
+  },
+  {
+    "fecha": "2017-05",
+    "anio": 2017,
+    "mes": 5,
+    "continente": "europa",
+    "viajeros": 8172
+  },
+  {
+    "fecha": "2017-05",
+    "anio": 2017,
+    "mes": 5,
+    "continente": "norte",
+    "viajeros": 34825
+  },
+  {
+    "fecha": "2017-05",
+    "anio": 2017,
+    "mes": 5,
+    "continente": "resto",
+    "viajeros": 2142
+  },
+  {
+    "fecha": "2017-05",
+    "anio": 2017,
+    "mes": 5,
+    "continente": "sur",
+    "viajeros": 7239
+  },
+  {
+    "fecha": "2017-06",
+    "anio": 2017,
+    "mes": 6,
+    "continente": "asia",
+    "viajeros": 1928
+  },
+  {
+    "fecha": "2017-06",
+    "anio": 2017,
+    "mes": 6,
+    "continente": "centro",
+    "viajeros": 177782
+  },
+  {
+    "fecha": "2017-06",
+    "anio": 2017,
+    "mes": 6,
+    "continente": "europa",
+    "viajeros": 7150
+  },
+  {
+    "fecha": "2017-06",
+    "anio": 2017,
+    "mes": 6,
+    "continente": "norte",
+    "viajeros": 52114
+  },
+  {
+    "fecha": "2017-06",
+    "anio": 2017,
+    "mes": 6,
+    "continente": "resto",
+    "viajeros": 1643
+  },
+  {
+    "fecha": "2017-06",
+    "anio": 2017,
+    "mes": 6,
+    "continente": "sur",
+    "viajeros": 7236
+  },
+  {
+    "fecha": "2017-07",
+    "anio": 2017,
+    "mes": 7,
+    "continente": "asia",
+    "viajeros": 2073
+  },
+  {
+    "fecha": "2017-07",
+    "anio": 2017,
+    "mes": 7,
+    "continente": "centro",
+    "viajeros": 202948
+  },
+  {
+    "fecha": "2017-07",
+    "anio": 2017,
+    "mes": 7,
+    "continente": "europa",
+    "viajeros": 13229
+  },
+  {
+    "fecha": "2017-07",
+    "anio": 2017,
+    "mes": 7,
+    "continente": "norte",
+    "viajeros": 62265
+  },
+  {
+    "fecha": "2017-07",
+    "anio": 2017,
+    "mes": 7,
+    "continente": "resto",
+    "viajeros": 1910
+  },
+  {
+    "fecha": "2017-07",
+    "anio": 2017,
+    "mes": 7,
+    "continente": "sur",
+    "viajeros": 9149
+  },
+  {
+    "fecha": "2017-08",
+    "anio": 2017,
+    "mes": 8,
+    "continente": "asia",
+    "viajeros": 2076
+  },
+  {
+    "fecha": "2017-08",
+    "anio": 2017,
+    "mes": 8,
+    "continente": "centro",
+    "viajeros": 210650
+  },
+  {
+    "fecha": "2017-08",
+    "anio": 2017,
+    "mes": 8,
+    "continente": "europa",
+    "viajeros": 12125
+  },
+  {
+    "fecha": "2017-08",
+    "anio": 2017,
+    "mes": 8,
+    "continente": "norte",
+    "viajeros": 40281
+  },
+  {
+    "fecha": "2017-08",
+    "anio": 2017,
+    "mes": 8,
+    "continente": "resto",
+    "viajeros": 1605
+  },
+  {
+    "fecha": "2017-08",
+    "anio": 2017,
+    "mes": 8,
+    "continente": "sur",
+    "viajeros": 7556
+  },
+  {
+    "fecha": "2017-09",
+    "anio": 2017,
+    "mes": 9,
+    "continente": "asia",
+    "viajeros": 1661
+  },
+  {
+    "fecha": "2017-09",
+    "anio": 2017,
+    "mes": 9,
+    "continente": "centro",
+    "viajeros": 166138
+  },
+  {
+    "fecha": "2017-09",
+    "anio": 2017,
+    "mes": 9,
+    "continente": "europa",
+    "viajeros": 8198
+  },
+  {
+    "fecha": "2017-09",
+    "anio": 2017,
+    "mes": 9,
+    "continente": "norte",
+    "viajeros": 28515
+  },
+  {
+    "fecha": "2017-09",
+    "anio": 2017,
+    "mes": 9,
+    "continente": "resto",
+    "viajeros": 1751
+  },
+  {
+    "fecha": "2017-09",
+    "anio": 2017,
+    "mes": 9,
+    "continente": "sur",
+    "viajeros": 7434
+  },
+  {
+    "fecha": "2017-10",
+    "anio": 2017,
+    "mes": 10,
+    "continente": "asia",
+    "viajeros": 1783
+  },
+  {
+    "fecha": "2017-10",
+    "anio": 2017,
+    "mes": 10,
+    "continente": "centro",
+    "viajeros": 180228
+  },
+  {
+    "fecha": "2017-10",
+    "anio": 2017,
+    "mes": 10,
+    "continente": "europa",
+    "viajeros": 10459
+  },
+  {
+    "fecha": "2017-10",
+    "anio": 2017,
+    "mes": 10,
+    "continente": "norte",
+    "viajeros": 37063
+  },
+  {
+    "fecha": "2017-10",
+    "anio": 2017,
+    "mes": 10,
+    "continente": "resto",
+    "viajeros": 1669
+  },
+  {
+    "fecha": "2017-10",
+    "anio": 2017,
+    "mes": 10,
+    "continente": "sur",
+    "viajeros": 7854
+  },
+  {
+    "fecha": "2017-11",
+    "anio": 2017,
+    "mes": 11,
+    "continente": "asia",
+    "viajeros": 1917
+  },
+  {
+    "fecha": "2017-11",
+    "anio": 2017,
+    "mes": 11,
+    "continente": "centro",
+    "viajeros": 209691
+  },
+  {
+    "fecha": "2017-11",
+    "anio": 2017,
+    "mes": 11,
+    "continente": "europa",
+    "viajeros": 13872
+  },
+  {
+    "fecha": "2017-11",
+    "anio": 2017,
+    "mes": 11,
+    "continente": "norte",
+    "viajeros": 40241
+  },
+  {
+    "fecha": "2017-11",
+    "anio": 2017,
+    "mes": 11,
+    "continente": "resto",
+    "viajeros": 1555
+  },
+  {
+    "fecha": "2017-11",
+    "anio": 2017,
+    "mes": 11,
+    "continente": "sur",
+    "viajeros": 8417
+  },
+  {
+    "fecha": "2017-12",
+    "anio": 2017,
+    "mes": 12,
+    "continente": "asia",
+    "viajeros": 2152
+  },
+  {
+    "fecha": "2017-12",
+    "anio": 2017,
+    "mes": 12,
+    "continente": "centro",
+    "viajeros": 277929
+  },
+  {
+    "fecha": "2017-12",
+    "anio": 2017,
+    "mes": 12,
+    "continente": "europa",
+    "viajeros": 11079
+  },
+  {
+    "fecha": "2017-12",
+    "anio": 2017,
+    "mes": 12,
+    "continente": "norte",
+    "viajeros": 56121
+  },
+  {
+    "fecha": "2017-12",
+    "anio": 2017,
+    "mes": 12,
+    "continente": "resto",
+    "viajeros": 1841
+  },
+  {
+    "fecha": "2017-12",
+    "anio": 2017,
+    "mes": 12,
+    "continente": "sur",
+    "viajeros": 6988
+  },
+  {
+    "fecha": "2018-01",
+    "anio": 2018,
+    "mes": 1,
+    "continente": "asia",
+    "viajeros": 2244
+  },
+  {
+    "fecha": "2018-01",
+    "anio": 2018,
+    "mes": 1,
+    "continente": "centro",
+    "viajeros": 229847
+  },
+  {
+    "fecha": "2018-01",
+    "anio": 2018,
+    "mes": 1,
+    "continente": "europa",
+    "viajeros": 14512
+  },
+  {
+    "fecha": "2018-01",
+    "anio": 2018,
+    "mes": 1,
+    "continente": "norte",
+    "viajeros": 45421
+  },
+  {
+    "fecha": "2018-01",
+    "anio": 2018,
+    "mes": 1,
+    "continente": "resto",
+    "viajeros": 2610
+  },
+  {
+    "fecha": "2018-01",
+    "anio": 2018,
+    "mes": 1,
+    "continente": "sur",
+    "viajeros": 9184
+  },
+  {
+    "fecha": "2018-02",
+    "anio": 2018,
+    "mes": 2,
+    "continente": "asia",
+    "viajeros": 1783
+  },
+  {
+    "fecha": "2018-02",
+    "anio": 2018,
+    "mes": 2,
+    "continente": "centro",
+    "viajeros": 185100
+  },
+  {
+    "fecha": "2018-02",
+    "anio": 2018,
+    "mes": 2,
+    "continente": "europa",
+    "viajeros": 14219
+  },
+  {
+    "fecha": "2018-02",
+    "anio": 2018,
+    "mes": 2,
+    "continente": "norte",
+    "viajeros": 41351
+  },
+  {
+    "fecha": "2018-02",
+    "anio": 2018,
+    "mes": 2,
+    "continente": "resto",
+    "viajeros": 1727
+  },
+  {
+    "fecha": "2018-02",
+    "anio": 2018,
+    "mes": 2,
+    "continente": "sur",
+    "viajeros": 7487
+  },
+  {
+    "fecha": "2018-03",
+    "anio": 2018,
+    "mes": 3,
+    "continente": "asia",
+    "viajeros": 2238
+  },
+  {
+    "fecha": "2018-03",
+    "anio": 2018,
+    "mes": 3,
+    "continente": "centro",
+    "viajeros": 308231
+  },
+  {
+    "fecha": "2018-03",
+    "anio": 2018,
+    "mes": 3,
+    "continente": "europa",
+    "viajeros": 13939
+  },
+  {
+    "fecha": "2018-03",
+    "anio": 2018,
+    "mes": 3,
+    "continente": "norte",
+    "viajeros": 58273
+  },
+  {
+    "fecha": "2018-03",
+    "anio": 2018,
+    "mes": 3,
+    "continente": "resto",
+    "viajeros": 1948
+  },
+  {
+    "fecha": "2018-03",
+    "anio": 2018,
+    "mes": 3,
+    "continente": "sur",
+    "viajeros": 8392
+  },
+  {
+    "fecha": "2018-04",
+    "anio": 2018,
+    "mes": 4,
+    "continente": "asia",
+    "viajeros": 1873
+  },
+  {
+    "fecha": "2018-04",
+    "anio": 2018,
+    "mes": 4,
+    "continente": "centro",
+    "viajeros": 244259
+  },
+  {
+    "fecha": "2018-04",
+    "anio": 2018,
+    "mes": 4,
+    "continente": "europa",
+    "viajeros": 11243
+  },
+  {
+    "fecha": "2018-04",
+    "anio": 2018,
+    "mes": 4,
+    "continente": "norte",
+    "viajeros": 41175
+  },
+  {
+    "fecha": "2018-04",
+    "anio": 2018,
+    "mes": 4,
+    "continente": "resto",
+    "viajeros": 1797
+  },
+  {
+    "fecha": "2018-04",
+    "anio": 2018,
+    "mes": 4,
+    "continente": "sur",
+    "viajeros": 7893
+  },
+  {
+    "fecha": "2018-05",
+    "anio": 2018,
+    "mes": 5,
+    "continente": "asia",
+    "viajeros": 1910
+  },
+  {
+    "fecha": "2018-05",
+    "anio": 2018,
+    "mes": 5,
+    "continente": "centro",
+    "viajeros": 216959
+  },
+  {
+    "fecha": "2018-05",
+    "anio": 2018,
+    "mes": 5,
+    "continente": "europa",
+    "viajeros": 8852
+  },
+  {
+    "fecha": "2018-05",
+    "anio": 2018,
+    "mes": 5,
+    "continente": "norte",
+    "viajeros": 40062
+  },
+  {
+    "fecha": "2018-05",
+    "anio": 2018,
+    "mes": 5,
+    "continente": "resto",
+    "viajeros": 2092
+  },
+  {
+    "fecha": "2018-05",
+    "anio": 2018,
+    "mes": 5,
+    "continente": "sur",
+    "viajeros": 7875
+  },
+  {
+    "fecha": "2018-06",
+    "anio": 2018,
+    "mes": 6,
+    "continente": "asia",
+    "viajeros": 1717
+  },
+  {
+    "fecha": "2018-06",
+    "anio": 2018,
+    "mes": 6,
+    "continente": "centro",
+    "viajeros": 234903
+  },
+  {
+    "fecha": "2018-06",
+    "anio": 2018,
+    "mes": 6,
+    "continente": "europa",
+    "viajeros": 7649
+  },
+  {
+    "fecha": "2018-06",
+    "anio": 2018,
+    "mes": 6,
+    "continente": "norte",
+    "viajeros": 58332
+  },
+  {
+    "fecha": "2018-06",
+    "anio": 2018,
+    "mes": 6,
+    "continente": "resto",
+    "viajeros": 1620
+  },
+  {
+    "fecha": "2018-06",
+    "anio": 2018,
+    "mes": 6,
+    "continente": "sur",
+    "viajeros": 7059
+  },
+  {
+    "fecha": "2018-07",
+    "anio": 2018,
+    "mes": 7,
+    "continente": "asia",
+    "viajeros": 1794
+  },
+  {
+    "fecha": "2018-07",
+    "anio": 2018,
+    "mes": 7,
+    "continente": "centro",
+    "viajeros": 248852
+  },
+  {
+    "fecha": "2018-07",
+    "anio": 2018,
+    "mes": 7,
+    "continente": "europa",
+    "viajeros": 13359
+  },
+  {
+    "fecha": "2018-07",
+    "anio": 2018,
+    "mes": 7,
+    "continente": "norte",
+    "viajeros": 63754
+  },
+  {
+    "fecha": "2018-07",
+    "anio": 2018,
+    "mes": 7,
+    "continente": "resto",
+    "viajeros": 1910
+  },
+  {
+    "fecha": "2018-07",
+    "anio": 2018,
+    "mes": 7,
+    "continente": "sur",
+    "viajeros": 7631
+  },
+  {
+    "fecha": "2018-08",
+    "anio": 2018,
+    "mes": 8,
+    "continente": "asia",
+    "viajeros": 1749
+  },
+  {
+    "fecha": "2018-08",
+    "anio": 2018,
+    "mes": 8,
+    "continente": "centro",
+    "viajeros": 280769
+  },
+  {
+    "fecha": "2018-08",
+    "anio": 2018,
+    "mes": 8,
+    "continente": "europa",
+    "viajeros": 14017
+  },
+  {
+    "fecha": "2018-08",
+    "anio": 2018,
+    "mes": 8,
+    "continente": "norte",
+    "viajeros": 46512
+  },
+  {
+    "fecha": "2018-08",
+    "anio": 2018,
+    "mes": 8,
+    "continente": "resto",
+    "viajeros": 1667
+  },
+  {
+    "fecha": "2018-08",
+    "anio": 2018,
+    "mes": 8,
+    "continente": "sur",
+    "viajeros": 7603
+  },
+  {
+    "fecha": "2018-09",
+    "anio": 2018,
+    "mes": 9,
+    "continente": "asia",
+    "viajeros": 1709
+  },
+  {
+    "fecha": "2018-09",
+    "anio": 2018,
+    "mes": 9,
+    "continente": "centro",
+    "viajeros": 222892
+  },
+  {
+    "fecha": "2018-09",
+    "anio": 2018,
+    "mes": 9,
+    "continente": "europa",
+    "viajeros": 7703
+  },
+  {
+    "fecha": "2018-09",
+    "anio": 2018,
+    "mes": 9,
+    "continente": "norte",
+    "viajeros": 31231
+  },
+  {
+    "fecha": "2018-09",
+    "anio": 2018,
+    "mes": 9,
+    "continente": "resto",
+    "viajeros": 1880
+  },
+  {
+    "fecha": "2018-09",
+    "anio": 2018,
+    "mes": 9,
+    "continente": "sur",
+    "viajeros": 7362
+  },
+  {
+    "fecha": "2018-10",
+    "anio": 2018,
+    "mes": 10,
+    "continente": "asia",
+    "viajeros": 1872
+  },
+  {
+    "fecha": "2018-10",
+    "anio": 2018,
+    "mes": 10,
+    "continente": "centro",
+    "viajeros": 218948
+  },
+  {
+    "fecha": "2018-10",
+    "anio": 2018,
+    "mes": 10,
+    "continente": "europa",
+    "viajeros": 10687
+  },
+  {
+    "fecha": "2018-10",
+    "anio": 2018,
+    "mes": 10,
+    "continente": "norte",
+    "viajeros": 40830
+  },
+  {
+    "fecha": "2018-10",
+    "anio": 2018,
+    "mes": 10,
+    "continente": "resto",
+    "viajeros": 1381
+  },
+  {
+    "fecha": "2018-10",
+    "anio": 2018,
+    "mes": 10,
+    "continente": "sur",
+    "viajeros": 8454
+  },
+  {
+    "fecha": "2018-11",
+    "anio": 2018,
+    "mes": 11,
+    "continente": "asia",
+    "viajeros": 2148
+  },
+  {
+    "fecha": "2018-11",
+    "anio": 2018,
+    "mes": 11,
+    "continente": "centro",
+    "viajeros": 234351
+  },
+  {
+    "fecha": "2018-11",
+    "anio": 2018,
+    "mes": 11,
+    "continente": "europa",
+    "viajeros": 15214
+  },
+  {
+    "fecha": "2018-11",
+    "anio": 2018,
+    "mes": 11,
+    "continente": "norte",
+    "viajeros": 47376
+  },
+  {
+    "fecha": "2018-11",
+    "anio": 2018,
+    "mes": 11,
+    "continente": "resto",
+    "viajeros": 1548
+  },
+  {
+    "fecha": "2018-11",
+    "anio": 2018,
+    "mes": 11,
+    "continente": "sur",
+    "viajeros": 9050
+  },
+  {
+    "fecha": "2018-12",
+    "anio": 2018,
+    "mes": 12,
+    "continente": "asia",
+    "viajeros": 3537
+  },
+  {
+    "fecha": "2018-12",
+    "anio": 2018,
+    "mes": 12,
+    "continente": "centro",
+    "viajeros": 301254
+  },
+  {
+    "fecha": "2018-12",
+    "anio": 2018,
+    "mes": 12,
+    "continente": "europa",
+    "viajeros": 14125
+  },
+  {
+    "fecha": "2018-12",
+    "anio": 2018,
+    "mes": 12,
+    "continente": "norte",
+    "viajeros": 65050
+  },
+  {
+    "fecha": "2018-12",
+    "anio": 2018,
+    "mes": 12,
+    "continente": "resto",
+    "viajeros": 2255
+  },
+  {
+    "fecha": "2018-12",
+    "anio": 2018,
+    "mes": 12,
+    "continente": "sur",
+    "viajeros": 7509
+  },
+  {
+    "fecha": "2019-01",
+    "anio": 2019,
+    "mes": 1,
+    "continente": "asia",
+    "viajeros": 2412
+  },
+  {
+    "fecha": "2019-01",
+    "anio": 2019,
+    "mes": 1,
+    "continente": "centro",
+    "viajeros": 281062
+  },
+  {
+    "fecha": "2019-01",
+    "anio": 2019,
+    "mes": 1,
+    "continente": "europa",
+    "viajeros": 14725
+  },
+  {
+    "fecha": "2019-01",
+    "anio": 2019,
+    "mes": 1,
+    "continente": "norte",
+    "viajeros": 47828
+  },
+  {
+    "fecha": "2019-01",
+    "anio": 2019,
+    "mes": 1,
+    "continente": "resto",
+    "viajeros": 2593
+  },
+  {
+    "fecha": "2019-01",
+    "anio": 2019,
+    "mes": 1,
+    "continente": "sur",
+    "viajeros": 9027
+  },
+  {
+    "fecha": "2019-02",
+    "anio": 2019,
+    "mes": 2,
+    "continente": "asia",
+    "viajeros": 1853
+  },
+  {
+    "fecha": "2019-02",
+    "anio": 2019,
+    "mes": 2,
+    "continente": "centro",
+    "viajeros": 215846
+  },
+  {
+    "fecha": "2019-02",
+    "anio": 2019,
+    "mes": 2,
+    "continente": "europa",
+    "viajeros": 13868
+  },
+  {
+    "fecha": "2019-02",
+    "anio": 2019,
+    "mes": 2,
+    "continente": "norte",
+    "viajeros": 45016
+  },
+  {
+    "fecha": "2019-02",
+    "anio": 2019,
+    "mes": 2,
+    "continente": "resto",
+    "viajeros": 1430
+  },
+  {
+    "fecha": "2019-02",
+    "anio": 2019,
+    "mes": 2,
+    "continente": "sur",
+    "viajeros": 7338
+  },
+  {
+    "fecha": "2019-03",
+    "anio": 2019,
+    "mes": 3,
+    "continente": "asia",
+    "viajeros": 2260
+  },
+  {
+    "fecha": "2019-03",
+    "anio": 2019,
+    "mes": 3,
+    "continente": "centro",
+    "viajeros": 278723
+  },
+  {
+    "fecha": "2019-03",
+    "anio": 2019,
+    "mes": 3,
+    "continente": "europa",
+    "viajeros": 13904
+  },
+  {
+    "fecha": "2019-03",
+    "anio": 2019,
+    "mes": 3,
+    "continente": "norte",
+    "viajeros": 55370
+  },
+  {
+    "fecha": "2019-03",
+    "anio": 2019,
+    "mes": 3,
+    "continente": "resto",
+    "viajeros": 1481
+  },
+  {
+    "fecha": "2019-03",
+    "anio": 2019,
+    "mes": 3,
+    "continente": "sur",
+    "viajeros": 8019
+  },
+  {
+    "fecha": "2019-04",
+    "anio": 2019,
+    "mes": 4,
+    "continente": "asia",
+    "viajeros": 2136
+  },
+  {
+    "fecha": "2019-04",
+    "anio": 2019,
+    "mes": 4,
+    "continente": "centro",
+    "viajeros": 316517
+  },
+  {
+    "fecha": "2019-04",
+    "anio": 2019,
+    "mes": 4,
+    "continente": "europa",
+    "viajeros": 11111
+  },
+  {
+    "fecha": "2019-04",
+    "anio": 2019,
+    "mes": 4,
+    "continente": "norte",
+    "viajeros": 48778
+  },
+  {
+    "fecha": "2019-04",
+    "anio": 2019,
+    "mes": 4,
+    "continente": "resto",
+    "viajeros": 1845
+  },
+  {
+    "fecha": "2019-04",
+    "anio": 2019,
+    "mes": 4,
+    "continente": "sur",
+    "viajeros": 8152
+  },
+  {
+    "fecha": "2019-05",
+    "anio": 2019,
+    "mes": 5,
+    "continente": "asia",
+    "viajeros": 1856
+  },
+  {
+    "fecha": "2019-05",
+    "anio": 2019,
+    "mes": 5,
+    "continente": "centro",
+    "viajeros": 235949
+  },
+  {
+    "fecha": "2019-05",
+    "anio": 2019,
+    "mes": 5,
+    "continente": "europa",
+    "viajeros": 8260
+  },
+  {
+    "fecha": "2019-05",
+    "anio": 2019,
+    "mes": 5,
+    "continente": "norte",
+    "viajeros": 43339
+  },
+  {
+    "fecha": "2019-05",
+    "anio": 2019,
+    "mes": 5,
+    "continente": "resto",
+    "viajeros": 1986
+  },
+  {
+    "fecha": "2019-05",
+    "anio": 2019,
+    "mes": 5,
+    "continente": "sur",
+    "viajeros": 7908
+  },
+  {
+    "fecha": "2019-06",
+    "anio": 2019,
+    "mes": 6,
+    "continente": "asia",
+    "viajeros": 1699
+  },
+  {
+    "fecha": "2019-06",
+    "anio": 2019,
+    "mes": 6,
+    "continente": "centro",
+    "viajeros": 253203
+  },
+  {
+    "fecha": "2019-06",
+    "anio": 2019,
+    "mes": 6,
+    "continente": "europa",
+    "viajeros": 7213
+  },
+  {
+    "fecha": "2019-06",
+    "anio": 2019,
+    "mes": 6,
+    "continente": "norte",
+    "viajeros": 61958
+  },
+  {
+    "fecha": "2019-06",
+    "anio": 2019,
+    "mes": 6,
+    "continente": "resto",
+    "viajeros": 1713
+  },
+  {
+    "fecha": "2019-06",
+    "anio": 2019,
+    "mes": 6,
+    "continente": "sur",
+    "viajeros": 7376
+  },
+  {
+    "fecha": "2019-07",
+    "anio": 2019,
+    "mes": 7,
+    "continente": "asia",
+    "viajeros": 2021
+  },
+  {
+    "fecha": "2019-07",
+    "anio": 2019,
+    "mes": 7,
+    "continente": "centro",
+    "viajeros": 274104
+  },
+  {
+    "fecha": "2019-07",
+    "anio": 2019,
+    "mes": 7,
+    "continente": "europa",
+    "viajeros": 12848
+  },
+  {
+    "fecha": "2019-07",
+    "anio": 2019,
+    "mes": 7,
+    "continente": "norte",
+    "viajeros": 66272
+  },
+  {
+    "fecha": "2019-07",
+    "anio": 2019,
+    "mes": 7,
+    "continente": "resto",
+    "viajeros": 1769
+  },
+  {
+    "fecha": "2019-07",
+    "anio": 2019,
+    "mes": 7,
+    "continente": "sur",
+    "viajeros": 8319
+  },
+  {
+    "fecha": "2019-08",
+    "anio": 2019,
+    "mes": 8,
+    "continente": "asia",
+    "viajeros": 1920
+  },
+  {
+    "fecha": "2019-08",
+    "anio": 2019,
+    "mes": 8,
+    "continente": "centro",
+    "viajeros": 293028
+  },
+  {
+    "fecha": "2019-08",
+    "anio": 2019,
+    "mes": 8,
+    "continente": "europa",
+    "viajeros": 12647
+  },
+  {
+    "fecha": "2019-08",
+    "anio": 2019,
+    "mes": 8,
+    "continente": "norte",
+    "viajeros": 48254
+  },
+  {
+    "fecha": "2019-08",
+    "anio": 2019,
+    "mes": 8,
+    "continente": "resto",
+    "viajeros": 1582
+  },
+  {
+    "fecha": "2019-08",
+    "anio": 2019,
+    "mes": 8,
+    "continente": "sur",
+    "viajeros": 8082
+  },
+  {
+    "fecha": "2019-09",
+    "anio": 2019,
+    "mes": 9,
+    "continente": "asia",
+    "viajeros": 1839
+  },
+  {
+    "fecha": "2019-09",
+    "anio": 2019,
+    "mes": 9,
+    "continente": "centro",
+    "viajeros": 247175
+  },
+  {
+    "fecha": "2019-09",
+    "anio": 2019,
+    "mes": 9,
+    "continente": "europa",
+    "viajeros": 7419
+  },
+  {
+    "fecha": "2019-09",
+    "anio": 2019,
+    "mes": 9,
+    "continente": "norte",
+    "viajeros": 32571
+  },
+  {
+    "fecha": "2019-09",
+    "anio": 2019,
+    "mes": 9,
+    "continente": "resto",
+    "viajeros": 1586
+  },
+  {
+    "fecha": "2019-09",
+    "anio": 2019,
+    "mes": 9,
+    "continente": "sur",
+    "viajeros": 7660
+  },
+  {
+    "fecha": "2019-10",
+    "anio": 2019,
+    "mes": 10,
+    "continente": "asia",
+    "viajeros": 1592
+  },
+  {
+    "fecha": "2019-10",
+    "anio": 2019,
+    "mes": 10,
+    "continente": "centro",
+    "viajeros": 232199
+  },
+  {
+    "fecha": "2019-10",
+    "anio": 2019,
+    "mes": 10,
+    "continente": "europa",
+    "viajeros": 9658
+  },
+  {
+    "fecha": "2019-10",
+    "anio": 2019,
+    "mes": 10,
+    "continente": "norte",
+    "viajeros": 41435
+  },
+  {
+    "fecha": "2019-10",
+    "anio": 2019,
+    "mes": 10,
+    "continente": "resto",
+    "viajeros": 1634
+  },
+  {
+    "fecha": "2019-10",
+    "anio": 2019,
+    "mes": 10,
+    "continente": "sur",
+    "viajeros": 7986
+  },
+  {
+    "fecha": "2019-11",
+    "anio": 2019,
+    "mes": 11,
+    "continente": "asia",
+    "viajeros": 2074
+  },
+  {
+    "fecha": "2019-11",
+    "anio": 2019,
+    "mes": 11,
+    "continente": "centro",
+    "viajeros": 260704
+  },
+  {
+    "fecha": "2019-11",
+    "anio": 2019,
+    "mes": 11,
+    "continente": "europa",
+    "viajeros": 15912
+  },
+  {
+    "fecha": "2019-11",
+    "anio": 2019,
+    "mes": 11,
+    "continente": "norte",
+    "viajeros": 47095
+  },
+  {
+    "fecha": "2019-11",
+    "anio": 2019,
+    "mes": 11,
+    "continente": "resto",
+    "viajeros": 1462
+  },
+  {
+    "fecha": "2019-11",
+    "anio": 2019,
+    "mes": 11,
+    "continente": "sur",
+    "viajeros": 8536
+  },
+  {
+    "fecha": "2019-12",
+    "anio": 2019,
+    "mes": 12,
+    "continente": "asia",
+    "viajeros": 2328
+  },
+  {
+    "fecha": "2019-12",
+    "anio": 2019,
+    "mes": 12,
+    "continente": "centro",
+    "viajeros": 359173
+  },
+  {
+    "fecha": "2019-12",
+    "anio": 2019,
+    "mes": 12,
+    "continente": "europa",
+    "viajeros": 13673
+  },
+  {
+    "fecha": "2019-12",
+    "anio": 2019,
+    "mes": 12,
+    "continente": "norte",
+    "viajeros": 64641
+  },
+  {
+    "fecha": "2019-12",
+    "anio": 2019,
+    "mes": 12,
+    "continente": "resto",
+    "viajeros": 1924
+  },
+  {
+    "fecha": "2019-12",
+    "anio": 2019,
+    "mes": 12,
+    "continente": "sur",
+    "viajeros": 7375
+  },
+  {
+    "fecha": "2020-01",
+    "anio": 2020,
+    "mes": 1,
+    "continente": "asia",
+    "viajeros": 2319
+  },
+  {
+    "fecha": "2020-01",
+    "anio": 2020,
+    "mes": 1,
+    "continente": "centro",
+    "viajeros": 307940
+  },
+  {
+    "fecha": "2020-01",
+    "anio": 2020,
+    "mes": 1,
+    "continente": "europa",
+    "viajeros": 15122
+  },
+  {
+    "fecha": "2020-01",
+    "anio": 2020,
+    "mes": 1,
+    "continente": "norte",
+    "viajeros": 51644
+  },
+  {
+    "fecha": "2020-01",
+    "anio": 2020,
+    "mes": 1,
+    "continente": "resto",
+    "viajeros": 2396
+  },
+  {
+    "fecha": "2020-01",
+    "anio": 2020,
+    "mes": 1,
+    "continente": "sur",
+    "viajeros": 8803
+  },
+  {
+    "fecha": "2020-02",
+    "anio": 2020,
+    "mes": 2,
+    "continente": "asia",
+    "viajeros": 1788
+  },
+  {
+    "fecha": "2020-02",
+    "anio": 2020,
+    "mes": 2,
+    "continente": "centro",
+    "viajeros": 239370
+  },
+  {
+    "fecha": "2020-02",
+    "anio": 2020,
+    "mes": 2,
+    "continente": "europa",
+    "viajeros": 16224
+  },
+  {
+    "fecha": "2020-02",
+    "anio": 2020,
+    "mes": 2,
+    "continente": "norte",
+    "viajeros": 51210
+  },
+  {
+    "fecha": "2020-02",
+    "anio": 2020,
+    "mes": 2,
+    "continente": "resto",
+    "viajeros": 1464
+  },
+  {
+    "fecha": "2020-02",
+    "anio": 2020,
+    "mes": 2,
+    "continente": "sur",
+    "viajeros": 7862
+  },
+  {
+    "fecha": "2020-03",
+    "anio": 2020,
+    "mes": 3,
+    "continente": "asia",
+    "viajeros": 606
+  },
+  {
+    "fecha": "2020-03",
+    "anio": 2020,
+    "mes": 3,
+    "continente": "centro",
+    "viajeros": 121339
+  },
+  {
+    "fecha": "2020-03",
+    "anio": 2020,
+    "mes": 3,
+    "continente": "europa",
+    "viajeros": 5748
+  },
+  {
+    "fecha": "2020-03",
+    "anio": 2020,
+    "mes": 3,
+    "continente": "norte",
+    "viajeros": 23675
+  },
+  {
+    "fecha": "2020-03",
+    "anio": 2020,
+    "mes": 3,
+    "continente": "resto",
+    "viajeros": 573
+  },
+  {
+    "fecha": "2020-03",
+    "anio": 2020,
+    "mes": 3,
+    "continente": "sur",
+    "viajeros": 3474
+  },
+  {
+    "fecha": "2020-04",
+    "anio": 2020,
+    "mes": 4,
+    "continente": "asia",
+    "viajeros": null
+  },
+  {
+    "fecha": "2020-04",
+    "anio": 2020,
+    "mes": 4,
+    "continente": "centro",
+    "viajeros": 10039
+  },
+  {
+    "fecha": "2020-04",
+    "anio": 2020,
+    "mes": 4,
+    "continente": "europa",
+    "viajeros": null
+  },
+  {
+    "fecha": "2020-04",
+    "anio": 2020,
+    "mes": 4,
+    "continente": "norte",
+    "viajeros": null
+  },
+  {
+    "fecha": "2020-04",
+    "anio": 2020,
+    "mes": 4,
+    "continente": "resto",
+    "viajeros": null
+  },
+  {
+    "fecha": "2020-04",
+    "anio": 2020,
+    "mes": 4,
+    "continente": "sur",
+    "viajeros": null
+  },
+  {
+    "fecha": "2020-05",
+    "anio": 2020,
+    "mes": 5,
+    "continente": "asia",
+    "viajeros": null
+  },
+  {
+    "fecha": "2020-05",
+    "anio": 2020,
+    "mes": 5,
+    "continente": "centro",
+    "viajeros": 9779
+  },
+  {
+    "fecha": "2020-05",
+    "anio": 2020,
+    "mes": 5,
+    "continente": "europa",
+    "viajeros": null
+  },
+  {
+    "fecha": "2020-05",
+    "anio": 2020,
+    "mes": 5,
+    "continente": "norte",
+    "viajeros": null
+  },
+  {
+    "fecha": "2020-05",
+    "anio": 2020,
+    "mes": 5,
+    "continente": "resto",
+    "viajeros": null
+  },
+  {
+    "fecha": "2020-05",
+    "anio": 2020,
+    "mes": 5,
+    "continente": "sur",
+    "viajeros": null
+  },
+  {
+    "fecha": "2020-06",
+    "anio": 2020,
+    "mes": 6,
+    "continente": "asia",
+    "viajeros": null
+  },
+  {
+    "fecha": "2020-06",
+    "anio": 2020,
+    "mes": 6,
+    "continente": "centro",
+    "viajeros": 11817
+  },
+  {
+    "fecha": "2020-06",
+    "anio": 2020,
+    "mes": 6,
+    "continente": "europa",
+    "viajeros": null
+  },
+  {
+    "fecha": "2020-06",
+    "anio": 2020,
+    "mes": 6,
+    "continente": "norte",
+    "viajeros": null
+  },
+  {
+    "fecha": "2020-06",
+    "anio": 2020,
+    "mes": 6,
+    "continente": "resto",
+    "viajeros": null
+  },
+  {
+    "fecha": "2020-06",
+    "anio": 2020,
+    "mes": 6,
+    "continente": "sur",
+    "viajeros": null
+  },
+  {
+    "fecha": "2020-07",
+    "anio": 2020,
+    "mes": 7,
+    "continente": "asia",
+    "viajeros": null
+  },
+  {
+    "fecha": "2020-07",
+    "anio": 2020,
+    "mes": 7,
+    "continente": "centro",
+    "viajeros": 13484
+  },
+  {
+    "fecha": "2020-07",
+    "anio": 2020,
+    "mes": 7,
+    "continente": "europa",
+    "viajeros": null
+  },
+  {
+    "fecha": "2020-07",
+    "anio": 2020,
+    "mes": 7,
+    "continente": "norte",
+    "viajeros": null
+  },
+  {
+    "fecha": "2020-07",
+    "anio": 2020,
+    "mes": 7,
+    "continente": "resto",
+    "viajeros": null
+  },
+  {
+    "fecha": "2020-07",
+    "anio": 2020,
+    "mes": 7,
+    "continente": "sur",
+    "viajeros": null
+  },
+  {
+    "fecha": "2020-08",
+    "anio": 2020,
+    "mes": 8,
+    "continente": "asia",
+    "viajeros": null
+  },
+  {
+    "fecha": "2020-08",
+    "anio": 2020,
+    "mes": 8,
+    "continente": "centro",
+    "viajeros": 15357
+  },
+  {
+    "fecha": "2020-08",
+    "anio": 2020,
+    "mes": 8,
+    "continente": "europa",
+    "viajeros": null
+  },
+  {
+    "fecha": "2020-08",
+    "anio": 2020,
+    "mes": 8,
+    "continente": "norte",
+    "viajeros": null
+  },
+  {
+    "fecha": "2020-08",
+    "anio": 2020,
+    "mes": 8,
+    "continente": "resto",
+    "viajeros": null
+  },
+  {
+    "fecha": "2020-08",
+    "anio": 2020,
+    "mes": 8,
+    "continente": "sur",
+    "viajeros": null
+  },
+  {
+    "fecha": "2020-09",
+    "anio": 2020,
+    "mes": 9,
+    "continente": "asia",
+    "viajeros": 29
+  },
+  {
+    "fecha": "2020-09",
+    "anio": 2020,
+    "mes": 9,
+    "continente": "centro",
+    "viajeros": 11220
+  },
+  {
+    "fecha": "2020-09",
+    "anio": 2020,
+    "mes": 9,
+    "continente": "europa",
+    "viajeros": 22
+  },
+  {
+    "fecha": "2020-09",
+    "anio": 2020,
+    "mes": 9,
+    "continente": "norte",
+    "viajeros": 1144
+  },
+  {
+    "fecha": "2020-09",
+    "anio": 2020,
+    "mes": 9,
+    "continente": "resto",
+    "viajeros": 14
+  },
+  {
+    "fecha": "2020-09",
+    "anio": 2020,
+    "mes": 9,
+    "continente": "sur",
+    "viajeros": 143
+  },
+  {
+    "fecha": "2020-10",
+    "anio": 2020,
+    "mes": 10,
+    "continente": "asia",
+    "viajeros": 85
+  },
+  {
+    "fecha": "2020-10",
+    "anio": 2020,
+    "mes": 10,
+    "continente": "centro",
+    "viajeros": 14209
+  },
+  {
+    "fecha": "2020-10",
+    "anio": 2020,
+    "mes": 10,
+    "continente": "europa",
+    "viajeros": 202
+  },
+  {
+    "fecha": "2020-10",
+    "anio": 2020,
+    "mes": 10,
+    "continente": "norte",
+    "viajeros": 1831
+  },
+  {
+    "fecha": "2020-10",
+    "anio": 2020,
+    "mes": 10,
+    "continente": "resto",
+    "viajeros": 47
+  },
+  {
+    "fecha": "2020-10",
+    "anio": 2020,
+    "mes": 10,
+    "continente": "sur",
+    "viajeros": 307
+  },
+  {
+    "fecha": "2020-11",
+    "anio": 2020,
+    "mes": 11,
+    "continente": "asia",
+    "viajeros": 288
+  },
+  {
+    "fecha": "2020-11",
+    "anio": 2020,
+    "mes": 11,
+    "continente": "centro",
+    "viajeros": 36164
+  },
+  {
+    "fecha": "2020-11",
+    "anio": 2020,
+    "mes": 11,
+    "continente": "europa",
+    "viajeros": 1461
+  },
+  {
+    "fecha": "2020-11",
+    "anio": 2020,
+    "mes": 11,
+    "continente": "norte",
+    "viajeros": 12742
+  },
+  {
+    "fecha": "2020-11",
+    "anio": 2020,
+    "mes": 11,
+    "continente": "resto",
+    "viajeros": 184
+  },
+  {
+    "fecha": "2020-11",
+    "anio": 2020,
+    "mes": 11,
+    "continente": "sur",
+    "viajeros": 2026
+  },
+  {
+    "fecha": "2020-12",
+    "anio": 2020,
+    "mes": 12,
+    "continente": "asia",
+    "viajeros": 156
+  },
+  {
+    "fecha": "2020-12",
+    "anio": 2020,
+    "mes": 12,
+    "continente": "centro",
+    "viajeros": 39679
+  },
+  {
+    "fecha": "2020-12",
+    "anio": 2020,
+    "mes": 12,
+    "continente": "europa",
+    "viajeros": 1008
+  },
+  {
+    "fecha": "2020-12",
+    "anio": 2020,
+    "mes": 12,
+    "continente": "norte",
+    "viajeros": 13549
+  },
+  {
+    "fecha": "2020-12",
+    "anio": 2020,
+    "mes": 12,
+    "continente": "resto",
+    "viajeros": 92
+  },
+  {
+    "fecha": "2020-12",
+    "anio": 2020,
+    "mes": 12,
+    "continente": "sur",
+    "viajeros": 1136
+  },
+  {
+    "fecha": "2021-01",
+    "anio": 2021,
+    "mes": 1,
+    "continente": "asia",
+    "viajeros": 240
+  },
+  {
+    "fecha": "2021-01",
+    "anio": 2021,
+    "mes": 1,
+    "continente": "centro",
+    "viajeros": 71529
+  },
+  {
+    "fecha": "2021-01",
+    "anio": 2021,
+    "mes": 1,
+    "continente": "europa",
+    "viajeros": 2128
+  },
+  {
+    "fecha": "2021-01",
+    "anio": 2021,
+    "mes": 1,
+    "continente": "norte",
+    "viajeros": 13870
+  },
+  {
+    "fecha": "2021-01",
+    "anio": 2021,
+    "mes": 1,
+    "continente": "resto",
+    "viajeros": 95
+  },
+  {
+    "fecha": "2021-01",
+    "anio": 2021,
+    "mes": 1,
+    "continente": "sur",
+    "viajeros": 2098
+  },
+  {
+    "fecha": "2021-02",
+    "anio": 2021,
+    "mes": 2,
+    "continente": "asia",
+    "viajeros": 184
+  },
+  {
+    "fecha": "2021-02",
+    "anio": 2021,
+    "mes": 2,
+    "continente": "centro",
+    "viajeros": 42917
+  },
+  {
+    "fecha": "2021-02",
+    "anio": 2021,
+    "mes": 2,
+    "continente": "europa",
+    "viajeros": 946
+  },
+  {
+    "fecha": "2021-02",
+    "anio": 2021,
+    "mes": 2,
+    "continente": "norte",
+    "viajeros": 7313
+  },
+  {
+    "fecha": "2021-02",
+    "anio": 2021,
+    "mes": 2,
+    "continente": "resto",
+    "viajeros": 119
+  },
+  {
+    "fecha": "2021-02",
+    "anio": 2021,
+    "mes": 2,
+    "continente": "sur",
+    "viajeros": 1126
+  },
+  {
+    "fecha": "2021-03",
+    "anio": 2021,
+    "mes": 3,
+    "continente": "asia",
+    "viajeros": 354
+  },
+  {
+    "fecha": "2021-03",
+    "anio": 2021,
+    "mes": 3,
+    "continente": "centro",
+    "viajeros": 53656
+  },
+  {
+    "fecha": "2021-03",
+    "anio": 2021,
+    "mes": 3,
+    "continente": "europa",
+    "viajeros": 2511
+  },
+  {
+    "fecha": "2021-03",
+    "anio": 2021,
+    "mes": 3,
+    "continente": "norte",
+    "viajeros": 25250
+  },
+  {
+    "fecha": "2021-03",
+    "anio": 2021,
+    "mes": 3,
+    "continente": "resto",
+    "viajeros": 260
+  },
+  {
+    "fecha": "2021-03",
+    "anio": 2021,
+    "mes": 3,
+    "continente": "sur",
+    "viajeros": 2986
+  },
+  {
+    "fecha": "2021-04",
+    "anio": 2021,
+    "mes": 4,
+    "continente": "asia",
+    "viajeros": 281
+  },
+  {
+    "fecha": "2021-04",
+    "anio": 2021,
+    "mes": 4,
+    "continente": "centro",
+    "viajeros": 37903
+  },
+  {
+    "fecha": "2021-04",
+    "anio": 2021,
+    "mes": 4,
+    "continente": "europa",
+    "viajeros": 1957
+  },
+  {
+    "fecha": "2021-04",
+    "anio": 2021,
+    "mes": 4,
+    "continente": "norte",
+    "viajeros": 17564
+  },
+  {
+    "fecha": "2021-04",
+    "anio": 2021,
+    "mes": 4,
+    "continente": "resto",
+    "viajeros": 58
+  },
+  {
+    "fecha": "2021-04",
+    "anio": 2021,
+    "mes": 4,
+    "continente": "sur",
+    "viajeros": 1980
+  },
+  {
+    "fecha": "2021-05",
+    "anio": 2021,
+    "mes": 5,
+    "continente": "asia",
+    "viajeros": 100
+  },
+  {
+    "fecha": "2021-05",
+    "anio": 2021,
+    "mes": 5,
+    "continente": "centro",
+    "viajeros": 49645
+  },
+  {
+    "fecha": "2021-05",
+    "anio": 2021,
+    "mes": 5,
+    "continente": "europa",
+    "viajeros": 2150
+  },
+  {
+    "fecha": "2021-05",
+    "anio": 2021,
+    "mes": 5,
+    "continente": "norte",
+    "viajeros": 19349
+  },
+  {
+    "fecha": "2021-05",
+    "anio": 2021,
+    "mes": 5,
+    "continente": "resto",
+    "viajeros": 234
+  },
+  {
+    "fecha": "2021-05",
+    "anio": 2021,
+    "mes": 5,
+    "continente": "sur",
+    "viajeros": 2395
+  },
+  {
+    "fecha": "2021-06",
+    "anio": 2021,
+    "mes": 6,
+    "continente": "asia",
+    "viajeros": 777
+  },
+  {
+    "fecha": "2021-06",
+    "anio": 2021,
+    "mes": 6,
+    "continente": "centro",
+    "viajeros": 60745
+  },
+  {
+    "fecha": "2021-06",
+    "anio": 2021,
+    "mes": 6,
+    "continente": "europa",
+    "viajeros": 2099
+  },
+  {
+    "fecha": "2021-06",
+    "anio": 2021,
+    "mes": 6,
+    "continente": "norte",
+    "viajeros": 28504
+  },
+  {
+    "fecha": "2021-06",
+    "anio": 2021,
+    "mes": 6,
+    "continente": "resto",
+    "viajeros": 352
+  },
+  {
+    "fecha": "2021-06",
+    "anio": 2021,
+    "mes": 6,
+    "continente": "sur",
+    "viajeros": 2669
+  },
+  {
+    "fecha": "2021-07",
+    "anio": 2021,
+    "mes": 7,
+    "continente": "asia",
+    "viajeros": 720
+  },
+  {
+    "fecha": "2021-07",
+    "anio": 2021,
+    "mes": 7,
+    "continente": "centro",
+    "viajeros": 64960
+  },
+  {
+    "fecha": "2021-07",
+    "anio": 2021,
+    "mes": 7,
+    "continente": "europa",
+    "viajeros": 2456
+  },
+  {
+    "fecha": "2021-07",
+    "anio": 2021,
+    "mes": 7,
+    "continente": "norte",
+    "viajeros": 26905
+  },
+  {
+    "fecha": "2021-07",
+    "anio": 2021,
+    "mes": 7,
+    "continente": "resto",
+    "viajeros": 426
+  },
+  {
+    "fecha": "2021-07",
+    "anio": 2021,
+    "mes": 7,
+    "continente": "sur",
+    "viajeros": 2127
+  },
+  {
+    "fecha": "2021-08",
+    "anio": 2021,
+    "mes": 8,
+    "continente": "asia",
+    "viajeros": 427
+  },
+  {
+    "fecha": "2021-08",
+    "anio": 2021,
+    "mes": 8,
+    "continente": "centro",
+    "viajeros": 51192
+  },
+  {
+    "fecha": "2021-08",
+    "anio": 2021,
+    "mes": 8,
+    "continente": "europa",
+    "viajeros": 2367
+  },
+  {
+    "fecha": "2021-08",
+    "anio": 2021,
+    "mes": 8,
+    "continente": "norte",
+    "viajeros": 15939
+  },
+  {
+    "fecha": "2021-08",
+    "anio": 2021,
+    "mes": 8,
+    "continente": "resto",
+    "viajeros": 473
+  },
+  {
+    "fecha": "2021-08",
+    "anio": 2021,
+    "mes": 8,
+    "continente": "sur",
+    "viajeros": 1929
+  },
+  {
+    "fecha": "2021-09",
+    "anio": 2021,
+    "mes": 9,
+    "continente": "asia",
+    "viajeros": 429
+  },
+  {
+    "fecha": "2021-09",
+    "anio": 2021,
+    "mes": 9,
+    "continente": "centro",
+    "viajeros": 48794
+  },
+  {
+    "fecha": "2021-09",
+    "anio": 2021,
+    "mes": 9,
+    "continente": "europa",
+    "viajeros": 1816
+  },
+  {
+    "fecha": "2021-09",
+    "anio": 2021,
+    "mes": 9,
+    "continente": "norte",
+    "viajeros": 13003
+  },
+  {
+    "fecha": "2021-09",
+    "anio": 2021,
+    "mes": 9,
+    "continente": "resto",
+    "viajeros": 584
+  },
+  {
+    "fecha": "2021-09",
+    "anio": 2021,
+    "mes": 9,
+    "continente": "sur",
+    "viajeros": 2398
+  },
+  {
+    "fecha": "2021-10",
+    "anio": 2021,
+    "mes": 10,
+    "continente": "asia",
+    "viajeros": 538
+  },
+  {
+    "fecha": "2021-10",
+    "anio": 2021,
+    "mes": 10,
+    "continente": "centro",
+    "viajeros": 59170
+  },
+  {
+    "fecha": "2021-10",
+    "anio": 2021,
+    "mes": 10,
+    "continente": "europa",
+    "viajeros": 3245
+  },
+  {
+    "fecha": "2021-10",
+    "anio": 2021,
+    "mes": 10,
+    "continente": "norte",
+    "viajeros": 16873
+  },
+  {
+    "fecha": "2021-10",
+    "anio": 2021,
+    "mes": 10,
+    "continente": "resto",
+    "viajeros": 513
+  },
+  {
+    "fecha": "2021-10",
+    "anio": 2021,
+    "mes": 10,
+    "continente": "sur",
+    "viajeros": 3189
+  },
+  {
+    "fecha": "2021-11",
+    "anio": 2021,
+    "mes": 11,
+    "continente": "asia",
+    "viajeros": 687
+  },
+  {
+    "fecha": "2021-11",
+    "anio": 2021,
+    "mes": 11,
+    "continente": "centro",
+    "viajeros": 64724
+  },
+  {
+    "fecha": "2021-11",
+    "anio": 2021,
+    "mes": 11,
+    "continente": "europa",
+    "viajeros": 5746
+  },
+  {
+    "fecha": "2021-11",
+    "anio": 2021,
+    "mes": 11,
+    "continente": "norte",
+    "viajeros": 22724
+  },
+  {
+    "fecha": "2021-11",
+    "anio": 2021,
+    "mes": 11,
+    "continente": "resto",
+    "viajeros": 659
+  },
+  {
+    "fecha": "2021-11",
+    "anio": 2021,
+    "mes": 11,
+    "continente": "sur",
+    "viajeros": 4038
+  },
+  {
+    "fecha": "2021-12",
+    "anio": 2021,
+    "mes": 12,
+    "continente": "asia",
+    "viajeros": 1057
+  },
+  {
+    "fecha": "2021-12",
+    "anio": 2021,
+    "mes": 12,
+    "continente": "centro",
+    "viajeros": 149703
+  },
+  {
+    "fecha": "2021-12",
+    "anio": 2021,
+    "mes": 12,
+    "continente": "europa",
+    "viajeros": 8958
+  },
+  {
+    "fecha": "2021-12",
+    "anio": 2021,
+    "mes": 12,
+    "continente": "norte",
+    "viajeros": 57595
+  },
+  {
+    "fecha": "2021-12",
+    "anio": 2021,
+    "mes": 12,
+    "continente": "resto",
+    "viajeros": 1096
+  },
+  {
+    "fecha": "2021-12",
+    "anio": 2021,
+    "mes": 12,
+    "continente": "sur",
+    "viajeros": 5160
+  },
+  {
+    "fecha": "2022-01",
+    "anio": 2022,
+    "mes": 1,
+    "continente": "asia",
+    "viajeros": 628
+  },
+  {
+    "fecha": "2022-01",
+    "anio": 2022,
+    "mes": 1,
+    "continente": "centro",
+    "viajeros": 86499
+  },
+  {
+    "fecha": "2022-01",
+    "anio": 2022,
+    "mes": 1,
+    "continente": "europa",
+    "viajeros": 8829
+  },
+  {
+    "fecha": "2022-01",
+    "anio": 2022,
+    "mes": 1,
+    "continente": "norte",
+    "viajeros": 31451
+  },
+  {
+    "fecha": "2022-01",
+    "anio": 2022,
+    "mes": 1,
+    "continente": "resto",
+    "viajeros": 1221
+  },
+  {
+    "fecha": "2022-01",
+    "anio": 2022,
+    "mes": 1,
+    "continente": "sur",
+    "viajeros": 5675
+  },
+  {
+    "fecha": "2022-02",
+    "anio": 2022,
+    "mes": 2,
+    "continente": "asia",
+    "viajeros": 369
+  },
+  {
+    "fecha": "2022-02",
+    "anio": 2022,
+    "mes": 2,
+    "continente": "centro",
+    "viajeros": 146717
+  },
+  {
+    "fecha": "2022-02",
+    "anio": 2022,
+    "mes": 2,
+    "continente": "europa",
+    "viajeros": 9011
+  },
+  {
+    "fecha": "2022-02",
+    "anio": 2022,
+    "mes": 2,
+    "continente": "norte",
+    "viajeros": 31340
+  },
+  {
+    "fecha": "2022-02",
+    "anio": 2022,
+    "mes": 2,
+    "continente": "resto",
+    "viajeros": 1303
+  },
+  {
+    "fecha": "2022-02",
+    "anio": 2022,
+    "mes": 2,
+    "continente": "sur",
+    "viajeros": 5164
+  },
+  {
+    "fecha": "2022-03",
+    "anio": 2022,
+    "mes": 3,
+    "continente": "asia",
+    "viajeros": 527
+  },
+  {
+    "fecha": "2022-03",
+    "anio": 2022,
+    "mes": 3,
+    "continente": "centro",
+    "viajeros": 163872
+  },
+  {
+    "fecha": "2022-03",
+    "anio": 2022,
+    "mes": 3,
+    "continente": "europa",
+    "viajeros": 10288
+  },
+  {
+    "fecha": "2022-03",
+    "anio": 2022,
+    "mes": 3,
+    "continente": "norte",
+    "viajeros": 44999
+  },
+  {
+    "fecha": "2022-03",
+    "anio": 2022,
+    "mes": 3,
+    "continente": "resto",
+    "viajeros": 1501
+  },
+  {
+    "fecha": "2022-03",
+    "anio": 2022,
+    "mes": 3,
+    "continente": "sur",
+    "viajeros": 6699
+  },
+  {
+    "fecha": "2022-04",
+    "anio": 2022,
+    "mes": 4,
+    "continente": "asia",
+    "viajeros": 642
+  },
+  {
+    "fecha": "2022-04",
+    "anio": 2022,
+    "mes": 4,
+    "continente": "centro",
+    "viajeros": 223294
+  },
+  {
+    "fecha": "2022-04",
+    "anio": 2022,
+    "mes": 4,
+    "continente": "europa",
+    "viajeros": 11837
+  },
+  {
+    "fecha": "2022-04",
+    "anio": 2022,
+    "mes": 4,
+    "continente": "norte",
+    "viajeros": 48861
+  },
+  {
+    "fecha": "2022-04",
+    "anio": 2022,
+    "mes": 4,
+    "continente": "resto",
+    "viajeros": 1079
+  },
+  {
+    "fecha": "2022-04",
+    "anio": 2022,
+    "mes": 4,
+    "continente": "sur",
+    "viajeros": 6935
+  },
+  {
+    "fecha": "2022-05",
+    "anio": 2022,
+    "mes": 5,
+    "continente": "asia",
+    "viajeros": 524
+  },
+  {
+    "fecha": "2022-05",
+    "anio": 2022,
+    "mes": 5,
+    "continente": "centro",
+    "viajeros": 198203
+  },
+  {
+    "fecha": "2022-05",
+    "anio": 2022,
+    "mes": 5,
+    "continente": "europa",
+    "viajeros": 7827
+  },
+  {
+    "fecha": "2022-05",
+    "anio": 2022,
+    "mes": 5,
+    "continente": "norte",
+    "viajeros": 45596
+  },
+  {
+    "fecha": "2022-05",
+    "anio": 2022,
+    "mes": 5,
+    "continente": "resto",
+    "viajeros": 1442
+  },
+  {
+    "fecha": "2022-05",
+    "anio": 2022,
+    "mes": 5,
+    "continente": "sur",
+    "viajeros": 6421
+  },
+  {
+    "fecha": "2022-06",
+    "anio": 2022,
+    "mes": 6,
+    "continente": "asia",
+    "viajeros": 506
+  },
+  {
+    "fecha": "2022-06",
+    "anio": 2022,
+    "mes": 6,
+    "continente": "centro",
+    "viajeros": 198702
+  },
+  {
+    "fecha": "2022-06",
+    "anio": 2022,
+    "mes": 6,
+    "continente": "europa",
+    "viajeros": 5841
+  },
+  {
+    "fecha": "2022-06",
+    "anio": 2022,
+    "mes": 6,
+    "continente": "norte",
+    "viajeros": 56586
+  },
+  {
+    "fecha": "2022-06",
+    "anio": 2022,
+    "mes": 6,
+    "continente": "resto",
+    "viajeros": 1432
+  },
+  {
+    "fecha": "2022-06",
+    "anio": 2022,
+    "mes": 6,
+    "continente": "sur",
+    "viajeros": 6299
+  },
+  {
+    "fecha": "2022-07",
+    "anio": 2022,
+    "mes": 7,
+    "continente": "asia",
+    "viajeros": 817
+  },
+  {
+    "fecha": "2022-07",
+    "anio": 2022,
+    "mes": 7,
+    "continente": "centro",
+    "viajeros": 231554
+  },
+  {
+    "fecha": "2022-07",
+    "anio": 2022,
+    "mes": 7,
+    "continente": "europa",
+    "viajeros": 10376
+  },
+  {
+    "fecha": "2022-07",
+    "anio": 2022,
+    "mes": 7,
+    "continente": "norte",
+    "viajeros": 54309
+  },
+  {
+    "fecha": "2022-07",
+    "anio": 2022,
+    "mes": 7,
+    "continente": "resto",
+    "viajeros": 2006
+  },
+  {
+    "fecha": "2022-07",
+    "anio": 2022,
+    "mes": 7,
+    "continente": "sur",
+    "viajeros": 7184
+  },
+  {
+    "fecha": "2022-08",
+    "anio": 2022,
+    "mes": 8,
+    "continente": "asia",
+    "viajeros": 1140
+  },
+  {
+    "fecha": "2022-08",
+    "anio": 2022,
+    "mes": 8,
+    "continente": "centro",
+    "viajeros": 232241
+  },
+  {
+    "fecha": "2022-08",
+    "anio": 2022,
+    "mes": 8,
+    "continente": "europa",
+    "viajeros": 11412
+  },
+  {
+    "fecha": "2022-08",
+    "anio": 2022,
+    "mes": 8,
+    "continente": "norte",
+    "viajeros": 42553
+  },
+  {
+    "fecha": "2022-08",
+    "anio": 2022,
+    "mes": 8,
+    "continente": "resto",
+    "viajeros": 2138
+  },
+  {
+    "fecha": "2022-08",
+    "anio": 2022,
+    "mes": 8,
+    "continente": "sur",
+    "viajeros": 8118
+  },
+  {
+    "fecha": "2022-09",
+    "anio": 2022,
+    "mes": 9,
+    "continente": "asia",
+    "viajeros": 1058
+  },
+  {
+    "fecha": "2022-09",
+    "anio": 2022,
+    "mes": 9,
+    "continente": "centro",
+    "viajeros": 195304
+  },
+  {
+    "fecha": "2022-09",
+    "anio": 2022,
+    "mes": 9,
+    "continente": "europa",
+    "viajeros": 6998
+  },
+  {
+    "fecha": "2022-09",
+    "anio": 2022,
+    "mes": 9,
+    "continente": "norte",
+    "viajeros": 33194
+  },
+  {
+    "fecha": "2022-09",
+    "anio": 2022,
+    "mes": 9,
+    "continente": "resto",
+    "viajeros": 2265
+  },
+  {
+    "fecha": "2022-09",
+    "anio": 2022,
+    "mes": 9,
+    "continente": "sur",
+    "viajeros": 7645
+  },
+  {
+    "fecha": "2022-10",
+    "anio": 2022,
+    "mes": 10,
+    "continente": "asia",
+    "viajeros": 1911
+  },
+  {
+    "fecha": "2022-10",
+    "anio": 2022,
+    "mes": 10,
+    "continente": "centro",
+    "viajeros": 218504
+  },
+  {
+    "fecha": "2022-10",
+    "anio": 2022,
+    "mes": 10,
+    "continente": "europa",
+    "viajeros": 9073
+  },
+  {
+    "fecha": "2022-10",
+    "anio": 2022,
+    "mes": 10,
+    "continente": "norte",
+    "viajeros": 40404
+  },
+  {
+    "fecha": "2022-10",
+    "anio": 2022,
+    "mes": 10,
+    "continente": "resto",
+    "viajeros": 2242
+  },
+  {
+    "fecha": "2022-10",
+    "anio": 2022,
+    "mes": 10,
+    "continente": "sur",
+    "viajeros": 9804
+  },
+  {
+    "fecha": "2022-11",
+    "anio": 2022,
+    "mes": 11,
+    "continente": "asia",
+    "viajeros": 1128
+  },
+  {
+    "fecha": "2022-11",
+    "anio": 2022,
+    "mes": 11,
+    "continente": "centro",
+    "viajeros": 244172
+  },
+  {
+    "fecha": "2022-11",
+    "anio": 2022,
+    "mes": 11,
+    "continente": "europa",
+    "viajeros": 20420
+  },
+  {
+    "fecha": "2022-11",
+    "anio": 2022,
+    "mes": 11,
+    "continente": "norte",
+    "viajeros": 41749
+  },
+  {
+    "fecha": "2022-11",
+    "anio": 2022,
+    "mes": 11,
+    "continente": "resto",
+    "viajeros": 1111
+  },
+  {
+    "fecha": "2022-11",
+    "anio": 2022,
+    "mes": 11,
+    "continente": "sur",
+    "viajeros": 10113
+  },
+  {
+    "fecha": "2022-12",
+    "anio": 2022,
+    "mes": 12,
+    "continente": "asia",
+    "viajeros": 2162
+  },
+  {
+    "fecha": "2022-12",
+    "anio": 2022,
+    "mes": 12,
+    "continente": "centro",
+    "viajeros": 310516
+  },
+  {
+    "fecha": "2022-12",
+    "anio": 2022,
+    "mes": 12,
+    "continente": "europa",
+    "viajeros": 12829
+  },
+  {
+    "fecha": "2022-12",
+    "anio": 2022,
+    "mes": 12,
+    "continente": "norte",
+    "viajeros": 62274
+  },
+  {
+    "fecha": "2022-12",
+    "anio": 2022,
+    "mes": 12,
+    "continente": "resto",
+    "viajeros": 2313
+  },
+  {
+    "fecha": "2022-12",
+    "anio": 2022,
+    "mes": 12,
+    "continente": "sur",
+    "viajeros": 10172
+  },
+  {
+    "fecha": "2023-01",
+    "anio": 2023,
+    "mes": 1,
+    "continente": "asia",
+    "viajeros": 4494
+  },
+  {
+    "fecha": "2023-01",
+    "anio": 2023,
+    "mes": 1,
+    "continente": "centro",
+    "viajeros": 178469
+  },
+  {
+    "fecha": "2023-01",
+    "anio": 2023,
+    "mes": 1,
+    "continente": "europa",
+    "viajeros": 13968
+  },
+  {
+    "fecha": "2023-01",
+    "anio": 2023,
+    "mes": 1,
+    "continente": "norte",
+    "viajeros": 52109
+  },
+  {
+    "fecha": "2023-01",
+    "anio": 2023,
+    "mes": 1,
+    "continente": "resto",
+    "viajeros": 1479
+  },
+  {
+    "fecha": "2023-01",
+    "anio": 2023,
+    "mes": 1,
+    "continente": "sur",
+    "viajeros": 7648
+  },
+  {
+    "fecha": "2023-02",
+    "anio": 2023,
+    "mes": 2,
+    "continente": "asia",
+    "viajeros": 3200
+  },
+  {
+    "fecha": "2023-02",
+    "anio": 2023,
+    "mes": 2,
+    "continente": "centro",
+    "viajeros": 119271
+  },
+  {
+    "fecha": "2023-02",
+    "anio": 2023,
+    "mes": 2,
+    "continente": "europa",
+    "viajeros": 15508
+  },
+  {
+    "fecha": "2023-02",
+    "anio": 2023,
+    "mes": 2,
+    "continente": "norte",
+    "viajeros": 51866
+  },
+  {
+    "fecha": "2023-02",
+    "anio": 2023,
+    "mes": 2,
+    "continente": "resto",
+    "viajeros": 958
+  },
+  {
+    "fecha": "2023-02",
+    "anio": 2023,
+    "mes": 2,
+    "continente": "sur",
+    "viajeros": 7950
+  },
+  {
+    "fecha": "2023-03",
+    "anio": 2023,
+    "mes": 3,
+    "continente": "asia",
+    "viajeros": 3493
+  },
+  {
+    "fecha": "2023-03",
+    "anio": 2023,
+    "mes": 3,
+    "continente": "centro",
+    "viajeros": 153935
+  },
+  {
+    "fecha": "2023-03",
+    "anio": 2023,
+    "mes": 3,
+    "continente": "europa",
+    "viajeros": 17234
+  },
+  {
+    "fecha": "2023-03",
+    "anio": 2023,
+    "mes": 3,
+    "continente": "norte",
+    "viajeros": 66573
+  },
+  {
+    "fecha": "2023-03",
+    "anio": 2023,
+    "mes": 3,
+    "continente": "resto",
+    "viajeros": 1199
+  },
+  {
+    "fecha": "2023-03",
+    "anio": 2023,
+    "mes": 3,
+    "continente": "sur",
+    "viajeros": 9405
+  },
+  {
+    "fecha": "2023-04",
+    "anio": 2023,
+    "mes": 4,
+    "continente": "asia",
+    "viajeros": 3264
+  },
+  {
+    "fecha": "2023-04",
+    "anio": 2023,
+    "mes": 4,
+    "continente": "centro",
+    "viajeros": 198942
+  },
+  {
+    "fecha": "2023-04",
+    "anio": 2023,
+    "mes": 4,
+    "continente": "europa",
+    "viajeros": 14255
+  },
+  {
+    "fecha": "2023-04",
+    "anio": 2023,
+    "mes": 4,
+    "continente": "norte",
+    "viajeros": 55382
+  },
+  {
+    "fecha": "2023-04",
+    "anio": 2023,
+    "mes": 4,
+    "continente": "resto",
+    "viajeros": 1347
+  },
+  {
+    "fecha": "2023-04",
+    "anio": 2023,
+    "mes": 4,
+    "continente": "sur",
+    "viajeros": 9990
+  },
+  {
+    "fecha": "2023-05",
+    "anio": 2023,
+    "mes": 5,
+    "continente": "asia",
+    "viajeros": 3289
+  },
+  {
+    "fecha": "2023-05",
+    "anio": 2023,
+    "mes": 5,
+    "continente": "centro",
+    "viajeros": 138774
+  },
+  {
+    "fecha": "2023-05",
+    "anio": 2023,
+    "mes": 5,
+    "continente": "europa",
+    "viajeros": 9737
+  },
+  {
+    "fecha": "2023-05",
+    "anio": 2023,
+    "mes": 5,
+    "continente": "norte",
+    "viajeros": 51273
+  },
+  {
+    "fecha": "2023-05",
+    "anio": 2023,
+    "mes": 5,
+    "continente": "resto",
+    "viajeros": 1710
+  },
+  {
+    "fecha": "2023-05",
+    "anio": 2023,
+    "mes": 5,
+    "continente": "sur",
+    "viajeros": 8408
+  },
+  {
+    "fecha": "2023-06",
+    "anio": 2023,
+    "mes": 6,
+    "continente": "asia",
+    "viajeros": 3089
+  },
+  {
+    "fecha": "2023-06",
+    "anio": 2023,
+    "mes": 6,
+    "continente": "centro",
+    "viajeros": 135249
+  },
+  {
+    "fecha": "2023-06",
+    "anio": 2023,
+    "mes": 6,
+    "continente": "europa",
+    "viajeros": 7405
+  },
+  {
+    "fecha": "2023-06",
+    "anio": 2023,
+    "mes": 6,
+    "continente": "norte",
+    "viajeros": 68588
+  },
+  {
+    "fecha": "2023-06",
+    "anio": 2023,
+    "mes": 6,
+    "continente": "resto",
+    "viajeros": 1452
+  },
+  {
+    "fecha": "2023-06",
+    "anio": 2023,
+    "mes": 6,
+    "continente": "sur",
+    "viajeros": 8798
+  },
+  {
+    "fecha": "2023-07",
+    "anio": 2023,
+    "mes": 7,
+    "continente": "asia",
+    "viajeros": 2772
+  },
+  {
+    "fecha": "2023-07",
+    "anio": 2023,
+    "mes": 7,
+    "continente": "centro",
+    "viajeros": 166138
+  },
+  {
+    "fecha": "2023-07",
+    "anio": 2023,
+    "mes": 7,
+    "continente": "europa",
+    "viajeros": 9324
+  },
+  {
+    "fecha": "2023-07",
+    "anio": 2023,
+    "mes": 7,
+    "continente": "norte",
+    "viajeros": 70693
+  },
+  {
+    "fecha": "2023-07",
+    "anio": 2023,
+    "mes": 7,
+    "continente": "resto",
+    "viajeros": 786
+  },
+  {
+    "fecha": "2023-07",
+    "anio": 2023,
+    "mes": 7,
+    "continente": "sur",
+    "viajeros": 7914
+  },
+  {
+    "fecha": "2023-08",
+    "anio": 2023,
+    "mes": 8,
+    "continente": "asia",
+    "viajeros": 3022
+  },
+  {
+    "fecha": "2023-08",
+    "anio": 2023,
+    "mes": 8,
+    "continente": "centro",
+    "viajeros": 182501
+  },
+  {
+    "fecha": "2023-08",
+    "anio": 2023,
+    "mes": 8,
+    "continente": "europa",
+    "viajeros": 12202
+  },
+  {
+    "fecha": "2023-08",
+    "anio": 2023,
+    "mes": 8,
+    "continente": "norte",
+    "viajeros": 55583
+  },
+  {
+    "fecha": "2023-08",
+    "anio": 2023,
+    "mes": 8,
+    "continente": "resto",
+    "viajeros": 1277
+  },
+  {
+    "fecha": "2023-08",
+    "anio": 2023,
+    "mes": 8,
+    "continente": "sur",
+    "viajeros": 9929
+  },
+  {
+    "fecha": "2023-09",
+    "anio": 2023,
+    "mes": 9,
+    "continente": "asia",
+    "viajeros": 3143
+  },
+  {
+    "fecha": "2023-09",
+    "anio": 2023,
+    "mes": 9,
+    "continente": "centro",
+    "viajeros": 154870
+  },
+  {
+    "fecha": "2023-09",
+    "anio": 2023,
+    "mes": 9,
+    "continente": "europa",
+    "viajeros": 6954
+  },
+  {
+    "fecha": "2023-09",
+    "anio": 2023,
+    "mes": 9,
+    "continente": "norte",
+    "viajeros": 41730
+  },
+  {
+    "fecha": "2023-09",
+    "anio": 2023,
+    "mes": 9,
+    "continente": "resto",
+    "viajeros": 1030
+  },
+  {
+    "fecha": "2023-09",
+    "anio": 2023,
+    "mes": 9,
+    "continente": "sur",
+    "viajeros": 10759
+  },
+  {
+    "fecha": "2023-10",
+    "anio": 2023,
+    "mes": 10,
+    "continente": "asia",
+    "viajeros": 2243
+  },
+  {
+    "fecha": "2023-10",
+    "anio": 2023,
+    "mes": 10,
+    "continente": "centro",
+    "viajeros": 109571
+  },
+  {
+    "fecha": "2023-10",
+    "anio": 2023,
+    "mes": 10,
+    "continente": "europa",
+    "viajeros": 8853
+  },
+  {
+    "fecha": "2023-10",
+    "anio": 2023,
+    "mes": 10,
+    "continente": "norte",
+    "viajeros": 35870
+  },
+  {
+    "fecha": "2023-10",
+    "anio": 2023,
+    "mes": 10,
+    "continente": "resto",
+    "viajeros": 548
+  },
+  {
+    "fecha": "2023-10",
+    "anio": 2023,
+    "mes": 10,
+    "continente": "sur",
+    "viajeros": 7415
+  },
+  {
+    "fecha": "2023-11",
+    "anio": 2023,
+    "mes": 11,
+    "continente": "asia",
+    "viajeros": 3274
+  },
+  {
+    "fecha": "2023-11",
+    "anio": 2023,
+    "mes": 11,
+    "continente": "centro",
+    "viajeros": 167002
+  },
+  {
+    "fecha": "2023-11",
+    "anio": 2023,
+    "mes": 11,
+    "continente": "europa",
+    "viajeros": 16684
+  },
+  {
+    "fecha": "2023-11",
+    "anio": 2023,
+    "mes": 11,
+    "continente": "norte",
+    "viajeros": 54451
+  },
+  {
+    "fecha": "2023-11",
+    "anio": 2023,
+    "mes": 11,
+    "continente": "resto",
+    "viajeros": 702
+  },
+  {
+    "fecha": "2023-11",
+    "anio": 2023,
+    "mes": 11,
+    "continente": "sur",
+    "viajeros": 13781
+  },
+  {
+    "fecha": "2023-12",
+    "anio": 2023,
+    "mes": 12,
+    "continente": "asia",
+    "viajeros": 4284
+  },
+  {
+    "fecha": "2023-12",
+    "anio": 2023,
+    "mes": 12,
+    "continente": "centro",
+    "viajeros": 221297
+  },
+  {
+    "fecha": "2023-12",
+    "anio": 2023,
+    "mes": 12,
+    "continente": "europa",
+    "viajeros": 13746
+  },
+  {
+    "fecha": "2023-12",
+    "anio": 2023,
+    "mes": 12,
+    "continente": "norte",
+    "viajeros": 79127
+  },
+  {
+    "fecha": "2023-12",
+    "anio": 2023,
+    "mes": 12,
+    "continente": "resto",
+    "viajeros": 869
+  },
+  {
+    "fecha": "2023-12",
+    "anio": 2023,
+    "mes": 12,
+    "continente": "sur",
+    "viajeros": 7775
+  },
+  {
+    "fecha": "2024-01",
+    "anio": 2024,
+    "mes": 1,
+    "continente": "asia",
+    "viajeros": 4006
+  },
+  {
+    "fecha": "2024-01",
+    "anio": 2024,
+    "mes": 1,
+    "continente": "centro",
+    "viajeros": 197656
+  },
+  {
+    "fecha": "2024-01",
+    "anio": 2024,
+    "mes": 1,
+    "continente": "europa",
+    "viajeros": 15783
+  },
+  {
+    "fecha": "2024-01",
+    "anio": 2024,
+    "mes": 1,
+    "continente": "norte",
+    "viajeros": 63914
+  },
+  {
+    "fecha": "2024-01",
+    "anio": 2024,
+    "mes": 1,
+    "continente": "resto",
+    "viajeros": 1161
+  },
+  {
+    "fecha": "2024-01",
+    "anio": 2024,
+    "mes": 1,
+    "continente": "sur",
+    "viajeros": 10211
+  },
+  {
+    "fecha": "2024-02",
+    "anio": 2024,
+    "mes": 2,
+    "continente": "asia",
+    "viajeros": 4195
+  },
+  {
+    "fecha": "2024-02",
+    "anio": 2024,
+    "mes": 2,
+    "continente": "centro",
+    "viajeros": 160647
+  },
+  {
+    "fecha": "2024-02",
+    "anio": 2024,
+    "mes": 2,
+    "continente": "europa",
+    "viajeros": 19031
+  },
+  {
+    "fecha": "2024-02",
+    "anio": 2024,
+    "mes": 2,
+    "continente": "norte",
+    "viajeros": 69066
+  },
+  {
+    "fecha": "2024-02",
+    "anio": 2024,
+    "mes": 2,
+    "continente": "resto",
+    "viajeros": 699
+  },
+  {
+    "fecha": "2024-02",
+    "anio": 2024,
+    "mes": 2,
+    "continente": "sur",
+    "viajeros": 12352
+  },
+  {
+    "fecha": "2024-03",
+    "anio": 2024,
+    "mes": 3,
+    "continente": "asia",
+    "viajeros": 4400
+  },
+  {
+    "fecha": "2024-03",
+    "anio": 2024,
+    "mes": 3,
+    "continente": "centro",
+    "viajeros": 206698
+  },
+  {
+    "fecha": "2024-03",
+    "anio": 2024,
+    "mes": 3,
+    "continente": "europa",
+    "viajeros": 17713
+  },
+  {
+    "fecha": "2024-03",
+    "anio": 2024,
+    "mes": 3,
+    "continente": "norte",
+    "viajeros": 81208
+  },
+  {
+    "fecha": "2024-03",
+    "anio": 2024,
+    "mes": 3,
+    "continente": "resto",
+    "viajeros": 806
+  },
+  {
+    "fecha": "2024-03",
+    "anio": 2024,
+    "mes": 3,
+    "continente": "sur",
+    "viajeros": 11487
+  },
+  {
+    "fecha": "2024-04",
+    "anio": 2024,
+    "mes": 4,
+    "continente": "asia",
+    "viajeros": 3498
+  },
+  {
+    "fecha": "2024-04",
+    "anio": 2024,
+    "mes": 4,
+    "continente": "centro",
+    "viajeros": 152615
+  },
+  {
+    "fecha": "2024-04",
+    "anio": 2024,
+    "mes": 4,
+    "continente": "europa",
+    "viajeros": 13101
+  },
+  {
+    "fecha": "2024-04",
+    "anio": 2024,
+    "mes": 4,
+    "continente": "norte",
+    "viajeros": 60460
+  },
+  {
+    "fecha": "2024-04",
+    "anio": 2024,
+    "mes": 4,
+    "continente": "resto",
+    "viajeros": 1029
+  },
+  {
+    "fecha": "2024-04",
+    "anio": 2024,
+    "mes": 4,
+    "continente": "sur",
+    "viajeros": 10285
+  },
+  {
+    "fecha": "2024-05",
+    "anio": 2024,
+    "mes": 5,
+    "continente": "asia",
+    "viajeros": 3838
+  },
+  {
+    "fecha": "2024-05",
+    "anio": 2024,
+    "mes": 5,
+    "continente": "centro",
+    "viajeros": 152267
+  },
+  {
+    "fecha": "2024-05",
+    "anio": 2024,
+    "mes": 5,
+    "continente": "europa",
+    "viajeros": 9832
+  },
+  {
+    "fecha": "2024-05",
+    "anio": 2024,
+    "mes": 5,
+    "continente": "norte",
+    "viajeros": 61292
+  },
+  {
+    "fecha": "2024-05",
+    "anio": 2024,
+    "mes": 5,
+    "continente": "resto",
+    "viajeros": 1031
+  },
+  {
+    "fecha": "2024-05",
+    "anio": 2024,
+    "mes": 5,
+    "continente": "sur",
+    "viajeros": 10547
+  },
+  {
+    "fecha": "2024-06",
+    "anio": 2024,
+    "mes": 6,
+    "continente": "asia",
+    "viajeros": 3252
+  },
+  {
+    "fecha": "2024-06",
+    "anio": 2024,
+    "mes": 6,
+    "continente": "centro",
+    "viajeros": 130714
+  },
+  {
+    "fecha": "2024-06",
+    "anio": 2024,
+    "mes": 6,
+    "continente": "europa",
+    "viajeros": 7705
+  },
+  {
+    "fecha": "2024-06",
+    "anio": 2024,
+    "mes": 6,
+    "continente": "norte",
+    "viajeros": 82320
+  },
+  {
+    "fecha": "2024-06",
+    "anio": 2024,
+    "mes": 6,
+    "continente": "resto",
+    "viajeros": 841
+  },
+  {
+    "fecha": "2024-06",
+    "anio": 2024,
+    "mes": 6,
+    "continente": "sur",
+    "viajeros": 9949
+  },
+  {
+    "fecha": "2024-07",
+    "anio": 2024,
+    "mes": 7,
+    "continente": "asia",
+    "viajeros": 3452
+  },
+  {
+    "fecha": "2024-07",
+    "anio": 2024,
+    "mes": 7,
+    "continente": "centro",
+    "viajeros": 157325
+  },
+  {
+    "fecha": "2024-07",
+    "anio": 2024,
+    "mes": 7,
+    "continente": "europa",
+    "viajeros": 13121
+  },
+  {
+    "fecha": "2024-07",
+    "anio": 2024,
+    "mes": 7,
+    "continente": "norte",
+    "viajeros": 82205
+  },
+  {
+    "fecha": "2024-07",
+    "anio": 2024,
+    "mes": 7,
+    "continente": "resto",
+    "viajeros": 1061
+  },
+  {
+    "fecha": "2024-07",
+    "anio": 2024,
+    "mes": 7,
+    "continente": "sur",
+    "viajeros": 9811
+  },
+  {
+    "fecha": "2024-08",
+    "anio": 2024,
+    "mes": 8,
+    "continente": "asia",
+    "viajeros": 3721
+  },
+  {
+    "fecha": "2024-08",
+    "anio": 2024,
+    "mes": 8,
+    "continente": "centro",
+    "viajeros": 191992
+  },
+  {
+    "fecha": "2024-08",
+    "anio": 2024,
+    "mes": 8,
+    "continente": "europa",
+    "viajeros": 14105
+  },
+  {
+    "fecha": "2024-08",
+    "anio": 2024,
+    "mes": 8,
+    "continente": "norte",
+    "viajeros": 61032
+  },
+  {
+    "fecha": "2024-08",
+    "anio": 2024,
+    "mes": 8,
+    "continente": "resto",
+    "viajeros": 983
+  },
+  {
+    "fecha": "2024-08",
+    "anio": 2024,
+    "mes": 8,
+    "continente": "sur",
+    "viajeros": 10268
+  },
+  {
+    "fecha": "2024-09",
+    "anio": 2024,
+    "mes": 9,
+    "continente": "asia",
+    "viajeros": 3666
+  },
+  {
+    "fecha": "2024-09",
+    "anio": 2024,
+    "mes": 9,
+    "continente": "centro",
+    "viajeros": 151187
+  },
+  {
+    "fecha": "2024-09",
+    "anio": 2024,
+    "mes": 9,
+    "continente": "europa",
+    "viajeros": 7824
+  },
+  {
+    "fecha": "2024-09",
+    "anio": 2024,
+    "mes": 9,
+    "continente": "norte",
+    "viajeros": 41563
+  },
+  {
+    "fecha": "2024-09",
+    "anio": 2024,
+    "mes": 9,
+    "continente": "resto",
+    "viajeros": 1126
+  },
+  {
+    "fecha": "2024-09",
+    "anio": 2024,
+    "mes": 9,
+    "continente": "sur",
+    "viajeros": 10293
+  },
+  {
+    "fecha": "2024-10",
+    "anio": 2024,
+    "mes": 10,
+    "continente": "asia",
+    "viajeros": 3812
+  },
+  {
+    "fecha": "2024-10",
+    "anio": 2024,
+    "mes": 10,
+    "continente": "centro",
+    "viajeros": 170604
+  },
+  {
+    "fecha": "2024-10",
+    "anio": 2024,
+    "mes": 10,
+    "continente": "europa",
+    "viajeros": 12275
+  },
+  {
+    "fecha": "2024-10",
+    "anio": 2024,
+    "mes": 10,
+    "continente": "norte",
+    "viajeros": 50582
+  },
+  {
+    "fecha": "2024-10",
+    "anio": 2024,
+    "mes": 10,
+    "continente": "resto",
+    "viajeros": 986
+  },
+  {
+    "fecha": "2024-10",
+    "anio": 2024,
+    "mes": 10,
+    "continente": "sur",
+    "viajeros": 11406
+  },
+  {
+    "fecha": "2024-11",
+    "anio": 2024,
+    "mes": 11,
+    "continente": "asia",
+    "viajeros": 4761
+  },
+  {
+    "fecha": "2024-11",
+    "anio": 2024,
+    "mes": 11,
+    "continente": "centro",
+    "viajeros": 201391
+  },
+  {
+    "fecha": "2024-11",
+    "anio": 2024,
+    "mes": 11,
+    "continente": "europa",
+    "viajeros": 19801
+  },
+  {
+    "fecha": "2024-11",
+    "anio": 2024,
+    "mes": 11,
+    "continente": "norte",
+    "viajeros": 63736
+  },
+  {
+    "fecha": "2024-11",
+    "anio": 2024,
+    "mes": 11,
+    "continente": "resto",
+    "viajeros": 1208
+  },
+  {
+    "fecha": "2024-11",
+    "anio": 2024,
+    "mes": 11,
+    "continente": "sur",
+    "viajeros": 11778
+  },
+  {
+    "fecha": "2024-12",
+    "anio": 2024,
+    "mes": 12,
+    "continente": "asia",
+    "viajeros": 4266
+  },
+  {
+    "fecha": "2024-12",
+    "anio": 2024,
+    "mes": 12,
+    "continente": "centro",
+    "viajeros": 242239
+  },
+  {
+    "fecha": "2024-12",
+    "anio": 2024,
+    "mes": 12,
+    "continente": "europa",
+    "viajeros": 16340
+  },
+  {
+    "fecha": "2024-12",
+    "anio": 2024,
+    "mes": 12,
+    "continente": "norte",
+    "viajeros": 87400
+  },
+  {
+    "fecha": "2024-12",
+    "anio": 2024,
+    "mes": 12,
+    "continente": "resto",
+    "viajeros": 1472
+  },
+  {
+    "fecha": "2024-12",
+    "anio": 2024,
+    "mes": 12,
+    "continente": "sur",
+    "viajeros": 10033
+  },
+  {
+    "fecha": "2025-01",
+    "anio": 2025,
+    "mes": 1,
+    "continente": "asia",
+    "viajeros": 3835
+  },
+  {
+    "fecha": "2025-01",
+    "anio": 2025,
+    "mes": 1,
+    "continente": "centro",
+    "viajeros": 187170
+  },
+  {
+    "fecha": "2025-01",
+    "anio": 2025,
+    "mes": 1,
+    "continente": "europa",
+    "viajeros": 17867
+  },
+  {
+    "fecha": "2025-01",
+    "anio": 2025,
+    "mes": 1,
+    "continente": "norte",
+    "viajeros": 68398
+  },
+  {
+    "fecha": "2025-01",
+    "anio": 2025,
+    "mes": 1,
+    "continente": "resto",
+    "viajeros": 1567
+  },
+  {
+    "fecha": "2025-01",
+    "anio": 2025,
+    "mes": 1,
+    "continente": "sur",
+    "viajeros": 10706
+  },
+  {
+    "fecha": "2025-02",
+    "anio": 2025,
+    "mes": 2,
+    "continente": "asia",
+    "viajeros": 4184
+  },
+  {
+    "fecha": "2025-02",
+    "anio": 2025,
+    "mes": 2,
+    "continente": "centro",
+    "viajeros": 155565
+  },
+  {
+    "fecha": "2025-02",
+    "anio": 2025,
+    "mes": 2,
+    "continente": "europa",
+    "viajeros": 19359
+  },
+  {
+    "fecha": "2025-02",
+    "anio": 2025,
+    "mes": 2,
+    "continente": "norte",
+    "viajeros": 63957
+  },
+  {
+    "fecha": "2025-02",
+    "anio": 2025,
+    "mes": 2,
+    "continente": "resto",
+    "viajeros": 1051
+  },
+  {
+    "fecha": "2025-02",
+    "anio": 2025,
+    "mes": 2,
+    "continente": "sur",
+    "viajeros": 10312
+  },
+  {
+    "fecha": "2025-03",
+    "anio": 2025,
+    "mes": 3,
+    "continente": "asia",
+    "viajeros": 4167
+  },
+  {
+    "fecha": "2025-03",
+    "anio": 2025,
+    "mes": 3,
+    "continente": "centro",
+    "viajeros": 167730
+  },
+  {
+    "fecha": "2025-03",
+    "anio": 2025,
+    "mes": 3,
+    "continente": "europa",
+    "viajeros": 18720
+  },
+  {
+    "fecha": "2025-03",
+    "anio": 2025,
+    "mes": 3,
+    "continente": "norte",
+    "viajeros": 75853
+  },
+  {
+    "fecha": "2025-03",
+    "anio": 2025,
+    "mes": 3,
+    "continente": "resto",
+    "viajeros": 993
+  },
+  {
+    "fecha": "2025-03",
+    "anio": 2025,
+    "mes": 3,
+    "continente": "sur",
+    "viajeros": 11076
+  },
+  {
+    "fecha": "2025-04",
+    "anio": 2025,
+    "mes": 4,
+    "continente": "asia",
+    "viajeros": 3836
+  },
+  {
+    "fecha": "2025-04",
+    "anio": 2025,
+    "mes": 4,
+    "continente": "centro",
+    "viajeros": 203524
+  },
+  {
+    "fecha": "2025-04",
+    "anio": 2025,
+    "mes": 4,
+    "continente": "europa",
+    "viajeros": 14989
+  },
+  {
+    "fecha": "2025-04",
+    "anio": 2025,
+    "mes": 4,
+    "continente": "norte",
+    "viajeros": 66079
+  },
+  {
+    "fecha": "2025-04",
+    "anio": 2025,
+    "mes": 4,
+    "continente": "resto",
+    "viajeros": 1265
+  },
+  {
+    "fecha": "2025-04",
+    "anio": 2025,
+    "mes": 4,
+    "continente": "sur",
+    "viajeros": 10595
+  },
+  {
+    "fecha": "2025-05",
+    "anio": 2025,
+    "mes": 5,
+    "continente": "asia",
+    "viajeros": 3414
+  },
+  {
+    "fecha": "2025-05",
+    "anio": 2025,
+    "mes": 5,
+    "continente": "centro",
+    "viajeros": 160973
+  },
+  {
+    "fecha": "2025-05",
+    "anio": 2025,
+    "mes": 5,
+    "continente": "europa",
+    "viajeros": 9765
+  },
+  {
+    "fecha": "2025-05",
+    "anio": 2025,
+    "mes": 5,
+    "continente": "norte",
+    "viajeros": 62372
+  },
+  {
+    "fecha": "2025-05",
+    "anio": 2025,
+    "mes": 5,
+    "continente": "resto",
+    "viajeros": 1595
+  },
+  {
+    "fecha": "2025-05",
+    "anio": 2025,
+    "mes": 5,
+    "continente": "sur",
+    "viajeros": 9862
+  },
+  {
+    "fecha": "2025-06",
+    "anio": 2025,
+    "mes": 6,
+    "continente": "asia",
+    "viajeros": 3364
+  },
+  {
+    "fecha": "2025-06",
+    "anio": 2025,
+    "mes": 6,
+    "continente": "centro",
+    "viajeros": 155038
+  },
+  {
+    "fecha": "2025-06",
+    "anio": 2025,
+    "mes": 6,
+    "continente": "europa",
+    "viajeros": 7502
+  },
+  {
+    "fecha": "2025-06",
+    "anio": 2025,
+    "mes": 6,
+    "continente": "norte",
+    "viajeros": 77124
+  },
+  {
+    "fecha": "2025-06",
+    "anio": 2025,
+    "mes": 6,
+    "continente": "resto",
+    "viajeros": 1204
+  },
+  {
+    "fecha": "2025-06",
+    "anio": 2025,
+    "mes": 6,
+    "continente": "sur",
+    "viajeros": 9958
+  },
+  {
+    "fecha": "2025-07",
+    "anio": 2025,
+    "mes": 7,
+    "continente": "asia",
+    "viajeros": 4054
+  },
+  {
+    "fecha": "2025-07",
+    "anio": 2025,
+    "mes": 7,
+    "continente": "centro",
+    "viajeros": 165620
+  },
+  {
+    "fecha": "2025-07",
+    "anio": 2025,
+    "mes": 7,
+    "continente": "europa",
+    "viajeros": 14115
+  },
+  {
+    "fecha": "2025-07",
+    "anio": 2025,
+    "mes": 7,
+    "continente": "norte",
+    "viajeros": 86625
+  },
+  {
+    "fecha": "2025-07",
+    "anio": 2025,
+    "mes": 7,
+    "continente": "resto",
+    "viajeros": 1124
+  },
+  {
+    "fecha": "2025-07",
+    "anio": 2025,
+    "mes": 7,
+    "continente": "sur",
+    "viajeros": 11850
+  },
+  {
+    "fecha": "2025-08",
+    "anio": 2025,
+    "mes": 8,
+    "continente": "asia",
+    "viajeros": 3545
+  },
+  {
+    "fecha": "2025-08",
+    "anio": 2025,
+    "mes": 8,
+    "continente": "centro",
+    "viajeros": 199695
+  },
+  {
+    "fecha": "2025-08",
+    "anio": 2025,
+    "mes": 8,
+    "continente": "europa",
+    "viajeros": 14330
+  },
+  {
+    "fecha": "2025-08",
+    "anio": 2025,
+    "mes": 8,
+    "continente": "norte",
+    "viajeros": 64688
+  },
+  {
+    "fecha": "2025-08",
+    "anio": 2025,
+    "mes": 8,
+    "continente": "resto",
+    "viajeros": 1033
+  },
+  {
+    "fecha": "2025-08",
+    "anio": 2025,
+    "mes": 8,
+    "continente": "sur",
+    "viajeros": 10489
+  },
+  {
+    "fecha": "2025-09",
+    "anio": 2025,
+    "mes": 9,
+    "continente": "asia",
+    "viajeros": 3053
+  },
+  {
+    "fecha": "2025-09",
+    "anio": 2025,
+    "mes": 9,
+    "continente": "centro",
+    "viajeros": 154323
+  },
+  {
+    "fecha": "2025-09",
+    "anio": 2025,
+    "mes": 9,
+    "continente": "europa",
+    "viajeros": 7069
+  },
+  {
+    "fecha": "2025-09",
+    "anio": 2025,
+    "mes": 9,
+    "continente": "norte",
+    "viajeros": 43141
+  },
+  {
+    "fecha": "2025-09",
+    "anio": 2025,
+    "mes": 9,
+    "continente": "resto",
+    "viajeros": 1074
+  },
+  {
+    "fecha": "2025-09",
+    "anio": 2025,
+    "mes": 9,
+    "continente": "sur",
+    "viajeros": 9409
+  },
+  {
+    "fecha": "2025-10",
+    "anio": 2025,
+    "mes": 10,
+    "continente": "asia",
+    "viajeros": 3672
+  },
+  {
+    "fecha": "2025-10",
+    "anio": 2025,
+    "mes": 10,
+    "continente": "centro",
+    "viajeros": 168768
+  },
+  {
+    "fecha": "2025-10",
+    "anio": 2025,
+    "mes": 10,
+    "continente": "europa",
+    "viajeros": 11743
+  },
+  {
+    "fecha": "2025-10",
+    "anio": 2025,
+    "mes": 10,
+    "continente": "norte",
+    "viajeros": 58937
+  },
+  {
+    "fecha": "2025-10",
+    "anio": 2025,
+    "mes": 10,
+    "continente": "resto",
+    "viajeros": 1012
+  },
+  {
+    "fecha": "2025-10",
+    "anio": 2025,
+    "mes": 10,
+    "continente": "sur",
+    "viajeros": 11789
+  },
+  {
+    "fecha": "2025-11",
+    "anio": 2025,
+    "mes": 11,
+    "continente": "asia",
+    "viajeros": 4659
+  },
+  {
+    "fecha": "2025-11",
+    "anio": 2025,
+    "mes": 11,
+    "continente": "centro",
+    "viajeros": 194775
+  },
+  {
+    "fecha": "2025-11",
+    "anio": 2025,
+    "mes": 11,
+    "continente": "europa",
+    "viajeros": 22824
+  },
+  {
+    "fecha": "2025-11",
+    "anio": 2025,
+    "mes": 11,
+    "continente": "norte",
+    "viajeros": 73826
+  },
+  {
+    "fecha": "2025-11",
+    "anio": 2025,
+    "mes": 11,
+    "continente": "resto",
+    "viajeros": 1095
+  },
+  {
+    "fecha": "2025-11",
+    "anio": 2025,
+    "mes": 11,
+    "continente": "sur",
+    "viajeros": 13405
+  },
+  {
+    "fecha": "2025-12",
+    "anio": 2025,
+    "mes": 12,
+    "continente": "asia",
+    "viajeros": 4291
+  },
+  {
+    "fecha": "2025-12",
+    "anio": 2025,
+    "mes": 12,
+    "continente": "centro",
+    "viajeros": 230511
+  },
+  {
+    "fecha": "2025-12",
+    "anio": 2025,
+    "mes": 12,
+    "continente": "europa",
+    "viajeros": 17977
+  },
+  {
+    "fecha": "2025-12",
+    "anio": 2025,
+    "mes": 12,
+    "continente": "norte",
+    "viajeros": 98380
+  },
+  {
+    "fecha": "2025-12",
+    "anio": 2025,
+    "mes": 12,
+    "continente": "resto",
+    "viajeros": 1513
+  },
+  {
+    "fecha": "2025-12",
+    "anio": 2025,
+    "mes": 12,
+    "continente": "sur",
+    "viajeros": 12901
+  },
+  {
+    "fecha": "2026-01",
+    "anio": 2026,
+    "mes": 1,
+    "continente": "asia",
+    "viajeros": 4174
+  },
+  {
+    "fecha": "2026-01",
+    "anio": 2026,
+    "mes": 1,
+    "continente": "centro",
+    "viajeros": 188957
+  },
+  {
+    "fecha": "2026-01",
+    "anio": 2026,
+    "mes": 1,
+    "continente": "europa",
+    "viajeros": 19158
+  },
+  {
+    "fecha": "2026-01",
+    "anio": 2026,
+    "mes": 1,
+    "continente": "norte",
+    "viajeros": 73594
+  },
+  {
+    "fecha": "2026-01",
+    "anio": 2026,
+    "mes": 1,
+    "continente": "resto",
+    "viajeros": 1355
+  },
+  {
+    "fecha": "2026-01",
+    "anio": 2026,
+    "mes": 1,
+    "continente": "sur",
+    "viajeros": 13426
+  },
+  {
+    "fecha": "2026-02",
+    "anio": 2026,
+    "mes": 2,
+    "continente": "asia",
+    "viajeros": 3942
+  },
+  {
+    "fecha": "2026-02",
+    "anio": 2026,
+    "mes": 2,
+    "continente": "centro",
+    "viajeros": 129776
+  },
+  {
+    "fecha": "2026-02",
+    "anio": 2026,
+    "mes": 2,
+    "continente": "europa",
+    "viajeros": 20118
+  },
+  {
+    "fecha": "2026-02",
+    "anio": 2026,
+    "mes": 2,
+    "continente": "norte",
+    "viajeros": 70562
+  },
+  {
+    "fecha": "2026-02",
+    "anio": 2026,
+    "mes": 2,
+    "continente": "resto",
+    "viajeros": 1047
+  },
+  {
+    "fecha": "2026-02",
+    "anio": 2026,
+    "mes": 2,
+    "continente": "sur",
+    "viajeros": 11399
+  },
+  {
+    "fecha": "2026-03",
+    "anio": 2026,
+    "mes": 3,
+    "continente": "asia",
+    "viajeros": 4796
+  },
+  {
+    "fecha": "2026-03",
+    "anio": 2026,
+    "mes": 3,
+    "continente": "centro",
+    "viajeros": 157706
+  },
+  {
+    "fecha": "2026-03",
+    "anio": 2026,
+    "mes": 3,
+    "continente": "europa",
+    "viajeros": 21565
+  },
+  {
+    "fecha": "2026-03",
+    "anio": 2026,
+    "mes": 3,
+    "continente": "norte",
+    "viajeros": 91979
+  },
+  {
+    "fecha": "2026-03",
+    "anio": 2026,
+    "mes": 3,
+    "continente": "resto",
+    "viajeros": 1076
+  },
+  {
+    "fecha": "2026-03",
+    "anio": 2026,
+    "mes": 3,
+    "continente": "sur",
+    "viajeros": 14039
+  },
+  {
+    "fecha": "2026-04",
+    "anio": 2026,
+    "mes": 4,
+    "continente": "asia",
+    "viajeros": 4096
+  },
+  {
+    "fecha": "2026-04",
+    "anio": 2026,
+    "mes": 4,
+    "continente": "centro",
+    "viajeros": 157873
+  },
+  {
+    "fecha": "2026-04",
+    "anio": 2026,
+    "mes": 4,
+    "continente": "europa",
+    "viajeros": 15281
+  },
+  {
+    "fecha": "2026-04",
+    "anio": 2026,
+    "mes": 4,
+    "continente": "norte",
+    "viajeros": 69652
+  },
+  {
+    "fecha": "2026-04",
+    "anio": 2026,
+    "mes": 4,
+    "continente": "resto",
+    "viajeros": 1570
+  },
+  {
+    "fecha": "2026-04",
+    "anio": 2026,
+    "mes": 4,
+    "continente": "sur",
+    "viajeros": 12479
+  },
+  {
+    "fecha": "2026-05",
+    "anio": 2026,
+    "mes": 5,
+    "continente": "asia",
+    "viajeros": 3662
+  },
+  {
+    "fecha": "2026-05",
+    "anio": 2026,
+    "mes": 5,
+    "continente": "centro",
+    "viajeros": 146233
+  },
+  {
+    "fecha": "2026-05",
+    "anio": 2026,
+    "mes": 5,
+    "continente": "europa",
+    "viajeros": 10870
+  },
+  {
+    "fecha": "2026-05",
+    "anio": 2026,
+    "mes": 5,
+    "continente": "norte",
+    "viajeros": 67069
+  },
+  {
+    "fecha": "2026-05",
+    "anio": 2026,
+    "mes": 5,
+    "continente": "resto",
+    "viajeros": 2059
+  },
+  {
+    "fecha": "2026-05",
+    "anio": 2026,
+    "mes": 5,
+    "continente": "sur",
+    "viajeros": 11420
+  },
+  {
+    "fecha": "2026-06",
+    "anio": 2026,
+    "mes": 6,
+    "continente": "asia",
+    "viajeros": 3269
+  },
+  {
+    "fecha": "2026-06",
+    "anio": 2026,
+    "mes": 6,
+    "continente": "centro",
+    "viajeros": 146093
+  },
+  {
+    "fecha": "2026-06",
+    "anio": 2026,
+    "mes": 6,
+    "continente": "europa",
+    "viajeros": 7856
+  },
+  {
+    "fecha": "2026-06",
+    "anio": 2026,
+    "mes": 6,
+    "continente": "norte",
+    "viajeros": 74835
+  },
+  {
+    "fecha": "2026-06",
+    "anio": 2026,
+    "mes": 6,
+    "continente": "resto",
+    "viajeros": 1457
+  },
+  {
+    "fecha": "2026-06",
+    "anio": 2026,
+    "mes": 6,
+    "continente": "sur",
+    "viajeros": 12178
+  }
+]

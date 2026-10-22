@@ -1,0 +1,2249 @@
+[
+  {
+    "anio": 2009,
+    "via": "aerea",
+    "frontera": "La Aurora",
+    "viajeros": 932073,
+    "parcial": false
+  },
+  {
+    "anio": 2009,
+    "via": "aerea",
+    "frontera": "Mundo Maya",
+    "viajeros": 3306,
+    "parcial": false
+  },
+  {
+    "anio": 2009,
+    "via": "maritima",
+    "frontera": "Puerto Quetzal",
+    "viajeros": 709,
+    "parcial": false
+  },
+  {
+    "anio": 2009,
+    "via": "maritima",
+    "frontera": "Santo Tomás de Castilla",
+    "viajeros": 99,
+    "parcial": false
+  },
+  {
+    "anio": 2009,
+    "via": "maritima",
+    "frontera": "Puerto Barrios",
+    "viajeros": 6867,
+    "parcial": false
+  },
+  {
+    "anio": 2009,
+    "via": "maritima",
+    "frontera": "Livingston",
+    "viajeros": 4683,
+    "parcial": false
+  },
+  {
+    "anio": 2009,
+    "via": "terrestre",
+    "frontera": "Valle Nuevo",
+    "viajeros": 386734,
+    "parcial": false
+  },
+  {
+    "anio": 2009,
+    "via": "terrestre",
+    "frontera": "Pedro de Alvarado",
+    "viajeros": 68953,
+    "parcial": false
+  },
+  {
+    "anio": 2009,
+    "via": "terrestre",
+    "frontera": "San Cristóbal",
+    "viajeros": 120741,
+    "parcial": false
+  },
+  {
+    "anio": 2009,
+    "via": "terrestre",
+    "frontera": "La Ermita (Nueva Anguiatú)",
+    "viajeros": 21439,
+    "parcial": false
+  },
+  {
+    "anio": 2009,
+    "via": "terrestre",
+    "frontera": "Agua Caliente",
+    "viajeros": 39676,
+    "parcial": false
+  },
+  {
+    "anio": 2009,
+    "via": "terrestre",
+    "frontera": "El Florido",
+    "viajeros": 40505,
+    "parcial": false
+  },
+  {
+    "anio": 2009,
+    "via": "terrestre",
+    "frontera": "El Cinchado / El Corinto",
+    "viajeros": 27082,
+    "parcial": false
+  },
+  {
+    "anio": 2009,
+    "via": "terrestre",
+    "frontera": "Tecún Umán",
+    "viajeros": 19756,
+    "parcial": false
+  },
+  {
+    "anio": 2009,
+    "via": "terrestre",
+    "frontera": "El Carmen",
+    "viajeros": 52698,
+    "parcial": false
+  },
+  {
+    "anio": 2009,
+    "via": "terrestre",
+    "frontera": "La Mesilla",
+    "viajeros": 36179,
+    "parcial": false
+  },
+  {
+    "anio": 2009,
+    "via": "terrestre",
+    "frontera": "El Naranjo",
+    "viajeros": 280,
+    "parcial": false
+  },
+  {
+    "anio": 2009,
+    "via": "terrestre",
+    "frontera": "Bethel",
+    "viajeros": 7973,
+    "parcial": false
+  },
+  {
+    "anio": 2009,
+    "via": "terrestre",
+    "frontera": "Gracias a Dios",
+    "viajeros": 6747,
+    "parcial": false
+  },
+  {
+    "anio": 2009,
+    "via": "terrestre",
+    "frontera": "Melchor de Mencos",
+    "viajeros": 103684,
+    "parcial": false
+  },
+  {
+    "anio": 2010,
+    "via": "aerea",
+    "frontera": "La Aurora",
+    "viajeros": 971762,
+    "parcial": false
+  },
+  {
+    "anio": 2010,
+    "via": "aerea",
+    "frontera": "Mundo Maya",
+    "viajeros": 2471,
+    "parcial": false
+  },
+  {
+    "anio": 2010,
+    "via": "maritima",
+    "frontera": "Puerto Quetzal",
+    "viajeros": 788,
+    "parcial": false
+  },
+  {
+    "anio": 2010,
+    "via": "maritima",
+    "frontera": "Santo Tomás de Castilla",
+    "viajeros": 86,
+    "parcial": false
+  },
+  {
+    "anio": 2010,
+    "via": "maritima",
+    "frontera": "Puerto Barrios",
+    "viajeros": 7226,
+    "parcial": false
+  },
+  {
+    "anio": 2010,
+    "via": "maritima",
+    "frontera": "Livingston",
+    "viajeros": 4575,
+    "parcial": false
+  },
+  {
+    "anio": 2010,
+    "via": "terrestre",
+    "frontera": "Valle Nuevo",
+    "viajeros": 408358,
+    "parcial": false
+  },
+  {
+    "anio": 2010,
+    "via": "terrestre",
+    "frontera": "Pedro de Alvarado",
+    "viajeros": 71083,
+    "parcial": false
+  },
+  {
+    "anio": 2010,
+    "via": "terrestre",
+    "frontera": "San Cristóbal",
+    "viajeros": 144977,
+    "parcial": false
+  },
+  {
+    "anio": 2010,
+    "via": "terrestre",
+    "frontera": "La Ermita (Nueva Anguiatú)",
+    "viajeros": 33022,
+    "parcial": false
+  },
+  {
+    "anio": 2010,
+    "via": "terrestre",
+    "frontera": "Agua Caliente",
+    "viajeros": 36523,
+    "parcial": false
+  },
+  {
+    "anio": 2010,
+    "via": "terrestre",
+    "frontera": "El Florido",
+    "viajeros": 49715,
+    "parcial": false
+  },
+  {
+    "anio": 2010,
+    "via": "terrestre",
+    "frontera": "El Cinchado / El Corinto",
+    "viajeros": 28869,
+    "parcial": false
+  },
+  {
+    "anio": 2010,
+    "via": "terrestre",
+    "frontera": "Tecún Umán",
+    "viajeros": 30324,
+    "parcial": false
+  },
+  {
+    "anio": 2010,
+    "via": "terrestre",
+    "frontera": "El Carmen",
+    "viajeros": 62935,
+    "parcial": false
+  },
+  {
+    "anio": 2010,
+    "via": "terrestre",
+    "frontera": "La Mesilla",
+    "viajeros": 38605,
+    "parcial": false
+  },
+  {
+    "anio": 2010,
+    "via": "terrestre",
+    "frontera": "El Naranjo",
+    "viajeros": 788,
+    "parcial": false
+  },
+  {
+    "anio": 2010,
+    "via": "terrestre",
+    "frontera": "Bethel",
+    "viajeros": 7904,
+    "parcial": false
+  },
+  {
+    "anio": 2010,
+    "via": "terrestre",
+    "frontera": "Gracias a Dios",
+    "viajeros": 7091,
+    "parcial": false
+  },
+  {
+    "anio": 2010,
+    "via": "terrestre",
+    "frontera": "Melchor de Mencos",
+    "viajeros": 97680,
+    "parcial": false
+  },
+  {
+    "anio": 2011,
+    "via": "aerea",
+    "frontera": "La Aurora",
+    "viajeros": 953241,
+    "parcial": false
+  },
+  {
+    "anio": 2011,
+    "via": "aerea",
+    "frontera": "Mundo Maya",
+    "viajeros": 2723,
+    "parcial": false
+  },
+  {
+    "anio": 2011,
+    "via": "maritima",
+    "frontera": "Puerto Quetzal",
+    "viajeros": 693,
+    "parcial": false
+  },
+  {
+    "anio": 2011,
+    "via": "maritima",
+    "frontera": "Santo Tomás de Castilla",
+    "viajeros": 121,
+    "parcial": false
+  },
+  {
+    "anio": 2011,
+    "via": "maritima",
+    "frontera": "Puerto Barrios",
+    "viajeros": 7735,
+    "parcial": false
+  },
+  {
+    "anio": 2011,
+    "via": "maritima",
+    "frontera": "Livingston",
+    "viajeros": 4420,
+    "parcial": false
+  },
+  {
+    "anio": 2011,
+    "via": "terrestre",
+    "frontera": "Valle Nuevo",
+    "viajeros": 425765,
+    "parcial": false
+  },
+  {
+    "anio": 2011,
+    "via": "terrestre",
+    "frontera": "Pedro de Alvarado",
+    "viajeros": 88987,
+    "parcial": false
+  },
+  {
+    "anio": 2011,
+    "via": "terrestre",
+    "frontera": "San Cristóbal",
+    "viajeros": 167340,
+    "parcial": false
+  },
+  {
+    "anio": 2011,
+    "via": "terrestre",
+    "frontera": "La Ermita (Nueva Anguiatú)",
+    "viajeros": 59410,
+    "parcial": false
+  },
+  {
+    "anio": 2011,
+    "via": "terrestre",
+    "frontera": "Agua Caliente",
+    "viajeros": 60838,
+    "parcial": false
+  },
+  {
+    "anio": 2011,
+    "via": "terrestre",
+    "frontera": "El Florido",
+    "viajeros": 43321,
+    "parcial": false
+  },
+  {
+    "anio": 2011,
+    "via": "terrestre",
+    "frontera": "El Cinchado / El Corinto",
+    "viajeros": 36508,
+    "parcial": false
+  },
+  {
+    "anio": 2011,
+    "via": "terrestre",
+    "frontera": "Tecún Umán",
+    "viajeros": 34187,
+    "parcial": false
+  },
+  {
+    "anio": 2011,
+    "via": "terrestre",
+    "frontera": "El Carmen",
+    "viajeros": 57651,
+    "parcial": false
+  },
+  {
+    "anio": 2011,
+    "via": "terrestre",
+    "frontera": "La Mesilla",
+    "viajeros": 36191,
+    "parcial": false
+  },
+  {
+    "anio": 2011,
+    "via": "terrestre",
+    "frontera": "El Naranjo",
+    "viajeros": 3296,
+    "parcial": false
+  },
+  {
+    "anio": 2011,
+    "via": "terrestre",
+    "frontera": "Bethel",
+    "viajeros": 7767,
+    "parcial": false
+  },
+  {
+    "anio": 2011,
+    "via": "terrestre",
+    "frontera": "Gracias a Dios",
+    "viajeros": 3886,
+    "parcial": false
+  },
+  {
+    "anio": 2011,
+    "via": "terrestre",
+    "frontera": "Melchor de Mencos",
+    "viajeros": 85632,
+    "parcial": false
+  },
+  {
+    "anio": 2012,
+    "via": "aerea",
+    "frontera": "La Aurora",
+    "viajeros": 967874,
+    "parcial": false
+  },
+  {
+    "anio": 2012,
+    "via": "aerea",
+    "frontera": "Mundo Maya",
+    "viajeros": 2656,
+    "parcial": false
+  },
+  {
+    "anio": 2012,
+    "via": "maritima",
+    "frontera": "Puerto Quetzal",
+    "viajeros": 764,
+    "parcial": false
+  },
+  {
+    "anio": 2012,
+    "via": "maritima",
+    "frontera": "Santo Tomás de Castilla",
+    "viajeros": 86,
+    "parcial": false
+  },
+  {
+    "anio": 2012,
+    "via": "maritima",
+    "frontera": "Puerto Barrios",
+    "viajeros": 7505,
+    "parcial": false
+  },
+  {
+    "anio": 2012,
+    "via": "maritima",
+    "frontera": "Livingston",
+    "viajeros": 4927,
+    "parcial": false
+  },
+  {
+    "anio": 2012,
+    "via": "terrestre",
+    "frontera": "Valle Nuevo",
+    "viajeros": 411889,
+    "parcial": false
+  },
+  {
+    "anio": 2012,
+    "via": "terrestre",
+    "frontera": "Pedro de Alvarado",
+    "viajeros": 98849,
+    "parcial": false
+  },
+  {
+    "anio": 2012,
+    "via": "terrestre",
+    "frontera": "San Cristóbal",
+    "viajeros": 169567,
+    "parcial": false
+  },
+  {
+    "anio": 2012,
+    "via": "terrestre",
+    "frontera": "La Ermita (Nueva Anguiatú)",
+    "viajeros": 70665,
+    "parcial": false
+  },
+  {
+    "anio": 2012,
+    "via": "terrestre",
+    "frontera": "Agua Caliente",
+    "viajeros": 67295,
+    "parcial": false
+  },
+  {
+    "anio": 2012,
+    "via": "terrestre",
+    "frontera": "El Florido",
+    "viajeros": 42932,
+    "parcial": false
+  },
+  {
+    "anio": 2012,
+    "via": "terrestre",
+    "frontera": "El Cinchado / El Corinto",
+    "viajeros": 37482,
+    "parcial": false
+  },
+  {
+    "anio": 2012,
+    "via": "terrestre",
+    "frontera": "Tecún Umán",
+    "viajeros": 48119,
+    "parcial": false
+  },
+  {
+    "anio": 2012,
+    "via": "terrestre",
+    "frontera": "El Carmen",
+    "viajeros": 59807,
+    "parcial": false
+  },
+  {
+    "anio": 2012,
+    "via": "terrestre",
+    "frontera": "La Mesilla",
+    "viajeros": 37040,
+    "parcial": false
+  },
+  {
+    "anio": 2012,
+    "via": "terrestre",
+    "frontera": "El Naranjo",
+    "viajeros": 3947,
+    "parcial": false
+  },
+  {
+    "anio": 2012,
+    "via": "terrestre",
+    "frontera": "Bethel",
+    "viajeros": 6385,
+    "parcial": false
+  },
+  {
+    "anio": 2012,
+    "via": "terrestre",
+    "frontera": "Gracias a Dios",
+    "viajeros": 5375,
+    "parcial": false
+  },
+  {
+    "anio": 2012,
+    "via": "terrestre",
+    "frontera": "Melchor de Mencos",
+    "viajeros": 96379,
+    "parcial": false
+  },
+  {
+    "anio": 2013,
+    "via": "aerea",
+    "frontera": "La Aurora",
+    "viajeros": 994411,
+    "parcial": false
+  },
+  {
+    "anio": 2013,
+    "via": "aerea",
+    "frontera": "Mundo Maya",
+    "viajeros": 2376,
+    "parcial": false
+  },
+  {
+    "anio": 2013,
+    "via": "maritima",
+    "frontera": "Puerto Quetzal",
+    "viajeros": 747,
+    "parcial": false
+  },
+  {
+    "anio": 2013,
+    "via": "maritima",
+    "frontera": "Santo Tomás de Castilla",
+    "viajeros": 158,
+    "parcial": false
+  },
+  {
+    "anio": 2013,
+    "via": "maritima",
+    "frontera": "Puerto Barrios",
+    "viajeros": 7323,
+    "parcial": false
+  },
+  {
+    "anio": 2013,
+    "via": "maritima",
+    "frontera": "Livingston",
+    "viajeros": 5014,
+    "parcial": false
+  },
+  {
+    "anio": 2013,
+    "via": "terrestre",
+    "frontera": "Valle Nuevo",
+    "viajeros": 527046,
+    "parcial": false
+  },
+  {
+    "anio": 2013,
+    "via": "terrestre",
+    "frontera": "Pedro de Alvarado",
+    "viajeros": 116555,
+    "parcial": false
+  },
+  {
+    "anio": 2013,
+    "via": "terrestre",
+    "frontera": "San Cristóbal",
+    "viajeros": 170029,
+    "parcial": false
+  },
+  {
+    "anio": 2013,
+    "via": "terrestre",
+    "frontera": "La Ermita (Nueva Anguiatú)",
+    "viajeros": 73052,
+    "parcial": false
+  },
+  {
+    "anio": 2013,
+    "via": "terrestre",
+    "frontera": "Agua Caliente",
+    "viajeros": 60591,
+    "parcial": false
+  },
+  {
+    "anio": 2013,
+    "via": "terrestre",
+    "frontera": "El Florido",
+    "viajeros": 43139,
+    "parcial": false
+  },
+  {
+    "anio": 2013,
+    "via": "terrestre",
+    "frontera": "El Cinchado / El Corinto",
+    "viajeros": 36144,
+    "parcial": false
+  },
+  {
+    "anio": 2013,
+    "via": "terrestre",
+    "frontera": "Tecún Umán",
+    "viajeros": 44250,
+    "parcial": false
+  },
+  {
+    "anio": 2013,
+    "via": "terrestre",
+    "frontera": "El Carmen",
+    "viajeros": 52149,
+    "parcial": false
+  },
+  {
+    "anio": 2013,
+    "via": "terrestre",
+    "frontera": "La Mesilla",
+    "viajeros": 38439,
+    "parcial": false
+  },
+  {
+    "anio": 2013,
+    "via": "terrestre",
+    "frontera": "El Naranjo",
+    "viajeros": 4934,
+    "parcial": false
+  },
+  {
+    "anio": 2013,
+    "via": "terrestre",
+    "frontera": "Bethel",
+    "viajeros": 5180,
+    "parcial": false
+  },
+  {
+    "anio": 2013,
+    "via": "terrestre",
+    "frontera": "Gracias a Dios",
+    "viajeros": 7870,
+    "parcial": false
+  },
+  {
+    "anio": 2013,
+    "via": "terrestre",
+    "frontera": "Melchor de Mencos",
+    "viajeros": 100295,
+    "parcial": false
+  },
+  {
+    "anio": 2014,
+    "via": "aerea",
+    "frontera": "La Aurora",
+    "viajeros": 1090138,
+    "parcial": false
+  },
+  {
+    "anio": 2014,
+    "via": "aerea",
+    "frontera": "Mundo Maya",
+    "viajeros": 2215,
+    "parcial": false
+  },
+  {
+    "anio": 2014,
+    "via": "maritima",
+    "frontera": "Puerto Quetzal",
+    "viajeros": 580,
+    "parcial": false
+  },
+  {
+    "anio": 2014,
+    "via": "maritima",
+    "frontera": "Santo Tomás de Castilla",
+    "viajeros": 189,
+    "parcial": false
+  },
+  {
+    "anio": 2014,
+    "via": "maritima",
+    "frontera": "Puerto Barrios",
+    "viajeros": 6955,
+    "parcial": false
+  },
+  {
+    "anio": 2014,
+    "via": "maritima",
+    "frontera": "Livingston",
+    "viajeros": 5532,
+    "parcial": false
+  },
+  {
+    "anio": 2014,
+    "via": "terrestre",
+    "frontera": "Valle Nuevo",
+    "viajeros": 700210,
+    "parcial": false
+  },
+  {
+    "anio": 2014,
+    "via": "terrestre",
+    "frontera": "Pedro de Alvarado",
+    "viajeros": 136772,
+    "parcial": false
+  },
+  {
+    "anio": 2014,
+    "via": "terrestre",
+    "frontera": "San Cristóbal",
+    "viajeros": 195339,
+    "parcial": false
+  },
+  {
+    "anio": 2014,
+    "via": "terrestre",
+    "frontera": "La Ermita (Nueva Anguiatú)",
+    "viajeros": 90670,
+    "parcial": false
+  },
+  {
+    "anio": 2014,
+    "via": "terrestre",
+    "frontera": "Agua Caliente",
+    "viajeros": 65454,
+    "parcial": false
+  },
+  {
+    "anio": 2014,
+    "via": "terrestre",
+    "frontera": "El Florido",
+    "viajeros": 43025,
+    "parcial": false
+  },
+  {
+    "anio": 2014,
+    "via": "terrestre",
+    "frontera": "El Cinchado / El Corinto",
+    "viajeros": 37105,
+    "parcial": false
+  },
+  {
+    "anio": 2014,
+    "via": "terrestre",
+    "frontera": "Tecún Umán",
+    "viajeros": 42826,
+    "parcial": false
+  },
+  {
+    "anio": 2014,
+    "via": "terrestre",
+    "frontera": "El Carmen",
+    "viajeros": 59175,
+    "parcial": false
+  },
+  {
+    "anio": 2014,
+    "via": "terrestre",
+    "frontera": "La Mesilla",
+    "viajeros": 39230,
+    "parcial": false
+  },
+  {
+    "anio": 2014,
+    "via": "terrestre",
+    "frontera": "El Naranjo",
+    "viajeros": 5920,
+    "parcial": false
+  },
+  {
+    "anio": 2014,
+    "via": "terrestre",
+    "frontera": "Bethel",
+    "viajeros": 7004,
+    "parcial": false
+  },
+  {
+    "anio": 2014,
+    "via": "terrestre",
+    "frontera": "Gracias a Dios",
+    "viajeros": 10256,
+    "parcial": false
+  },
+  {
+    "anio": 2014,
+    "via": "terrestre",
+    "frontera": "Melchor de Mencos",
+    "viajeros": 121583,
+    "parcial": false
+  },
+  {
+    "anio": 2015,
+    "via": "aerea",
+    "frontera": "La Aurora",
+    "viajeros": 1165004,
+    "parcial": false
+  },
+  {
+    "anio": 2015,
+    "via": "aerea",
+    "frontera": "Mundo Maya",
+    "viajeros": 2408,
+    "parcial": false
+  },
+  {
+    "anio": 2015,
+    "via": "maritima",
+    "frontera": "Puerto Quetzal",
+    "viajeros": 761,
+    "parcial": false
+  },
+  {
+    "anio": 2015,
+    "via": "maritima",
+    "frontera": "Santo Tomás de Castilla",
+    "viajeros": 106,
+    "parcial": false
+  },
+  {
+    "anio": 2015,
+    "via": "maritima",
+    "frontera": "Puerto Barrios",
+    "viajeros": 5866,
+    "parcial": false
+  },
+  {
+    "anio": 2015,
+    "via": "maritima",
+    "frontera": "Livingston",
+    "viajeros": 5148,
+    "parcial": false
+  },
+  {
+    "anio": 2015,
+    "via": "terrestre",
+    "frontera": "Valle Nuevo",
+    "viajeros": 785719,
+    "parcial": false
+  },
+  {
+    "anio": 2015,
+    "via": "terrestre",
+    "frontera": "Pedro de Alvarado",
+    "viajeros": 148183,
+    "parcial": false
+  },
+  {
+    "anio": 2015,
+    "via": "terrestre",
+    "frontera": "San Cristóbal",
+    "viajeros": 233449,
+    "parcial": false
+  },
+  {
+    "anio": 2015,
+    "via": "terrestre",
+    "frontera": "La Ermita (Nueva Anguiatú)",
+    "viajeros": 106537,
+    "parcial": false
+  },
+  {
+    "anio": 2015,
+    "via": "terrestre",
+    "frontera": "Agua Caliente",
+    "viajeros": 68386,
+    "parcial": false
+  },
+  {
+    "anio": 2015,
+    "via": "terrestre",
+    "frontera": "El Florido",
+    "viajeros": 47905,
+    "parcial": false
+  },
+  {
+    "anio": 2015,
+    "via": "terrestre",
+    "frontera": "El Cinchado / El Corinto",
+    "viajeros": 36018,
+    "parcial": false
+  },
+  {
+    "anio": 2015,
+    "via": "terrestre",
+    "frontera": "Tecún Umán",
+    "viajeros": 49749,
+    "parcial": false
+  },
+  {
+    "anio": 2015,
+    "via": "terrestre",
+    "frontera": "El Carmen",
+    "viajeros": 76620,
+    "parcial": false
+  },
+  {
+    "anio": 2015,
+    "via": "terrestre",
+    "frontera": "La Mesilla",
+    "viajeros": 38625,
+    "parcial": false
+  },
+  {
+    "anio": 2015,
+    "via": "terrestre",
+    "frontera": "El Naranjo",
+    "viajeros": 6366,
+    "parcial": false
+  },
+  {
+    "anio": 2015,
+    "via": "terrestre",
+    "frontera": "Bethel",
+    "viajeros": 4322,
+    "parcial": false
+  },
+  {
+    "anio": 2015,
+    "via": "terrestre",
+    "frontera": "Gracias a Dios",
+    "viajeros": 13215,
+    "parcial": false
+  },
+  {
+    "anio": 2015,
+    "via": "terrestre",
+    "frontera": "Melchor de Mencos",
+    "viajeros": 123500,
+    "parcial": false
+  },
+  {
+    "anio": 2016,
+    "via": "aerea",
+    "frontera": "La Aurora",
+    "viajeros": 1252640,
+    "parcial": false
+  },
+  {
+    "anio": 2016,
+    "via": "aerea",
+    "frontera": "Mundo Maya",
+    "viajeros": 2684,
+    "parcial": false
+  },
+  {
+    "anio": 2016,
+    "via": "maritima",
+    "frontera": "Puerto Quetzal",
+    "viajeros": 846,
+    "parcial": false
+  },
+  {
+    "anio": 2016,
+    "via": "maritima",
+    "frontera": "Santo Tomás de Castilla",
+    "viajeros": 86,
+    "parcial": false
+  },
+  {
+    "anio": 2016,
+    "via": "maritima",
+    "frontera": "Puerto Barrios",
+    "viajeros": 5754,
+    "parcial": false
+  },
+  {
+    "anio": 2016,
+    "via": "maritima",
+    "frontera": "Livingston",
+    "viajeros": 3892,
+    "parcial": false
+  },
+  {
+    "anio": 2016,
+    "via": "terrestre",
+    "frontera": "Valle Nuevo",
+    "viajeros": 602146,
+    "parcial": false
+  },
+  {
+    "anio": 2016,
+    "via": "terrestre",
+    "frontera": "Pedro de Alvarado",
+    "viajeros": 253350,
+    "parcial": false
+  },
+  {
+    "anio": 2016,
+    "via": "terrestre",
+    "frontera": "San Cristóbal",
+    "viajeros": 311621,
+    "parcial": false
+  },
+  {
+    "anio": 2016,
+    "via": "terrestre",
+    "frontera": "La Ermita (Nueva Anguiatú)",
+    "viajeros": 212535,
+    "parcial": false
+  },
+  {
+    "anio": 2016,
+    "via": "terrestre",
+    "frontera": "Agua Caliente",
+    "viajeros": 38549,
+    "parcial": false
+  },
+  {
+    "anio": 2016,
+    "via": "terrestre",
+    "frontera": "El Florido",
+    "viajeros": 39462,
+    "parcial": false
+  },
+  {
+    "anio": 2016,
+    "via": "terrestre",
+    "frontera": "El Cinchado / El Corinto",
+    "viajeros": 31675,
+    "parcial": false
+  },
+  {
+    "anio": 2016,
+    "via": "terrestre",
+    "frontera": "Tecún Umán",
+    "viajeros": 52759,
+    "parcial": false
+  },
+  {
+    "anio": 2016,
+    "via": "terrestre",
+    "frontera": "El Carmen",
+    "viajeros": 68449,
+    "parcial": false
+  },
+  {
+    "anio": 2016,
+    "via": "terrestre",
+    "frontera": "La Mesilla",
+    "viajeros": 27981,
+    "parcial": false
+  },
+  {
+    "anio": 2016,
+    "via": "terrestre",
+    "frontera": "El Naranjo",
+    "viajeros": 5402,
+    "parcial": false
+  },
+  {
+    "anio": 2016,
+    "via": "terrestre",
+    "frontera": "Bethel",
+    "viajeros": 3564,
+    "parcial": false
+  },
+  {
+    "anio": 2016,
+    "via": "terrestre",
+    "frontera": "Gracias a Dios",
+    "viajeros": 11874,
+    "parcial": false
+  },
+  {
+    "anio": 2016,
+    "via": "terrestre",
+    "frontera": "Melchor de Mencos",
+    "viajeros": 71758,
+    "parcial": false
+  },
+  {
+    "anio": 2017,
+    "via": "aerea",
+    "frontera": "La Aurora",
+    "viajeros": 1310821,
+    "parcial": false
+  },
+  {
+    "anio": 2017,
+    "via": "aerea",
+    "frontera": "Mundo Maya",
+    "viajeros": 2969,
+    "parcial": false
+  },
+  {
+    "anio": 2017,
+    "via": "terrestre",
+    "frontera": "Valle Nuevo",
+    "viajeros": 804645,
+    "parcial": false
+  },
+  {
+    "anio": 2017,
+    "via": "terrestre",
+    "frontera": "Pedro de Alvarado",
+    "viajeros": 292225,
+    "parcial": false
+  },
+  {
+    "anio": 2017,
+    "via": "terrestre",
+    "frontera": "San Cristóbal",
+    "viajeros": 305361,
+    "parcial": false
+  },
+  {
+    "anio": 2017,
+    "via": "terrestre",
+    "frontera": "La Ermita (Nueva Anguiatú)",
+    "viajeros": 201195,
+    "parcial": false
+  },
+  {
+    "anio": 2017,
+    "via": "terrestre",
+    "frontera": "Agua Caliente",
+    "viajeros": 44749,
+    "parcial": false
+  },
+  {
+    "anio": 2017,
+    "via": "terrestre",
+    "frontera": "El Florido",
+    "viajeros": 37960,
+    "parcial": false
+  },
+  {
+    "anio": 2017,
+    "via": "terrestre",
+    "frontera": "El Cinchado / El Corinto",
+    "viajeros": 35662,
+    "parcial": false
+  },
+  {
+    "anio": 2017,
+    "via": "terrestre",
+    "frontera": "Tecún Umán",
+    "viajeros": 41921,
+    "parcial": false
+  },
+  {
+    "anio": 2017,
+    "via": "terrestre",
+    "frontera": "El Carmen",
+    "viajeros": 74345,
+    "parcial": false
+  },
+  {
+    "anio": 2017,
+    "via": "terrestre",
+    "frontera": "La Mesilla",
+    "viajeros": 30297,
+    "parcial": false
+  },
+  {
+    "anio": 2017,
+    "via": "terrestre",
+    "frontera": "El Naranjo",
+    "viajeros": 5176,
+    "parcial": false
+  },
+  {
+    "anio": 2017,
+    "via": "terrestre",
+    "frontera": "Bethel",
+    "viajeros": 2233,
+    "parcial": false
+  },
+  {
+    "anio": 2017,
+    "via": "terrestre",
+    "frontera": "Gracias a Dios",
+    "viajeros": 10873,
+    "parcial": false
+  },
+  {
+    "anio": 2017,
+    "via": "terrestre",
+    "frontera": "Melchor de Mencos",
+    "viajeros": 107218,
+    "parcial": false
+  },
+  {
+    "anio": 2018,
+    "via": "aerea",
+    "frontera": "La Aurora",
+    "viajeros": 1411582,
+    "parcial": false
+  },
+  {
+    "anio": 2018,
+    "via": "aerea",
+    "frontera": "Mundo Maya",
+    "viajeros": 3404,
+    "parcial": false
+  },
+  {
+    "anio": 2018,
+    "via": "terrestre",
+    "frontera": "Valle Nuevo",
+    "viajeros": 906559,
+    "parcial": false
+  },
+  {
+    "anio": 2018,
+    "via": "terrestre",
+    "frontera": "Pedro de Alvarado",
+    "viajeros": 366804,
+    "parcial": false
+  },
+  {
+    "anio": 2018,
+    "via": "terrestre",
+    "frontera": "San Cristóbal",
+    "viajeros": 387409,
+    "parcial": false
+  },
+  {
+    "anio": 2018,
+    "via": "terrestre",
+    "frontera": "La Ermita (Nueva Anguiatú)",
+    "viajeros": 217511,
+    "parcial": false
+  },
+  {
+    "anio": 2018,
+    "via": "terrestre",
+    "frontera": "Agua Caliente",
+    "viajeros": 70718,
+    "parcial": false
+  },
+  {
+    "anio": 2018,
+    "via": "terrestre",
+    "frontera": "El Florido",
+    "viajeros": 46214,
+    "parcial": false
+  },
+  {
+    "anio": 2018,
+    "via": "terrestre",
+    "frontera": "El Cinchado / El Corinto",
+    "viajeros": 74741,
+    "parcial": false
+  },
+  {
+    "anio": 2018,
+    "via": "terrestre",
+    "frontera": "Tecún Umán",
+    "viajeros": 39049,
+    "parcial": false
+  },
+  {
+    "anio": 2018,
+    "via": "terrestre",
+    "frontera": "El Carmen",
+    "viajeros": 77503,
+    "parcial": false
+  },
+  {
+    "anio": 2018,
+    "via": "terrestre",
+    "frontera": "La Mesilla",
+    "viajeros": 31396,
+    "parcial": false
+  },
+  {
+    "anio": 2018,
+    "via": "terrestre",
+    "frontera": "El Naranjo",
+    "viajeros": 6338,
+    "parcial": false
+  },
+  {
+    "anio": 2018,
+    "via": "terrestre",
+    "frontera": "Bethel",
+    "viajeros": 1943,
+    "parcial": false
+  },
+  {
+    "anio": 2018,
+    "via": "terrestre",
+    "frontera": "Gracias a Dios",
+    "viajeros": 12301,
+    "parcial": false
+  },
+  {
+    "anio": 2018,
+    "via": "terrestre",
+    "frontera": "Melchor de Mencos",
+    "viajeros": 140290,
+    "parcial": false
+  },
+  {
+    "anio": 2019,
+    "via": "aerea",
+    "frontera": "La Aurora",
+    "viajeros": 1481702,
+    "parcial": false
+  },
+  {
+    "anio": 2019,
+    "via": "aerea",
+    "frontera": "Mundo Maya",
+    "viajeros": 1684,
+    "parcial": false
+  },
+  {
+    "anio": 2019,
+    "via": "terrestre",
+    "frontera": "Valle Nuevo",
+    "viajeros": 975293,
+    "parcial": false
+  },
+  {
+    "anio": 2019,
+    "via": "terrestre",
+    "frontera": "Pedro de Alvarado",
+    "viajeros": 396715,
+    "parcial": false
+  },
+  {
+    "anio": 2019,
+    "via": "terrestre",
+    "frontera": "San Cristóbal",
+    "viajeros": 407932,
+    "parcial": false
+  },
+  {
+    "anio": 2019,
+    "via": "terrestre",
+    "frontera": "La Ermita (Nueva Anguiatú)",
+    "viajeros": 261250,
+    "parcial": false
+  },
+  {
+    "anio": 2019,
+    "via": "terrestre",
+    "frontera": "Agua Caliente",
+    "viajeros": 103629,
+    "parcial": false
+  },
+  {
+    "anio": 2019,
+    "via": "terrestre",
+    "frontera": "El Florido",
+    "viajeros": 65418,
+    "parcial": false
+  },
+  {
+    "anio": 2019,
+    "via": "terrestre",
+    "frontera": "El Cinchado / El Corinto",
+    "viajeros": 103550,
+    "parcial": false
+  },
+  {
+    "anio": 2019,
+    "via": "terrestre",
+    "frontera": "Tecún Umán",
+    "viajeros": 43980,
+    "parcial": false
+  },
+  {
+    "anio": 2019,
+    "via": "terrestre",
+    "frontera": "El Carmen",
+    "viajeros": 83964,
+    "parcial": false
+  },
+  {
+    "anio": 2019,
+    "via": "terrestre",
+    "frontera": "La Mesilla",
+    "viajeros": 35395,
+    "parcial": false
+  },
+  {
+    "anio": 2019,
+    "via": "terrestre",
+    "frontera": "El Naranjo",
+    "viajeros": 6018,
+    "parcial": false
+  },
+  {
+    "anio": 2019,
+    "via": "terrestre",
+    "frontera": "Bethel",
+    "viajeros": 1555,
+    "parcial": false
+  },
+  {
+    "anio": 2019,
+    "via": "terrestre",
+    "frontera": "Gracias a Dios",
+    "viajeros": 11904,
+    "parcial": false
+  },
+  {
+    "anio": 2019,
+    "via": "terrestre",
+    "frontera": "Melchor de Mencos",
+    "viajeros": 152262,
+    "parcial": false
+  },
+  {
+    "anio": 2020,
+    "via": "aerea",
+    "frontera": "La Aurora",
+    "viajeros": 402848,
+    "parcial": false
+  },
+  {
+    "anio": 2020,
+    "via": "aerea",
+    "frontera": "Mundo Maya",
+    "viajeros": 677,
+    "parcial": false
+  },
+  {
+    "anio": 2020,
+    "via": "terrestre",
+    "frontera": "Valle Nuevo",
+    "viajeros": 188042,
+    "parcial": false
+  },
+  {
+    "anio": 2020,
+    "via": "terrestre",
+    "frontera": "Pedro de Alvarado",
+    "viajeros": 125191,
+    "parcial": false
+  },
+  {
+    "anio": 2020,
+    "via": "terrestre",
+    "frontera": "San Cristóbal",
+    "viajeros": 111912,
+    "parcial": false
+  },
+  {
+    "anio": 2020,
+    "via": "terrestre",
+    "frontera": "La Ermita (Nueva Anguiatú)",
+    "viajeros": 51634,
+    "parcial": false
+  },
+  {
+    "anio": 2020,
+    "via": "terrestre",
+    "frontera": "Agua Caliente",
+    "viajeros": 28781,
+    "parcial": false
+  },
+  {
+    "anio": 2020,
+    "via": "terrestre",
+    "frontera": "El Florido",
+    "viajeros": 25948,
+    "parcial": false
+  },
+  {
+    "anio": 2020,
+    "via": "terrestre",
+    "frontera": "El Cinchado / El Corinto",
+    "viajeros": 37723,
+    "parcial": false
+  },
+  {
+    "anio": 2020,
+    "via": "terrestre",
+    "frontera": "Tecún Umán",
+    "viajeros": 15739,
+    "parcial": false
+  },
+  {
+    "anio": 2020,
+    "via": "terrestre",
+    "frontera": "El Carmen",
+    "viajeros": 24439,
+    "parcial": false
+  },
+  {
+    "anio": 2020,
+    "via": "terrestre",
+    "frontera": "La Mesilla",
+    "viajeros": 8041,
+    "parcial": false
+  },
+  {
+    "anio": 2020,
+    "via": "terrestre",
+    "frontera": "El Naranjo",
+    "viajeros": 1809,
+    "parcial": false
+  },
+  {
+    "anio": 2020,
+    "via": "terrestre",
+    "frontera": "Bethel",
+    "viajeros": 359,
+    "parcial": false
+  },
+  {
+    "anio": 2020,
+    "via": "terrestre",
+    "frontera": "Gracias a Dios",
+    "viajeros": 3325,
+    "parcial": false
+  },
+  {
+    "anio": 2020,
+    "via": "terrestre",
+    "frontera": "Melchor de Mencos",
+    "viajeros": 33303,
+    "parcial": false
+  },
+  {
+    "anio": 2021,
+    "via": "aerea",
+    "frontera": "La Aurora",
+    "viajeros": 703204,
+    "parcial": false
+  },
+  {
+    "anio": 2021,
+    "via": "aerea",
+    "frontera": "Mundo Maya",
+    "viajeros": 267,
+    "parcial": false
+  },
+  {
+    "anio": 2021,
+    "via": "terrestre",
+    "frontera": "La Aurora",
+    "viajeros": 4828,
+    "parcial": false
+  },
+  {
+    "anio": 2021,
+    "via": "terrestre",
+    "frontera": "Mundo Maya",
+    "viajeros": 2,
+    "parcial": false
+  },
+  {
+    "anio": 2021,
+    "via": "terrestre",
+    "frontera": "Valle Nuevo",
+    "viajeros": 120557,
+    "parcial": false
+  },
+  {
+    "anio": 2021,
+    "via": "terrestre",
+    "frontera": "Pedro de Alvarado",
+    "viajeros": 106911,
+    "parcial": false
+  },
+  {
+    "anio": 2021,
+    "via": "terrestre",
+    "frontera": "San Cristóbal",
+    "viajeros": 35092,
+    "parcial": false
+  },
+  {
+    "anio": 2021,
+    "via": "terrestre",
+    "frontera": "La Ermita (Nueva Anguiatú)",
+    "viajeros": 29979,
+    "parcial": false
+  },
+  {
+    "anio": 2021,
+    "via": "terrestre",
+    "frontera": "Agua Caliente",
+    "viajeros": 7452,
+    "parcial": false
+  },
+  {
+    "anio": 2021,
+    "via": "terrestre",
+    "frontera": "El Florido",
+    "viajeros": 22099,
+    "parcial": false
+  },
+  {
+    "anio": 2021,
+    "via": "terrestre",
+    "frontera": "El Cinchado / El Corinto",
+    "viajeros": 41751,
+    "parcial": false
+  },
+  {
+    "anio": 2021,
+    "via": "terrestre",
+    "frontera": "Tecún Umán",
+    "viajeros": 6270,
+    "parcial": false
+  },
+  {
+    "anio": 2021,
+    "via": "terrestre",
+    "frontera": "El Carmen",
+    "viajeros": 11046,
+    "parcial": false
+  },
+  {
+    "anio": 2021,
+    "via": "terrestre",
+    "frontera": "La Mesilla",
+    "viajeros": 4239,
+    "parcial": false
+  },
+  {
+    "anio": 2021,
+    "via": "terrestre",
+    "frontera": "El Naranjo",
+    "viajeros": 893,
+    "parcial": false
+  },
+  {
+    "anio": 2021,
+    "via": "terrestre",
+    "frontera": "Bethel",
+    "viajeros": 113,
+    "parcial": false
+  },
+  {
+    "anio": 2021,
+    "via": "terrestre",
+    "frontera": "Gracias a Dios",
+    "viajeros": 203,
+    "parcial": false
+  },
+  {
+    "anio": 2021,
+    "via": "terrestre",
+    "frontera": "Melchor de Mencos",
+    "viajeros": 4057,
+    "parcial": false
+  },
+  {
+    "anio": 2022,
+    "via": "aerea",
+    "frontera": "La Aurora",
+    "viajeros": 1388401,
+    "parcial": false
+  },
+  {
+    "anio": 2022,
+    "via": "aerea",
+    "frontera": "Mundo Maya",
+    "viajeros": 1859,
+    "parcial": false
+  },
+  {
+    "anio": 2022,
+    "via": "aerea",
+    "frontera": "Melchor de Mencos",
+    "viajeros": 15,
+    "parcial": false
+  },
+  {
+    "anio": 2022,
+    "via": "terrestre",
+    "frontera": "Valle Nuevo",
+    "viajeros": 622386,
+    "parcial": false
+  },
+  {
+    "anio": 2022,
+    "via": "terrestre",
+    "frontera": "Pedro de Alvarado",
+    "viajeros": 315778,
+    "parcial": false
+  },
+  {
+    "anio": 2022,
+    "via": "terrestre",
+    "frontera": "San Cristóbal",
+    "viajeros": 283105,
+    "parcial": false
+  },
+  {
+    "anio": 2022,
+    "via": "terrestre",
+    "frontera": "La Ermita (Nueva Anguiatú)",
+    "viajeros": 166986,
+    "parcial": false
+  },
+  {
+    "anio": 2022,
+    "via": "terrestre",
+    "frontera": "Agua Caliente",
+    "viajeros": 45393,
+    "parcial": false
+  },
+  {
+    "anio": 2022,
+    "via": "terrestre",
+    "frontera": "El Florido",
+    "viajeros": 94368,
+    "parcial": false
+  },
+  {
+    "anio": 2022,
+    "via": "terrestre",
+    "frontera": "El Cinchado / El Corinto",
+    "viajeros": 130232,
+    "parcial": false
+  },
+  {
+    "anio": 2022,
+    "via": "terrestre",
+    "frontera": "Tecún Umán",
+    "viajeros": 27262,
+    "parcial": false
+  },
+  {
+    "anio": 2022,
+    "via": "terrestre",
+    "frontera": "El Carmen",
+    "viajeros": 44803,
+    "parcial": false
+  },
+  {
+    "anio": 2022,
+    "via": "terrestre",
+    "frontera": "La Mesilla",
+    "viajeros": 18639,
+    "parcial": false
+  },
+  {
+    "anio": 2022,
+    "via": "terrestre",
+    "frontera": "El Naranjo",
+    "viajeros": 3933,
+    "parcial": false
+  },
+  {
+    "anio": 2022,
+    "via": "terrestre",
+    "frontera": "Bethel",
+    "viajeros": 954,
+    "parcial": false
+  },
+  {
+    "anio": 2022,
+    "via": "terrestre",
+    "frontera": "Gracias a Dios",
+    "viajeros": 1637,
+    "parcial": false
+  },
+  {
+    "anio": 2022,
+    "via": "terrestre",
+    "frontera": "Melchor de Mencos",
+    "viajeros": 83577,
+    "parcial": false
+  },
+  {
+    "anio": 2023,
+    "via": "aerea",
+    "frontera": "La Aurora",
+    "viajeros": 984552,
+    "parcial": false
+  },
+  {
+    "anio": 2023,
+    "via": "aerea",
+    "frontera": "Mundo Maya",
+    "viajeros": 1288,
+    "parcial": false
+  },
+  {
+    "anio": 2023,
+    "via": "terrestre",
+    "frontera": "Valle Nuevo",
+    "viajeros": 602959,
+    "parcial": false
+  },
+  {
+    "anio": 2023,
+    "via": "terrestre",
+    "frontera": "Pedro de Alvarado",
+    "viajeros": 314715,
+    "parcial": false
+  },
+  {
+    "anio": 2023,
+    "via": "terrestre",
+    "frontera": "San Cristóbal",
+    "viajeros": 268747,
+    "parcial": false
+  },
+  {
+    "anio": 2023,
+    "via": "terrestre",
+    "frontera": "La Ermita (Nueva Anguiatú)",
+    "viajeros": 282711,
+    "parcial": false
+  },
+  {
+    "anio": 2023,
+    "via": "terrestre",
+    "frontera": "Agua Caliente",
+    "viajeros": 61599,
+    "parcial": false
+  },
+  {
+    "anio": 2023,
+    "via": "terrestre",
+    "frontera": "El Florido",
+    "viajeros": 60508,
+    "parcial": false
+  },
+  {
+    "anio": 2023,
+    "via": "terrestre",
+    "frontera": "El Cinchado / El Corinto",
+    "viajeros": 171448,
+    "parcial": false
+  },
+  {
+    "anio": 2023,
+    "via": "terrestre",
+    "frontera": "Tecún Umán",
+    "viajeros": 14639,
+    "parcial": false
+  },
+  {
+    "anio": 2023,
+    "via": "terrestre",
+    "frontera": "El Carmen",
+    "viajeros": 11459,
+    "parcial": false
+  },
+  {
+    "anio": 2023,
+    "via": "terrestre",
+    "frontera": "La Mesilla",
+    "viajeros": 5898,
+    "parcial": false
+  },
+  {
+    "anio": 2023,
+    "via": "terrestre",
+    "frontera": "Bethel",
+    "viajeros": 868,
+    "parcial": false
+  },
+  {
+    "anio": 2023,
+    "via": "terrestre",
+    "frontera": "Gracias a Dios",
+    "viajeros": 323,
+    "parcial": false
+  },
+  {
+    "anio": 2023,
+    "via": "terrestre",
+    "frontera": "Melchor de Mencos",
+    "viajeros": 136071,
+    "parcial": false
+  },
+  {
+    "anio": 2023,
+    "via": "terrestre",
+    "frontera": "Otra frontera",
+    "viajeros": 41,
+    "parcial": false
+  },
+  {
+    "anio": 2024,
+    "via": "aerea",
+    "frontera": "La Aurora",
+    "viajeros": 1142624,
+    "parcial": false
+  },
+  {
+    "anio": 2024,
+    "via": "aerea",
+    "frontera": "Mundo Maya",
+    "viajeros": 729,
+    "parcial": false
+  },
+  {
+    "anio": 2024,
+    "via": "terrestre",
+    "frontera": "Valle Nuevo",
+    "viajeros": 703432,
+    "parcial": false
+  },
+  {
+    "anio": 2024,
+    "via": "terrestre",
+    "frontera": "Pedro de Alvarado",
+    "viajeros": 350539,
+    "parcial": false
+  },
+  {
+    "anio": 2024,
+    "via": "terrestre",
+    "frontera": "San Cristóbal",
+    "viajeros": 332799,
+    "parcial": false
+  },
+  {
+    "anio": 2024,
+    "via": "terrestre",
+    "frontera": "La Ermita (Nueva Anguiatú)",
+    "viajeros": 300163,
+    "parcial": false
+  },
+  {
+    "anio": 2024,
+    "via": "terrestre",
+    "frontera": "Agua Caliente",
+    "viajeros": 55423,
+    "parcial": false
+  },
+  {
+    "anio": 2024,
+    "via": "terrestre",
+    "frontera": "El Florido",
+    "viajeros": 73790,
+    "parcial": false
+  },
+  {
+    "anio": 2024,
+    "via": "terrestre",
+    "frontera": "El Cinchado / El Corinto",
+    "viajeros": 156618,
+    "parcial": false
+  },
+  {
+    "anio": 2024,
+    "via": "terrestre",
+    "frontera": "Tecún Umán",
+    "viajeros": 16410,
+    "parcial": false
+  },
+  {
+    "anio": 2024,
+    "via": "terrestre",
+    "frontera": "El Carmen",
+    "viajeros": 12955,
+    "parcial": false
+  },
+  {
+    "anio": 2024,
+    "via": "terrestre",
+    "frontera": "La Mesilla",
+    "viajeros": 6548,
+    "parcial": false
+  },
+  {
+    "anio": 2024,
+    "via": "terrestre",
+    "frontera": "Bethel",
+    "viajeros": 90,
+    "parcial": false
+  },
+  {
+    "anio": 2024,
+    "via": "terrestre",
+    "frontera": "Gracias a Dios",
+    "viajeros": 901,
+    "parcial": false
+  },
+  {
+    "anio": 2024,
+    "via": "terrestre",
+    "frontera": "Melchor de Mencos",
+    "viajeros": 121406,
+    "parcial": false
+  },
+  {
+    "anio": 2024,
+    "via": "terrestre",
+    "frontera": "Otra frontera",
+    "viajeros": 8,
+    "parcial": false
+  },
+  {
+    "anio": 2025,
+    "via": "aerea",
+    "frontera": "La Aurora",
+    "viajeros": 1188605,
+    "parcial": false
+  },
+  {
+    "anio": 2025,
+    "via": "aerea",
+    "frontera": "Mundo Maya",
+    "viajeros": 366,
+    "parcial": false
+  },
+  {
+    "anio": 2025,
+    "via": "terrestre",
+    "frontera": "Valle Nuevo",
+    "viajeros": 699114,
+    "parcial": false
+  },
+  {
+    "anio": 2025,
+    "via": "terrestre",
+    "frontera": "Pedro de Alvarado",
+    "viajeros": 360487,
+    "parcial": false
+  },
+  {
+    "anio": 2025,
+    "via": "terrestre",
+    "frontera": "San Cristóbal",
+    "viajeros": 368060,
+    "parcial": false
+  },
+  {
+    "anio": 2025,
+    "via": "terrestre",
+    "frontera": "La Ermita (Nueva Anguiatú)",
+    "viajeros": 297657,
+    "parcial": false
+  },
+  {
+    "anio": 2025,
+    "via": "terrestre",
+    "frontera": "Agua Caliente",
+    "viajeros": 35964,
+    "parcial": false
+  },
+  {
+    "anio": 2025,
+    "via": "terrestre",
+    "frontera": "El Florido",
+    "viajeros": 84758,
+    "parcial": false
+  },
+  {
+    "anio": 2025,
+    "via": "terrestre",
+    "frontera": "El Cinchado / El Corinto",
+    "viajeros": 123851,
+    "parcial": false
+  },
+  {
+    "anio": 2025,
+    "via": "terrestre",
+    "frontera": "Tecún Umán",
+    "viajeros": 24155,
+    "parcial": false
+  },
+  {
+    "anio": 2025,
+    "via": "terrestre",
+    "frontera": "El Carmen",
+    "viajeros": 20150,
+    "parcial": false
+  },
+  {
+    "anio": 2025,
+    "via": "terrestre",
+    "frontera": "La Mesilla",
+    "viajeros": 10715,
+    "parcial": false
+  },
+  {
+    "anio": 2025,
+    "via": "terrestre",
+    "frontera": "Bethel",
+    "viajeros": 368,
+    "parcial": false
+  },
+  {
+    "anio": 2025,
+    "via": "terrestre",
+    "frontera": "Gracias a Dios",
+    "viajeros": 529,
+    "parcial": false
+  },
+  {
+    "anio": 2025,
+    "via": "terrestre",
+    "frontera": "Melchor de Mencos",
+    "viajeros": 137509,
+    "parcial": false
+  },
+  {
+    "anio": 2026,
+    "via": "aerea",
+    "frontera": "La Aurora",
+    "viajeros": 643675,
+    "parcial": true
+  },
+  {
+    "anio": 2026,
+    "via": "aerea",
+    "frontera": "Mundo Maya",
+    "viajeros": 165,
+    "parcial": true
+  },
+  {
+    "anio": 2026,
+    "via": "terrestre",
+    "frontera": "Valle Nuevo",
+    "viajeros": 272189,
+    "parcial": true
+  },
+  {
+    "anio": 2026,
+    "via": "terrestre",
+    "frontera": "Pedro de Alvarado",
+    "viajeros": 152131,
+    "parcial": true
+  },
+  {
+    "anio": 2026,
+    "via": "terrestre",
+    "frontera": "San Cristóbal",
+    "viajeros": 170153,
+    "parcial": true
+  },
+  {
+    "anio": 2026,
+    "via": "terrestre",
+    "frontera": "La Ermita (Nueva Anguiatú)",
+    "viajeros": 110655,
+    "parcial": true
+  },
+  {
+    "anio": 2026,
+    "via": "terrestre",
+    "frontera": "Agua Caliente",
+    "viajeros": 31398,
+    "parcial": true
+  },
+  {
+    "anio": 2026,
+    "via": "terrestre",
+    "frontera": "El Florido",
+    "viajeros": 49305,
+    "parcial": true
+  },
+  {
+    "anio": 2026,
+    "via": "terrestre",
+    "frontera": "El Cinchado / El Corinto",
+    "viajeros": 67028,
+    "parcial": true
+  },
+  {
+    "anio": 2026,
+    "via": "terrestre",
+    "frontera": "Tecún Umán",
+    "viajeros": 5502,
+    "parcial": true
+  },
+  {
+    "anio": 2026,
+    "via": "terrestre",
+    "frontera": "El Carmen",
+    "viajeros": 2514,
+    "parcial": true
+  },
+  {
+    "anio": 2026,
+    "via": "terrestre",
+    "frontera": "La Mesilla",
+    "viajeros": 5055,
+    "parcial": true
+  },
+  {
+    "anio": 2026,
+    "via": "terrestre",
+    "frontera": "Bethel",
+    "viajeros": 91,
+    "parcial": true
+  },
+  {
+    "anio": 2026,
+    "via": "terrestre",
+    "frontera": "Gracias a Dios",
+    "viajeros": 113,
+    "parcial": true
+  },
+  {
+    "anio": 2026,
+    "via": "terrestre",
+    "frontera": "Melchor de Mencos",
+    "viajeros": 66645,
+    "parcial": true
+  }
+]

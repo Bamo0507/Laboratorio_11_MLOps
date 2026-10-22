@@ -1,0 +1,3404 @@
+[
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2021-04",
+    "real": 59743,
+    "prediccion": 85017,
+    "limiteInferior": 44851,
+    "limiteSuperior": 161155
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2021-05",
+    "real": 73873,
+    "prediccion": 85017,
+    "limiteInferior": 34413,
+    "limiteSuperior": 210033
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2021-06",
+    "real": 95146,
+    "prediccion": 85017,
+    "limiteInferior": 28084,
+    "limiteSuperior": 257373
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2021-07",
+    "real": 97595,
+    "prediccion": 85017,
+    "limiteInferior": 23661,
+    "limiteSuperior": 305479
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2021-08",
+    "real": 72327,
+    "prediccion": 85017,
+    "limiteInferior": 20346,
+    "limiteSuperior": 355260
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2021-09",
+    "real": 67023,
+    "prediccion": 85017,
+    "limiteInferior": 17750,
+    "limiteSuperior": 407213
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2021-10",
+    "real": 83528,
+    "prediccion": 85017,
+    "limiteInferior": 15656,
+    "limiteSuperior": 461669
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2021-11",
+    "real": 98578,
+    "prediccion": 85017,
+    "limiteInferior": 13930,
+    "limiteSuperior": 518880
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2021-12",
+    "real": 223569,
+    "prediccion": 85017,
+    "limiteInferior": 12482,
+    "limiteSuperior": 579054
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2022-01",
+    "real": 134303,
+    "prediccion": 85017,
+    "limiteInferior": 11252,
+    "limiteSuperior": 642376
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2022-02",
+    "real": 193904,
+    "prediccion": 85017,
+    "limiteInferior": 10194,
+    "limiteSuperior": 709018
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2022-03",
+    "real": 227886,
+    "prediccion": 85017,
+    "limiteInferior": 9277,
+    "limiteSuperior": 779143
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2022-04",
+    "real": 292648,
+    "prediccion": 85017,
+    "limiteInferior": 8474,
+    "limiteSuperior": 852909
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2022-05",
+    "real": 260013,
+    "prediccion": 85017,
+    "limiteInferior": 7768,
+    "limiteSuperior": 930475
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2022-06",
+    "real": 269366,
+    "prediccion": 85017,
+    "limiteInferior": 7142,
+    "limiteSuperior": 1011996
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2022-07",
+    "real": 306246,
+    "prediccion": 85017,
+    "limiteInferior": 6585,
+    "limiteSuperior": 1097630
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2022-08",
+    "real": 297602,
+    "prediccion": 85017,
+    "limiteInferior": 6087,
+    "limiteSuperior": 1187536
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2022-09",
+    "real": 246464,
+    "prediccion": 85017,
+    "limiteInferior": 5639,
+    "limiteSuperior": 1281876
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2022-10",
+    "real": 281938,
+    "prediccion": 85017,
+    "limiteInferior": 5235,
+    "limiteSuperior": 1380815
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2022-11",
+    "real": 318693,
+    "prediccion": 85017,
+    "limiteInferior": 4869,
+    "limiteSuperior": 1484518
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2022-12",
+    "real": 400266,
+    "prediccion": 85017,
+    "limiteInferior": 4537,
+    "limiteSuperior": 1593157
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2023-01",
+    "real": 258166,
+    "prediccion": 85017,
+    "limiteInferior": 4235,
+    "limiteSuperior": 1706907
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2023-02",
+    "real": 198752,
+    "prediccion": 85017,
+    "limiteInferior": 3958,
+    "limiteSuperior": 1825945
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2023-03",
+    "real": 251840,
+    "prediccion": 85017,
+    "limiteInferior": 3706,
+    "limiteSuperior": 1950454
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2023-04",
+    "real": 283179,
+    "prediccion": 85017,
+    "limiteInferior": 3474,
+    "limiteSuperior": 2080620
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2023-05",
+    "real": 213191,
+    "prediccion": 85017,
+    "limiteInferior": 3261,
+    "limiteSuperior": 2216635
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2023-06",
+    "real": 224580,
+    "prediccion": 85017,
+    "limiteInferior": 3064,
+    "limiteSuperior": 2358694
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2023-07",
+    "real": 257627,
+    "prediccion": 85017,
+    "limiteInferior": 2883,
+    "limiteSuperior": 2506998
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2023-08",
+    "real": 264514,
+    "prediccion": 85017,
+    "limiteInferior": 2715,
+    "limiteSuperior": 2661751
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2023-09",
+    "real": 218486,
+    "prediccion": 85017,
+    "limiteInferior": 2560,
+    "limiteSuperior": 2823164
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2023-10",
+    "real": 164499,
+    "prediccion": 85017,
+    "limiteInferior": 2416,
+    "limiteSuperior": 2991452
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2023-11",
+    "real": 255894,
+    "prediccion": 85017,
+    "limiteInferior": 2282,
+    "limiteSuperior": 3166836
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2023-12",
+    "real": 327098,
+    "prediccion": 85017,
+    "limiteInferior": 2158,
+    "limiteSuperior": 3349542
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2024-01",
+    "real": 292732,
+    "prediccion": 85017,
+    "limiteInferior": 2042,
+    "limiteSuperior": 3539802
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2024-02",
+    "real": 265991,
+    "prediccion": 85017,
+    "limiteInferior": 1934,
+    "limiteSuperior": 3737852
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2024-03",
+    "real": 322310,
+    "prediccion": 85017,
+    "limiteInferior": 1833,
+    "limiteSuperior": 3943936
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2024-04",
+    "real": 240989,
+    "prediccion": 85017,
+    "limiteInferior": 1738,
+    "limiteSuperior": 4158302
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2024-05",
+    "real": 238808,
+    "prediccion": 85017,
+    "limiteInferior": 1650,
+    "limiteSuperior": 4381206
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2024-06",
+    "real": 234781,
+    "prediccion": 85017,
+    "limiteInferior": 1567,
+    "limiteSuperior": 4612909
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2024-07",
+    "real": 266975,
+    "prediccion": 85017,
+    "limiteInferior": 1489,
+    "limiteSuperior": 4853677
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2024-08",
+    "real": 282102,
+    "prediccion": 85017,
+    "limiteInferior": 1416,
+    "limiteSuperior": 5103785
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2024-09",
+    "real": 215659,
+    "prediccion": 85017,
+    "limiteInferior": 1348,
+    "limiteSuperior": 5363513
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2024-10",
+    "real": 249666,
+    "prediccion": 85017,
+    "limiteInferior": 1283,
+    "limiteSuperior": 5633148
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2024-11",
+    "real": 302674,
+    "prediccion": 85017,
+    "limiteInferior": 1222,
+    "limiteSuperior": 5912984
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2024-12",
+    "real": 361750,
+    "prediccion": 85017,
+    "limiteInferior": 1165,
+    "limiteSuperior": 6203322
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2025-01",
+    "real": 289544,
+    "prediccion": 85017,
+    "limiteInferior": 1111,
+    "limiteSuperior": 6504469
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2025-02",
+    "real": 254429,
+    "prediccion": 85017,
+    "limiteInferior": 1060,
+    "limiteSuperior": 6816741
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2025-03",
+    "real": 278538,
+    "prediccion": 85017,
+    "limiteInferior": 1012,
+    "limiteSuperior": 7140461
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2025-04",
+    "real": 300288,
+    "prediccion": 85017,
+    "limiteInferior": 967,
+    "limiteSuperior": 7475958
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2025-05",
+    "real": 247982,
+    "prediccion": 85017,
+    "limiteInferior": 924,
+    "limiteSuperior": 7823571
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2025-06",
+    "real": 254190,
+    "prediccion": 85017,
+    "limiteInferior": 883,
+    "limiteSuperior": 8183645
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2025-07",
+    "real": 283389,
+    "prediccion": 85017,
+    "limiteInferior": 845,
+    "limiteSuperior": 8556534
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2025-08",
+    "real": 293781,
+    "prediccion": 85017,
+    "limiteInferior": 808,
+    "limiteSuperior": 8942599
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2025-09",
+    "real": 218070,
+    "prediccion": 85017,
+    "limiteInferior": 774,
+    "limiteSuperior": 9342211
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2025-10",
+    "real": 255921,
+    "prediccion": 85017,
+    "limiteInferior": 741,
+    "limiteSuperior": 9755748
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2025-11",
+    "real": 310586,
+    "prediccion": 85017,
+    "limiteInferior": 710,
+    "limiteSuperior": 10183598
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2025-12",
+    "real": 365573,
+    "prediccion": 85017,
+    "limiteInferior": 680,
+    "limiteSuperior": 10626157
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2026-01",
+    "real": 300664,
+    "prediccion": 85017,
+    "limiteInferior": 652,
+    "limiteSuperior": 11083830
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2026-02",
+    "real": 236844,
+    "prediccion": 85017,
+    "limiteInferior": 625,
+    "limiteSuperior": 11557030
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2026-03",
+    "real": 291160,
+    "prediccion": 85017,
+    "limiteInferior": 600,
+    "limiteSuperior": 12046182
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2026-04",
+    "real": 260951,
+    "prediccion": 85017,
+    "limiteInferior": 576,
+    "limiteSuperior": 12551718
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2026-05",
+    "real": 241312,
+    "prediccion": 85017,
+    "limiteInferior": 553,
+    "limiteSuperior": 13074082
+  },
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "fecha": "2026-06",
+    "real": 245688,
+    "prediccion": 85017,
+    "limiteInferior": 531,
+    "limiteSuperior": 13613725
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2021-04",
+    "real": 59743,
+    "prediccion": 35581,
+    "limiteInferior": 19987,
+    "limiteSuperior": 63342
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2021-05",
+    "real": 73873,
+    "prediccion": 29662,
+    "limiteInferior": 13121,
+    "limiteSuperior": 67054
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2021-06",
+    "real": 95146,
+    "prediccion": 33943,
+    "limiteInferior": 12500,
+    "limiteSuperior": 92170
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2021-07",
+    "real": 97595,
+    "prediccion": 37722,
+    "limiteInferior": 11903,
+    "limiteSuperior": 119551
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2021-08",
+    "real": 72327,
+    "prediccion": 39423,
+    "limiteInferior": 10856,
+    "limiteSuperior": 143165
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2021-09",
+    "real": 67023,
+    "prediccion": 32204,
+    "limiteInferior": 7841,
+    "limiteSuperior": 132268
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2021-10",
+    "real": 83528,
+    "prediccion": 35124,
+    "limiteInferior": 7637,
+    "limiteSuperior": 161549
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2021-11",
+    "real": 98578,
+    "prediccion": 56495,
+    "limiteInferior": 11055,
+    "limiteSuperior": 288713
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2021-12",
+    "real": 223569,
+    "prediccion": 69698,
+    "limiteInferior": 12353,
+    "limiteSuperior": 393237
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2022-01",
+    "real": 134303,
+    "prediccion": 74392,
+    "limiteInferior": 12007,
+    "limiteSuperior": 460901
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2022-02",
+    "real": 193904,
+    "prediccion": 54392,
+    "limiteInferior": 8031,
+    "limiteSuperior": 368362
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2022-03",
+    "real": 227886,
+    "prediccion": 39765,
+    "limiteInferior": 5393,
+    "limiteSuperior": 293212
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2022-04",
+    "real": 292648,
+    "prediccion": 4818,
+    "limiteInferior": 566,
+    "limiteSuperior": 41008
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2022-05",
+    "real": 260013,
+    "prediccion": 4453,
+    "limiteInferior": 457,
+    "limiteSuperior": 43364
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2022-06",
+    "real": 269366,
+    "prediccion": 5284,
+    "limiteInferior": 478,
+    "limiteSuperior": 58416
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2022-07",
+    "real": 306246,
+    "prediccion": 5976,
+    "limiteInferior": 479,
+    "limiteSuperior": 74537
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2022-08",
+    "real": 297602,
+    "prediccion": 6612,
+    "limiteInferior": 472,
+    "limiteSuperior": 92531
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2022-09",
+    "real": 246464,
+    "prediccion": 5409,
+    "limiteInferior": 346,
+    "limiteSuperior": 84524
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2022-10",
+    "real": 281938,
+    "prediccion": 6718,
+    "limiteInferior": 387,
+    "limiteSuperior": 116730
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2022-11",
+    "real": 318693,
+    "prediccion": 16946,
+    "limiteInferior": 880,
+    "limiteSuperior": 326134
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2022-12",
+    "real": 400266,
+    "prediccion": 18810,
+    "limiteInferior": 885,
+    "limiteSuperior": 399622
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2023-01",
+    "real": 258166,
+    "prediccion": 26452,
+    "limiteInferior": 1131,
+    "limiteSuperior": 618419
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2023-02",
+    "real": 198752,
+    "prediccion": 16676,
+    "limiteInferior": 650,
+    "limiteSuperior": 427823
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2023-03",
+    "real": 251840,
+    "prediccion": 20636,
+    "limiteInferior": 735,
+    "limiteSuperior": 579443
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2023-04",
+    "real": 283179,
+    "prediccion": 5690,
+    "limiteInferior": 163,
+    "limiteSuperior": 198247
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2023-05",
+    "real": 213191,
+    "prediccion": 4911,
+    "limiteInferior": 115,
+    "limiteSuperior": 209703
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2023-06",
+    "real": 224580,
+    "prediccion": 5689,
+    "limiteInferior": 110,
+    "limiteSuperior": 294589
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2023-07",
+    "real": 257627,
+    "prediccion": 6360,
+    "limiteInferior": 102,
+    "limiteSuperior": 395816
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2023-08",
+    "real": 264514,
+    "prediccion": 6775,
+    "limiteInferior": 91,
+    "limiteSuperior": 502856
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2023-09",
+    "real": 218486,
+    "prediccion": 5537,
+    "limiteInferior": 63,
+    "limiteSuperior": 486713
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2023-10",
+    "real": 164499,
+    "prediccion": 6310,
+    "limiteInferior": 61,
+    "limiteSuperior": 652747
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2023-11",
+    "real": 255894,
+    "prediccion": 11808,
+    "limiteInferior": 98,
+    "limiteSuperior": 1429868
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2023-12",
+    "real": 327098,
+    "prediccion": 14059,
+    "limiteInferior": 100,
+    "limiteSuperior": 1982757
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2024-01",
+    "real": 292732,
+    "prediccion": 16465,
+    "limiteInferior": 101,
+    "limiteSuperior": 2692187
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2024-02",
+    "real": 265991,
+    "prediccion": 11453,
+    "limiteInferior": 61,
+    "limiteSuperior": 2162005
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2024-03",
+    "real": 322310,
+    "prediccion": 9995,
+    "limiteInferior": 46,
+    "limiteSuperior": 2170181
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2024-04",
+    "real": 240989,
+    "prediccion": 1597,
+    "limiteInferior": 6,
+    "limiteSuperior": 425567
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2024-05",
+    "real": 238808,
+    "prediccion": 1443,
+    "limiteInferior": 4,
+    "limiteSuperior": 468346
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2024-06",
+    "real": 234781,
+    "prediccion": 1698,
+    "limiteInferior": 4,
+    "limiteSuperior": 667193
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2024-07",
+    "real": 266975,
+    "prediccion": 1913,
+    "limiteInferior": 4,
+    "limiteSuperior": 904433
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2024-08",
+    "real": 282102,
+    "prediccion": 2090,
+    "limiteInferior": 4,
+    "limiteSuperior": 1182473
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2024-09",
+    "real": 215659,
+    "prediccion": 1709,
+    "limiteInferior": 3,
+    "limiteSuperior": 1151639
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2024-10",
+    "real": 249666,
+    "prediccion": 2062,
+    "limiteInferior": 3,
+    "limiteSuperior": 1647207
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2024-11",
+    "real": 302674,
+    "prediccion": 4704,
+    "limiteInferior": 5,
+    "limiteSuperior": 4435905
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2024-12",
+    "real": 361750,
+    "prediccion": 5346,
+    "limiteInferior": 5,
+    "limiteSuperior": 5928075
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2025-01",
+    "real": 289544,
+    "prediccion": 7069,
+    "limiteInferior": 5,
+    "limiteSuperior": 9183225
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2025-02",
+    "real": 254429,
+    "prediccion": 4606,
+    "limiteInferior": 3,
+    "limiteSuperior": 6986822
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2025-03",
+    "real": 278538,
+    "prediccion": 5068,
+    "limiteInferior": 3,
+    "limiteSuperior": 8946416
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2025-04",
+    "real": 300288,
+    "prediccion": 1163,
+    "limiteInferior": 1,
+    "limiteSuperior": 2597226
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2025-05",
+    "real": 247982,
+    "prediccion": 1019,
+    "limiteInferior": 0,
+    "limiteSuperior": 2859727
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2025-06",
+    "real": 254190,
+    "prediccion": 1187,
+    "limiteInferior": 0,
+    "limiteSuperior": 4157265
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2025-07",
+    "real": 283389,
+    "prediccion": 1331,
+    "limiteInferior": 0,
+    "limiteSuperior": 5782488
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2025-08",
+    "real": 293781,
+    "prediccion": 1429,
+    "limiteInferior": 0,
+    "limiteSuperior": 7668114
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2025-09",
+    "real": 218070,
+    "prediccion": 1169,
+    "limiteInferior": 0,
+    "limiteSuperior": 7698101
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2025-10",
+    "real": 255921,
+    "prediccion": 1357,
+    "limiteInferior": 0,
+    "limiteSuperior": 10930229
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2025-11",
+    "real": 310586,
+    "prediccion": 2715,
+    "limiteInferior": 0,
+    "limiteSuperior": 26609534
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2025-12",
+    "real": 365573,
+    "prediccion": 3183,
+    "limiteInferior": 0,
+    "limiteSuperior": 37801931
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2026-01",
+    "real": 300664,
+    "prediccion": 3883,
+    "limiteInferior": 0,
+    "limiteSuperior": 55678934
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2026-02",
+    "real": 236844,
+    "prediccion": 2642,
+    "limiteInferior": 0,
+    "limiteSuperior": 45576301
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2026-03",
+    "real": 291160,
+    "prediccion": 2493,
+    "limiteInferior": 0,
+    "limiteSuperior": 51551738
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2026-04",
+    "real": 260951,
+    "prediccion": 450,
+    "limiteInferior": 0,
+    "limiteSuperior": 11853554
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2026-05",
+    "real": 241312,
+    "prediccion": 402,
+    "limiteInferior": 0,
+    "limiteSuperior": 13426565
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "fecha": "2026-06",
+    "real": 245688,
+    "prediccion": 472,
+    "limiteInferior": 0,
+    "limiteSuperior": 19842121
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2021-04",
+    "real": 59743,
+    "prediccion": 89553,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2021-05",
+    "real": 73873,
+    "prediccion": 97966,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2021-06",
+    "real": 95146,
+    "prediccion": 105547,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2021-07",
+    "real": 97595,
+    "prediccion": 112553,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2021-08",
+    "real": 72327,
+    "prediccion": 118910,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2021-09",
+    "real": 67023,
+    "prediccion": 124238,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2021-10",
+    "real": 83528,
+    "prediccion": 128375,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2021-11",
+    "real": 98578,
+    "prediccion": 132325,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2021-12",
+    "real": 223569,
+    "prediccion": 136244,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2022-01",
+    "real": 134303,
+    "prediccion": 139742,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2022-02",
+    "real": 193904,
+    "prediccion": 142835,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2022-03",
+    "real": 227886,
+    "prediccion": 145626,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2022-04",
+    "real": 292648,
+    "prediccion": 148226,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2022-05",
+    "real": 260013,
+    "prediccion": 150647,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2022-06",
+    "real": 269366,
+    "prediccion": 152909,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2022-07",
+    "real": 306246,
+    "prediccion": 155026,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2022-08",
+    "real": 297602,
+    "prediccion": 157011,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2022-09",
+    "real": 246464,
+    "prediccion": 158877,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2022-10",
+    "real": 281938,
+    "prediccion": 160642,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2022-11",
+    "real": 318693,
+    "prediccion": 162317,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2022-12",
+    "real": 400266,
+    "prediccion": 163912,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2023-01",
+    "real": 258166,
+    "prediccion": 165430,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2023-02",
+    "real": 198752,
+    "prediccion": 166881,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2023-03",
+    "real": 251840,
+    "prediccion": 168269,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2023-04",
+    "real": 283179,
+    "prediccion": 169603,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2023-05",
+    "real": 213191,
+    "prediccion": 170885,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2023-06",
+    "real": 224580,
+    "prediccion": 172121,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2023-07",
+    "real": 257627,
+    "prediccion": 173314,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2023-08",
+    "real": 264514,
+    "prediccion": 174468,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2023-09",
+    "real": 218486,
+    "prediccion": 175586,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2023-10",
+    "real": 164499,
+    "prediccion": 176671,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2023-11",
+    "real": 255894,
+    "prediccion": 177726,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2023-12",
+    "real": 327098,
+    "prediccion": 178753,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2024-01",
+    "real": 292732,
+    "prediccion": 179754,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2024-02",
+    "real": 265991,
+    "prediccion": 180732,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2024-03",
+    "real": 322310,
+    "prediccion": 181688,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2024-04",
+    "real": 240989,
+    "prediccion": 182624,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2024-05",
+    "real": 238808,
+    "prediccion": 183541,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2024-06",
+    "real": 234781,
+    "prediccion": 184442,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2024-07",
+    "real": 266975,
+    "prediccion": 185327,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2024-08",
+    "real": 282102,
+    "prediccion": 186198,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2024-09",
+    "real": 215659,
+    "prediccion": 187056,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2024-10",
+    "real": 249666,
+    "prediccion": 187902,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2024-11",
+    "real": 302674,
+    "prediccion": 188737,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2024-12",
+    "real": 361750,
+    "prediccion": 189563,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2025-01",
+    "real": 289544,
+    "prediccion": 190380,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2025-02",
+    "real": 254429,
+    "prediccion": 191189,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2025-03",
+    "real": 278538,
+    "prediccion": 191991,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2025-04",
+    "real": 300288,
+    "prediccion": 192787,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2025-05",
+    "real": 247982,
+    "prediccion": 193578,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2025-06",
+    "real": 254190,
+    "prediccion": 194364,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2025-07",
+    "real": 283389,
+    "prediccion": 195147,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2025-08",
+    "real": 293781,
+    "prediccion": 195926,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2025-09",
+    "real": 218070,
+    "prediccion": 196704,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2025-10",
+    "real": 255921,
+    "prediccion": 197480,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2025-11",
+    "real": 310586,
+    "prediccion": 198255,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2025-12",
+    "real": 365573,
+    "prediccion": 199030,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2026-01",
+    "real": 300664,
+    "prediccion": 199805,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2026-02",
+    "real": 236844,
+    "prediccion": 200582,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2026-03",
+    "real": 291160,
+    "prediccion": 201360,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2026-04",
+    "real": 260951,
+    "prediccion": 202141,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2026-05",
+    "real": 241312,
+    "prediccion": 202925,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "fecha": "2026-06",
+    "real": 245688,
+    "prediccion": 203713,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2021-04",
+    "real": 33042,
+    "prediccion": 58806,
+    "limiteInferior": 22657,
+    "limiteSuperior": 152629
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2021-05",
+    "real": 58366,
+    "prediccion": 58806,
+    "limiteInferior": 15263,
+    "limiteSuperior": 226574
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2021-06",
+    "real": 73409,
+    "prediccion": 58806,
+    "limiteInferior": 11272,
+    "limiteSuperior": 306805
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2021-07",
+    "real": 70338,
+    "prediccion": 58806,
+    "limiteInferior": 8730,
+    "limiteSuperior": 396141
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2021-08",
+    "real": 50329,
+    "prediccion": 58806,
+    "limiteInferior": 6970,
+    "limiteSuperior": 496172
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2021-09",
+    "real": 45551,
+    "prediccion": 58806,
+    "limiteInferior": 5686,
+    "limiteSuperior": 608184
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2021-10",
+    "real": 58214,
+    "prediccion": 58806,
+    "limiteInferior": 4715,
+    "limiteSuperior": 733380
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2021-11",
+    "real": 68341,
+    "prediccion": 58806,
+    "limiteInferior": 3961,
+    "limiteSuperior": 872963
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2021-12",
+    "real": 122055,
+    "prediccion": 58806,
+    "limiteInferior": 3363,
+    "limiteSuperior": 1028167
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2022-01",
+    "real": 97425,
+    "prediccion": 58806,
+    "limiteInferior": 2881,
+    "limiteSuperior": 1200276
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2022-02",
+    "real": 80430,
+    "prediccion": 58806,
+    "limiteInferior": 2487,
+    "limiteSuperior": 1390637
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2022-03",
+    "real": 106039,
+    "prediccion": 58806,
+    "limiteInferior": 2160,
+    "limiteSuperior": 1600666
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2022-04",
+    "real": 120691,
+    "prediccion": 58806,
+    "limiteInferior": 1888,
+    "limiteSuperior": 1831856
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2022-05",
+    "real": 111743,
+    "prediccion": 58806,
+    "limiteInferior": 1658,
+    "limiteSuperior": 2085779
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2022-06",
+    "real": 123396,
+    "prediccion": 58806,
+    "limiteInferior": 1463,
+    "limiteSuperior": 2364097
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2022-07",
+    "real": 124569,
+    "prediccion": 58806,
+    "limiteInferior": 1296,
+    "limiteSuperior": 2668562
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2022-08",
+    "real": 108814,
+    "prediccion": 58806,
+    "limiteInferior": 1152,
+    "limiteSuperior": 3001023
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2022-09",
+    "real": 103185,
+    "prediccion": 58806,
+    "limiteInferior": 1028,
+    "limiteSuperior": 3363430
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2022-10",
+    "real": 122906,
+    "prediccion": 58806,
+    "limiteInferior": 920,
+    "limiteSuperior": 3757838
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2022-11",
+    "real": 131130,
+    "prediccion": 58806,
+    "limiteInferior": 826,
+    "limiteSuperior": 4186416
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2022-12",
+    "real": 158073,
+    "prediccion": 58806,
+    "limiteInferior": 743,
+    "limiteSuperior": 4651447
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2023-01",
+    "real": 76213,
+    "prediccion": 58806,
+    "limiteInferior": 671,
+    "limiteSuperior": 5155335
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2023-02",
+    "real": 75139,
+    "prediccion": 58806,
+    "limiteInferior": 607,
+    "limiteSuperior": 5700613
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2023-03",
+    "real": 92427,
+    "prediccion": 58806,
+    "limiteInferior": 550,
+    "limiteSuperior": 6289945
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2023-04",
+    "real": 79177,
+    "prediccion": 58806,
+    "limiteInferior": 499,
+    "limiteSuperior": 6926134
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2023-05",
+    "real": 71800,
+    "prediccion": 58806,
+    "limiteInferior": 454,
+    "limiteSuperior": 7612129
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2023-06",
+    "real": 87748,
+    "prediccion": 58806,
+    "limiteInferior": 414,
+    "limiteSuperior": 8351028
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2023-07",
+    "real": 98942,
+    "prediccion": 58806,
+    "limiteInferior": 378,
+    "limiteSuperior": 9146086
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2023-08",
+    "real": 79084,
+    "prediccion": 58806,
+    "limiteInferior": 346,
+    "limiteSuperior": 10000724
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2023-09",
+    "real": 67300,
+    "prediccion": 58806,
+    "limiteInferior": 317,
+    "limiteSuperior": 10918532
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2023-10",
+    "real": 59320,
+    "prediccion": 58806,
+    "limiteInferior": 291,
+    "limiteSuperior": 11903280
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2023-11",
+    "real": 89115,
+    "prediccion": 58806,
+    "limiteInferior": 267,
+    "limiteSuperior": 12958923
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2023-12",
+    "real": 108287,
+    "prediccion": 58806,
+    "limiteInferior": 245,
+    "limiteSuperior": 14089608
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2024-01",
+    "real": 95943,
+    "prediccion": 58806,
+    "limiteInferior": 226,
+    "limiteSuperior": 15299686
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2024-02",
+    "real": 98780,
+    "prediccion": 58806,
+    "limiteInferior": 208,
+    "limiteSuperior": 16593716
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2024-03",
+    "real": 108306,
+    "prediccion": 58806,
+    "limiteInferior": 192,
+    "limiteSuperior": 17976476
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2024-04",
+    "real": 87832,
+    "prediccion": 58806,
+    "limiteInferior": 178,
+    "limiteSuperior": 19452971
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2024-05",
+    "real": 87971,
+    "prediccion": 58806,
+    "limiteInferior": 164,
+    "limiteSuperior": 21028442
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2024-06",
+    "real": 104432,
+    "prediccion": 58806,
+    "limiteInferior": 152,
+    "limiteSuperior": 22708376
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2024-07",
+    "real": 110289,
+    "prediccion": 58806,
+    "limiteInferior": 141,
+    "limiteSuperior": 24498518
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2024-08",
+    "real": 88601,
+    "prediccion": 58806,
+    "limiteInferior": 131,
+    "limiteSuperior": 26404876
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2024-09",
+    "real": 69259,
+    "prediccion": 58806,
+    "limiteInferior": 122,
+    "limiteSuperior": 28433736
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2024-10",
+    "real": 81163,
+    "prediccion": 58806,
+    "limiteInferior": 113,
+    "limiteSuperior": 30591672
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2024-11",
+    "real": 97101,
+    "prediccion": 58806,
+    "limiteInferior": 105,
+    "limiteSuperior": 32885556
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2024-12",
+    "real": 112947,
+    "prediccion": 58806,
+    "limiteInferior": 98,
+    "limiteSuperior": 35322570
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2025-01",
+    "real": 101100,
+    "prediccion": 58806,
+    "limiteInferior": 91,
+    "limiteSuperior": 37910221
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2025-02",
+    "real": 92669,
+    "prediccion": 58806,
+    "limiteInferior": 85,
+    "limiteSuperior": 40656349
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2025-03",
+    "real": 107158,
+    "prediccion": 58806,
+    "limiteInferior": 79,
+    "limiteSuperior": 43569142
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2025-04",
+    "real": 93445,
+    "prediccion": 58806,
+    "limiteInferior": 74,
+    "limiteSuperior": 46657151
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2025-05",
+    "real": 87746,
+    "prediccion": 58806,
+    "limiteInferior": 69,
+    "limiteSuperior": 49929299
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2025-06",
+    "real": 99386,
+    "prediccion": 58806,
+    "limiteInferior": 65,
+    "limiteSuperior": 53394902
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2025-07",
+    "real": 117314,
+    "prediccion": 58806,
+    "limiteInferior": 61,
+    "limiteSuperior": 57063679
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2025-08",
+    "real": 90568,
+    "prediccion": 58806,
+    "limiteInferior": 57,
+    "limiteSuperior": 60945768
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2025-09",
+    "real": 70415,
+    "prediccion": 58806,
+    "limiteInferior": 53,
+    "limiteSuperior": 65051741
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2025-10",
+    "real": 89989,
+    "prediccion": 58806,
+    "limiteInferior": 50,
+    "limiteSuperior": 69392623
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2025-11",
+    "real": 111541,
+    "prediccion": 58806,
+    "limiteInferior": 47,
+    "limiteSuperior": 73979908
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2025-12",
+    "real": 127274,
+    "prediccion": 58806,
+    "limiteInferior": 44,
+    "limiteSuperior": 78825574
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2026-01",
+    "real": 113422,
+    "prediccion": 58806,
+    "limiteInferior": 41,
+    "limiteSuperior": 83942101
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2026-02",
+    "real": 106723,
+    "prediccion": 58806,
+    "limiteInferior": 39,
+    "limiteSuperior": 89342495
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2026-03",
+    "real": 127510,
+    "prediccion": 58806,
+    "limiteInferior": 36,
+    "limiteSuperior": 95040300
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2026-04",
+    "real": 102021,
+    "prediccion": 58806,
+    "limiteInferior": 34,
+    "limiteSuperior": 101049621
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2026-05",
+    "real": 95801,
+    "prediccion": 58806,
+    "limiteInferior": 32,
+    "limiteSuperior": 107385144
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "fecha": "2026-06",
+    "real": 98198,
+    "prediccion": 58806,
+    "limiteInferior": 30,
+    "limiteSuperior": 114062158
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2021-04",
+    "real": 33042,
+    "prediccion": 38228,
+    "limiteInferior": 15980,
+    "limiteSuperior": 91449
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2021-05",
+    "real": 58366,
+    "prediccion": 55183,
+    "limiteInferior": 14581,
+    "limiteSuperior": 208839
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2021-06",
+    "real": 73409,
+    "prediccion": 41815,
+    "limiteInferior": 8382,
+    "limiteSuperior": 208593
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2021-07",
+    "real": 70338,
+    "prediccion": 54217,
+    "limiteInferior": 8505,
+    "limiteSuperior": 345604
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2021-08",
+    "real": 50329,
+    "prediccion": 53637,
+    "limiteInferior": 6572,
+    "limiteSuperior": 437721
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2021-09",
+    "real": 45551,
+    "prediccion": 38324,
+    "limiteInferior": 3934,
+    "limiteSuperior": 373311
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2021-10",
+    "real": 58214,
+    "prediccion": 60186,
+    "limiteInferior": 5080,
+    "limiteSuperior": 713094
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2021-11",
+    "real": 68341,
+    "prediccion": 60461,
+    "limiteInferior": 4280,
+    "limiteSuperior": 854025
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2021-12",
+    "real": 122055,
+    "prediccion": 61941,
+    "limiteInferior": 3787,
+    "limiteSuperior": 1013221
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2022-01",
+    "real": 97425,
+    "prediccion": 71522,
+    "limiteInferior": 3699,
+    "limiteSuperior": 1383028
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2022-02",
+    "real": 80430,
+    "prediccion": 47883,
+    "limiteInferior": 2159,
+    "limiteSuperior": 1062158
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2022-03",
+    "real": 106039,
+    "prediccion": 61452,
+    "limiteInferior": 2421,
+    "limiteSuperior": 1560055
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2022-04",
+    "real": 120691,
+    "prediccion": 47627,
+    "limiteInferior": 1605,
+    "limiteSuperior": 1413141
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2022-05",
+    "real": 111743,
+    "prediccion": 37592,
+    "limiteInferior": 1111,
+    "limiteSuperior": 1271507
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2022-06",
+    "real": 123396,
+    "prediccion": 54636,
+    "limiteInferior": 1405,
+    "limiteSuperior": 2124971
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2022-07",
+    "real": 124569,
+    "prediccion": 50943,
+    "limiteInferior": 1148,
+    "limiteSuperior": 2261580
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2022-08",
+    "real": 108814,
+    "prediccion": 43585,
+    "limiteInferior": 871,
+    "limiteSuperior": 2180368
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2022-09",
+    "real": 103185,
+    "prediccion": 50943,
+    "limiteInferior": 895,
+    "limiteSuperior": 2898764
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2022-10",
+    "real": 122906,
+    "prediccion": 47151,
+    "limiteInferior": 738,
+    "limiteSuperior": 3010543
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2022-11",
+    "real": 131130,
+    "prediccion": 61680,
+    "limiteInferior": 862,
+    "limiteSuperior": 4411863
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2022-12",
+    "real": 158073,
+    "prediccion": 71311,
+    "limiteInferior": 887,
+    "limiteSuperior": 5733230
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2023-01",
+    "real": 76213,
+    "prediccion": 55162,
+    "limiteInferior": 618,
+    "limiteSuperior": 4922989
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2023-02",
+    "real": 75139,
+    "prediccion": 56693,
+    "limiteInferior": 570,
+    "limiteSuperior": 5638695
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2023-03",
+    "real": 92427,
+    "prediccion": 58805,
+    "limiteInferior": 532,
+    "limiteSuperior": 6495158
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2023-04",
+    "real": 79177,
+    "prediccion": 41247,
+    "limiteInferior": 335,
+    "limiteSuperior": 5072988
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2023-05",
+    "real": 71800,
+    "prediccion": 45144,
+    "limiteInferior": 328,
+    "limiteSuperior": 6222194
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2023-06",
+    "real": 87748,
+    "prediccion": 46349,
+    "limiteInferior": 303,
+    "limiteSuperior": 7094394
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2023-07",
+    "real": 98942,
+    "prediccion": 51249,
+    "limiteInferior": 302,
+    "limiteSuperior": 8701133
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2023-08",
+    "real": 79084,
+    "prediccion": 47706,
+    "limiteInferior": 253,
+    "limiteSuperior": 9004826
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2023-09",
+    "real": 67300,
+    "prediccion": 42726,
+    "limiteInferior": 205,
+    "limiteSuperior": 8889380
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2023-10",
+    "real": 59320,
+    "prediccion": 52369,
+    "limiteInferior": 228,
+    "limiteSuperior": 12046239
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2023-11",
+    "real": 89115,
+    "prediccion": 59697,
+    "limiteInferior": 235,
+    "limiteSuperior": 15144225
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2023-12",
+    "real": 108287,
+    "prediccion": 64341,
+    "limiteInferior": 231,
+    "limiteSuperior": 17911620
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2024-01",
+    "real": 95943,
+    "prediccion": 61857,
+    "limiteInferior": 202,
+    "limiteSuperior": 18960971
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2024-02",
+    "real": 98780,
+    "prediccion": 50640,
+    "limiteInferior": 151,
+    "limiteSuperior": 16988520
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2024-03",
+    "real": 108306,
+    "prediccion": 58607,
+    "limiteInferior": 160,
+    "limiteSuperior": 21498672
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2024-04",
+    "real": 87832,
+    "prediccion": 43613,
+    "limiteInferior": 108,
+    "limiteSuperior": 17661236
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2024-05",
+    "real": 87971,
+    "prediccion": 40002,
+    "limiteInferior": 90,
+    "limiteSuperior": 17803535
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2024-06",
+    "real": 104432,
+    "prediccion": 49373,
+    "limiteInferior": 101,
+    "limiteSuperior": 24165240
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2024-07",
+    "real": 110289,
+    "prediccion": 49976,
+    "limiteInferior": 93,
+    "limiteSuperior": 26854666
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2024-08",
+    "real": 88601,
+    "prediccion": 44350,
+    "limiteInferior": 75,
+    "limiteSuperior": 26088942
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2024-09",
+    "real": 69259,
+    "prediccion": 45877,
+    "limiteInferior": 71,
+    "limiteSuperior": 29571223
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2024-10",
+    "real": 81163,
+    "prediccion": 48397,
+    "limiteInferior": 69,
+    "limiteSuperior": 34085496
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2024-11",
+    "real": 97101,
+    "prediccion": 59178,
+    "limiteInferior": 77,
+    "limiteSuperior": 45491963
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2024-12",
+    "real": 112947,
+    "prediccion": 66358,
+    "limiteInferior": 79,
+    "limiteSuperior": 55682894
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2025-01",
+    "real": 101100,
+    "prediccion": 56756,
+    "limiteInferior": 62,
+    "limiteSuperior": 51838319
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2025-02",
+    "real": 92669,
+    "prediccion": 52477,
+    "limiteInferior": 53,
+    "limiteSuperior": 52126609
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2025-03",
+    "real": 107158,
+    "prediccion": 57358,
+    "limiteInferior": 53,
+    "limiteSuperior": 61895800
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2025-04",
+    "real": 93445,
+    "prediccion": 41339,
+    "limiteInferior": 35,
+    "limiteSuperior": 48723395
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2025-05",
+    "real": 87746,
+    "prediccion": 41724,
+    "limiteInferior": 32,
+    "limiteSuperior": 53779258
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2025-06",
+    "real": 99386,
+    "prediccion": 46655,
+    "limiteInferior": 33,
+    "limiteSuperior": 65578533
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2025-07",
+    "real": 117314,
+    "prediccion": 49417,
+    "limiteInferior": 32,
+    "limiteSuperior": 75686267
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2025-08",
+    "real": 90568,
+    "prediccion": 45093,
+    "limiteInferior": 27,
+    "limiteSuperior": 75269970
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2025-09",
+    "real": 70415,
+    "prediccion": 43153,
+    "limiteInferior": 24,
+    "limiteSuperior": 78289292
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2025-10",
+    "real": 89989,
+    "prediccion": 49277,
+    "limiteInferior": 25,
+    "limiteSuperior": 97199943
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2025-11",
+    "real": 111541,
+    "prediccion": 58056,
+    "limiteInferior": 27,
+    "limiteSuperior": 124378311
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2025-12",
+    "real": 127274,
+    "prediccion": 63610,
+    "limiteInferior": 27,
+    "limiteSuperior": 147746812
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2026-01",
+    "real": 113422,
+    "prediccion": 57993,
+    "limiteInferior": 23,
+    "limiteSuperior": 146109420
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2026-02",
+    "real": 106723,
+    "prediccion": 50294,
+    "limiteInferior": 18,
+    "limiteSuperior": 137043095
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2026-03",
+    "real": 127510,
+    "prediccion": 56583,
+    "limiteInferior": 19,
+    "limiteSuperior": 166638894
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2026-04",
+    "real": 102021,
+    "prediccion": 41605,
+    "limiteInferior": 13,
+    "limiteSuperior": 133319917
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2026-05",
+    "real": 95801,
+    "prediccion": 39881,
+    "limiteInferior": 11,
+    "limiteSuperior": 138893333
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "fecha": "2026-06",
+    "real": 98198,
+    "prediccion": 46961,
+    "limiteInferior": 12,
+    "limiteSuperior": 177629518
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2021-04",
+    "real": 33042,
+    "prediccion": 77210,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2021-05",
+    "real": 58366,
+    "prediccion": 92550,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2021-06",
+    "real": 73409,
+    "prediccion": 104558,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2021-07",
+    "real": 70338,
+    "prediccion": 112221,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2021-08",
+    "real": 50329,
+    "prediccion": 115359,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2021-09",
+    "real": 45551,
+    "prediccion": 114688,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2021-10",
+    "real": 58214,
+    "prediccion": 111440,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2021-11",
+    "real": 68341,
+    "prediccion": 106528,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2021-12",
+    "real": 122055,
+    "prediccion": 101084,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2022-01",
+    "real": 97425,
+    "prediccion": 95540,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2022-02",
+    "real": 80430,
+    "prediccion": 90290,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2022-03",
+    "real": 106039,
+    "prediccion": 85606,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2022-04",
+    "real": 120691,
+    "prediccion": 81727,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2022-05",
+    "real": 111743,
+    "prediccion": 78637,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2022-06",
+    "real": 123396,
+    "prediccion": 76295,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2022-07",
+    "real": 124569,
+    "prediccion": 74632,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2022-08",
+    "real": 108814,
+    "prediccion": 73562,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2022-09",
+    "real": 103185,
+    "prediccion": 72993,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2022-10",
+    "real": 122906,
+    "prediccion": 72832,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2022-11",
+    "real": 131130,
+    "prediccion": 72987,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2022-12",
+    "real": 158073,
+    "prediccion": 73375,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2023-01",
+    "real": 76213,
+    "prediccion": 73916,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2023-02",
+    "real": 75139,
+    "prediccion": 74542,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2023-03",
+    "real": 92427,
+    "prediccion": 75194,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2023-04",
+    "real": 79177,
+    "prediccion": 75824,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2023-05",
+    "real": 71800,
+    "prediccion": 76397,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2023-06",
+    "real": 87748,
+    "prediccion": 76890,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2023-07",
+    "real": 98942,
+    "prediccion": 77289,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2023-08",
+    "real": 79084,
+    "prediccion": 77591,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2023-09",
+    "real": 67300,
+    "prediccion": 77799,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2023-10",
+    "real": 59320,
+    "prediccion": 77921,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2023-11",
+    "real": 89115,
+    "prediccion": 77971,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2023-12",
+    "real": 108287,
+    "prediccion": 77963,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2024-01",
+    "real": 95943,
+    "prediccion": 77912,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2024-02",
+    "real": 98780,
+    "prediccion": 77831,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2024-03",
+    "real": 108306,
+    "prediccion": 77733,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2024-04",
+    "real": 87832,
+    "prediccion": 77629,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2024-05",
+    "real": 87971,
+    "prediccion": 77526,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2024-06",
+    "real": 104432,
+    "prediccion": 77432,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2024-07",
+    "real": 110289,
+    "prediccion": 77350,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2024-08",
+    "real": 88601,
+    "prediccion": 77282,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2024-09",
+    "real": 69259,
+    "prediccion": 77230,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2024-10",
+    "real": 81163,
+    "prediccion": 77192,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2024-11",
+    "real": 97101,
+    "prediccion": 77169,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2024-12",
+    "real": 112947,
+    "prediccion": 77157,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2025-01",
+    "real": 101100,
+    "prediccion": 77155,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2025-02",
+    "real": 92669,
+    "prediccion": 77160,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2025-03",
+    "real": 107158,
+    "prediccion": 77171,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2025-04",
+    "real": 93445,
+    "prediccion": 77185,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2025-05",
+    "real": 87746,
+    "prediccion": 77201,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2025-06",
+    "real": 99386,
+    "prediccion": 77217,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2025-07",
+    "real": 117314,
+    "prediccion": 77232,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2025-08",
+    "real": 90568,
+    "prediccion": 77245,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2025-09",
+    "real": 70415,
+    "prediccion": 77257,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2025-10",
+    "real": 89989,
+    "prediccion": 77266,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2025-11",
+    "real": 111541,
+    "prediccion": 77273,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2025-12",
+    "real": 127274,
+    "prediccion": 77277,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2026-01",
+    "real": 113422,
+    "prediccion": 77279,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2026-02",
+    "real": 106723,
+    "prediccion": 77280,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2026-03",
+    "real": 127510,
+    "prediccion": 77280,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2026-04",
+    "real": 102021,
+    "prediccion": 77279,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2026-05",
+    "real": 95801,
+    "prediccion": 77276,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "fecha": "2026-06",
+    "real": 98198,
+    "prediccion": 77274,
+    "limiteInferior": null,
+    "limiteSuperior": null
+  }
+]

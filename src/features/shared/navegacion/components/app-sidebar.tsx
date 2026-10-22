@@ -15,7 +15,7 @@ import {
   SidebarMenuItem,
   SidebarRail,
 } from "@/components/ui/sidebar"
-import { SECCIONES, seccionActual } from "@/config/secciones"
+import { SECCIONES, seccionActual } from "@/features/shared/navegacion/secciones"
 
 export function AppSidebar() {
   const pathname = usePathname()

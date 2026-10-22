@@ -1,0 +1,75 @@
+{
+  "fuente": "Base de Migración (Turista + Excursionista), partición de los laboratorios 1 y 2",
+  "periodo": {
+    "inicio": "2009-01",
+    "fin": "2026-06"
+  },
+  "anioParcial": 2026,
+  "anioBaseRecuperacion": 2019,
+  "finEntrenamiento": "2021-03",
+  "generado": "2026-10-22",
+  "continentes": [
+    {
+      "id": "norte",
+      "nombre": "América del Norte"
+    },
+    {
+      "id": "centro",
+      "nombre": "Centroamérica"
+    },
+    {
+      "id": "sur",
+      "nombre": "Sudamérica y el Caribe"
+    },
+    {
+      "id": "europa",
+      "nombre": "Europa"
+    },
+    {
+      "id": "asia",
+      "nombre": "Asia"
+    },
+    {
+      "id": "resto",
+      "nombre": "Resto del mundo"
+    }
+  ],
+  "vias": [
+    {
+      "id": "aerea",
+      "nombre": "Aérea"
+    },
+    {
+      "id": "terrestre",
+      "nombre": "Terrestre"
+    },
+    {
+      "id": "maritima",
+      "nombre": "Marítima"
+    }
+  ],
+  "series": [
+    {
+      "id": "total",
+      "nombre": "Total de llegadas"
+    },
+    {
+      "id": "aurora",
+      "nombre": "Aeropuerto La Aurora"
+    }
+  ],
+  "modelos": [
+    {
+      "id": "ses",
+      "nombre": "Suavizamiento exponencial simple"
+    },
+    {
+      "id": "sarima",
+      "nombre": "SARIMA"
+    },
+    {
+      "id": "lstm",
+      "nombre": "Red neuronal LSTM"
+    }
+  ]
+}

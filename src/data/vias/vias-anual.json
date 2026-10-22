@@ -1,0 +1,266 @@
+[
+  {
+    "anio": 2009,
+    "via": "aerea",
+    "viajeros": 935379,
+    "parcial": false
+  },
+  {
+    "anio": 2009,
+    "via": "maritima",
+    "viajeros": 12358,
+    "parcial": false
+  },
+  {
+    "anio": 2009,
+    "via": "terrestre",
+    "viajeros": 932446,
+    "parcial": false
+  },
+  {
+    "anio": 2010,
+    "via": "aerea",
+    "viajeros": 974233,
+    "parcial": false
+  },
+  {
+    "anio": 2010,
+    "via": "maritima",
+    "viajeros": 12675,
+    "parcial": false
+  },
+  {
+    "anio": 2010,
+    "via": "terrestre",
+    "viajeros": 1017876,
+    "parcial": false
+  },
+  {
+    "anio": 2011,
+    "via": "aerea",
+    "viajeros": 955964,
+    "parcial": false
+  },
+  {
+    "anio": 2011,
+    "via": "maritima",
+    "viajeros": 12969,
+    "parcial": false
+  },
+  {
+    "anio": 2011,
+    "via": "terrestre",
+    "viajeros": 1110782,
+    "parcial": false
+  },
+  {
+    "anio": 2012,
+    "via": "aerea",
+    "viajeros": 970530,
+    "parcial": false
+  },
+  {
+    "anio": 2012,
+    "via": "maritima",
+    "viajeros": 13282,
+    "parcial": false
+  },
+  {
+    "anio": 2012,
+    "via": "terrestre",
+    "viajeros": 1155729,
+    "parcial": false
+  },
+  {
+    "anio": 2013,
+    "via": "aerea",
+    "viajeros": 996787,
+    "parcial": false
+  },
+  {
+    "anio": 2013,
+    "via": "maritima",
+    "viajeros": 13242,
+    "parcial": false
+  },
+  {
+    "anio": 2013,
+    "via": "terrestre",
+    "viajeros": 1279674,
+    "parcial": false
+  },
+  {
+    "anio": 2014,
+    "via": "aerea",
+    "viajeros": 1092353,
+    "parcial": false
+  },
+  {
+    "anio": 2014,
+    "via": "maritima",
+    "viajeros": 13256,
+    "parcial": false
+  },
+  {
+    "anio": 2014,
+    "via": "terrestre",
+    "viajeros": 1554568,
+    "parcial": false
+  },
+  {
+    "anio": 2015,
+    "via": "aerea",
+    "viajeros": 1167412,
+    "parcial": false
+  },
+  {
+    "anio": 2015,
+    "via": "maritima",
+    "viajeros": 11881,
+    "parcial": false
+  },
+  {
+    "anio": 2015,
+    "via": "terrestre",
+    "viajeros": 1738593,
+    "parcial": false
+  },
+  {
+    "anio": 2016,
+    "via": "aerea",
+    "viajeros": 1255323,
+    "parcial": false
+  },
+  {
+    "anio": 2016,
+    "via": "maritima",
+    "viajeros": 10578,
+    "parcial": false
+  },
+  {
+    "anio": 2016,
+    "via": "terrestre",
+    "viajeros": 1731125,
+    "parcial": false
+  },
+  {
+    "anio": 2017,
+    "via": "aerea",
+    "viajeros": 1313790,
+    "parcial": false
+  },
+  {
+    "anio": 2017,
+    "via": "terrestre",
+    "viajeros": 1993861,
+    "parcial": false
+  },
+  {
+    "anio": 2018,
+    "via": "aerea",
+    "viajeros": 1414986,
+    "parcial": false
+  },
+  {
+    "anio": 2018,
+    "via": "terrestre",
+    "viajeros": 2378775,
+    "parcial": false
+  },
+  {
+    "anio": 2019,
+    "via": "aerea",
+    "viajeros": 1483386,
+    "parcial": false
+  },
+  {
+    "anio": 2019,
+    "via": "terrestre",
+    "viajeros": 2648865,
+    "parcial": false
+  },
+  {
+    "anio": 2020,
+    "via": "aerea",
+    "viajeros": 403525,
+    "parcial": false
+  },
+  {
+    "anio": 2020,
+    "via": "terrestre",
+    "viajeros": 656246,
+    "parcial": false
+  },
+  {
+    "anio": 2021,
+    "via": "aerea",
+    "viajeros": 703471,
+    "parcial": false
+  },
+  {
+    "anio": 2021,
+    "via": "terrestre",
+    "viajeros": 395493,
+    "parcial": false
+  },
+  {
+    "anio": 2022,
+    "via": "aerea",
+    "viajeros": 1390275,
+    "parcial": false
+  },
+  {
+    "anio": 2022,
+    "via": "terrestre",
+    "viajeros": 1839054,
+    "parcial": false
+  },
+  {
+    "anio": 2023,
+    "via": "aerea",
+    "viajeros": 985840,
+    "parcial": false
+  },
+  {
+    "anio": 2023,
+    "via": "terrestre",
+    "viajeros": 1931987,
+    "parcial": false
+  },
+  {
+    "anio": 2024,
+    "via": "aerea",
+    "viajeros": 1143353,
+    "parcial": false
+  },
+  {
+    "anio": 2024,
+    "via": "terrestre",
+    "viajeros": 2131083,
+    "parcial": false
+  },
+  {
+    "anio": 2025,
+    "via": "aerea",
+    "viajeros": 1188971,
+    "parcial": false
+  },
+  {
+    "anio": 2025,
+    "via": "terrestre",
+    "viajeros": 2163318,
+    "parcial": false
+  },
+  {
+    "anio": 2026,
+    "via": "aerea",
+    "viajeros": 643840,
+    "parcial": true
+  },
+  {
+    "anio": 2026,
+    "via": "terrestre",
+    "viajeros": 932779,
+    "parcial": true
+  }
+]

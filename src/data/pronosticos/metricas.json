@@ -1,0 +1,44 @@
+[
+  {
+    "serie": "total",
+    "modelo": "ses",
+    "mae": 158777,
+    "rmse": 173709,
+    "mape": 60.6
+  },
+  {
+    "serie": "total",
+    "modelo": "sarima",
+    "mae": 228182,
+    "rmse": 244059,
+    "mape": 90.1
+  },
+  {
+    "serie": "total",
+    "modelo": "lstm",
+    "mae": 80354,
+    "rmse": 92383,
+    "mape": 32.8
+  },
+  {
+    "serie": "aurora",
+    "modelo": "ses",
+    "mae": 36822,
+    "rmse": 42053,
+    "mape": 36.6
+  },
+  {
+    "serie": "aurora",
+    "modelo": "sarima",
+    "mae": 42860,
+    "rmse": 47429,
+    "mape": 42.8
+  },
+  {
+    "serie": "aurora",
+    "modelo": "lstm",
+    "mae": 26587,
+    "rmse": 32125,
+    "mape": 30.6
+  }
+]

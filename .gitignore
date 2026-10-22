@@ -41,3 +41,5 @@ yarn-error.log*
 next-env.d.ts
 
 .idea/
+# pipeline local que genera src/data/*.json: no se versiona, solo sus JSON
+pipeline/

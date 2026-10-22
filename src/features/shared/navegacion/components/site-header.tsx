@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation"
 
 import { Separator } from "@/components/ui/separator"
 import { SidebarTrigger } from "@/components/ui/sidebar"
-import { seccionActual } from "@/config/secciones"
+import { seccionActual } from "@/features/shared/navegacion/secciones"
 
 export function SiteHeader() {
   const { titulo } = seccionActual(usePathname())
