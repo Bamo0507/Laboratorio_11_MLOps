@@ -4,17 +4,22 @@ import { Area, Brush, CartesianGrid, ComposedChart, Line, ReferenceLine, XAxis, 
 
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { ChartContainer, ChartTooltip, type ChartConfig } from "@/components/ui/chart"
-import { formatoCompacto, formatoPersonas } from "@/features/shared/datos/formato"
-import type { ModeloId, SerieId } from "@/features/shared/datos/types"
+import { formatoCompacto, formatoPersonas, formatoPorcentaje } from "@/features/shared/datos/formato"
+import type { SerieId } from "@/features/shared/datos/types"
+import { PieFuente } from "@/features/shared/ui/pie-fuente"
+import { UsoDirectivo } from "@/features/shared/ui/uso-directivo"
 
 import type { PuntoPronostico } from "../hooks/use-pronosticos"
 
 type Props = {
   puntos: PuntoPronostico[]
   serie: SerieId
-  modelo: ModeloId
   nombreModelo: string
   finEntrenamiento: string
+  quiebre: string
+  bandaPorMae: boolean
+  mae: number
+  cobertura: number | null
   rango: { inicio: number; fin: number } | null
   onCambiarRango: (rango: { inicio: number; fin: number }) => void
 }
@@ -30,20 +35,32 @@ export function etiquetaMes(fecha: string) {
 const CONFIG = {
   real: { label: "Observado", color: "var(--observado)" },
   prediccion: { label: "Estimado", color: "var(--estimacion)" },
-  banda: { label: "Banda de incertidumbre", color: "var(--estimacion)" },
+  banda: { label: "Franja", color: "var(--estimacion)" },
 } satisfies ChartConfig
 
-export function PrediccionChart({ puntos, serie, modelo, nombreModelo, finEntrenamiento, rango, onCambiarRango }: Props) {
-  const sinBanda = modelo === "lstm"
+export function PrediccionChart({
+  puntos,
+  serie,
+  nombreModelo,
+  finEntrenamiento,
+  quiebre,
+  bandaPorMae,
+  mae,
+  cobertura,
+  rango,
+  onCambiarRango,
+}: Props) {
+  const nombreBanda = bandaPorMae ? "Rango típico de error (± MAE)" : "Banda de incertidumbre (95 %, calculada para el tablero)"
   const prueba = puntos.filter((p) => p.prediccion !== null)
   const debajo = prueba.filter((p) => p.prediccion! < p.real).length
   // El eje se ajusta a lo observado y lo estimado; la banda puede crecer tanto que aplasta las líneas, así que se recorta.
   const maximo = Math.max(1, ...puntos.map((p) => Math.max(p.real, p.prediccion ?? 0)))
   let paso = 10 ** Math.floor(Math.log10(maximo))
   if (maximo / paso < 3) paso /= 2
-  const techo = Math.ceil((maximo * 1.15) / paso) * paso
+  const techo = Math.ceil(maximo / paso) * paso
   const ticksY = Array.from({ length: techo / paso + 1 }, (_, i) => i * paso)
-  const bandaRecortada = !sinBanda && puntos.some((p) => p.banda && p.banda[1] > techo)
+  const bandaRecortada = !bandaPorMae && puntos.some((p) => p.banda && p.banda[1] > techo)
+  const ticksX = puntos.filter((p) => p.fecha.endsWith("-01")).map((p) => p.fecha)
 
   return (
     <Card className="gap-5 py-6">
@@ -54,8 +71,10 @@ export function PrediccionChart({ puntos, serie, modelo, nombreModelo, finEntren
           </h2>
         </CardTitle>
         <CardDescription className="max-w-[75ch] text-sm leading-relaxed">
-          {nombreModelo} quedó por debajo de lo observado en {debajo} de {prueba.length} meses del periodo de prueba.
+          Línea continua: lo que realmente llegó; punteada: lo que estimó {nombreModelo}. Quedó por debajo de lo observado
+          en {debajo} de {prueba.length} meses del periodo de prueba.
         </CardDescription>
+        <UsoDirectivo>comprobar si un pronóstico es confiable para planificar. Si lo observado se sale seguido de la franja, la estimación debe usarse con cautela.</UsoDirectivo>
       </CardHeader>
 
       <CardContent className="flex flex-col gap-3 px-6">
@@ -68,35 +87,48 @@ export function PrediccionChart({ puntos, serie, modelo, nombreModelo, finEntren
             <span aria-hidden className="w-5 border-t-2 border-dashed" style={{ borderColor: "var(--estimacion)" }} />
             Estimado ({nombreModelo})
           </span>
-          {!sinBanda && (
-            <span className="flex items-center gap-2">
-              <span aria-hidden className="h-3 w-5 rounded-sm opacity-20" style={{ backgroundColor: "var(--estimacion)" }} />
-              Banda de incertidumbre (95 %)
-            </span>
-          )}
+          <span className="flex items-center gap-2">
+            <span aria-hidden className="h-3 w-5 rounded-sm opacity-20" style={{ backgroundColor: "var(--estimacion)" }} />
+            {nombreBanda}
+          </span>
         </div>
 
-        {sinBanda && (
-          <p className="rounded-lg bg-muted px-4 py-3 text-sm leading-relaxed text-foreground">
-            La red LSTM no genera una banda de incertidumbre: solo da un valor por mes, así que no indica qué tan lejos
-            podría quedar el dato real.
-          </p>
-        )}
+        <p className="rounded-lg bg-muted px-4 py-3 text-sm leading-relaxed text-foreground">
+          {bandaPorMae ? (
+            <>
+              La red LSTM no genera una banda de incertidumbre. La franja muestra ± su error promedio en la prueba (
+              <span className="font-data">{formatoPersonas(mae)}</span> personas) como referencia de qué tan lejos suele
+              quedar el dato real.
+            </>
+          ) : (
+            "La banda no viene de los laboratorios: se calculó para el tablero con el mismo modelo."
+          )}
+          {cobertura !== null && (
+            <>
+              {" "}
+              Lo observado cayó dentro de la franja en <span className="font-data font-semibold">{formatoPorcentaje(cobertura)}</span>{" "}
+              de los meses de prueba.
+            </>
+          )}
+        </p>
+
+        <p className="text-xs font-medium text-muted-foreground">Viajeros por mes</p>
 
         <ChartContainer
           config={CONFIG}
-          className="aspect-auto w-full"
+          className="-mt-2 aspect-auto w-full"
           style={{ height: ALTO_GRAFICO }}
           role="img"
           aria-label={`Llegadas observadas contra la estimación de ${nombreModelo}. El modelo quedó por debajo en ${debajo} de ${prueba.length} meses.`}
         >
-          <ComposedChart data={puntos} margin={{ top: 16, right: 16, bottom: 4, left: 0 }}>
+          {/* key: al cambiar de serie cambia el número de meses y el Brush conservaría la escala anterior (NaN). */}
+          <ComposedChart key={serie} data={puntos} margin={{ top: 16, right: 16, bottom: 4, left: 0 }}>
             <CartesianGrid vertical={false} stroke="var(--border)" />
             <XAxis
               dataKey="fecha"
-              tickFormatter={etiquetaMes}
-              interval="preserveStartEnd"
-              minTickGap={32}
+              ticks={ticksX}
+              tickFormatter={(fecha: string) => fecha.slice(0, 4)}
+              interval={0}
               tickLine={false}
               axisLine={false}
               tickMargin={8}
@@ -116,6 +148,12 @@ export function PrediccionChart({ puntos, serie, modelo, nombreModelo, finEntren
                 label={{ value: "Fin del entrenamiento", position: "insideTopRight", fill: "var(--muted-foreground)", fontSize: 12 }}
               />
             )}
+            <ReferenceLine
+              x={quiebre}
+              stroke="var(--muted-foreground)"
+              strokeDasharray="2 3"
+              label={{ value: "Sin residentes desde aquí", position: "insideTopLeft", fill: "var(--muted-foreground)", fontSize: 12 }}
+            />
             <ChartTooltip
               content={({ active, payload, label }) => {
                 const p = payload?.[0]?.payload as PuntoPronostico | undefined
@@ -131,25 +169,23 @@ export function PrediccionChart({ puntos, serie, modelo, nombreModelo, finEntren
                         Estimado <span className="font-data">{formatoPersonas(p.prediccion)}</span>
                       </p>
                     )}
-                    {p.banda && (
+                    {p.banda && p.prediccion !== null && (
                       <p className="font-data text-xs text-muted-foreground">
-                        Rango: {formatoPersonas(p.banda[0])} a {formatoPersonas(p.banda[1])}
+                        {bandaPorMae ? "Rango típico" : "Banda"}: {formatoPersonas(p.banda[0])} a {formatoPersonas(p.banda[1])}
                       </p>
                     )}
                   </div>
                 )
               }}
             />
-            {!sinBanda && (
-              <Area
-                dataKey="banda"
-                stroke="none"
-                fill="var(--color-banda)"
-                fillOpacity={0.15}
-                connectNulls={false}
-                isAnimationActive={false}
-              />
-            )}
+            <Area
+              dataKey="banda"
+              stroke="none"
+              fill="var(--color-banda)"
+              fillOpacity={0.15}
+              connectNulls={false}
+              isAnimationActive={false}
+            />
             <Line dataKey="real" stroke="var(--color-real)" strokeWidth={2} dot={false} isAnimationActive={false} />
             <Line
               dataKey="prediccion"
@@ -180,17 +216,24 @@ export function PrediccionChart({ puntos, serie, modelo, nombreModelo, finEntren
       <CardFooter className="flex-col items-start gap-1 border-t px-6 pt-4 pb-5 text-xs leading-relaxed text-muted-foreground">
         <p>Arrastra los extremos de la barra inferior para acotar el periodo: el gráfico de errores de abajo se ajusta.</p>
         <p>
-          Los modelos se entrenaron con datos hasta {etiquetaMes(finEntrenamiento)} y se evaluaron de{" "}
-          {etiquetaMes(prueba[0]?.fecha ?? finEntrenamiento)} a {etiquetaMes(prueba.at(-1)?.fecha ?? finEntrenamiento)}.
+          Los modelos solo vieron datos hasta {etiquetaMes(finEntrenamiento)}, en plena pandemia, y se evaluaron de{" "}
+          {etiquetaMes(prueba[0]?.fecha ?? finEntrenamiento)} a {etiquetaMes(prueba.at(-1)?.fecha ?? finEntrenamiento)}: no
+          conocieron la reapertura, así que su error mide sobre todo qué tan bien anticiparon una recuperación que no
+          habían visto.
           {serie === "aurora" && " Para La Aurora solo se muestra el periodo de prueba."}
         </p>
-        <p>Línea continua = lo que realmente llegó. Línea punteada = lo que el modelo estimó.</p>
+        <p>
+          Desde {etiquetaMes(quiebre)} la base deja de registrar a los residentes en Guatemala. Estas series los incluyen
+          hasta 2022, igual que en los laboratorios, así que lo observado desde 2023 no es del todo comparable con los años
+          anteriores.
+        </p>
         {bandaRecortada && (
           <p>
             La banda de incertidumbre se recorta en la parte superior: crece tanto con los meses que, a largo plazo, el
             modelo admite casi cualquier valor.
           </p>
         )}
+        <PieFuente extra="Predicciones: laboratorios 1 y 2." />
       </CardFooter>
     </Card>
   )

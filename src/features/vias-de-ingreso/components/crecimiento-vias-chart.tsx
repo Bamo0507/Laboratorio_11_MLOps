@@ -6,7 +6,9 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { ChartContainer, ChartTooltip } from "@/components/ui/chart"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import { formatoIndice } from "@/features/shared/datos/formato"
+import { NotaQuiebre, PieFuente } from "@/features/shared/ui/pie-fuente"
 import type { ViaId } from "@/features/shared/datos/types"
+import { UsoDirectivo } from "@/features/shared/ui/uso-directivo"
 
 import type { CrecimientoVia, PuntoCrecimiento } from "../hooks/use-vias-de-ingreso"
 import { CHART_CONFIG_VIAS, NOMBRE_VIA, VIAS } from "../vias"
@@ -47,6 +49,7 @@ export function CrecimientoViasChart({ serie, crecimientoFinal, rango, anioParci
           </h2>
         </CardTitle>
         <CardDescription className="max-w-[75ch] text-sm leading-relaxed">{descripcion(seleccionada, rango)}</CardDescription>
+        <UsoDirectivo>saber por qué vía crecen más las llegadas, como insumo para planificar la capacidad de aeropuertos, puestos fronterizos y puertos.</UsoDirectivo>
       </CardHeader>
 
       <CardContent className="flex flex-col gap-4 px-6">
@@ -62,7 +65,7 @@ export function CrecimientoViasChart({ serie, crecimientoFinal, rango, anioParci
             <ToggleGroupItem
               key={id}
               value={id}
-              className="h-10 cursor-pointer gap-2 px-3 text-sm transition-colors duration-150 hover:border-foreground/30 hover:bg-muted hover:text-foreground data-pressed:border-primary data-pressed:bg-accent data-pressed:font-medium data-pressed:text-accent-foreground data-pressed:hover:bg-accent"
+              className="h-10 cursor-pointer gap-2 px-3 text-sm transition-colors duration-150 hover:border-foreground/30 hover:bg-accent/45 hover:text-foreground data-pressed:border-primary data-pressed:bg-accent data-pressed:font-medium data-pressed:text-accent-foreground data-pressed:hover:bg-accent"
             >
               <span aria-hidden className="size-2.5 rounded-full" style={{ backgroundColor: `var(--via-${id})` }} />
               {NOMBRE_VIA[id]}
@@ -181,10 +184,15 @@ export function CrecimientoViasChart({ serie, crecimientoFinal, rango, anioParci
       <CardFooter className="flex-col items-start gap-1 border-t px-6 pt-4 pb-5 text-xs leading-relaxed text-muted-foreground">
         <p>Haz clic en una vía para ver la variación de cada una de sus fronteras en el gráfico de abajo.</p>
         <p>
-          Índice = visitantes del año ÷ visitantes de {rango.inicio} × 100. La vía marítima solo tiene registros hasta
-          2016. {anioParcial && `${anioParcial} no se incluye porque solo tiene datos de enero a junio.`}
+          Índice = visitantes del año ÷ visitantes de {rango.inicio} × 100. 2020 y 2021 no se ofrecen como año base: con
+          tan pocos visitantes, cualquier crecimiento posterior se exagera. {anioParcial && `${anioParcial} no se incluye porque solo tiene datos de enero a junio.`}
         </p>
-        <p>Fuente: Base de Migración, turistas y excursionistas.</p>
+        <p>
+          La vía marítima deja de tener registros de turistas y excursionistas desde 2017, por lo que el reparto entre
+          vías cambia levemente ese año.
+        </p>
+        <NotaQuiebre />
+        <PieFuente />
       </CardFooter>
     </Card>
   )

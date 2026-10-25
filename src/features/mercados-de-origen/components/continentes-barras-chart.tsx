@@ -8,6 +8,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { CHART_CONFIG_CONTINENTES } from "@/features/shared/datos/continentes"
 import { formatoPersonas, formatoPorcentaje } from "@/features/shared/datos/formato"
 import type { ContinenteId } from "@/features/shared/datos/types"
+import { NotaQuiebre, PieFuente } from "@/features/shared/ui/pie-fuente"
+import { UsoDirectivo } from "@/features/shared/ui/uso-directivo"
 
 import type { BarraContinente } from "../hooks/use-mercados-de-origen"
 
@@ -50,7 +52,10 @@ export function ContinentesBarrasChart({
         <CardDescription className="text-sm leading-relaxed">
           En {etiquetaAnio(anioSeleccionado, anioParcial)}, {principal.nombre} aportó el{" "}
           {formatoPorcentaje(principal.porcentaje)} de los visitantes internacionales.
+          {anioSeleccionado === anioParcial &&
+            " Como solo hay datos de enero a junio, el reparto puede cambiar al completar el año: cada mercado tiene su propia temporada."}
         </CardDescription>
+        <UsoDirectivo>ver en qué mercados se concentra la demanda, para priorizar hacia dónde dirigir la promoción internacional.</UsoDirectivo>
         <CardAction>
           <label className="flex items-center gap-2 text-sm text-muted-foreground">
             Año
@@ -136,7 +141,8 @@ export function ContinentesBarrasChart({
                 <Cell
                   key={b.continente}
                   fill={`var(--color-${b.continente})`}
-                  fillOpacity={b.continente === continenteResaltado ? 1 : 0.45}
+                  stroke={b.continente === continenteResaltado ? "var(--foreground)" : "none"}
+                  strokeWidth={b.continente === continenteResaltado ? 2 : 0}
                 />
               ))}
               <LabelList
@@ -166,10 +172,9 @@ export function ContinentesBarrasChart({
 
       <CardFooter className="flex-col items-start gap-1 border-t px-6 pt-4 pb-5 text-xs leading-relaxed text-muted-foreground">
         <p>Haz clic en una barra para ver cómo se ha recuperado ese continente en el gráfico de abajo.</p>
-        <p>
-          Fuente: Base de Migración, turistas y excursionistas. Datos hasta junio de 2026. El porcentaje es sobre el total
-          del año.
-        </p>
+        <p>El porcentaje es sobre el total de visitantes del año. La barra con borde es el continente seleccionado.</p>
+        <NotaQuiebre />
+        <PieFuente />
       </CardFooter>
     </Card>
   )

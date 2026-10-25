@@ -1,6 +1,7 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { formatoPersonas, formatoPorcentaje } from "@/features/shared/datos/formato"
 import type { ModeloId } from "@/features/shared/datos/types"
+import { PieFuente } from "@/features/shared/ui/pie-fuente"
 
 import type { Metrica } from "../types"
 
@@ -56,6 +57,18 @@ export function TablaMetricas({ metricas, nombreModelo, modeloSeleccionado }: Pr
 
         <dl className="grid gap-2 text-xs leading-relaxed text-muted-foreground md:grid-cols-3">
           <div>
+            <dt className="font-medium text-foreground">Suavizamiento exponencial simple</dt>
+            <dd>Pronostica con un promedio que pesa más los meses recientes. Da un valor plano hacia adelante.</dd>
+          </div>
+          <div>
+            <dt className="font-medium text-foreground">SARIMA</dt>
+            <dd>Modelo estadístico que sigue la tendencia y repite el patrón de temporada de cada año.</dd>
+          </div>
+          <div>
+            <dt className="font-medium text-foreground">Red neuronal LSTM</dt>
+            <dd>Red neuronal que aprende patrones de los meses anteriores para estimar el siguiente.</dd>
+          </div>
+          <div>
             <dt className="font-medium text-foreground">MAE (error absoluto medio)</dt>
             <dd>Cuántas personas, en promedio, se aleja el pronóstico de lo que realmente llegó cada mes.</dd>
           </div>
@@ -69,6 +82,10 @@ export function TablaMetricas({ metricas, nombreModelo, modeloSeleccionado }: Pr
           </div>
         </dl>
       </CardContent>
+
+      <CardFooter className="flex-col items-start gap-1 border-t px-6 pt-4 pb-5 text-xs leading-relaxed text-muted-foreground">
+        <PieFuente extra="Predicciones: laboratorios 1 y 2." />
+      </CardFooter>
     </Card>
   )
 }

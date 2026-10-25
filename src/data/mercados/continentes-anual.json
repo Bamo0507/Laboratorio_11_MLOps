@@ -2,24 +2,24 @@
   {
     "anio": 2009,
     "continente": "asia",
-    "viajeros": 14724,
-    "porcentaje": 0.78,
-    "indice2019": 61.4,
+    "viajeros": 6358,
+    "porcentaje": 0.52,
+    "indice2019": 75.3,
     "parcial": false
   },
   {
     "anio": 2009,
     "continente": "centro",
-    "viajeros": 1272041,
-    "porcentaje": 67.66,
-    "indice2019": 39.2,
+    "viajeros": 621358,
+    "porcentaje": 50.54,
+    "indice2019": 40.2,
     "parcial": false
   },
   {
     "anio": 2009,
     "continente": "europa",
     "viajeros": 112190,
-    "porcentaje": 5.97,
+    "porcentaje": 9.12,
     "indice2019": 79.4,
     "parcial": false
   },
@@ -27,47 +27,47 @@
     "anio": 2009,
     "continente": "norte",
     "viajeros": 414601,
-    "porcentaje": 22.05,
+    "porcentaje": 33.72,
     "indice2019": 68.8,
     "parcial": false
   },
   {
     "anio": 2009,
     "continente": "resto",
-    "viajeros": 14191,
-    "porcentaje": 0.75,
-    "indice2019": 67.6,
+    "viajeros": 22557,
+    "porcentaje": 1.83,
+    "indice2019": 61.7,
     "parcial": false
   },
   {
     "anio": 2009,
     "continente": "sur",
     "viajeros": 52436,
-    "porcentaje": 2.79,
+    "porcentaje": 4.26,
     "indice2019": 54.7,
     "parcial": false
   },
   {
     "anio": 2010,
     "continente": "asia",
-    "viajeros": 19903,
-    "porcentaje": 0.99,
-    "indice2019": 83.0,
+    "viajeros": 6944,
+    "porcentaje": 0.53,
+    "indice2019": 82.2,
     "parcial": false
   },
   {
     "anio": 2010,
     "continente": "centro",
-    "viajeros": 1358007,
-    "porcentaje": 67.74,
-    "indice2019": 41.8,
+    "viajeros": 664368,
+    "porcentaje": 50.67,
+    "indice2019": 43.0,
     "parcial": false
   },
   {
     "anio": 2010,
     "continente": "europa",
     "viajeros": 113357,
-    "porcentaje": 5.65,
+    "porcentaje": 8.65,
     "indice2019": 80.3,
     "parcial": false
   },
@@ -75,47 +75,47 @@
     "anio": 2010,
     "continente": "norte",
     "viajeros": 444371,
-    "porcentaje": 22.17,
+    "porcentaje": 33.89,
     "indice2019": 73.7,
     "parcial": false
   },
   {
     "anio": 2010,
     "continente": "resto",
-    "viajeros": 14939,
-    "porcentaje": 0.75,
-    "indice2019": 71.1,
+    "viajeros": 27898,
+    "porcentaje": 2.13,
+    "indice2019": 76.3,
     "parcial": false
   },
   {
     "anio": 2010,
     "continente": "sur",
     "viajeros": 54207,
-    "porcentaje": 2.7,
+    "porcentaje": 4.13,
     "indice2019": 56.6,
     "parcial": false
   },
   {
     "anio": 2011,
     "continente": "asia",
-    "viajeros": 18723,
-    "porcentaje": 0.9,
-    "indice2019": 78.0,
+    "viajeros": 7343,
+    "porcentaje": 0.54,
+    "indice2019": 87.0,
     "parcial": false
   },
   {
     "anio": 2011,
     "continente": "centro",
-    "viajeros": 1452977,
-    "porcentaje": 69.86,
-    "indice2019": 44.7,
+    "viajeros": 735265,
+    "porcentaje": 53.98,
+    "indice2019": 47.6,
     "parcial": false
   },
   {
     "anio": 2011,
     "continente": "europa",
     "viajeros": 108607,
-    "porcentaje": 5.22,
+    "porcentaje": 7.97,
     "indice2019": 76.9,
     "parcial": false
   },
@@ -123,47 +123,47 @@
     "anio": 2011,
     "continente": "norte",
     "viajeros": 428583,
-    "porcentaje": 20.61,
+    "porcentaje": 31.47,
     "indice2019": 71.1,
     "parcial": false
   },
   {
     "anio": 2011,
     "continente": "resto",
-    "viajeros": 16570,
-    "porcentaje": 0.8,
-    "indice2019": 78.9,
+    "viajeros": 27950,
+    "porcentaje": 2.05,
+    "indice2019": 76.5,
     "parcial": false
   },
   {
     "anio": 2011,
     "continente": "sur",
     "viajeros": 54254,
-    "porcentaje": 2.61,
+    "porcentaje": 3.98,
     "indice2019": 56.6,
     "parcial": false
   },
   {
     "anio": 2012,
     "continente": "asia",
-    "viajeros": 18871,
-    "porcentaje": 0.88,
-    "indice2019": 78.7,
+    "viajeros": 8850,
+    "porcentaje": 0.62,
+    "indice2019": 104.8,
     "parcial": false
   },
   {
     "anio": 2012,
     "continente": "centro",
-    "viajeros": 1480925,
-    "porcentaje": 69.22,
-    "indice2019": 45.6,
+    "viajeros": 759818,
+    "porcentaje": 53.57,
+    "indice2019": 49.2,
     "parcial": false
   },
   {
     "anio": 2012,
     "continente": "europa",
     "viajeros": 107429,
-    "porcentaje": 5.02,
+    "porcentaje": 7.57,
     "indice2019": 76.1,
     "parcial": false
   },
@@ -171,47 +171,47 @@
     "anio": 2012,
     "continente": "norte",
     "viajeros": 456995,
-    "porcentaje": 21.36,
+    "porcentaje": 32.22,
     "indice2019": 75.8,
     "parcial": false
   },
   {
     "anio": 2012,
     "continente": "resto",
-    "viajeros": 17018,
-    "porcentaje": 0.8,
-    "indice2019": 81.0,
+    "viajeros": 27039,
+    "porcentaje": 1.91,
+    "indice2019": 74.0,
     "parcial": false
   },
   {
     "anio": 2012,
     "continente": "sur",
     "viajeros": 58304,
-    "porcentaje": 2.73,
+    "porcentaje": 4.11,
     "indice2019": 60.9,
     "parcial": false
   },
   {
     "anio": 2013,
     "continente": "asia",
-    "viajeros": 20077,
-    "porcentaje": 0.88,
-    "indice2019": 83.7,
+    "viajeros": 9306,
+    "porcentaje": 0.64,
+    "indice2019": 110.2,
     "parcial": false
   },
   {
     "anio": 2013,
     "continente": "centro",
-    "viajeros": 1599786,
-    "porcentaje": 69.87,
-    "indice2019": 49.3,
+    "viajeros": 754049,
+    "porcentaje": 52.22,
+    "indice2019": 48.8,
     "parcial": false
   },
   {
     "anio": 2013,
     "continente": "europa",
     "viajeros": 112213,
-    "porcentaje": 4.9,
+    "porcentaje": 7.77,
     "indice2019": 79.4,
     "parcial": false
   },
@@ -219,47 +219,47 @@
     "anio": 2013,
     "continente": "norte",
     "viajeros": 472354,
-    "porcentaje": 20.63,
+    "porcentaje": 32.71,
     "indice2019": 78.4,
     "parcial": false
   },
   {
     "anio": 2013,
     "continente": "resto",
-    "viajeros": 18457,
-    "porcentaje": 0.81,
-    "indice2019": 87.9,
+    "viajeros": 29228,
+    "porcentaje": 2.02,
+    "indice2019": 80.0,
     "parcial": false
   },
   {
     "anio": 2013,
     "continente": "sur",
     "viajeros": 66816,
-    "porcentaje": 2.92,
+    "porcentaje": 4.63,
     "indice2019": 69.8,
     "parcial": false
   },
   {
     "anio": 2014,
     "continente": "asia",
-    "viajeros": 22062,
-    "porcentaje": 0.83,
-    "indice2019": 92.0,
+    "viajeros": 10127,
+    "porcentaje": 0.61,
+    "indice2019": 119.9,
     "parcial": false
   },
   {
     "anio": 2014,
     "continente": "centro",
-    "viajeros": 1912776,
-    "porcentaje": 71.9,
-    "indice2019": 58.9,
+    "viajeros": 920889,
+    "porcentaje": 55.2,
+    "indice2019": 59.6,
     "parcial": false
   },
   {
     "anio": 2014,
     "continente": "europa",
     "viajeros": 129383,
-    "porcentaje": 4.86,
+    "porcentaje": 7.76,
     "indice2019": 91.6,
     "parcial": false
   },
@@ -267,47 +267,47 @@
     "anio": 2014,
     "continente": "norte",
     "viajeros": 497632,
-    "porcentaje": 18.71,
+    "porcentaje": 29.83,
     "indice2019": 82.6,
     "parcial": false
   },
   {
     "anio": 2014,
     "continente": "resto",
-    "viajeros": 22328,
-    "porcentaje": 0.84,
-    "indice2019": 106.3,
+    "viajeros": 34263,
+    "porcentaje": 2.05,
+    "indice2019": 93.7,
     "parcial": false
   },
   {
     "anio": 2014,
     "continente": "sur",
     "viajeros": 75996,
-    "porcentaje": 2.86,
+    "porcentaje": 4.56,
     "indice2019": 79.3,
     "parcial": false
   },
   {
     "anio": 2015,
     "continente": "asia",
-    "viajeros": 22946,
-    "porcentaje": 0.79,
-    "indice2019": 95.6,
+    "viajeros": 9942,
+    "porcentaje": 0.56,
+    "indice2019": 117.7,
     "parcial": false
   },
   {
     "anio": 2015,
     "continente": "centro",
-    "viajeros": 2132681,
-    "porcentaje": 73.09,
-    "indice2019": 65.7,
+    "viajeros": 1002739,
+    "porcentaje": 56.08,
+    "indice2019": 64.9,
     "parcial": false
   },
   {
     "anio": 2015,
     "continente": "europa",
     "viajeros": 130435,
-    "porcentaje": 4.47,
+    "porcentaje": 7.3,
     "indice2019": 92.4,
     "parcial": false
   },
@@ -315,47 +315,47 @@
     "anio": 2015,
     "continente": "norte",
     "viajeros": 522684,
-    "porcentaje": 17.91,
+    "porcentaje": 29.23,
     "indice2019": 86.7,
     "parcial": false
   },
   {
     "anio": 2015,
     "continente": "resto",
-    "viajeros": 23143,
-    "porcentaje": 0.79,
-    "indice2019": 110.2,
+    "viajeros": 36147,
+    "porcentaje": 2.02,
+    "indice2019": 98.9,
     "parcial": false
   },
   {
     "anio": 2015,
     "continente": "sur",
     "viajeros": 85997,
-    "porcentaje": 2.95,
+    "porcentaje": 4.81,
     "indice2019": 89.8,
     "parcial": false
   },
   {
     "anio": 2016,
     "continente": "asia",
-    "viajeros": 22001,
-    "porcentaje": 0.73,
-    "indice2019": 91.7,
+    "viajeros": 9655,
+    "porcentaje": 0.54,
+    "indice2019": 114.3,
     "parcial": false
   },
   {
     "anio": 2016,
     "continente": "centro",
-    "viajeros": 2246005,
-    "porcentaje": 74.94,
-    "indice2019": 69.2,
+    "viajeros": 1051449,
+    "porcentaje": 58.33,
+    "indice2019": 68.1,
     "parcial": false
   },
   {
     "anio": 2016,
     "continente": "europa",
     "viajeros": 125387,
-    "porcentaje": 4.18,
+    "porcentaje": 6.96,
     "indice2019": 88.8,
     "parcial": false
   },
@@ -363,47 +363,47 @@
     "anio": 2016,
     "continente": "norte",
     "viajeros": 491592,
-    "porcentaje": 16.4,
+    "porcentaje": 27.27,
     "indice2019": 81.6,
     "parcial": false
   },
   {
     "anio": 2016,
     "continente": "resto",
-    "viajeros": 22815,
-    "porcentaje": 0.76,
-    "indice2019": 108.6,
+    "viajeros": 35162,
+    "porcentaje": 1.95,
+    "indice2019": 96.2,
     "parcial": false
   },
   {
     "anio": 2016,
     "continente": "sur",
     "viajeros": 89227,
-    "porcentaje": 2.98,
+    "porcentaje": 4.95,
     "indice2019": 93.2,
     "parcial": false
   },
   {
     "anio": 2017,
     "continente": "asia",
-    "viajeros": 23539,
-    "porcentaje": 0.71,
-    "indice2019": 98.1,
+    "viajeros": 8311,
+    "porcentaje": 0.42,
+    "indice2019": 98.4,
     "parcial": false
   },
   {
     "anio": 2017,
     "continente": "centro",
-    "viajeros": 2508086,
-    "porcentaje": 75.83,
-    "indice2019": 77.2,
+    "viajeros": 1184591,
+    "porcentaje": 59.7,
+    "indice2019": 76.7,
     "parcial": false
   },
   {
     "anio": 2017,
     "continente": "europa",
     "viajeros": 138994,
-    "porcentaje": 4.2,
+    "porcentaje": 7.01,
     "indice2019": 98.4,
     "parcial": false
   },
@@ -411,47 +411,47 @@
     "anio": 2017,
     "continente": "norte",
     "viajeros": 520981,
-    "porcentaje": 15.75,
+    "porcentaje": 26.26,
     "indice2019": 86.5,
     "parcial": false
   },
   {
     "anio": 2017,
     "continente": "resto",
-    "viajeros": 22534,
-    "porcentaje": 0.68,
-    "indice2019": 107.3,
+    "viajeros": 37762,
+    "porcentaje": 1.9,
+    "indice2019": 103.3,
     "parcial": false
   },
   {
     "anio": 2017,
     "continente": "sur",
     "viajeros": 93517,
-    "porcentaje": 2.83,
+    "porcentaje": 4.71,
     "indice2019": 97.6,
     "parcial": false
   },
   {
     "anio": 2018,
     "continente": "asia",
-    "viajeros": 24574,
-    "porcentaje": 0.65,
-    "indice2019": 102.4,
+    "viajeros": 8385,
+    "porcentaje": 0.37,
+    "indice2019": 99.3,
     "parcial": false
   },
   {
     "anio": 2018,
     "continente": "centro",
-    "viajeros": 2926366,
-    "porcentaje": 77.14,
-    "indice2019": 90.1,
+    "viajeros": 1388122,
+    "porcentaje": 61.54,
+    "indice2019": 89.9,
     "parcial": false
   },
   {
     "anio": 2018,
     "continente": "europa",
     "viajeros": 145520,
-    "porcentaje": 3.84,
+    "porcentaje": 6.45,
     "indice2019": 103.0,
     "parcial": false
   },
@@ -459,39 +459,39 @@
     "anio": 2018,
     "continente": "norte",
     "viajeros": 579367,
-    "porcentaje": 15.27,
+    "porcentaje": 25.69,
     "indice2019": 96.2,
     "parcial": false
   },
   {
     "anio": 2018,
     "continente": "resto",
-    "viajeros": 22435,
-    "porcentaje": 0.59,
-    "indice2019": 106.8,
+    "viajeros": 38625,
+    "porcentaje": 1.71,
+    "indice2019": 105.7,
     "parcial": false
   },
   {
     "anio": 2018,
     "continente": "sur",
     "viajeros": 95499,
-    "porcentaje": 2.52,
+    "porcentaje": 4.23,
     "indice2019": 99.7,
     "parcial": false
   },
   {
     "anio": 2019,
     "continente": "asia",
-    "viajeros": 23992,
-    "porcentaje": 0.58,
+    "viajeros": 8444,
+    "porcentaje": 0.35,
     "indice2019": 100.0,
     "parcial": false
   },
   {
     "anio": 2019,
     "continente": "centro",
-    "viajeros": 3247683,
-    "porcentaje": 78.59,
+    "viajeros": 1544243,
+    "porcentaje": 63.58,
     "indice2019": 100.0,
     "parcial": false
   },
@@ -499,7 +499,7 @@
     "anio": 2019,
     "continente": "europa",
     "viajeros": 141238,
-    "porcentaje": 3.42,
+    "porcentaje": 5.82,
     "indice2019": 100.0,
     "parcial": false
   },
@@ -507,15 +507,15 @@
     "anio": 2019,
     "continente": "norte",
     "viajeros": 602557,
-    "porcentaje": 14.58,
+    "porcentaje": 24.81,
     "indice2019": 100.0,
     "parcial": false
   },
   {
     "anio": 2019,
     "continente": "resto",
-    "viajeros": 21005,
-    "porcentaje": 0.51,
+    "viajeros": 36552,
+    "porcentaje": 1.5,
     "indice2019": 100.0,
     "parcial": false
   },
@@ -523,31 +523,31 @@
     "anio": 2019,
     "continente": "sur",
     "viajeros": 95776,
-    "porcentaje": 2.32,
+    "porcentaje": 3.94,
     "indice2019": 100.0,
     "parcial": false
   },
   {
     "anio": 2020,
     "continente": "asia",
-    "viajeros": 5271,
-    "porcentaje": 0.5,
-    "indice2019": 22.0,
+    "viajeros": 1809,
+    "porcentaje": 0.33,
+    "indice2019": 21.4,
     "parcial": false
   },
   {
     "anio": 2020,
     "continente": "centro",
-    "viajeros": 830397,
-    "porcentaje": 78.36,
-    "indice2019": 25.6,
+    "viajeros": 322624,
+    "porcentaje": 58.45,
+    "indice2019": 20.9,
     "parcial": false
   },
   {
     "anio": 2020,
     "continente": "europa",
     "viajeros": 39787,
-    "porcentaje": 3.75,
+    "porcentaje": 7.21,
     "indice2019": 28.2,
     "parcial": false
   },
@@ -555,47 +555,47 @@
     "anio": 2020,
     "continente": "norte",
     "viajeros": 155795,
-    "porcentaje": 14.7,
+    "porcentaje": 28.22,
     "indice2019": 25.9,
     "parcial": false
   },
   {
     "anio": 2020,
     "continente": "resto",
-    "viajeros": 4770,
-    "porcentaje": 0.45,
-    "indice2019": 22.7,
+    "viajeros": 8231,
+    "porcentaje": 1.49,
+    "indice2019": 22.5,
     "parcial": false
   },
   {
     "anio": 2020,
     "continente": "sur",
     "viajeros": 23751,
-    "porcentaje": 2.24,
+    "porcentaje": 4.3,
     "indice2019": 24.8,
     "parcial": false
   },
   {
     "anio": 2021,
     "continente": "asia",
-    "viajeros": 5794,
-    "porcentaje": 0.53,
-    "indice2019": 24.1,
+    "viajeros": 1322,
+    "porcentaje": 0.2,
+    "indice2019": 15.7,
     "parcial": false
   },
   {
     "anio": 2021,
     "continente": "centro",
-    "viajeros": 754938,
-    "porcentaje": 68.7,
-    "indice2019": 23.2,
+    "viajeros": 318097,
+    "porcentaje": 48.04,
+    "indice2019": 20.6,
     "parcial": false
   },
   {
     "anio": 2021,
     "continente": "europa",
     "viajeros": 36380,
-    "porcentaje": 3.31,
+    "porcentaje": 5.49,
     "indice2019": 25.8,
     "parcial": false
   },
@@ -603,47 +603,47 @@
     "anio": 2021,
     "continente": "norte",
     "viajeros": 264889,
-    "porcentaje": 24.1,
+    "porcentaje": 40.01,
     "indice2019": 44.0,
     "parcial": false
   },
   {
     "anio": 2021,
     "continente": "resto",
-    "viajeros": 4869,
-    "porcentaje": 0.44,
-    "indice2019": 23.2,
+    "viajeros": 9341,
+    "porcentaje": 1.41,
+    "indice2019": 25.6,
     "parcial": false
   },
   {
     "anio": 2021,
     "continente": "sur",
     "viajeros": 32095,
-    "porcentaje": 2.92,
+    "porcentaje": 4.85,
     "indice2019": 33.5,
     "parcial": false
   },
   {
     "anio": 2022,
     "continente": "asia",
-    "viajeros": 11412,
-    "porcentaje": 0.35,
+    "viajeros": 4021,
+    "porcentaje": 0.22,
     "indice2019": 47.6,
     "parcial": false
   },
   {
     "anio": 2022,
     "continente": "centro",
-    "viajeros": 2449578,
-    "porcentaje": 75.85,
-    "indice2019": 75.4,
+    "viajeros": 1034243,
+    "porcentaje": 57.01,
+    "indice2019": 67.0,
     "parcial": false
   },
   {
     "anio": 2022,
     "continente": "europa",
     "viajeros": 124741,
-    "porcentaje": 3.86,
+    "porcentaje": 6.88,
     "indice2019": 88.3,
     "parcial": false
   },
@@ -651,32 +651,32 @@
     "anio": 2022,
     "continente": "norte",
     "viajeros": 533316,
-    "porcentaje": 16.51,
+    "porcentaje": 29.4,
     "indice2019": 88.5,
     "parcial": false
   },
   {
     "anio": 2022,
     "continente": "resto",
-    "viajeros": 20053,
-    "porcentaje": 0.62,
-    "indice2019": 95.5,
+    "viajeros": 27444,
+    "porcentaje": 1.51,
+    "indice2019": 75.1,
     "parcial": false
   },
   {
     "anio": 2022,
     "continente": "sur",
     "viajeros": 90229,
-    "porcentaje": 2.79,
+    "porcentaje": 4.97,
     "indice2019": 94.2,
     "parcial": false
   },
   {
     "anio": 2023,
     "continente": "asia",
-    "viajeros": 39565,
-    "porcentaje": 1.36,
-    "indice2019": 164.9,
+    "viajeros": 6212,
+    "porcentaje": 0.21,
+    "indice2019": 73.6,
     "parcial": false
   },
   {
@@ -684,7 +684,7 @@
     "continente": "centro",
     "viajeros": 1926018,
     "porcentaje": 66.01,
-    "indice2019": 59.3,
+    "indice2019": 124.7,
     "parcial": false
   },
   {
@@ -706,9 +706,9 @@
   {
     "anio": 2023,
     "continente": "resto",
-    "viajeros": 13355,
-    "porcentaje": 0.46,
-    "indice2019": 63.6,
+    "viajeros": 46708,
+    "porcentaje": 1.6,
+    "indice2019": 127.8,
     "parcial": false
   },
   {
@@ -722,9 +722,9 @@
   {
     "anio": 2024,
     "continente": "asia",
-    "viajeros": 46868,
-    "porcentaje": 1.43,
-    "indice2019": 195.4,
+    "viajeros": 9301,
+    "porcentaje": 0.28,
+    "indice2019": 110.1,
     "parcial": false
   },
   {
@@ -732,7 +732,7 @@
     "continente": "centro",
     "viajeros": 2115335,
     "porcentaje": 64.6,
-    "indice2019": 65.1,
+    "indice2019": 137.0,
     "parcial": false
   },
   {
@@ -754,9 +754,9 @@
   {
     "anio": 2024,
     "continente": "resto",
-    "viajeros": 12404,
-    "porcentaje": 0.38,
-    "indice2019": 59.1,
+    "viajeros": 49971,
+    "porcentaje": 1.53,
+    "indice2019": 136.7,
     "parcial": false
   },
   {
@@ -770,9 +770,9 @@
   {
     "anio": 2025,
     "continente": "asia",
-    "viajeros": 46075,
-    "porcentaje": 1.37,
-    "indice2019": 192.0,
+    "viajeros": 10311,
+    "porcentaje": 0.31,
+    "indice2019": 122.1,
     "parcial": false
   },
   {
@@ -780,7 +780,7 @@
     "continente": "centro",
     "viajeros": 2143694,
     "porcentaje": 63.95,
-    "indice2019": 66.0,
+    "indice2019": 138.8,
     "parcial": false
   },
   {
@@ -802,9 +802,9 @@
   {
     "anio": 2025,
     "continente": "resto",
-    "viajeros": 14525,
-    "porcentaje": 0.43,
-    "indice2019": 69.2,
+    "viajeros": 50290,
+    "porcentaje": 1.5,
+    "indice2019": 137.6,
     "parcial": false
   },
   {
@@ -818,9 +818,9 @@
   {
     "anio": 2026,
     "continente": "asia",
-    "viajeros": 23938,
-    "porcentaje": 1.52,
-    "indice2019": 99.8,
+    "viajeros": 5474,
+    "porcentaje": 0.35,
+    "indice2019": 64.8,
     "parcial": true
   },
   {
@@ -828,7 +828,7 @@
     "continente": "centro",
     "viajeros": 926638,
     "porcentaje": 58.77,
-    "indice2019": 28.5,
+    "indice2019": 60.0,
     "parcial": true
   },
   {
@@ -850,9 +850,9 @@
   {
     "anio": 2026,
     "continente": "resto",
-    "viajeros": 8564,
-    "porcentaje": 0.54,
-    "indice2019": 40.8,
+    "viajeros": 27028,
+    "porcentaje": 1.71,
+    "indice2019": 73.9,
     "parcial": true
   },
   {

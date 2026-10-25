@@ -1,5 +1,5 @@
 {
-  "fuente": "Base de Migración (Turista + Excursionista), partición de los laboratorios 1 y 2",
+  "fuente": "Base de Migración, turistas y excursionistas (cifras estimadas, uso académico; no son cifras oficiales)",
   "periodo": {
     "inicio": "2009-01",
     "fin": "2026-06"
@@ -7,7 +7,12 @@
   "anioParcial": 2026,
   "anioBaseRecuperacion": 2019,
   "finEntrenamiento": "2021-03",
-  "generado": "2026-10-22",
+  "quiebre": {
+    "fecha": "2023-01",
+    "descripcion": "Desde enero de 2023 la base deja de incluir a los residentes en Guatemala y agrupa los países en 26 categorías."
+  },
+  "residentesExcluidos": true,
+  "generado": "2026-10-24",
   "continentes": [
     {
       "id": "norte",

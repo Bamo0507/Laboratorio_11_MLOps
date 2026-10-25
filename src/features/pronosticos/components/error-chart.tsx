@@ -5,6 +5,8 @@ import { Bar, BarChart, CartesianGrid, Cell, ReferenceLine, XAxis, YAxis } from 
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { ChartContainer, ChartTooltip } from "@/components/ui/chart"
 import { formatoCompacto, formatoPersonas } from "@/features/shared/datos/formato"
+import { PieFuente } from "@/features/shared/ui/pie-fuente"
+import { UsoDirectivo } from "@/features/shared/ui/uso-directivo"
 
 import type { PuntoPronostico } from "../hooks/use-pronosticos"
 import { etiquetaMes } from "./prediccion-chart"
@@ -27,6 +29,9 @@ export function ErrorChart({ errores, nombreModelo }: Props) {
   const paso = ([1, 2, 5, 10].find((m) => m * magnitud >= crudo) ?? 10) * magnitud
   const extremo = Math.ceil(maximo / paso) * paso
   const ticksY = Array.from({ length: (2 * extremo) / paso + 1 }, (_, i) => -extremo + i * paso)
+  // Un tick por año; si el periodo elegido es corto, se etiquetan meses.
+  const enero = errores.filter((e) => e.fecha.endsWith("-01")).map((e) => e.fecha)
+  const porAnio = enero.length >= 2
 
   return (
     <Card className="gap-5 py-6">
@@ -39,15 +44,18 @@ export function ErrorChart({ errores, nombreModelo }: Props) {
             ? "El periodo seleccionado no incluye meses de prueba. Amplía la selección en el gráfico de arriba."
             : `Entre ${etiquetaMes(errores[0].fecha)} y ${etiquetaMes(errores.at(-1)!.fecha)}, ${nombreModelo} subestimó las llegadas en ${subestima} de ${errores.length} meses.`}
         </CardDescription>
+        <UsoDirectivo>ver si el modelo tiende a quedarse corto o a pasarse, para saber en qué dirección ajustar los planes que se basen en él.</UsoDirectivo>
       </CardHeader>
 
-      <CardContent className="px-6">
+      <CardContent className="flex flex-col gap-3 px-6">
         {errores.length === 0 ? (
           <p className="rounded-lg bg-muted px-4 py-6 text-center text-sm text-muted-foreground">Sin datos para esta selección.</p>
         ) : (
+          <>
+          <p className="text-xs font-medium text-muted-foreground">Diferencia en personas (estimado − observado)</p>
           <ChartContainer
             config={CONFIG}
-            className="aspect-auto w-full"
+            className="-mt-1 aspect-auto w-full"
             style={{ height: ALTO_GRAFICO }}
             role="img"
             aria-label={`${nombreModelo} subestimó en ${subestima} de ${errores.length} meses.`}
@@ -56,8 +64,9 @@ export function ErrorChart({ errores, nombreModelo }: Props) {
               <CartesianGrid vertical={false} stroke="var(--border)" />
               <XAxis
                 dataKey="fecha"
-                tickFormatter={etiquetaMes}
-                interval="preserveStartEnd"
+                ticks={porAnio ? enero : undefined}
+                tickFormatter={(fecha: string) => (porAnio ? fecha.slice(0, 4) : etiquetaMes(fecha))}
+                interval={porAnio ? 0 : "preserveStartEnd"}
                 minTickGap={32}
                 tickLine={false}
                 axisLine={false}
@@ -67,7 +76,7 @@ export function ErrorChart({ errores, nombreModelo }: Props) {
               <YAxis
                 domain={[-extremo, extremo]}
                 ticks={ticksY}
-                tickFormatter={(v) => (v > 0 ? `+${formatoCompacto(v)}` : formatoCompacto(v))}
+                tickFormatter={(v: number) => (v > 0 ? `+${formatoCompacto(v)}` : v < 0 ? `−${formatoCompacto(-v)}` : "0")}
                 width={56}
                 tickLine={false}
                 axisLine={false}
@@ -97,6 +106,7 @@ export function ErrorChart({ errores, nombreModelo }: Props) {
               </Bar>
             </BarChart>
           </ChartContainer>
+          </>
         )}
       </CardContent>
 
@@ -108,6 +118,7 @@ export function ErrorChart({ errores, nombreModelo }: Props) {
           <span className="font-medium" style={{ color: "var(--divergente-negativo)" }}>Naranja, hacia abajo</span>: el
           modelo subestimó.
         </p>
+        <PieFuente extra="Predicciones: laboratorios 1 y 2." />
       </CardFooter>
     </Card>
   )

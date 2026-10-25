@@ -10,7 +10,10 @@ import { NOMBRE_VIA, VIAS } from "../vias"
 /** Una frontera con menos viajeros que esto en el año base infla su % de crecimiento. */
 export const VOLUMEN_MINIMO_FRONTERA = 5000
 export const ANIO_PRE_PANDEMIA = 2019
-export const ANIOS_POST_PANDEMIA = [2022, 2023, 2024, 2025]
+// Desde 2023 la base usa la misma agrupación de países; antes se recodifica en el pipeline.
+export const ANIOS_POST_PANDEMIA = [2023, 2024, 2025]
+/** Años de pandemia: como base del índice exageran cualquier crecimiento posterior. */
+export const ANIOS_PANDEMIA = [2020, 2021]
 const TOP_PAISES = 10
 
 export type PuntoCrecimiento = { anio: number } & Partial<Record<ViaId, number>>
@@ -22,13 +25,16 @@ export type VariacionFrontera = {
   inicial: number
   final: number
   variacion: number
+  /** Menos de VOLUMEN_MINIMO_FRONTERA en el año base: su % se infla y se muestra como contexto. */
+  basePequena: boolean
 }
 
 export type BarraPais = {
   pais: string
-  porcentajePre: number
+  /** null = la categoría no tiene registro en 2019 (sin dato, no cero). */
+  porcentajePre: number | null
   porcentajePost: number
-  viajerosPre: number
+  viajerosPre: number | null
   viajerosPost: number
 }
 
@@ -40,6 +46,8 @@ export function useViasDeIngreso({ vias, fronteras, paises }: Datos) {
     () => [...new Set(vias.filter((d) => !d.parcial).map((d) => d.anio))].sort((a, b) => a - b),
     [vias]
   )
+  // Un año de pandemia no sirve como base del índice: queda fuera de "Desde".
+  const aniosInicio = useMemo(() => anios.slice(0, -1).filter((a) => !ANIOS_PANDEMIA.includes(a)), [anios])
   const anioParcial = useMemo(() => vias.find((d) => d.parcial)?.anio ?? null, [vias])
 
   const [rango, setRango] = useState({ inicio: anios[0], fin: anios.at(-1)! })
@@ -78,7 +86,8 @@ export function useViasDeIngreso({ vias, fronteras, paises }: Datos) {
     [crecimientoFinal]
   )
 
-  // P2 gráfico B: variación % por frontera de la vía elegida, solo con base relevante.
+  // P2 gráfico B: variación % de todas las fronteras de la vía con dato en ambos años.
+  // Las de base pequeña se muestran, pero marcadas como contexto.
   const variacionFronteras = useMemo<VariacionFrontera[]>(() => {
     const deVia = fronteras.filter((d) => d.via === viaSeleccionada)
     const inicial = new Map(deVia.filter((d) => d.anio === rango.inicio).map((d) => [d.frontera, d.viajeros]))
@@ -86,10 +95,18 @@ export function useViasDeIngreso({ vias, fronteras, paises }: Datos) {
       .filter((d) => d.anio === rango.fin)
       .flatMap((d) => {
         const base = inicial.get(d.frontera)
-        if (!base || base < VOLUMEN_MINIMO_FRONTERA) return []
-        return [{ frontera: d.frontera, inicial: base, final: d.viajeros, variacion: ((d.viajeros - base) / base) * 100 }]
+        if (!base) return []
+        return [
+          {
+            frontera: d.frontera,
+            inicial: base,
+            final: d.viajeros,
+            variacion: ((d.viajeros - base) / base) * 100,
+            basePequena: base < VOLUMEN_MINIMO_FRONTERA,
+          },
+        ]
       })
-      .sort((a, b) => b.variacion - a.variacion)
+      .sort((a, b) => Number(a.basePequena) - Number(b.basePequena) || b.variacion - a.variacion)
   }, [fronteras, viaSeleccionada, rango])
 
   // P4: top 10 países por aire del año post, comparados contra 2019 en % del total aéreo.
@@ -103,20 +120,28 @@ export function useViasDeIngreso({ vias, fronteras, paises }: Datos) {
         pais: d.pais,
         porcentajePost: d.porcentaje,
         viajerosPost: d.viajeros,
-        porcentajePre: pre.get(d.pais)?.porcentaje ?? 0,
-        viajerosPre: pre.get(d.pais)?.viajeros ?? 0,
+        porcentajePre: pre.get(d.pais)?.porcentaje ?? null,
+        viajerosPre: pre.get(d.pais)?.viajeros ?? null,
       }))
   }, [paises, anioPost])
 
   const kpis = useMemo(() => {
-    const delFin = vias.filter((d) => d.anio === rango.fin)
-    const total = delFin.reduce((suma, d) => suma + d.viajeros, 0)
-    const aerea = delFin.find((d) => d.via === "aerea")?.viajeros ?? 0
-    return { porcentajeAereo: total > 0 ? (aerea / total) * 100 : 0, paisPrincipal: barrasPaises[0] }
-  }, [vias, rango.fin, barrasPaises])
+    const porcentajeAereo = (anio: number) => {
+      const delAnio = vias.filter((d) => d.anio === anio)
+      const total = delAnio.reduce((suma, d) => suma + d.viajeros, 0)
+      const aerea = delAnio.find((d) => d.via === "aerea")?.viajeros ?? 0
+      return total > 0 ? (aerea / total) * 100 : 0
+    }
+    return {
+      porcentajeAereo: porcentajeAereo(rango.fin),
+      porcentajeAereoInicio: porcentajeAereo(rango.inicio),
+      paisPrincipal: barrasPaises[0],
+    }
+  }, [vias, rango, barrasPaises])
 
   return {
     anios,
+    aniosInicio,
     anioParcial,
     rango,
     cambiarInicio,

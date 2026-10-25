@@ -14,6 +14,9 @@ export type Metadatos = {
   anioParcial: number
   anioBaseRecuperacion: number
   finEntrenamiento: string
+  /** Mes desde el que la base deja de incluir a los residentes en Guatemala. */
+  quiebre: { fecha: string; descripcion: string }
+  residentesExcluidos: boolean
   generado: string
   continentes: Catalogo<ContinenteId>[]
   vias: Catalogo<ViaId>[]

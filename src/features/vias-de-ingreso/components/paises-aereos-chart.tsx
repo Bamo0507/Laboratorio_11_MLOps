@@ -6,6 +6,8 @@ import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader,
 import { ChartContainer, ChartTooltip, type ChartConfig } from "@/components/ui/chart"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { formatoPersonas, formatoPorcentaje } from "@/features/shared/datos/formato"
+import { NotaQuiebre, PieFuente } from "@/features/shared/ui/pie-fuente"
+import { UsoDirectivo } from "@/features/shared/ui/uso-directivo"
 
 import { ANIO_PRE_PANDEMIA, ANIOS_POST_PANDEMIA, type BarraPais } from "../hooks/use-vias-de-ingreso"
 
@@ -23,9 +25,9 @@ export function PaisesAereosChart({ barras, anioPost, onCambiarAnio }: Props) {
     porcentajePost: { label: String(anioPost), color: "var(--periodo-post)" },
   } satisfies ChartConfig
   const items = ANIOS_POST_PANDEMIA.map((a) => ({ value: String(a), label: String(a) })).reverse()
-  const nuevos = barras.filter((b) => b.porcentajePre === 0).map((b) => b.pais)
+  const sinEquivalente = barras.filter((b) => b.porcentajePre === null).map((b) => b.pais)
   const principal = barras[0]
-  const techo = Math.ceil(Math.max(0, ...barras.map((b) => Math.max(b.porcentajePre, b.porcentajePost))) / 10) * 10
+  const techo = Math.ceil(Math.max(0, ...barras.map((b) => Math.max(b.porcentajePre ?? 0, b.porcentajePost))) / 10) * 10
   const ticksX = Array.from({ length: techo / 10 + 1 }, (_, i) => i * 10)
 
   return (
@@ -38,15 +40,16 @@ export function PaisesAereosChart({ barras, anioPost, onCambiarAnio }: Props) {
         </CardTitle>
         <CardDescription className="max-w-[75ch] text-sm leading-relaxed">
           {principal &&
-            `En ${anioPost}, ${principal.pais} aportó el ${formatoPorcentaje(principal.porcentajePost)} de las llegadas aéreas, frente a ${formatoPorcentaje(principal.porcentajePre)} en ${ANIO_PRE_PANDEMIA}.`}
-          {nuevos.length > 0 &&
-            ` ${nuevos.length === 1 ? nuevos[0] : `${nuevos.slice(0, -1).join(", ")} y ${nuevos.at(-1)}`} no ${nuevos.length === 1 ? "aparecía" : "aparecían"} entre los 20 principales de ${ANIO_PRE_PANDEMIA}.`}
+            `En ${anioPost}, ${principal.pais} aportó el ${formatoPorcentaje(principal.porcentajePost)} de las llegadas aéreas${principal.porcentajePre === null ? "" : `, frente a ${formatoPorcentaje(principal.porcentajePre)} en ${ANIO_PRE_PANDEMIA}`}.`}
+          {sinEquivalente.length > 0 &&
+            ` ${sinEquivalente.join(", ")} no ${sinEquivalente.length === 1 ? "tiene" : "tienen"} registro en ${ANIO_PRE_PANDEMIA} (sin dato, no cero).`}
         </CardDescription>
+        <UsoDirectivo>detectar qué países ganaron o perdieron peso en las llegadas aéreas, como insumo para gestionar rutas y conectividad aérea.</UsoDirectivo>
         <CardAction>
           <label className="flex items-center gap-2 text-sm text-muted-foreground">
-            Año post-pandemia
+            Año a comparar
             <Select items={items} value={String(anioPost)} onValueChange={(v) => v && onCambiarAnio(Number(v))}>
-              <SelectTrigger className="h-10 min-w-24 bg-card text-foreground" aria-label="Año post-pandemia">
+              <SelectTrigger className="h-10 min-w-24 bg-card text-foreground" aria-label="Año a comparar">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
@@ -76,7 +79,7 @@ export function PaisesAereosChart({ barras, anioPost, onCambiarAnio }: Props) {
           style={{ height: barras.length * ALTO_FILA }}
           role="img"
           aria-label={barras
-            .map((b) => `${b.pais}: ${formatoPorcentaje(b.porcentajePre)} en ${ANIO_PRE_PANDEMIA}, ${formatoPorcentaje(b.porcentajePost)} en ${anioPost}`)
+            .map((b) => `${b.pais}: ${b.porcentajePre === null ? "sin dato" : formatoPorcentaje(b.porcentajePre)} en ${ANIO_PRE_PANDEMIA}, ${formatoPorcentaje(b.porcentajePost)} en ${anioPost}`)
             .join(". ")}
         >
           <BarChart data={barras} layout="vertical" margin={{ top: 0, right: 16, bottom: 0, left: 0 }} barGap={2}>
@@ -100,7 +103,10 @@ export function PaisesAereosChart({ barras, anioPost, onCambiarAnio }: Props) {
                   <div className="rounded-lg border bg-popover px-3 py-2 text-sm text-popover-foreground shadow-md">
                     <p className="font-medium">{dato.pais}</p>
                     <p className="font-data text-muted-foreground">
-                      {ANIO_PRE_PANDEMIA}: {formatoPorcentaje(dato.porcentajePre)} · {formatoPersonas(dato.viajerosPre)}
+                      {ANIO_PRE_PANDEMIA}:{" "}
+                      {dato.porcentajePre === null || dato.viajerosPre === null
+                        ? "sin dato"
+                        : `${formatoPorcentaje(dato.porcentajePre)} · ${formatoPersonas(dato.viajerosPre)}`}
                     </p>
                     <p className="font-data text-foreground">
                       {anioPost}: {formatoPorcentaje(dato.porcentajePost)} · {formatoPersonas(dato.viajerosPost)}
@@ -121,11 +127,11 @@ export function PaisesAereosChart({ barras, anioPost, onCambiarAnio }: Props) {
           por {anioPost}.
         </p>
         <p>
-          Un país sin barra gris no estaba entre los 20 principales de {ANIO_PRE_PANDEMIA}. Después de la pandemia la base
-          agrupa algunos países en categorías como «Otros países de Europa», por lo que esas categorías no tienen
-          equivalente en {ANIO_PRE_PANDEMIA}.
+          Desde 2023 la base agrupa a los países con menos llegadas en «Otros Países de América del Sur», «Otros Países de
+          Europa» y «Resto del Mundo». Para comparar, los países de {ANIO_PRE_PANDEMIA} se agruparon de la misma forma.
         </p>
-        <p>Fuente: Base de Migración, turistas y excursionistas.</p>
+        <NotaQuiebre />
+        <PieFuente />
       </CardFooter>
     </Card>
   )

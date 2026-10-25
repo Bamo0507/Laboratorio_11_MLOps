@@ -5,9 +5,11 @@ import { Area, CartesianGrid, ComposedChart, Line, ReferenceDot, ReferenceLine, 
 import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { ChartContainer, ChartTooltip } from "@/components/ui/chart"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
-import { CHART_CONFIG_CONTINENTES, CONTINENTES } from "@/features/shared/datos/continentes"
+import { CHART_CONFIG_CONTINENTES, CONTINENTES, NOMBRE_CONTINENTE } from "@/features/shared/datos/continentes"
 import { formatoPorcentaje } from "@/features/shared/datos/formato"
 import type { ContinenteId } from "@/features/shared/datos/types"
+import { NotaQuiebre, PieFuente } from "@/features/shared/ui/pie-fuente"
+import { UsoDirectivo } from "@/features/shared/ui/uso-directivo"
 
 import {
   INICIALES_MESES,
@@ -24,6 +26,8 @@ type Cambio = { continente: ContinenteId; nombre: string; mesOtro: number; mes: 
 type Props = {
   periodo: PeriodoId
   onCambiarPeriodo: (periodo: PeriodoId) => void
+  visibles: ContinenteId[]
+  onCambiarVisibles: (visibles: ContinenteId[]) => void
   otro: PeriodoId
   serie: PuntoPerfil[]
   resumen: ResumenContinente[]
@@ -48,7 +52,7 @@ function hallazgo(resumen: ResumenContinente[], etiqueta: string) {
     .slice(1)
     .map(([mes, rs]) => `; ${lista(rs.map((r) => r.nombre))} ${rs.length > 1 ? "llegan" : "llega"} más en ${MESES_LARGOS[mes - 1]}`)
     .join("")
-  return `En promedio, entre ${etiqueta} ${MESES_LARGOS[mesComun - 1]} es el mes con más llegadas para ${grupo.length} de ${resumen.length} continentes${detalle}.`
+  return `En promedio, de ${etiqueta}, ${MESES_LARGOS[mesComun - 1]} es el mes con más llegadas para ${grupo.length} de ${resumen.length} continentes${detalle}.`
 }
 
 function Panel({ r, serie, maximoY, mostrarEtiquetaPromedio }: { r: ResumenContinente; serie: PuntoPerfil[]; maximoY: number; mostrarEtiquetaPromedio: boolean }) {
@@ -106,7 +110,7 @@ function Panel({ r, serie, maximoY, mostrarEtiquetaPromedio }: { r: ResumenConti
             strokeDasharray="4 4"
             label={
               mostrarEtiquetaPromedio
-                ? { value: "reparto parejo 8.3 %", position: "insideBottomLeft", fontSize: 11, fill: "var(--muted-foreground)" }
+                ? { value: "reparto parejo 8.3 %", position: "insideBottomLeft", fontSize: 12, fill: "var(--muted-foreground)" }
                 : undefined
             }
           />
@@ -197,6 +201,8 @@ function Panel({ r, serie, maximoY, mostrarEtiquetaPromedio }: { r: ResumenConti
 export function TemporadasMultiplesChart({
   periodo,
   onCambiarPeriodo,
+  visibles,
+  onCambiarVisibles,
   otro,
   serie,
   resumen,
@@ -215,6 +221,7 @@ export function TemporadasMultiplesChart({
           </h2>
         </CardTitle>
         <CardDescription className="max-w-[80ch] text-sm leading-relaxed">{hallazgo(resumen, etiqueta)}</CardDescription>
+        <UsoDirectivo>anticipar los meses de mayor y menor demanda de cada mercado, para calendarizar campañas, eventos y capacidad de atención.</UsoDirectivo>
         <CardAction>
           <ToggleGroup
             aria-label="Periodo"
@@ -227,7 +234,7 @@ export function TemporadasMultiplesChart({
               <ToggleGroupItem
                 key={id}
                 value={id}
-                className="h-10 cursor-pointer px-3 text-sm transition-colors duration-150 hover:bg-muted hover:text-foreground data-pressed:bg-accent data-pressed:font-medium data-pressed:text-accent-foreground data-pressed:hover:bg-accent"
+                className="h-10 cursor-pointer px-3 text-sm transition-colors duration-150 hover:bg-accent/45 hover:text-foreground data-pressed:bg-accent data-pressed:font-medium data-pressed:text-accent-foreground data-pressed:hover:bg-accent"
               >
                 {PERIODOS[id].corta} ({PERIODOS[id].etiqueta})
               </ToggleGroupItem>
@@ -239,7 +246,7 @@ export function TemporadasMultiplesChart({
       <CardContent className="flex flex-col gap-4 px-6">
         {cambios.length > 0 && (
           <p className="rounded-lg bg-muted px-4 py-3 text-sm leading-relaxed text-foreground">
-            <span className="font-semibold">Cambio frente a {PERIODOS[otro].etiqueta}:</span>{" "}
+            <span className="font-semibold">Cambio frente al periodo {PERIODOS[otro].etiqueta}:</span>{" "}
             {cambios
               .map((c) =>
                 periodo === "post"
@@ -251,15 +258,42 @@ export function TemporadasMultiplesChart({
           </p>
         )}
 
-        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-          {CONTINENTES.map((id, i) => {
-            const r = resumen.find((x) => x.continente === id)
-            return r ? <Panel key={id} r={r} serie={serie} maximoY={maximoY} mostrarEtiquetaPromedio={i === 0} /> : null
-          })}
-        </div>
+        <ToggleGroup
+          aria-label="Continentes a mostrar"
+          multiple
+          value={visibles}
+          onValueChange={(valor) => onCambiarVisibles(CONTINENTES.filter((id) => valor.includes(id)))}
+          variant="outline"
+          spacing={2}
+          className="flex-wrap"
+        >
+          {CONTINENTES.map((id) => (
+            <ToggleGroupItem
+              key={id}
+              value={id}
+              className="h-10 cursor-pointer gap-2 px-3 text-sm transition-colors duration-150 hover:border-foreground/30 hover:bg-accent/45 hover:text-foreground data-pressed:border-primary data-pressed:bg-accent data-pressed:font-medium data-pressed:text-accent-foreground data-pressed:hover:bg-accent"
+            >
+              <span aria-hidden className="size-2.5 rounded-full" style={{ backgroundColor: `var(--continente-${id})` }} />
+              {NOMBRE_CONTINENTE[id]}
+            </ToggleGroupItem>
+          ))}
+        </ToggleGroup>
+
+        {visibles.length === 0 ? (
+          <p className="rounded-lg border border-dashed px-4 py-10 text-center text-sm text-muted-foreground">
+            Elige al menos un continente para ver su temporada.
+          </p>
+        ) : (
+          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+            {visibles.map((id, i) => {
+              const r = resumen.find((x) => x.continente === id)
+              return r ? <Panel key={id} r={r} serie={serie} maximoY={maximoY} mostrarEtiquetaPromedio={i === 0} /> : null
+            })}
+          </div>
+        )}
       </CardContent>
 
-      <CardFooter className="flex-col items-start gap-1.5 border-t px-6 pt-4 pb-5 text-sm leading-relaxed text-muted-foreground">
+      <CardFooter className="flex-col items-start gap-1 border-t px-6 pt-4 pb-5 text-xs leading-relaxed text-muted-foreground">
         <p>
           La línea es el % de las llegadas del año que cae en cada mes, promediado entre {aniosPorPeriodo[periodo]} años
           ({etiqueta}); la franja de color muestra el año más bajo y el más alto. La línea punteada marca{" "}
@@ -271,9 +305,11 @@ export function TemporadasMultiplesChart({
           lo marca como pico, pero no se repite de forma constante. Todos los paneles usan el mismo eje en ambos periodos. No se ajusta por días del mes: febrero tiene hasta 3 días menos.
         </p>
         <p>
-          Se excluyen 2020 (abril a agosto sin dato) y 2021, año de transición, para comparar años completos y
-          comparables. Fuente: Base de Migración, turistas y excursionistas. Datos hasta junio de 2026.
+          Se excluyen 2020 (abril a agosto sin dato), 2021 y 2022, años de pandemia y reapertura, para comparar años
+          completos con un comportamiento normal. 2026 no entra porque solo tiene datos de enero a junio.
         </p>
+        <NotaQuiebre />
+        <PieFuente />
       </CardFooter>
     </Card>
   )

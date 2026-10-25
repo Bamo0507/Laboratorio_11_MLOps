@@ -13,6 +13,8 @@ import {
 } from "@/features/shared/datos/continentes"
 import { formatoIndice, formatoPersonas, formatoPorcentaje } from "@/features/shared/datos/formato"
 import type { ContinenteId } from "@/features/shared/datos/types"
+import { NotaQuiebre, PieFuente } from "@/features/shared/ui/pie-fuente"
+import { UsoDirectivo } from "@/features/shared/ui/uso-directivo"
 
 import { PESO_MINIMO_MERCADO, type PuntoRecuperacion, type Recuperacion } from "../hooks/use-mercados-de-origen"
 
@@ -20,6 +22,7 @@ type Props = {
   serie: PuntoRecuperacion[]
   recuperacionFinal: Recuperacion[]
   mercadoPrincipal: Recuperacion
+  empatados: Recuperacion[]
   ultimoAnio: number
   continenteResaltado: ContinenteId
   onSeleccionarContinente: (continente: ContinenteId) => void
@@ -35,6 +38,25 @@ function descripcion(r: Recuperacion, anio: number) {
     return `${base}, pero sobre una base pequeña: pasó de ${formatoPersonas(r.viajeros2019)} a ${formatoPersonas(r.viajeros)} visitantes.`
   }
   return r.indice >= 100 ? `${base}: ya superó su nivel previo a la pandemia.` : `${base}: todavía no recupera su nivel previo a la pandemia.`
+}
+
+function lista(nombres: string[]) {
+  return nombres.length === 1 ? nombres[0] : `${nombres.slice(0, -1).join(", ")} y ${nombres.at(-1)}`
+}
+
+/** Mensaje principal del gráfico: si el mercado más grande ya se recuperó y si hay un ganador claro. */
+function datoClave(final: Recuperacion[], principal: Recuperacion, empatados: Recuperacion[], anio: number) {
+  if (principal.indice < 100) {
+    return `${principal.nombre}, el mercado más grande (${formatoPorcentaje(principal.peso2019)} de los visitantes en 2019), sigue en ${formatoIndice(principal.indice)}: todavía está por debajo de su nivel de 2019.`
+  }
+  const recuperados = final.filter((r) => r.indice >= 100).length
+  const inicio =
+    recuperados === final.length
+      ? `en ${anio} todos los continentes ya superaron su nivel de 2019.`
+      : `en ${anio}, ${recuperados} de ${final.length} continentes ya superaron su nivel de 2019.`
+  if (empatados.length < 2) return inicio.charAt(0).toUpperCase() + inicio.slice(1)
+  const indices = empatados.map((r) => r.indice)
+  return `${inicio.charAt(0).toUpperCase() + inicio.slice(1)} ${lista(empatados.map((r) => NOMBRE_CORTO_CONTINENTE[r.continente]))} quedaron prácticamente empatados (entre ${formatoIndice(Math.min(...indices))} y ${formatoIndice(Math.max(...indices))}), así que ninguno se separa como el de mejor recuperación.`
 }
 
 /** Reparte las etiquetas del final de las líneas para que no se encimen. */
@@ -54,6 +76,7 @@ export function RecuperacionChart({
   serie,
   recuperacionFinal,
   mercadoPrincipal,
+  empatados,
   ultimoAnio,
   continenteResaltado,
   onSeleccionarContinente,
@@ -77,17 +100,13 @@ export function RecuperacionChart({
         <CardDescription className="max-w-[75ch] text-sm leading-relaxed">
           {descripcion(resaltado, ultimoAnio)}
         </CardDescription>
+        <UsoDirectivo>distinguir los mercados que ya volvieron a su nivel de 2019 de los que siguen rezagados, para decidir dónde reforzar la promoción.</UsoDirectivo>
       </CardHeader>
 
       <CardContent className="flex flex-col gap-4 px-6">
-        {mercadoPrincipal.indice < 100 && (
-          <p className="rounded-lg bg-muted px-4 py-3 text-sm leading-relaxed text-foreground">
-            <span className="font-semibold">Dato clave:</span> {mercadoPrincipal.nombre}, el mercado más grande (
-            {formatoPorcentaje(mercadoPrincipal.peso2019)} de los visitantes en 2019), sigue en{" "}
-            <span className="font-data font-semibold">{formatoIndice(mercadoPrincipal.indice)}</span>: todavía está por
-            debajo de su nivel de 2019.
-          </p>
-        )}
+        <p className="rounded-lg bg-muted px-4 py-3 text-sm leading-relaxed text-foreground">
+          <span className="font-semibold">Dato clave:</span> {datoClave(recuperacionFinal, mercadoPrincipal, empatados, ultimoAnio)}
+        </p>
 
         <ToggleGroup
           aria-label="Continente a resaltar"
@@ -101,7 +120,7 @@ export function RecuperacionChart({
             <ToggleGroupItem
               key={id}
               value={id}
-              className="h-10 cursor-pointer gap-2 px-3 text-sm transition-colors duration-150 hover:border-foreground/30 hover:bg-muted hover:text-foreground data-pressed:border-primary data-pressed:bg-accent data-pressed:font-medium data-pressed:text-accent-foreground data-pressed:hover:bg-accent"
+              className="h-10 cursor-pointer gap-2 px-3 text-sm transition-colors duration-150 hover:border-foreground/30 hover:bg-accent/45 hover:text-foreground data-pressed:border-primary data-pressed:bg-accent data-pressed:font-medium data-pressed:text-accent-foreground data-pressed:hover:bg-accent"
             >
               <span aria-hidden className="size-2.5 rounded-full" style={{ backgroundColor: `var(--continente-${id})` }} />
               {NOMBRE_CONTINENTE[id]}
@@ -225,10 +244,11 @@ export function RecuperacionChart({
           nivel previo a la pandemia. {ultimoAnio + 1} no se incluye porque solo tiene datos de enero a junio.
         </p>
         <p>
-          Asia y el resto del mundo representaban menos del {PESO_MINIMO_MERCADO} % de los visitantes en 2019: sobre
-          bases tan pequeñas, sus variaciones se ven más grandes.
+          Asia (solo China y Japón, que la base reporta por separado) y el resto del mundo representaban menos del{" "}
+          {PESO_MINIMO_MERCADO} % de los visitantes en 2019: sobre bases tan pequeñas, sus variaciones se ven más grandes.
         </p>
-        <p>Fuente: Base de Migración, turistas y excursionistas. Datos hasta junio de 2026.</p>
+        <NotaQuiebre />
+        <PieFuente />
       </CardFooter>
     </Card>
   )

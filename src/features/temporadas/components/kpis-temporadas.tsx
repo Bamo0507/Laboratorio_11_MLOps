@@ -1,5 +1,5 @@
-import { Card } from "@/components/ui/card"
 import { formatoPorcentaje } from "@/features/shared/datos/formato"
+import { Cifra, FilaKpis, Kpi } from "@/features/shared/ui/kpi"
 
 import { MESES_LARGOS, type Extremos } from "../hooks/use-temporadas"
 
@@ -12,25 +12,11 @@ type Props = {
   otro: PerfilPais
 }
 
-function Kpi({ etiqueta, valor, detalle }: { etiqueta: string; valor: React.ReactNode; detalle: React.ReactNode }) {
-  return (
-    <Card className="gap-2 px-5 py-5">
-      <p className="text-sm text-muted-foreground">{etiqueta}</p>
-      <p className="font-heading text-2xl leading-tight font-semibold text-foreground first-letter:uppercase">{valor}</p>
-      <div className="flex flex-col gap-0.5 text-sm leading-snug text-muted-foreground">{detalle}</div>
-    </Card>
-  )
-}
-
-function Cifra({ children }: { children: React.ReactNode }) {
-  return <span className="font-data font-medium text-foreground">{children}</span>
-}
-
 const decimal = new Intl.NumberFormat("es-GT", { maximumFractionDigits: 1, minimumFractionDigits: 1 })
 
 export function KpisTemporadas({ etiquetaPeriodo, etiquetaOtro, actual, otro }: Props) {
   return (
-    <section aria-label="Indicadores clave" className="grid gap-4 md:grid-cols-3">
+    <FilaKpis>
       <Kpi
         etiqueta={`Mes con más llegadas, ${etiquetaPeriodo}`}
         valor={MESES_LARGOS[actual.mesPico - 1]}
@@ -78,6 +64,6 @@ export function KpisTemporadas({ etiquetaPeriodo, etiquetaOtro, actual, otro }: 
           </>
         }
       />
-    </section>
+    </FilaKpis>
   )
 }

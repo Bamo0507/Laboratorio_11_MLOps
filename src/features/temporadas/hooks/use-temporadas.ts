@@ -11,7 +11,7 @@ export type PeriodoId = "pre" | "post"
 
 export const PERIODOS: Record<PeriodoId, { etiqueta: string; corta: string; desde: number; hasta: number }> = {
   pre: { etiqueta: "2010 a 2019", corta: "Antes", desde: 2010, hasta: 2019 },
-  post: { etiqueta: "2022 a 2025", corta: "Después", desde: 2022, hasta: 2025 },
+  post: { etiqueta: "2023 a 2025", corta: "Después", desde: 2023, hasta: 2025 },
 }
 
 export const MESES_LARGOS = [
@@ -116,6 +116,7 @@ function perfilesPorContinente(datos: ContinenteMensual[], periodo: PeriodoId) {
 
 export function useTemporadas(datos: ContinenteMensual[]) {
   const [periodo, setPeriodo] = useState<PeriodoId>("post")
+  const [visibles, setVisibles] = useState<ContinenteId[]>(CONTINENTES)
   const otro: PeriodoId = periodo === "post" ? "pre" : "post"
 
   const todos = useMemo(
@@ -174,5 +175,5 @@ export function useTemporadas(datos: ContinenteMensual[]) {
 
   const aniosPorPeriodo = { pre: todos.pre.centro.anios, post: todos.post.centro.anios }
 
-  return { periodo, setPeriodo, otro, serie, resumen, cambios, pais, maximoY, aniosPorPeriodo }
+  return { periodo, setPeriodo, visibles, setVisibles, otro, serie, resumen, cambios, pais, maximoY, aniosPorPeriodo }
 }

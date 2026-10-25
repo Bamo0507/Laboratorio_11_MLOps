@@ -25,6 +25,8 @@ export function TemporadasView({ datos }: { datos: ContinenteMensual[] }) {
       <TemporadasMultiplesChart
         periodo={t.periodo}
         onCambiarPeriodo={t.setPeriodo}
+        visibles={t.visibles}
+        onCambiarVisibles={t.setVisibles}
         otro={t.otro}
         serie={t.serie}
         resumen={t.resumen}

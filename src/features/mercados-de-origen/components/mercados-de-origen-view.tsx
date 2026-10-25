@@ -24,7 +24,7 @@ export function MercadosDeOrigenView({ datos }: { datos: ContinenteAnual[] }) {
         esParcial={m.kpis.esParcial}
         principal={m.kpis.principal}
         cambioPeso={m.kpis.cambioPeso}
-        recuperacion={m.mejorRecuperacion}
+        empatados={m.empatados}
         anioRecuperacion={m.ultimoAnioCompleto}
       />
 
@@ -42,6 +42,7 @@ export function MercadosDeOrigenView({ datos }: { datos: ContinenteAnual[] }) {
         serie={m.serieRecuperacion}
         recuperacionFinal={m.recuperacionFinal}
         mercadoPrincipal={m.mercadoPrincipal}
+        empatados={m.empatados}
         ultimoAnio={m.ultimoAnioCompleto}
         continenteResaltado={m.continenteResaltado}
         onSeleccionarContinente={m.setContinenteResaltado}

@@ -1,6 +1,6 @@
 import { TrendingDown, TrendingUp } from "lucide-react"
 
-import { Card } from "@/components/ui/card"
+import { NOMBRE_CORTO_CONTINENTE } from "@/features/shared/datos/continentes"
 import {
   formatoIndice,
   formatoPersonas,
@@ -9,8 +9,9 @@ import {
   formatoVariacion,
 } from "@/features/shared/datos/formato"
 import type { ContinenteId } from "@/features/shared/datos/types"
+import { Cifra, FilaKpis, Kpi, Muestra } from "@/features/shared/ui/kpi"
 
-import { PESO_MINIMO_MERCADO, type Recuperacion } from "../hooks/use-mercados-de-origen"
+import { MARGEN_EMPATE, PESO_MINIMO_MERCADO, type Recuperacion } from "../hooks/use-mercados-de-origen"
 
 type Props = {
   anio: number
@@ -19,32 +20,12 @@ type Props = {
   esParcial: boolean
   principal: { continente: ContinenteId; nombre: string; porcentaje: number }
   cambioPeso: number | null
-  recuperacion: Recuperacion
+  empatados: Recuperacion[]
   anioRecuperacion: number
 }
 
-function Kpi({ etiqueta, valor, detalle }: { etiqueta: string; valor: React.ReactNode; detalle: React.ReactNode }) {
-  return (
-    <Card className="gap-2 px-5 py-5">
-      <p className="text-sm text-muted-foreground">{etiqueta}</p>
-      <p className="font-heading text-2xl leading-tight font-semibold text-foreground">{valor}</p>
-      <p className="text-sm leading-snug text-muted-foreground">{detalle}</p>
-    </Card>
-  )
-}
-
-function Muestra({ continente }: { continente: ContinenteId }) {
-  return (
-    <span
-      aria-hidden
-      className="mr-2 inline-block size-3 rounded-full align-middle"
-      style={{ backgroundColor: `var(--continente-${continente})` }}
-    />
-  )
-}
-
-function Cifra({ children }: { children: React.ReactNode }) {
-  return <span className="font-data font-medium text-foreground">{children}</span>
+function lista(nombres: string[]) {
+  return nombres.length === 1 ? nombres[0] : `${nombres.slice(0, -1).join(", ")} y ${nombres.at(-1)}`
 }
 
 export function KpisMercados({
@@ -54,28 +35,29 @@ export function KpisMercados({
   esParcial,
   principal,
   cambioPeso,
-  recuperacion,
+  empatados,
   anioRecuperacion,
 }: Props) {
   const Tendencia = variacion !== null && variacion < 0 ? TrendingDown : TrendingUp
+  const indices = empatados.map((r) => r.indice)
 
   return (
-    <section aria-label="Indicadores clave" className="grid gap-4 md:grid-cols-3">
+    <FilaKpis>
       <Kpi
         etiqueta={`Visitantes en ${anio}`}
         valor={<span className="font-data">{formatoPersonas(total)}</span>}
         detalle={
           esParcial ? (
-            "Año parcial: solo enero a junio"
+            <p>Año parcial: solo enero a junio</p>
           ) : variacion === null ? (
-            "Sin año anterior para comparar"
+            <p>Sin año anterior para comparar</p>
           ) : (
-            <span className="inline-flex items-center gap-1.5">
+            <p className="inline-flex items-center gap-1.5">
               <Tendencia className="size-4 shrink-0 text-foreground" aria-hidden />
               <span>
                 <Cifra>{formatoVariacion(variacion)}</Cifra> frente a {anio - 1}
               </span>
-            </span>
+            </p>
           )
         }
       />
@@ -83,12 +65,12 @@ export function KpisMercados({
         etiqueta={`Continente principal en ${anio}`}
         valor={
           <>
-            <Muestra continente={principal.continente} />
+            <Muestra color={`var(--continente-${principal.continente})`} />
             {principal.nombre}
           </>
         }
         detalle={
-          <>
+          <p>
             Aportó el <Cifra>{formatoPorcentaje(principal.porcentaje)}</Cifra> de los visitantes
             {cambioPeso !== null && (
               <>
@@ -96,24 +78,36 @@ export function KpisMercados({
                 (<Cifra>{formatoPuntos(cambioPeso)}</Cifra> frente a {anio - 1})
               </>
             )}
-          </>
+          </p>
         }
       />
       <Kpi
         etiqueta={`Mejor recuperación, 2019 a ${anioRecuperacion}`}
         valor={
-          <>
-            <Muestra continente={recuperacion.continente} />
-            {recuperacion.nombre}
-          </>
+          empatados.length === 1 ? (
+            <>
+              <Muestra color={`var(--continente-${empatados[0].continente})`} />
+              {empatados[0].nombre}
+            </>
+          ) : (
+            `Empate entre ${empatados.length} mercados`
+          )
         }
         detalle={
-          <>
-            <Cifra>{formatoIndice(recuperacion.indice)}</Cifra> visitantes por cada 100 de 2019. Entre mercados con más
-            del {PESO_MINIMO_MERCADO} % del total.
-          </>
+          empatados.length === 1 ? (
+            <p>
+              <Cifra>{formatoIndice(empatados[0].indice)}</Cifra> visitantes por cada 100 de 2019 (mercados con más del{" "}
+              {PESO_MINIMO_MERCADO} % del total)
+            </p>
+          ) : (
+            <p>
+              {lista(empatados.map((r) => NOMBRE_CORTO_CONTINENTE[r.continente]))}: entre{" "}
+              <Cifra>{formatoIndice(Math.min(...indices))}</Cifra> y <Cifra>{formatoIndice(Math.max(...indices))}</Cifra>{" "}
+              visitantes por cada 100 de 2019 (diferencias menores a {MARGEN_EMPATE} puntos)
+            </p>
+          )
         }
       />
-    </section>
+    </FilaKpis>
   )
 }

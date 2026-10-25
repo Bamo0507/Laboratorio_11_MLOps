@@ -1,18 +1,10 @@
 [
   {
     "anio": 2009,
-    "pais": "Guatemala",
-    "continente": "centro",
-    "viajeros": 440986,
-    "porcentaje": 47.15,
-    "parcial": false
-  },
-  {
-    "anio": 2009,
     "pais": "Estados Unidos de América",
     "continente": "norte",
     "viajeros": 248394,
-    "porcentaje": 26.56,
+    "porcentaje": 50.24,
     "parcial": false
   },
   {
@@ -20,7 +12,7 @@
     "pais": "México",
     "continente": "norte",
     "viajeros": 35349,
-    "porcentaje": 3.78,
+    "porcentaje": 7.15,
     "parcial": false
   },
   {
@@ -28,7 +20,15 @@
     "pais": "Costa Rica",
     "continente": "centro",
     "viajeros": 25407,
-    "porcentaje": 2.72,
+    "porcentaje": 5.14,
+    "parcial": false
+  },
+  {
+    "anio": 2009,
+    "pais": "Otros Países de América del Sur",
+    "continente": "sur",
+    "viajeros": 21870,
+    "porcentaje": 4.42,
     "parcial": false
   },
   {
@@ -36,7 +36,15 @@
     "pais": "Canadá",
     "continente": "norte",
     "viajeros": 18096,
-    "porcentaje": 1.93,
+    "porcentaje": 3.66,
+    "parcial": false
+  },
+  {
+    "anio": 2009,
+    "pais": "Otros Países de Europa",
+    "continente": "europa",
+    "viajeros": 14113,
+    "porcentaje": 2.85,
     "parcial": false
   },
   {
@@ -44,7 +52,7 @@
     "pais": "España",
     "continente": "europa",
     "viajeros": 14088,
-    "porcentaje": 1.51,
+    "porcentaje": 2.85,
     "parcial": false
   },
   {
@@ -52,7 +60,7 @@
     "pais": "Honduras",
     "continente": "centro",
     "viajeros": 12063,
-    "porcentaje": 1.29,
+    "porcentaje": 2.44,
     "parcial": false
   },
   {
@@ -60,7 +68,7 @@
     "pais": "El Salvador",
     "continente": "centro",
     "viajeros": 11771,
-    "porcentaje": 1.26,
+    "porcentaje": 2.38,
     "parcial": false
   },
   {
@@ -68,7 +76,7 @@
     "pais": "Francia",
     "continente": "europa",
     "viajeros": 11486,
-    "porcentaje": 1.23,
+    "porcentaje": 2.32,
     "parcial": false
   },
   {
@@ -76,7 +84,7 @@
     "pais": "Colombia",
     "continente": "sur",
     "viajeros": 10759,
-    "porcentaje": 1.15,
+    "porcentaje": 2.18,
     "parcial": false
   },
   {
@@ -84,7 +92,15 @@
     "pais": "Panamá",
     "continente": "centro",
     "viajeros": 8710,
-    "porcentaje": 0.93,
+    "porcentaje": 1.76,
+    "parcial": false
+  },
+  {
+    "anio": 2009,
+    "pais": "Resto del Mundo",
+    "continente": "resto",
+    "viajeros": 8667,
+    "porcentaje": 1.75,
     "parcial": false
   },
   {
@@ -92,7 +108,7 @@
     "pais": "Nicaragua",
     "continente": "centro",
     "viajeros": 8348,
-    "porcentaje": 0.89,
+    "porcentaje": 1.69,
     "parcial": false
   },
   {
@@ -100,7 +116,7 @@
     "pais": "Alemania",
     "continente": "europa",
     "viajeros": 6889,
-    "porcentaje": 0.74,
+    "porcentaje": 1.39,
     "parcial": false
   },
   {
@@ -108,7 +124,7 @@
     "pais": "Reino Unido de Gran Bretaña e Irlanda del Norte",
     "continente": "europa",
     "viajeros": 6235,
-    "porcentaje": 0.67,
+    "porcentaje": 1.26,
     "parcial": false
   },
   {
@@ -116,7 +132,7 @@
     "pais": "Argentina",
     "continente": "sur",
     "viajeros": 6106,
-    "porcentaje": 0.65,
+    "porcentaje": 1.24,
     "parcial": false
   },
   {
@@ -124,7 +140,7 @@
     "pais": "Italia",
     "continente": "europa",
     "viajeros": 6097,
-    "porcentaje": 0.65,
+    "porcentaje": 1.23,
     "parcial": false
   },
   {
@@ -132,39 +148,15 @@
     "pais": "Brasil",
     "continente": "sur",
     "viajeros": 5374,
-    "porcentaje": 0.57,
+    "porcentaje": 1.09,
     "parcial": false
   },
   {
     "anio": 2009,
-    "pais": "República de Corea",
-    "continente": "asia",
-    "viajeros": 5152,
-    "porcentaje": 0.55,
-    "parcial": false
-  },
-  {
-    "anio": 2009,
-    "pais": "Venezuela (República Bolivariana de)",
-    "continente": "sur",
-    "viajeros": 4729,
-    "porcentaje": 0.51,
-    "parcial": false
-  },
-  {
-    "anio": 2009,
-    "pais": "Chile",
-    "continente": "sur",
-    "viajeros": 3897,
-    "porcentaje": 0.42,
-    "parcial": false
-  },
-  {
-    "anio": 2010,
-    "pais": "Guatemala",
-    "continente": "centro",
-    "viajeros": 453365,
-    "porcentaje": 46.54,
+    "pais": "Israel",
+    "continente": "resto",
+    "viajeros": 3285,
+    "porcentaje": 0.66,
     "parcial": false
   },
   {
@@ -172,7 +164,7 @@
     "pais": "Estados Unidos de América",
     "continente": "norte",
     "viajeros": 266267,
-    "porcentaje": 27.33,
+    "porcentaje": 51.12,
     "parcial": false
   },
   {
@@ -180,7 +172,7 @@
     "pais": "México",
     "continente": "norte",
     "viajeros": 34121,
-    "porcentaje": 3.5,
+    "porcentaje": 6.55,
     "parcial": false
   },
   {
@@ -188,7 +180,15 @@
     "pais": "Costa Rica",
     "continente": "centro",
     "viajeros": 26809,
-    "porcentaje": 2.75,
+    "porcentaje": 5.15,
+    "parcial": false
+  },
+  {
+    "anio": 2010,
+    "pais": "Otros Países de América del Sur",
+    "continente": "sur",
+    "viajeros": 22835,
+    "porcentaje": 4.38,
     "parcial": false
   },
   {
@@ -196,7 +196,7 @@
     "pais": "Canadá",
     "continente": "norte",
     "viajeros": 18879,
-    "porcentaje": 1.94,
+    "porcentaje": 3.62,
     "parcial": false
   },
   {
@@ -204,7 +204,23 @@
     "pais": "España",
     "continente": "europa",
     "viajeros": 14928,
-    "porcentaje": 1.53,
+    "porcentaje": 2.87,
+    "parcial": false
+  },
+  {
+    "anio": 2010,
+    "pais": "Otros Países de Europa",
+    "continente": "europa",
+    "viajeros": 13943,
+    "porcentaje": 2.68,
+    "parcial": false
+  },
+  {
+    "anio": 2010,
+    "pais": "Resto del Mundo",
+    "continente": "resto",
+    "viajeros": 12550,
+    "porcentaje": 2.41,
     "parcial": false
   },
   {
@@ -212,7 +228,7 @@
     "pais": "El Salvador",
     "continente": "centro",
     "viajeros": 11961,
-    "porcentaje": 1.23,
+    "porcentaje": 2.3,
     "parcial": false
   },
   {
@@ -220,7 +236,7 @@
     "pais": "Honduras",
     "continente": "centro",
     "viajeros": 11706,
-    "porcentaje": 1.2,
+    "porcentaje": 2.25,
     "parcial": false
   },
   {
@@ -228,7 +244,7 @@
     "pais": "Colombia",
     "continente": "sur",
     "viajeros": 11013,
-    "porcentaje": 1.13,
+    "porcentaje": 2.11,
     "parcial": false
   },
   {
@@ -236,7 +252,7 @@
     "pais": "Francia",
     "continente": "europa",
     "viajeros": 10093,
-    "porcentaje": 1.04,
+    "porcentaje": 1.94,
     "parcial": false
   },
   {
@@ -244,7 +260,7 @@
     "pais": "Nicaragua",
     "continente": "centro",
     "viajeros": 9245,
-    "porcentaje": 0.95,
+    "porcentaje": 1.77,
     "parcial": false
   },
   {
@@ -252,7 +268,7 @@
     "pais": "Panamá",
     "continente": "centro",
     "viajeros": 9162,
-    "porcentaje": 0.94,
+    "porcentaje": 1.76,
     "parcial": false
   },
   {
@@ -260,7 +276,7 @@
     "pais": "Alemania",
     "continente": "europa",
     "viajeros": 7038,
-    "porcentaje": 0.72,
+    "porcentaje": 1.35,
     "parcial": false
   },
   {
@@ -268,7 +284,7 @@
     "pais": "Reino Unido de Gran Bretaña e Irlanda del Norte",
     "continente": "europa",
     "viajeros": 6493,
-    "porcentaje": 0.67,
+    "porcentaje": 1.25,
     "parcial": false
   },
   {
@@ -276,7 +292,7 @@
     "pais": "Italia",
     "continente": "europa",
     "viajeros": 6308,
-    "porcentaje": 0.65,
+    "porcentaje": 1.21,
     "parcial": false
   },
   {
@@ -284,15 +300,7 @@
     "pais": "Argentina",
     "continente": "sur",
     "viajeros": 6224,
-    "porcentaje": 0.64,
-    "parcial": false
-  },
-  {
-    "anio": 2010,
-    "pais": "República de Corea",
-    "continente": "asia",
-    "viajeros": 5570,
-    "porcentaje": 0.57,
+    "porcentaje": 1.19,
     "parcial": false
   },
   {
@@ -300,31 +308,15 @@
     "pais": "Brasil",
     "continente": "sur",
     "viajeros": 5511,
-    "porcentaje": 0.57,
+    "porcentaje": 1.06,
     "parcial": false
   },
   {
     "anio": 2010,
-    "pais": "Venezuela (República Bolivariana de)",
-    "continente": "sur",
-    "viajeros": 5204,
-    "porcentaje": 0.53,
-    "parcial": false
-  },
-  {
-    "anio": 2010,
-    "pais": "India",
-    "continente": "asia",
-    "viajeros": 4689,
-    "porcentaje": 0.48,
-    "parcial": false
-  },
-  {
-    "anio": 2011,
-    "pais": "Guatemala",
-    "continente": "centro",
-    "viajeros": 447757,
-    "porcentaje": 46.84,
+    "pais": "Países Bajos",
+    "continente": "europa",
+    "viajeros": 3872,
+    "porcentaje": 0.74,
     "parcial": false
   },
   {
@@ -332,7 +324,7 @@
     "pais": "Estados Unidos de América",
     "continente": "norte",
     "viajeros": 254699,
-    "porcentaje": 26.64,
+    "porcentaje": 50.12,
     "parcial": false
   },
   {
@@ -340,7 +332,7 @@
     "pais": "México",
     "continente": "norte",
     "viajeros": 40097,
-    "porcentaje": 4.19,
+    "porcentaje": 7.89,
     "parcial": false
   },
   {
@@ -348,7 +340,15 @@
     "pais": "Costa Rica",
     "continente": "centro",
     "viajeros": 26091,
-    "porcentaje": 2.73,
+    "porcentaje": 5.13,
+    "parcial": false
+  },
+  {
+    "anio": 2011,
+    "pais": "Otros Países de América del Sur",
+    "continente": "sur",
+    "viajeros": 22415,
+    "porcentaje": 4.41,
     "parcial": false
   },
   {
@@ -356,7 +356,7 @@
     "pais": "Canadá",
     "continente": "norte",
     "viajeros": 17513,
-    "porcentaje": 1.83,
+    "porcentaje": 3.45,
     "parcial": false
   },
   {
@@ -364,7 +364,15 @@
     "pais": "España",
     "continente": "europa",
     "viajeros": 14132,
-    "porcentaje": 1.48,
+    "porcentaje": 2.78,
+    "parcial": false
+  },
+  {
+    "anio": 2011,
+    "pais": "Otros Países de Europa",
+    "continente": "europa",
+    "viajeros": 13288,
+    "porcentaje": 2.61,
     "parcial": false
   },
   {
@@ -372,7 +380,7 @@
     "pais": "Colombia",
     "continente": "sur",
     "viajeros": 11762,
-    "porcentaje": 1.23,
+    "porcentaje": 2.31,
     "parcial": false
   },
   {
@@ -380,7 +388,7 @@
     "pais": "El Salvador",
     "continente": "centro",
     "viajeros": 11690,
-    "porcentaje": 1.22,
+    "porcentaje": 2.3,
     "parcial": false
   },
   {
@@ -388,7 +396,15 @@
     "pais": "Honduras",
     "continente": "centro",
     "viajeros": 11319,
-    "porcentaje": 1.18,
+    "porcentaje": 2.23,
+    "parcial": false
+  },
+  {
+    "anio": 2011,
+    "pais": "Resto del Mundo",
+    "continente": "resto",
+    "viajeros": 10651,
+    "porcentaje": 2.1,
     "parcial": false
   },
   {
@@ -396,7 +412,7 @@
     "pais": "Francia",
     "continente": "europa",
     "viajeros": 10160,
-    "porcentaje": 1.06,
+    "porcentaje": 2.0,
     "parcial": false
   },
   {
@@ -404,7 +420,7 @@
     "pais": "Panamá",
     "continente": "centro",
     "viajeros": 8748,
-    "porcentaje": 0.92,
+    "porcentaje": 1.72,
     "parcial": false
   },
   {
@@ -412,7 +428,7 @@
     "pais": "Nicaragua",
     "continente": "centro",
     "viajeros": 8610,
-    "porcentaje": 0.9,
+    "porcentaje": 1.69,
     "parcial": false
   },
   {
@@ -420,7 +436,7 @@
     "pais": "Italia",
     "continente": "europa",
     "viajeros": 6784,
-    "porcentaje": 0.71,
+    "porcentaje": 1.33,
     "parcial": false
   },
   {
@@ -428,7 +444,7 @@
     "pais": "Alemania",
     "continente": "europa",
     "viajeros": 6745,
-    "porcentaje": 0.71,
+    "porcentaje": 1.33,
     "parcial": false
   },
   {
@@ -436,15 +452,7 @@
     "pais": "Argentina",
     "continente": "sur",
     "viajeros": 6448,
-    "porcentaje": 0.67,
-    "parcial": false
-  },
-  {
-    "anio": 2011,
-    "pais": "Venezuela (República Bolivariana de)",
-    "continente": "sur",
-    "viajeros": 5942,
-    "porcentaje": 0.62,
+    "porcentaje": 1.27,
     "parcial": false
   },
   {
@@ -452,15 +460,7 @@
     "pais": "Reino Unido de Gran Bretaña e Irlanda del Norte",
     "continente": "europa",
     "viajeros": 5617,
-    "porcentaje": 0.59,
-    "parcial": false
-  },
-  {
-    "anio": 2011,
-    "pais": "República de Corea",
-    "continente": "asia",
-    "viajeros": 5233,
-    "porcentaje": 0.55,
+    "porcentaje": 1.11,
     "parcial": false
   },
   {
@@ -468,23 +468,15 @@
     "pais": "Brasil",
     "continente": "sur",
     "viajeros": 4795,
-    "porcentaje": 0.5,
+    "porcentaje": 0.94,
     "parcial": false
   },
   {
     "anio": 2011,
-    "pais": "Chile",
-    "continente": "sur",
-    "viajeros": 4094,
-    "porcentaje": 0.43,
-    "parcial": false
-  },
-  {
-    "anio": 2012,
-    "pais": "Guatemala",
-    "continente": "centro",
-    "viajeros": 433855,
-    "porcentaje": 44.7,
+    "pais": "Israel",
+    "continente": "resto",
+    "viajeros": 4045,
+    "porcentaje": 0.8,
     "parcial": false
   },
   {
@@ -492,7 +484,7 @@
     "pais": "Estados Unidos de América",
     "continente": "norte",
     "viajeros": 267215,
-    "porcentaje": 27.53,
+    "porcentaje": 49.79,
     "parcial": false
   },
   {
@@ -500,7 +492,7 @@
     "pais": "México",
     "continente": "norte",
     "viajeros": 48201,
-    "porcentaje": 4.97,
+    "porcentaje": 8.98,
     "parcial": false
   },
   {
@@ -508,7 +500,15 @@
     "pais": "Costa Rica",
     "continente": "centro",
     "viajeros": 27003,
-    "porcentaje": 2.78,
+    "porcentaje": 5.03,
+    "parcial": false
+  },
+  {
+    "anio": 2012,
+    "pais": "Otros Países de América del Sur",
+    "continente": "sur",
+    "viajeros": 24989,
+    "porcentaje": 4.66,
     "parcial": false
   },
   {
@@ -516,7 +516,15 @@
     "pais": "Canadá",
     "continente": "norte",
     "viajeros": 19244,
-    "porcentaje": 1.98,
+    "porcentaje": 3.59,
+    "parcial": false
+  },
+  {
+    "anio": 2012,
+    "pais": "Otros Países de Europa",
+    "continente": "europa",
+    "viajeros": 14068,
+    "porcentaje": 2.62,
     "parcial": false
   },
   {
@@ -524,7 +532,7 @@
     "pais": "España",
     "continente": "europa",
     "viajeros": 13777,
-    "porcentaje": 1.42,
+    "porcentaje": 2.57,
     "parcial": false
   },
   {
@@ -532,7 +540,7 @@
     "pais": "Colombia",
     "continente": "sur",
     "viajeros": 13663,
-    "porcentaje": 1.41,
+    "porcentaje": 2.55,
     "parcial": false
   },
   {
@@ -540,7 +548,7 @@
     "pais": "Francia",
     "continente": "europa",
     "viajeros": 12103,
-    "porcentaje": 1.25,
+    "porcentaje": 2.26,
     "parcial": false
   },
   {
@@ -548,7 +556,7 @@
     "pais": "El Salvador",
     "continente": "centro",
     "viajeros": 11022,
-    "porcentaje": 1.14,
+    "porcentaje": 2.05,
     "parcial": false
   },
   {
@@ -556,7 +564,15 @@
     "pais": "Honduras",
     "continente": "centro",
     "viajeros": 11009,
-    "porcentaje": 1.13,
+    "porcentaje": 2.05,
+    "parcial": false
+  },
+  {
+    "anio": 2012,
+    "pais": "Resto del Mundo",
+    "continente": "resto",
+    "viajeros": 9851,
+    "porcentaje": 1.84,
     "parcial": false
   },
   {
@@ -564,7 +580,7 @@
     "pais": "Panamá",
     "continente": "centro",
     "viajeros": 8442,
-    "porcentaje": 0.87,
+    "porcentaje": 1.57,
     "parcial": false
   },
   {
@@ -572,15 +588,7 @@
     "pais": "Nicaragua",
     "continente": "centro",
     "viajeros": 8301,
-    "porcentaje": 0.86,
-    "parcial": false
-  },
-  {
-    "anio": 2012,
-    "pais": "Venezuela (República Bolivariana de)",
-    "continente": "sur",
-    "viajeros": 7376,
-    "porcentaje": 0.76,
+    "porcentaje": 1.55,
     "parcial": false
   },
   {
@@ -588,7 +596,7 @@
     "pais": "Alemania",
     "continente": "europa",
     "viajeros": 7270,
-    "porcentaje": 0.75,
+    "porcentaje": 1.35,
     "parcial": false
   },
   {
@@ -596,7 +604,7 @@
     "pais": "Italia",
     "continente": "europa",
     "viajeros": 6395,
-    "porcentaje": 0.66,
+    "porcentaje": 1.19,
     "parcial": false
   },
   {
@@ -604,15 +612,7 @@
     "pais": "Argentina",
     "continente": "sur",
     "viajeros": 6285,
-    "porcentaje": 0.65,
-    "parcial": false
-  },
-  {
-    "anio": 2012,
-    "pais": "República de Corea",
-    "continente": "asia",
-    "viajeros": 5640,
-    "porcentaje": 0.58,
+    "porcentaje": 1.17,
     "parcial": false
   },
   {
@@ -620,7 +620,7 @@
     "pais": "Reino Unido de Gran Bretaña e Irlanda del Norte",
     "continente": "europa",
     "viajeros": 5497,
-    "porcentaje": 0.57,
+    "porcentaje": 1.02,
     "parcial": false
   },
   {
@@ -628,23 +628,15 @@
     "pais": "Brasil",
     "continente": "sur",
     "viajeros": 5005,
-    "porcentaje": 0.52,
+    "porcentaje": 0.93,
     "parcial": false
   },
   {
     "anio": 2012,
-    "pais": "Chile",
-    "continente": "sur",
-    "viajeros": 3965,
-    "porcentaje": 0.41,
-    "parcial": false
-  },
-  {
-    "anio": 2013,
-    "pais": "Guatemala",
-    "continente": "centro",
-    "viajeros": 444281,
-    "porcentaje": 44.57,
+    "pais": "Israel",
+    "continente": "resto",
+    "viajeros": 3649,
+    "porcentaje": 0.68,
     "parcial": false
   },
   {
@@ -652,7 +644,7 @@
     "pais": "Estados Unidos de América",
     "continente": "norte",
     "viajeros": 277347,
-    "porcentaje": 27.82,
+    "porcentaje": 50.2,
     "parcial": false
   },
   {
@@ -660,7 +652,15 @@
     "pais": "México",
     "continente": "norte",
     "viajeros": 47411,
-    "porcentaje": 4.76,
+    "porcentaje": 8.58,
+    "parcial": false
+  },
+  {
+    "anio": 2013,
+    "pais": "Otros Países de América del Sur",
+    "continente": "sur",
+    "viajeros": 26858,
+    "porcentaje": 4.86,
     "parcial": false
   },
   {
@@ -668,7 +668,7 @@
     "pais": "Costa Rica",
     "continente": "centro",
     "viajeros": 24872,
-    "porcentaje": 2.5,
+    "porcentaje": 4.5,
     "parcial": false
   },
   {
@@ -676,7 +676,7 @@
     "pais": "Canadá",
     "continente": "norte",
     "viajeros": 19921,
-    "porcentaje": 2.0,
+    "porcentaje": 3.61,
     "parcial": false
   },
   {
@@ -684,7 +684,7 @@
     "pais": "Colombia",
     "continente": "sur",
     "viajeros": 16320,
-    "porcentaje": 1.64,
+    "porcentaje": 2.95,
     "parcial": false
   },
   {
@@ -692,7 +692,15 @@
     "pais": "España",
     "continente": "europa",
     "viajeros": 15417,
-    "porcentaje": 1.55,
+    "porcentaje": 2.79,
+    "parcial": false
+  },
+  {
+    "anio": 2013,
+    "pais": "Otros Países de Europa",
+    "continente": "europa",
+    "viajeros": 14353,
+    "porcentaje": 2.6,
     "parcial": false
   },
   {
@@ -700,7 +708,7 @@
     "pais": "Honduras",
     "continente": "centro",
     "viajeros": 11364,
-    "porcentaje": 1.14,
+    "porcentaje": 2.06,
     "parcial": false
   },
   {
@@ -708,7 +716,7 @@
     "pais": "Francia",
     "continente": "europa",
     "viajeros": 10486,
-    "porcentaje": 1.05,
+    "porcentaje": 1.9,
     "parcial": false
   },
   {
@@ -716,7 +724,15 @@
     "pais": "El Salvador",
     "continente": "centro",
     "viajeros": 10387,
-    "porcentaje": 1.04,
+    "porcentaje": 1.88,
+    "parcial": false
+  },
+  {
+    "anio": 2013,
+    "pais": "Resto del Mundo",
+    "continente": "resto",
+    "viajeros": 10329,
+    "porcentaje": 1.87,
     "parcial": false
   },
   {
@@ -724,7 +740,7 @@
     "pais": "Panamá",
     "continente": "centro",
     "viajeros": 8512,
-    "porcentaje": 0.85,
+    "porcentaje": 1.54,
     "parcial": false
   },
   {
@@ -732,15 +748,7 @@
     "pais": "Nicaragua",
     "continente": "centro",
     "viajeros": 8204,
-    "porcentaje": 0.82,
-    "parcial": false
-  },
-  {
-    "anio": 2013,
-    "pais": "Venezuela (República Bolivariana de)",
-    "continente": "sur",
-    "viajeros": 7678,
-    "porcentaje": 0.77,
+    "porcentaje": 1.48,
     "parcial": false
   },
   {
@@ -748,7 +756,7 @@
     "pais": "Alemania",
     "continente": "europa",
     "viajeros": 7455,
-    "porcentaje": 0.75,
+    "porcentaje": 1.35,
     "parcial": false
   },
   {
@@ -756,7 +764,7 @@
     "pais": "Italia",
     "continente": "europa",
     "viajeros": 6675,
-    "porcentaje": 0.67,
+    "porcentaje": 1.21,
     "parcial": false
   },
   {
@@ -764,7 +772,7 @@
     "pais": "Argentina",
     "continente": "sur",
     "viajeros": 6553,
-    "porcentaje": 0.66,
+    "porcentaje": 1.19,
     "parcial": false
   },
   {
@@ -772,15 +780,7 @@
     "pais": "Reino Unido de Gran Bretaña e Irlanda del Norte",
     "continente": "europa",
     "viajeros": 6370,
-    "porcentaje": 0.64,
-    "parcial": false
-  },
-  {
-    "anio": 2013,
-    "pais": "República de Corea",
-    "continente": "asia",
-    "viajeros": 5749,
-    "porcentaje": 0.58,
+    "porcentaje": 1.15,
     "parcial": false
   },
   {
@@ -788,23 +788,15 @@
     "pais": "Brasil",
     "continente": "sur",
     "viajeros": 5707,
-    "porcentaje": 0.57,
+    "porcentaje": 1.03,
     "parcial": false
   },
   {
     "anio": 2013,
-    "pais": "Chile",
-    "continente": "sur",
-    "viajeros": 4367,
-    "porcentaje": 0.44,
-    "parcial": false
-  },
-  {
-    "anio": 2014,
-    "pais": "Guatemala",
-    "continente": "centro",
-    "viajeros": 494311,
-    "porcentaje": 45.25,
+    "pais": "Israel",
+    "continente": "resto",
+    "viajeros": 3768,
+    "porcentaje": 0.68,
     "parcial": false
   },
   {
@@ -812,7 +804,7 @@
     "pais": "Estados Unidos de América",
     "continente": "norte",
     "viajeros": 294986,
-    "porcentaje": 27.0,
+    "porcentaje": 49.33,
     "parcial": false
   },
   {
@@ -820,7 +812,15 @@
     "pais": "México",
     "continente": "norte",
     "viajeros": 48134,
-    "porcentaje": 4.41,
+    "porcentaje": 8.05,
+    "parcial": false
+  },
+  {
+    "anio": 2014,
+    "pais": "Otros Países de América del Sur",
+    "continente": "sur",
+    "viajeros": 28360,
+    "porcentaje": 4.74,
     "parcial": false
   },
   {
@@ -828,7 +828,7 @@
     "pais": "Costa Rica",
     "continente": "centro",
     "viajeros": 27866,
-    "porcentaje": 2.55,
+    "porcentaje": 4.66,
     "parcial": false
   },
   {
@@ -836,7 +836,7 @@
     "pais": "Canadá",
     "continente": "norte",
     "viajeros": 21027,
-    "porcentaje": 1.92,
+    "porcentaje": 3.52,
     "parcial": false
   },
   {
@@ -844,7 +844,7 @@
     "pais": "Colombia",
     "continente": "sur",
     "viajeros": 20009,
-    "porcentaje": 1.83,
+    "porcentaje": 3.35,
     "parcial": false
   },
   {
@@ -852,7 +852,15 @@
     "pais": "España",
     "continente": "europa",
     "viajeros": 17547,
-    "porcentaje": 1.61,
+    "porcentaje": 2.93,
+    "parcial": false
+  },
+  {
+    "anio": 2014,
+    "pais": "Otros Países de Europa",
+    "continente": "europa",
+    "viajeros": 16022,
+    "porcentaje": 2.68,
     "parcial": false
   },
   {
@@ -860,7 +868,7 @@
     "pais": "Honduras",
     "continente": "centro",
     "viajeros": 14057,
-    "porcentaje": 1.29,
+    "porcentaje": 2.35,
     "parcial": false
   },
   {
@@ -868,7 +876,7 @@
     "pais": "Francia",
     "continente": "europa",
     "viajeros": 12125,
-    "porcentaje": 1.11,
+    "porcentaje": 2.03,
     "parcial": false
   },
   {
@@ -876,7 +884,15 @@
     "pais": "El Salvador",
     "continente": "centro",
     "viajeros": 11507,
-    "porcentaje": 1.05,
+    "porcentaje": 1.92,
+    "parcial": false
+  },
+  {
+    "anio": 2014,
+    "pais": "Resto del Mundo",
+    "continente": "resto",
+    "viajeros": 11065,
+    "porcentaje": 1.85,
     "parcial": false
   },
   {
@@ -884,7 +900,7 @@
     "pais": "Alemania",
     "continente": "europa",
     "viajeros": 9178,
-    "porcentaje": 0.84,
+    "porcentaje": 1.53,
     "parcial": false
   },
   {
@@ -892,7 +908,7 @@
     "pais": "Panamá",
     "continente": "centro",
     "viajeros": 9163,
-    "porcentaje": 0.84,
+    "porcentaje": 1.53,
     "parcial": false
   },
   {
@@ -900,15 +916,7 @@
     "pais": "Nicaragua",
     "continente": "centro",
     "viajeros": 8899,
-    "porcentaje": 0.81,
-    "parcial": false
-  },
-  {
-    "anio": 2014,
-    "pais": "Venezuela (República Bolivariana de)",
-    "continente": "sur",
-    "viajeros": 7577,
-    "porcentaje": 0.69,
+    "porcentaje": 1.49,
     "parcial": false
   },
   {
@@ -916,7 +924,7 @@
     "pais": "Reino Unido de Gran Bretaña e Irlanda del Norte",
     "continente": "europa",
     "viajeros": 7414,
-    "porcentaje": 0.68,
+    "porcentaje": 1.24,
     "parcial": false
   },
   {
@@ -924,7 +932,7 @@
     "pais": "Italia",
     "continente": "europa",
     "viajeros": 7185,
-    "porcentaje": 0.66,
+    "porcentaje": 1.2,
     "parcial": false
   },
   {
@@ -932,7 +940,7 @@
     "pais": "Argentina",
     "continente": "sur",
     "viajeros": 6446,
-    "porcentaje": 0.59,
+    "porcentaje": 1.08,
     "parcial": false
   },
   {
@@ -940,15 +948,7 @@
     "pais": "Brasil",
     "continente": "sur",
     "viajeros": 6221,
-    "porcentaje": 0.57,
-    "parcial": false
-  },
-  {
-    "anio": 2014,
-    "pais": "República de Corea",
-    "continente": "asia",
-    "viajeros": 6086,
-    "porcentaje": 0.56,
+    "porcentaje": 1.04,
     "parcial": false
   },
   {
@@ -956,15 +956,7 @@
     "pais": "Israel",
     "continente": "resto",
     "viajeros": 4965,
-    "porcentaje": 0.45,
-    "parcial": false
-  },
-  {
-    "anio": 2015,
-    "pais": "Guatemala",
-    "continente": "centro",
-    "viajeros": 527145,
-    "porcentaje": 45.16,
+    "porcentaje": 0.83,
     "parcial": false
   },
   {
@@ -972,7 +964,7 @@
     "pais": "Estados Unidos de América",
     "continente": "norte",
     "viajeros": 305593,
-    "porcentaje": 26.18,
+    "porcentaje": 47.73,
     "parcial": false
   },
   {
@@ -980,7 +972,15 @@
     "pais": "México",
     "continente": "norte",
     "viajeros": 55619,
-    "porcentaje": 4.76,
+    "porcentaje": 8.69,
+    "parcial": false
+  },
+  {
+    "anio": 2015,
+    "pais": "Otros Países de América del Sur",
+    "continente": "sur",
+    "viajeros": 30541,
+    "porcentaje": 4.77,
     "parcial": false
   },
   {
@@ -988,7 +988,7 @@
     "pais": "Costa Rica",
     "continente": "centro",
     "viajeros": 28912,
-    "porcentaje": 2.48,
+    "porcentaje": 4.52,
     "parcial": false
   },
   {
@@ -996,7 +996,7 @@
     "pais": "Colombia",
     "continente": "sur",
     "viajeros": 24975,
-    "porcentaje": 2.14,
+    "porcentaje": 3.9,
     "parcial": false
   },
   {
@@ -1004,7 +1004,7 @@
     "pais": "Canadá",
     "continente": "norte",
     "viajeros": 21523,
-    "porcentaje": 1.84,
+    "porcentaje": 3.36,
     "parcial": false
   },
   {
@@ -1012,7 +1012,7 @@
     "pais": "España",
     "continente": "europa",
     "viajeros": 19295,
-    "porcentaje": 1.65,
+    "porcentaje": 3.01,
     "parcial": false
   },
   {
@@ -1020,7 +1020,15 @@
     "pais": "El Salvador",
     "continente": "centro",
     "viajeros": 16970,
-    "porcentaje": 1.45,
+    "porcentaje": 2.65,
+    "parcial": false
+  },
+  {
+    "anio": 2015,
+    "pais": "Otros Países de Europa",
+    "continente": "europa",
+    "viajeros": 15627,
+    "porcentaje": 2.44,
     "parcial": false
   },
   {
@@ -1028,7 +1036,7 @@
     "pais": "Honduras",
     "continente": "centro",
     "viajeros": 15186,
-    "porcentaje": 1.3,
+    "porcentaje": 2.37,
     "parcial": false
   },
   {
@@ -1036,7 +1044,7 @@
     "pais": "Francia",
     "continente": "europa",
     "viajeros": 12349,
-    "porcentaje": 1.06,
+    "porcentaje": 1.93,
     "parcial": false
   },
   {
@@ -1044,7 +1052,15 @@
     "pais": "Panamá",
     "continente": "centro",
     "viajeros": 12142,
-    "porcentaje": 1.04,
+    "porcentaje": 1.9,
+    "parcial": false
+  },
+  {
+    "anio": 2015,
+    "pais": "Resto del Mundo",
+    "continente": "resto",
+    "viajeros": 11577,
+    "porcentaje": 1.81,
     "parcial": false
   },
   {
@@ -1052,7 +1068,7 @@
     "pais": "Nicaragua",
     "continente": "centro",
     "viajeros": 10061,
-    "porcentaje": 0.86,
+    "porcentaje": 1.57,
     "parcial": false
   },
   {
@@ -1060,15 +1076,7 @@
     "pais": "Alemania",
     "continente": "europa",
     "viajeros": 9571,
-    "porcentaje": 0.82,
-    "parcial": false
-  },
-  {
-    "anio": 2015,
-    "pais": "Venezuela (República Bolivariana de)",
-    "continente": "sur",
-    "viajeros": 8614,
-    "porcentaje": 0.74,
+    "porcentaje": 1.49,
     "parcial": false
   },
   {
@@ -1076,7 +1084,7 @@
     "pais": "Reino Unido de Gran Bretaña e Irlanda del Norte",
     "continente": "europa",
     "viajeros": 7728,
-    "porcentaje": 0.66,
+    "porcentaje": 1.21,
     "parcial": false
   },
   {
@@ -1084,7 +1092,7 @@
     "pais": "Italia",
     "continente": "europa",
     "viajeros": 7645,
-    "porcentaje": 0.65,
+    "porcentaje": 1.19,
     "parcial": false
   },
   {
@@ -1092,7 +1100,7 @@
     "pais": "Argentina",
     "continente": "sur",
     "viajeros": 6725,
-    "porcentaje": 0.58,
+    "porcentaje": 1.05,
     "parcial": false
   },
   {
@@ -1100,15 +1108,7 @@
     "pais": "Brasil",
     "continente": "sur",
     "viajeros": 6533,
-    "porcentaje": 0.56,
-    "parcial": false
-  },
-  {
-    "anio": 2015,
-    "pais": "República de Corea",
-    "continente": "asia",
-    "viajeros": 6525,
-    "porcentaje": 0.56,
+    "porcentaje": 1.02,
     "parcial": false
   },
   {
@@ -1116,15 +1116,7 @@
     "pais": "Israel",
     "continente": "resto",
     "viajeros": 5832,
-    "porcentaje": 0.5,
-    "parcial": false
-  },
-  {
-    "anio": 2016,
-    "pais": "Guatemala",
-    "continente": "centro",
-    "viajeros": 573714,
-    "porcentaje": 45.7,
+    "porcentaje": 0.91,
     "parcial": false
   },
   {
@@ -1132,7 +1124,7 @@
     "pais": "Estados Unidos de América",
     "continente": "norte",
     "viajeros": 318708,
-    "porcentaje": 25.39,
+    "porcentaje": 46.76,
     "parcial": false
   },
   {
@@ -1140,7 +1132,7 @@
     "pais": "México",
     "continente": "norte",
     "viajeros": 58071,
-    "porcentaje": 4.63,
+    "porcentaje": 8.52,
     "parcial": false
   },
   {
@@ -1148,7 +1140,15 @@
     "pais": "Costa Rica",
     "continente": "centro",
     "viajeros": 35337,
-    "porcentaje": 2.81,
+    "porcentaje": 5.18,
+    "parcial": false
+  },
+  {
+    "anio": 2016,
+    "pais": "Otros Países de América del Sur",
+    "continente": "sur",
+    "viajeros": 32295,
+    "porcentaje": 4.74,
     "parcial": false
   },
   {
@@ -1156,7 +1156,7 @@
     "pais": "Colombia",
     "continente": "sur",
     "viajeros": 28344,
-    "porcentaje": 2.26,
+    "porcentaje": 4.16,
     "parcial": false
   },
   {
@@ -1164,7 +1164,7 @@
     "pais": "El Salvador",
     "continente": "centro",
     "viajeros": 22595,
-    "porcentaje": 1.8,
+    "porcentaje": 3.32,
     "parcial": false
   },
   {
@@ -1172,7 +1172,7 @@
     "pais": "Canadá",
     "continente": "norte",
     "viajeros": 22264,
-    "porcentaje": 1.77,
+    "porcentaje": 3.27,
     "parcial": false
   },
   {
@@ -1180,7 +1180,7 @@
     "pais": "España",
     "continente": "europa",
     "viajeros": 19956,
-    "porcentaje": 1.59,
+    "porcentaje": 2.93,
     "parcial": false
   },
   {
@@ -1188,7 +1188,15 @@
     "pais": "Honduras",
     "continente": "centro",
     "viajeros": 17530,
-    "porcentaje": 1.4,
+    "porcentaje": 2.57,
+    "parcial": false
+  },
+  {
+    "anio": 2016,
+    "pais": "Otros Países de Europa",
+    "continente": "europa",
+    "viajeros": 15882,
+    "porcentaje": 2.33,
     "parcial": false
   },
   {
@@ -1196,7 +1204,7 @@
     "pais": "Panamá",
     "continente": "centro",
     "viajeros": 13634,
-    "porcentaje": 1.09,
+    "porcentaje": 2.0,
     "parcial": false
   },
   {
@@ -1204,7 +1212,15 @@
     "pais": "Francia",
     "continente": "europa",
     "viajeros": 12295,
-    "porcentaje": 0.98,
+    "porcentaje": 1.8,
+    "parcial": false
+  },
+  {
+    "anio": 2016,
+    "pais": "Resto del Mundo",
+    "continente": "resto",
+    "viajeros": 11901,
+    "porcentaje": 1.75,
     "parcial": false
   },
   {
@@ -1212,15 +1228,7 @@
     "pais": "Nicaragua",
     "continente": "centro",
     "viajeros": 10330,
-    "porcentaje": 0.82,
-    "parcial": false
-  },
-  {
-    "anio": 2016,
-    "pais": "Venezuela (República Bolivariana de)",
-    "continente": "sur",
-    "viajeros": 9830,
-    "porcentaje": 0.78,
+    "porcentaje": 1.52,
     "parcial": false
   },
   {
@@ -1228,7 +1236,7 @@
     "pais": "Alemania",
     "continente": "europa",
     "viajeros": 9710,
-    "porcentaje": 0.77,
+    "porcentaje": 1.42,
     "parcial": false
   },
   {
@@ -1236,7 +1244,7 @@
     "pais": "Reino Unido de Gran Bretaña e Irlanda del Norte",
     "continente": "europa",
     "viajeros": 7949,
-    "porcentaje": 0.63,
+    "porcentaje": 1.17,
     "parcial": false
   },
   {
@@ -1244,7 +1252,7 @@
     "pais": "Italia",
     "continente": "europa",
     "viajeros": 7866,
-    "porcentaje": 0.63,
+    "porcentaje": 1.15,
     "parcial": false
   },
   {
@@ -1252,15 +1260,7 @@
     "pais": "Argentina",
     "continente": "sur",
     "viajeros": 7132,
-    "porcentaje": 0.57,
-    "parcial": false
-  },
-  {
-    "anio": 2016,
-    "pais": "República de Corea",
-    "continente": "asia",
-    "viajeros": 6525,
-    "porcentaje": 0.52,
+    "porcentaje": 1.05,
     "parcial": false
   },
   {
@@ -1268,7 +1268,7 @@
     "pais": "Brasil",
     "continente": "sur",
     "viajeros": 6323,
-    "porcentaje": 0.5,
+    "porcentaje": 0.93,
     "parcial": false
   },
   {
@@ -1276,15 +1276,7 @@
     "pais": "Israel",
     "continente": "resto",
     "viajeros": 6271,
-    "porcentaje": 0.5,
-    "parcial": false
-  },
-  {
-    "anio": 2017,
-    "pais": "Guatemala",
-    "continente": "centro",
-    "viajeros": 575904,
-    "porcentaje": 43.84,
+    "porcentaje": 0.92,
     "parcial": false
   },
   {
@@ -1292,7 +1284,7 @@
     "pais": "Estados Unidos de América",
     "continente": "norte",
     "viajeros": 329454,
-    "porcentaje": 25.08,
+    "porcentaje": 44.65,
     "parcial": false
   },
   {
@@ -1300,7 +1292,7 @@
     "pais": "Costa Rica",
     "continente": "centro",
     "viajeros": 64470,
-    "porcentaje": 4.91,
+    "porcentaje": 8.74,
     "parcial": false
   },
   {
@@ -1308,7 +1300,15 @@
     "pais": "México",
     "continente": "norte",
     "viajeros": 59257,
-    "porcentaje": 4.51,
+    "porcentaje": 8.03,
+    "parcial": false
+  },
+  {
+    "anio": 2017,
+    "pais": "Otros Países de América del Sur",
+    "continente": "sur",
+    "viajeros": 34124,
+    "porcentaje": 4.62,
     "parcial": false
   },
   {
@@ -1316,7 +1316,7 @@
     "pais": "Colombia",
     "continente": "sur",
     "viajeros": 28800,
-    "porcentaje": 2.19,
+    "porcentaje": 3.9,
     "parcial": false
   },
   {
@@ -1324,7 +1324,7 @@
     "pais": "Canadá",
     "continente": "norte",
     "viajeros": 26105,
-    "porcentaje": 1.99,
+    "porcentaje": 3.54,
     "parcial": false
   },
   {
@@ -1332,7 +1332,7 @@
     "pais": "El Salvador",
     "continente": "centro",
     "viajeros": 20739,
-    "porcentaje": 1.58,
+    "porcentaje": 2.81,
     "parcial": false
   },
   {
@@ -1340,7 +1340,15 @@
     "pais": "España",
     "continente": "europa",
     "viajeros": 20443,
-    "porcentaje": 1.56,
+    "porcentaje": 2.77,
+    "parcial": false
+  },
+  {
+    "anio": 2017,
+    "pais": "Otros Países de Europa",
+    "continente": "europa",
+    "viajeros": 18837,
+    "porcentaje": 2.55,
     "parcial": false
   },
   {
@@ -1348,7 +1356,7 @@
     "pais": "Honduras",
     "continente": "centro",
     "viajeros": 17079,
-    "porcentaje": 1.3,
+    "porcentaje": 2.31,
     "parcial": false
   },
   {
@@ -1356,7 +1364,15 @@
     "pais": "Francia",
     "continente": "europa",
     "viajeros": 15057,
-    "porcentaje": 1.15,
+    "porcentaje": 2.04,
+    "parcial": false
+  },
+  {
+    "anio": 2017,
+    "pais": "Resto del Mundo",
+    "continente": "resto",
+    "viajeros": 13557,
+    "porcentaje": 1.84,
     "parcial": false
   },
   {
@@ -1364,7 +1380,7 @@
     "pais": "Panamá",
     "continente": "centro",
     "viajeros": 12917,
-    "porcentaje": 0.98,
+    "porcentaje": 1.75,
     "parcial": false
   },
   {
@@ -1372,15 +1388,7 @@
     "pais": "Nicaragua",
     "continente": "centro",
     "viajeros": 11880,
-    "porcentaje": 0.9,
-    "parcial": false
-  },
-  {
-    "anio": 2017,
-    "pais": "Venezuela (República Bolivariana de)",
-    "continente": "sur",
-    "viajeros": 10848,
-    "porcentaje": 0.83,
+    "porcentaje": 1.61,
     "parcial": false
   },
   {
@@ -1388,7 +1396,7 @@
     "pais": "Alemania",
     "continente": "europa",
     "viajeros": 10818,
-    "porcentaje": 0.82,
+    "porcentaje": 1.47,
     "parcial": false
   },
   {
@@ -1396,7 +1404,7 @@
     "pais": "Italia",
     "continente": "europa",
     "viajeros": 8700,
-    "porcentaje": 0.66,
+    "porcentaje": 1.18,
     "parcial": false
   },
   {
@@ -1404,7 +1412,7 @@
     "pais": "Reino Unido de Gran Bretaña e Irlanda del Norte",
     "continente": "europa",
     "viajeros": 8434,
-    "porcentaje": 0.64,
+    "porcentaje": 1.14,
     "parcial": false
   },
   {
@@ -1412,15 +1420,7 @@
     "pais": "Argentina",
     "continente": "sur",
     "viajeros": 7390,
-    "porcentaje": 0.56,
-    "parcial": false
-  },
-  {
-    "anio": 2017,
-    "pais": "República de Corea",
-    "continente": "asia",
-    "viajeros": 6792,
-    "porcentaje": 0.52,
+    "porcentaje": 1.0,
     "parcial": false
   },
   {
@@ -1428,7 +1428,7 @@
     "pais": "Brasil",
     "continente": "sur",
     "viajeros": 6499,
-    "porcentaje": 0.49,
+    "porcentaje": 0.88,
     "parcial": false
   },
   {
@@ -1436,15 +1436,7 @@
     "pais": "Países Bajos",
     "continente": "europa",
     "viajeros": 5864,
-    "porcentaje": 0.45,
-    "parcial": false
-  },
-  {
-    "anio": 2018,
-    "pais": "Guatemala",
-    "continente": "centro",
-    "viajeros": 631690,
-    "porcentaje": 44.64,
+    "porcentaje": 0.79,
     "parcial": false
   },
   {
@@ -1452,7 +1444,7 @@
     "pais": "Estados Unidos de América",
     "continente": "norte",
     "viajeros": 379433,
-    "porcentaje": 26.82,
+    "porcentaje": 48.44,
     "parcial": false
   },
   {
@@ -1460,7 +1452,7 @@
     "pais": "México",
     "continente": "norte",
     "viajeros": 60638,
-    "porcentaje": 4.29,
+    "porcentaje": 7.74,
     "parcial": false
   },
   {
@@ -1468,7 +1460,15 @@
     "pais": "Costa Rica",
     "continente": "centro",
     "viajeros": 47688,
-    "porcentaje": 3.37,
+    "porcentaje": 6.09,
+    "parcial": false
+  },
+  {
+    "anio": 2018,
+    "pais": "Otros Países de América del Sur",
+    "continente": "sur",
+    "viajeros": 33209,
+    "porcentaje": 4.24,
     "parcial": false
   },
   {
@@ -1476,7 +1476,7 @@
     "pais": "Colombia",
     "continente": "sur",
     "viajeros": 31291,
-    "porcentaje": 2.21,
+    "porcentaje": 3.99,
     "parcial": false
   },
   {
@@ -1484,7 +1484,7 @@
     "pais": "Canadá",
     "continente": "norte",
     "viajeros": 27469,
-    "porcentaje": 1.94,
+    "porcentaje": 3.51,
     "parcial": false
   },
   {
@@ -1492,7 +1492,7 @@
     "pais": "España",
     "continente": "europa",
     "viajeros": 21212,
-    "porcentaje": 1.5,
+    "porcentaje": 2.71,
     "parcial": false
   },
   {
@@ -1500,7 +1500,7 @@
     "pais": "El Salvador",
     "continente": "centro",
     "viajeros": 18754,
-    "porcentaje": 1.33,
+    "porcentaje": 2.39,
     "parcial": false
   },
   {
@@ -1508,7 +1508,15 @@
     "pais": "Honduras",
     "continente": "centro",
     "viajeros": 18617,
-    "porcentaje": 1.32,
+    "porcentaje": 2.38,
+    "parcial": false
+  },
+  {
+    "anio": 2018,
+    "pais": "Otros Países de Europa",
+    "continente": "europa",
+    "viajeros": 18554,
+    "porcentaje": 2.37,
     "parcial": false
   },
   {
@@ -1516,7 +1524,15 @@
     "pais": "Francia",
     "continente": "europa",
     "viajeros": 15163,
-    "porcentaje": 1.07,
+    "porcentaje": 1.94,
+    "parcial": false
+  },
+  {
+    "anio": 2018,
+    "pais": "Resto del Mundo",
+    "continente": "resto",
+    "viajeros": 14149,
+    "porcentaje": 1.81,
     "parcial": false
   },
   {
@@ -1524,7 +1540,7 @@
     "pais": "Panamá",
     "continente": "centro",
     "viajeros": 13495,
-    "porcentaje": 0.95,
+    "porcentaje": 1.72,
     "parcial": false
   },
   {
@@ -1532,7 +1548,7 @@
     "pais": "Nicaragua",
     "continente": "centro",
     "viajeros": 12400,
-    "porcentaje": 0.88,
+    "porcentaje": 1.58,
     "parcial": false
   },
   {
@@ -1540,7 +1556,7 @@
     "pais": "Alemania",
     "continente": "europa",
     "viajeros": 12202,
-    "porcentaje": 0.86,
+    "porcentaje": 1.56,
     "parcial": false
   },
   {
@@ -1548,7 +1564,7 @@
     "pais": "Italia",
     "continente": "europa",
     "viajeros": 9149,
-    "porcentaje": 0.65,
+    "porcentaje": 1.17,
     "parcial": false
   },
   {
@@ -1556,15 +1572,7 @@
     "pais": "Reino Unido de Gran Bretaña e Irlanda del Norte",
     "continente": "europa",
     "viajeros": 9032,
-    "porcentaje": 0.64,
-    "parcial": false
-  },
-  {
-    "anio": 2018,
-    "pais": "Venezuela (República Bolivariana de)",
-    "continente": "sur",
-    "viajeros": 7740,
-    "porcentaje": 0.55,
+    "porcentaje": 1.15,
     "parcial": false
   },
   {
@@ -1572,7 +1580,7 @@
     "pais": "Argentina",
     "continente": "sur",
     "viajeros": 7694,
-    "porcentaje": 0.54,
+    "porcentaje": 0.98,
     "parcial": false
   },
   {
@@ -1580,7 +1588,7 @@
     "pais": "Países Bajos",
     "continente": "europa",
     "viajeros": 7427,
-    "porcentaje": 0.52,
+    "porcentaje": 0.95,
     "parcial": false
   },
   {
@@ -1588,23 +1596,7 @@
     "pais": "Brasil",
     "continente": "sur",
     "viajeros": 7179,
-    "porcentaje": 0.51,
-    "parcial": false
-  },
-  {
-    "anio": 2018,
-    "pais": "República de Corea",
-    "continente": "asia",
-    "viajeros": 6994,
-    "porcentaje": 0.49,
-    "parcial": false
-  },
-  {
-    "anio": 2019,
-    "pais": "Guatemala",
-    "continente": "centro",
-    "viajeros": 677171,
-    "porcentaje": 45.65,
+    "porcentaje": 0.92,
     "parcial": false
   },
   {
@@ -1612,7 +1604,7 @@
     "pais": "Estados Unidos de América",
     "continente": "norte",
     "viajeros": 395723,
-    "porcentaje": 26.68,
+    "porcentaje": 49.08,
     "parcial": false
   },
   {
@@ -1620,7 +1612,7 @@
     "pais": "México",
     "continente": "norte",
     "viajeros": 61321,
-    "porcentaje": 4.13,
+    "porcentaje": 7.61,
     "parcial": false
   },
   {
@@ -1628,7 +1620,15 @@
     "pais": "Costa Rica",
     "continente": "centro",
     "viajeros": 51825,
-    "porcentaje": 3.49,
+    "porcentaje": 6.43,
+    "parcial": false
+  },
+  {
+    "anio": 2019,
+    "pais": "Otros Países de América del Sur",
+    "continente": "sur",
+    "viajeros": 32291,
+    "porcentaje": 4.01,
     "parcial": false
   },
   {
@@ -1636,7 +1636,7 @@
     "pais": "Colombia",
     "continente": "sur",
     "viajeros": 30777,
-    "porcentaje": 2.07,
+    "porcentaje": 3.82,
     "parcial": false
   },
   {
@@ -1644,7 +1644,7 @@
     "pais": "Canadá",
     "continente": "norte",
     "viajeros": 27394,
-    "porcentaje": 1.85,
+    "porcentaje": 3.4,
     "parcial": false
   },
   {
@@ -1652,7 +1652,15 @@
     "pais": "España",
     "continente": "europa",
     "viajeros": 19945,
-    "porcentaje": 1.34,
+    "porcentaje": 2.47,
+    "parcial": false
+  },
+  {
+    "anio": 2019,
+    "pais": "Otros Países de Europa",
+    "continente": "europa",
+    "viajeros": 19870,
+    "porcentaje": 2.46,
     "parcial": false
   },
   {
@@ -1660,7 +1668,7 @@
     "pais": "El Salvador",
     "continente": "centro",
     "viajeros": 19100,
-    "porcentaje": 1.29,
+    "porcentaje": 2.37,
     "parcial": false
   },
   {
@@ -1668,7 +1676,7 @@
     "pais": "Honduras",
     "continente": "centro",
     "viajeros": 19028,
-    "porcentaje": 1.28,
+    "porcentaje": 2.36,
     "parcial": false
   },
   {
@@ -1676,7 +1684,15 @@
     "pais": "Francia",
     "continente": "europa",
     "viajeros": 16333,
-    "porcentaje": 1.1,
+    "porcentaje": 2.03,
+    "parcial": false
+  },
+  {
+    "anio": 2019,
+    "pais": "Resto del Mundo",
+    "continente": "resto",
+    "viajeros": 14769,
+    "porcentaje": 1.83,
     "parcial": false
   },
   {
@@ -1684,7 +1700,7 @@
     "pais": "Panamá",
     "continente": "centro",
     "viajeros": 14223,
-    "porcentaje": 0.96,
+    "porcentaje": 1.76,
     "parcial": false
   },
   {
@@ -1692,7 +1708,7 @@
     "pais": "Nicaragua",
     "continente": "centro",
     "viajeros": 14203,
-    "porcentaje": 0.96,
+    "porcentaje": 1.76,
     "parcial": false
   },
   {
@@ -1700,7 +1716,7 @@
     "pais": "Alemania",
     "continente": "europa",
     "viajeros": 11415,
-    "porcentaje": 0.77,
+    "porcentaje": 1.42,
     "parcial": false
   },
   {
@@ -1708,7 +1724,7 @@
     "pais": "Italia",
     "continente": "europa",
     "viajeros": 9190,
-    "porcentaje": 0.62,
+    "porcentaje": 1.14,
     "parcial": false
   },
   {
@@ -1716,7 +1732,7 @@
     "pais": "Reino Unido de Gran Bretaña e Irlanda del Norte",
     "continente": "europa",
     "viajeros": 8575,
-    "porcentaje": 0.58,
+    "porcentaje": 1.06,
     "parcial": false
   },
   {
@@ -1724,15 +1740,7 @@
     "pais": "Argentina",
     "continente": "sur",
     "viajeros": 7380,
-    "porcentaje": 0.5,
-    "parcial": false
-  },
-  {
-    "anio": 2019,
-    "pais": "República de Corea",
-    "continente": "asia",
-    "viajeros": 7297,
-    "porcentaje": 0.49,
+    "porcentaje": 0.92,
     "parcial": false
   },
   {
@@ -1740,7 +1748,7 @@
     "pais": "Países Bajos",
     "continente": "europa",
     "viajeros": 7228,
-    "porcentaje": 0.49,
+    "porcentaje": 0.9,
     "parcial": false
   },
   {
@@ -1748,23 +1756,7 @@
     "pais": "Brasil",
     "continente": "sur",
     "viajeros": 6818,
-    "porcentaje": 0.46,
-    "parcial": false
-  },
-  {
-    "anio": 2019,
-    "pais": "Venezuela (República Bolivariana de)",
-    "continente": "sur",
-    "viajeros": 6689,
-    "porcentaje": 0.45,
-    "parcial": false
-  },
-  {
-    "anio": 2020,
-    "pais": "Guatemala",
-    "continente": "centro",
-    "viajeros": 198093,
-    "porcentaje": 49.09,
+    "porcentaje": 0.85,
     "parcial": false
   },
   {
@@ -1772,7 +1764,7 @@
     "pais": "Estados Unidos de América",
     "continente": "norte",
     "viajeros": 103535,
-    "porcentaje": 25.66,
+    "porcentaje": 50.4,
     "parcial": false
   },
   {
@@ -1780,7 +1772,7 @@
     "pais": "México",
     "continente": "norte",
     "viajeros": 14353,
-    "porcentaje": 3.56,
+    "porcentaje": 6.99,
     "parcial": false
   },
   {
@@ -1788,7 +1780,7 @@
     "pais": "Costa Rica",
     "continente": "centro",
     "viajeros": 12028,
-    "porcentaje": 2.98,
+    "porcentaje": 5.86,
     "parcial": false
   },
   {
@@ -1796,7 +1788,15 @@
     "pais": "Canadá",
     "continente": "norte",
     "viajeros": 8857,
-    "porcentaje": 2.19,
+    "porcentaje": 4.31,
+    "parcial": false
+  },
+  {
+    "anio": 2020,
+    "pais": "Otros Países de América del Sur",
+    "continente": "sur",
+    "viajeros": 7742,
+    "porcentaje": 3.77,
     "parcial": false
   },
   {
@@ -1804,7 +1804,15 @@
     "pais": "Colombia",
     "continente": "sur",
     "viajeros": 7314,
-    "porcentaje": 1.81,
+    "porcentaje": 3.56,
+    "parcial": false
+  },
+  {
+    "anio": 2020,
+    "pais": "Otros Países de Europa",
+    "continente": "europa",
+    "viajeros": 5893,
+    "porcentaje": 2.87,
     "parcial": false
   },
   {
@@ -1812,7 +1820,7 @@
     "pais": "Francia",
     "continente": "europa",
     "viajeros": 5517,
-    "porcentaje": 1.37,
+    "porcentaje": 2.69,
     "parcial": false
   },
   {
@@ -1820,7 +1828,7 @@
     "pais": "Honduras",
     "continente": "centro",
     "viajeros": 4896,
-    "porcentaje": 1.21,
+    "porcentaje": 2.38,
     "parcial": false
   },
   {
@@ -1828,7 +1836,7 @@
     "pais": "España",
     "continente": "europa",
     "viajeros": 4449,
-    "porcentaje": 1.1,
+    "porcentaje": 2.17,
     "parcial": false
   },
   {
@@ -1836,7 +1844,7 @@
     "pais": "El Salvador",
     "continente": "centro",
     "viajeros": 4044,
-    "porcentaje": 1.0,
+    "porcentaje": 1.97,
     "parcial": false
   },
   {
@@ -1844,7 +1852,7 @@
     "pais": "Panamá",
     "continente": "centro",
     "viajeros": 3506,
-    "porcentaje": 0.87,
+    "porcentaje": 1.71,
     "parcial": false
   },
   {
@@ -1852,7 +1860,15 @@
     "pais": "Nicaragua",
     "continente": "centro",
     "viajeros": 3437,
-    "porcentaje": 0.85,
+    "porcentaje": 1.67,
+    "parcial": false
+  },
+  {
+    "anio": 2020,
+    "pais": "Resto del Mundo",
+    "continente": "resto",
+    "viajeros": 3268,
+    "porcentaje": 1.59,
     "parcial": false
   },
   {
@@ -1860,7 +1876,7 @@
     "pais": "Alemania",
     "continente": "europa",
     "viajeros": 3267,
-    "porcentaje": 0.81,
+    "porcentaje": 1.59,
     "parcial": false
   },
   {
@@ -1868,7 +1884,7 @@
     "pais": "Italia",
     "continente": "europa",
     "viajeros": 2214,
-    "porcentaje": 0.55,
+    "porcentaje": 1.08,
     "parcial": false
   },
   {
@@ -1876,7 +1892,7 @@
     "pais": "Reino Unido de Gran Bretaña e Irlanda del Norte",
     "continente": "europa",
     "viajeros": 2176,
-    "porcentaje": 0.54,
+    "porcentaje": 1.06,
     "parcial": false
   },
   {
@@ -1884,7 +1900,7 @@
     "pais": "Brasil",
     "continente": "sur",
     "viajeros": 1894,
-    "porcentaje": 0.47,
+    "porcentaje": 0.92,
     "parcial": false
   },
   {
@@ -1892,7 +1908,7 @@
     "pais": "Argentina",
     "continente": "sur",
     "viajeros": 1717,
-    "porcentaje": 0.43,
+    "porcentaje": 0.84,
     "parcial": false
   },
   {
@@ -1900,31 +1916,7 @@
     "pais": "Países Bajos",
     "continente": "europa",
     "viajeros": 1622,
-    "porcentaje": 0.4,
-    "parcial": false
-  },
-  {
-    "anio": 2020,
-    "pais": "Venezuela (República Bolivariana de)",
-    "continente": "sur",
-    "viajeros": 1480,
-    "porcentaje": 0.37,
-    "parcial": false
-  },
-  {
-    "anio": 2020,
-    "pais": "Perú",
-    "continente": "sur",
-    "viajeros": 1450,
-    "porcentaje": 0.36,
-    "parcial": false
-  },
-  {
-    "anio": 2021,
-    "pais": "Guatemala",
-    "continente": "centro",
-    "viajeros": 349617,
-    "porcentaje": 49.7,
+    "porcentaje": 0.79,
     "parcial": false
   },
   {
@@ -1932,7 +1924,7 @@
     "pais": "Estados Unidos de América",
     "continente": "norte",
     "viajeros": 219926,
-    "porcentaje": 31.26,
+    "porcentaje": 61.31,
     "parcial": false
   },
   {
@@ -1940,7 +1932,7 @@
     "pais": "México",
     "continente": "norte",
     "viajeros": 21631,
-    "porcentaje": 3.07,
+    "porcentaje": 6.03,
     "parcial": false
   },
   {
@@ -1948,15 +1940,23 @@
     "pais": "Costa Rica",
     "continente": "centro",
     "viajeros": 17386,
-    "porcentaje": 2.47,
+    "porcentaje": 4.85,
     "parcial": false
   },
   {
     "anio": 2021,
     "pais": "Colombia",
     "continente": "sur",
-    "viajeros": 11726,
-    "porcentaje": 1.67,
+    "viajeros": 12878,
+    "porcentaje": 3.59,
+    "parcial": false
+  },
+  {
+    "anio": 2021,
+    "pais": "Otros Países de América del Sur",
+    "continente": "sur",
+    "viajeros": 11688,
+    "porcentaje": 3.26,
     "parcial": false
   },
   {
@@ -1964,7 +1964,7 @@
     "pais": "El Salvador",
     "continente": "centro",
     "viajeros": 8481,
-    "porcentaje": 1.21,
+    "porcentaje": 2.36,
     "parcial": false
   },
   {
@@ -1972,15 +1972,23 @@
     "pais": "Honduras",
     "continente": "centro",
     "viajeros": 7708,
-    "porcentaje": 1.1,
+    "porcentaje": 2.15,
     "parcial": false
   },
   {
     "anio": 2021,
     "pais": "España",
     "continente": "europa",
-    "viajeros": 7107,
-    "porcentaje": 1.01,
+    "viajeros": 7480,
+    "porcentaje": 2.09,
+    "parcial": false
+  },
+  {
+    "anio": 2021,
+    "pais": "Otros Países de Europa",
+    "continente": "europa",
+    "viajeros": 6442,
+    "porcentaje": 1.8,
     "parcial": false
   },
   {
@@ -1988,7 +1996,7 @@
     "pais": "Canadá",
     "continente": "norte",
     "viajeros": 5891,
-    "porcentaje": 0.84,
+    "porcentaje": 1.64,
     "parcial": false
   },
   {
@@ -1996,7 +2004,7 @@
     "pais": "Panamá",
     "continente": "centro",
     "viajeros": 4983,
-    "porcentaje": 0.71,
+    "porcentaje": 1.39,
     "parcial": false
   },
   {
@@ -2004,87 +2012,71 @@
     "pais": "Nicaragua",
     "continente": "centro",
     "viajeros": 4650,
-    "porcentaje": 0.66,
+    "porcentaje": 1.3,
+    "parcial": false
+  },
+  {
+    "anio": 2021,
+    "pais": "Resto del Mundo",
+    "continente": "resto",
+    "viajeros": 4579,
+    "porcentaje": 1.28,
     "parcial": false
   },
   {
     "anio": 2021,
     "pais": "Francia",
     "continente": "europa",
-    "viajeros": 4055,
-    "porcentaje": 0.58,
+    "viajeros": 4305,
+    "porcentaje": 1.2,
     "parcial": false
   },
   {
     "anio": 2021,
     "pais": "Alemania",
     "continente": "europa",
-    "viajeros": 3857,
-    "porcentaje": 0.55,
-    "parcial": false
-  },
-  {
-    "anio": 2021,
-    "pais": "Italia",
-    "continente": "europa",
-    "viajeros": 2518,
-    "porcentaje": 0.36,
-    "parcial": false
-  },
-  {
-    "anio": 2021,
-    "pais": "República de Corea",
-    "continente": "asia",
-    "viajeros": 2491,
-    "porcentaje": 0.35,
-    "parcial": false
-  },
-  {
-    "anio": 2021,
-    "pais": "Reino Unido de Gran Bretaña e Irlanda del Norte",
-    "continente": "europa",
-    "viajeros": 2394,
-    "porcentaje": 0.34,
+    "viajeros": 4042,
+    "porcentaje": 1.13,
     "parcial": false
   },
   {
     "anio": 2021,
     "pais": "Israel",
     "continente": "resto",
-    "viajeros": 2340,
-    "porcentaje": 0.33,
+    "viajeros": 2575,
+    "porcentaje": 0.72,
     "parcial": false
   },
   {
     "anio": 2021,
-    "pais": "República Dominicana",
-    "continente": "sur",
-    "viajeros": 2238,
-    "porcentaje": 0.32,
+    "pais": "Italia",
+    "continente": "europa",
+    "viajeros": 2550,
+    "porcentaje": 0.71,
+    "parcial": false
+  },
+  {
+    "anio": 2021,
+    "pais": "Reino Unido de Gran Bretaña e Irlanda del Norte",
+    "continente": "europa",
+    "viajeros": 2421,
+    "porcentaje": 0.68,
     "parcial": false
   },
   {
     "anio": 2021,
     "pais": "Argentina",
     "continente": "sur",
-    "viajeros": 1822,
-    "porcentaje": 0.26,
+    "viajeros": 2091,
+    "porcentaje": 0.58,
     "parcial": false
   },
   {
     "anio": 2021,
-    "pais": "Perú",
+    "pais": "Brasil",
     "continente": "sur",
-    "viajeros": 1803,
-    "porcentaje": 0.26,
-    "parcial": false
-  },
-  {
-    "anio": 2022,
-    "pais": "Guatemala",
-    "continente": "centro",
-    "viajeros": 647584,
-    "porcentaje": 46.58,
+    "viajeros": 1925,
+    "porcentaje": 0.54,
     "parcial": false
   },
   {
@@ -2092,7 +2084,7 @@
     "pais": "Estados Unidos de América",
     "continente": "norte",
     "viajeros": 390366,
-    "porcentaje": 28.08,
+    "porcentaje": 52.56,
     "parcial": false
   },
   {
@@ -2100,7 +2092,7 @@
     "pais": "México",
     "continente": "norte",
     "viajeros": 47018,
-    "porcentaje": 3.38,
+    "porcentaje": 6.33,
     "parcial": false
   },
   {
@@ -2108,7 +2100,7 @@
     "pais": "Costa Rica",
     "continente": "centro",
     "viajeros": 44610,
-    "porcentaje": 3.21,
+    "porcentaje": 6.01,
     "parcial": false
   },
   {
@@ -2116,7 +2108,15 @@
     "pais": "Colombia",
     "continente": "sur",
     "viajeros": 34529,
-    "porcentaje": 2.48,
+    "porcentaje": 4.65,
+    "parcial": false
+  },
+  {
+    "anio": 2022,
+    "pais": "Otros Países de América del Sur",
+    "continente": "sur",
+    "viajeros": 29056,
+    "porcentaje": 3.91,
     "parcial": false
   },
   {
@@ -2124,7 +2124,7 @@
     "pais": "España",
     "continente": "europa",
     "viajeros": 24824,
-    "porcentaje": 1.79,
+    "porcentaje": 3.34,
     "parcial": false
   },
   {
@@ -2132,7 +2132,7 @@
     "pais": "Canadá",
     "continente": "norte",
     "viajeros": 19085,
-    "porcentaje": 1.37,
+    "porcentaje": 2.57,
     "parcial": false
   },
   {
@@ -2140,7 +2140,7 @@
     "pais": "El Salvador",
     "continente": "centro",
     "viajeros": 18132,
-    "porcentaje": 1.3,
+    "porcentaje": 2.44,
     "parcial": false
   },
   {
@@ -2148,7 +2148,7 @@
     "pais": "Honduras",
     "continente": "centro",
     "viajeros": 17539,
-    "porcentaje": 1.26,
+    "porcentaje": 2.36,
     "parcial": false
   },
   {
@@ -2156,7 +2156,7 @@
     "pais": "Francia",
     "continente": "europa",
     "viajeros": 12516,
-    "porcentaje": 0.9,
+    "porcentaje": 1.69,
     "parcial": false
   },
   {
@@ -2164,7 +2164,15 @@
     "pais": "Alemania",
     "continente": "europa",
     "viajeros": 12369,
-    "porcentaje": 0.89,
+    "porcentaje": 1.67,
+    "parcial": false
+  },
+  {
+    "anio": 2022,
+    "pais": "Otros Países de Europa",
+    "continente": "europa",
+    "viajeros": 12237,
+    "porcentaje": 1.65,
     "parcial": false
   },
   {
@@ -2172,7 +2180,7 @@
     "pais": "Panamá",
     "continente": "centro",
     "viajeros": 11512,
-    "porcentaje": 0.83,
+    "porcentaje": 1.55,
     "parcial": false
   },
   {
@@ -2180,15 +2188,7 @@
     "pais": "Nicaragua",
     "continente": "centro",
     "viajeros": 10000,
-    "porcentaje": 0.72,
-    "parcial": false
-  },
-  {
-    "anio": 2022,
-    "pais": "Puerto Rico",
-    "continente": "sur",
-    "viajeros": 9309,
-    "porcentaje": 0.67,
+    "porcentaje": 1.35,
     "parcial": false
   },
   {
@@ -2196,7 +2196,15 @@
     "pais": "Reino Unido de Gran Bretaña e Irlanda del Norte",
     "continente": "europa",
     "viajeros": 9140,
-    "porcentaje": 0.66,
+    "porcentaje": 1.23,
+    "parcial": false
+  },
+  {
+    "anio": 2022,
+    "pais": "Resto del Mundo",
+    "continente": "resto",
+    "viajeros": 7961,
+    "porcentaje": 1.07,
     "parcial": false
   },
   {
@@ -2204,7 +2212,7 @@
     "pais": "Israel",
     "continente": "resto",
     "viajeros": 7609,
-    "porcentaje": 0.55,
+    "porcentaje": 1.02,
     "parcial": false
   },
   {
@@ -2212,7 +2220,7 @@
     "pais": "Países Bajos",
     "continente": "europa",
     "viajeros": 7386,
-    "porcentaje": 0.53,
+    "porcentaje": 0.99,
     "parcial": false
   },
   {
@@ -2220,7 +2228,7 @@
     "pais": "Brasil",
     "continente": "sur",
     "viajeros": 6500,
-    "porcentaje": 0.47,
+    "porcentaje": 0.88,
     "parcial": false
   },
   {
@@ -2228,15 +2236,7 @@
     "pais": "Argentina",
     "continente": "sur",
     "viajeros": 6196,
-    "porcentaje": 0.45,
-    "parcial": false
-  },
-  {
-    "anio": 2022,
-    "pais": "Italia",
-    "continente": "europa",
-    "viajeros": 6180,
-    "porcentaje": 0.44,
+    "porcentaje": 0.83,
     "parcial": false
   },
   {
@@ -2306,7 +2306,7 @@
   {
     "anio": 2023,
     "pais": "Resto del Mundo",
-    "continente": "asia",
+    "continente": "resto",
     "viajeros": 26113,
     "porcentaje": 2.65,
     "parcial": false
@@ -2466,7 +2466,7 @@
   {
     "anio": 2024,
     "pais": "Resto del Mundo",
-    "continente": "asia",
+    "continente": "resto",
     "viajeros": 28269,
     "porcentaje": 2.47,
     "parcial": false
@@ -2618,7 +2618,7 @@
   {
     "anio": 2025,
     "pais": "Resto del Mundo",
-    "continente": "asia",
+    "continente": "resto",
     "viajeros": 28872,
     "porcentaje": 2.43,
     "parcial": false
@@ -2778,7 +2778,7 @@
   {
     "anio": 2026,
     "pais": "Resto del Mundo",
-    "continente": "asia",
+    "continente": "resto",
     "viajeros": 14911,
     "porcentaje": 2.32,
     "parcial": true

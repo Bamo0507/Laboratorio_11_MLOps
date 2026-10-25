@@ -9,6 +9,8 @@ import type { ContinenteAnual } from "../types"
 
 /** Un mercado con menos de este % del total en 2019 parte de una base pequeña y su índice se infla. */
 export const PESO_MINIMO_MERCADO = 2
+/** Diferencias de índice menores a esto no permiten nombrar un ganador: se reportan como empate. */
+export const MARGEN_EMPATE = 5
 
 export type BarraContinente = {
   continente: ContinenteId
@@ -88,6 +90,11 @@ export function useMercadosDeOrigen(datos: ContinenteAnual[]) {
   // La "mejor recuperación" solo se elige entre mercados con peso real: un índice
   // alto sobre una base de pocos miles de visitantes no es comparable.
   const mejorRecuperacion = recuperacionFinal.find((r) => !r.basePequena) ?? recuperacionFinal[0]
+  // Mercados relevantes cuya recuperación está a menos de MARGEN_EMPATE puntos del mejor.
+  const empatados = useMemo(
+    () => recuperacionFinal.filter((r) => !r.basePequena && mejorRecuperacion.indice - r.indice < MARGEN_EMPATE),
+    [recuperacionFinal, mejorRecuperacion]
+  )
   const mercadoPrincipal = useMemo(
     () => [...recuperacionFinal].sort((a, b) => b.peso2019 - a.peso2019)[0],
     [recuperacionFinal]
@@ -118,6 +125,7 @@ export function useMercadosDeOrigen(datos: ContinenteAnual[]) {
     serieRecuperacion,
     recuperacionFinal,
     mejorRecuperacion,
+    empatados,
     mercadoPrincipal,
     continenteResaltado,
     setContinenteResaltado,
