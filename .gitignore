@@ -41,5 +41,17 @@ yarn-error.log*
 next-env.d.ts
 
 .idea/
-# pipeline local que genera src/data/*.json: no se versiona, solo sus JSON
-pipeline/
+# Pipeline reproducible: se versionan codigo, configuracion y documentacion.
+# Los CSV de entrada se versionan en este repositorio privado.
+/pipeline/.venv/
+/pipeline/data/processed/
+/pipeline/data/interim/
+/pipeline/data/tmp/
+
+# Registros y artefactos generados por MLflow y Python.
+/pipeline/mlruns/
+/pipeline/mlartifacts/
+/pipeline/*.db
+**/__pycache__/
+*.pyc
+.ipynb_checkpoints/

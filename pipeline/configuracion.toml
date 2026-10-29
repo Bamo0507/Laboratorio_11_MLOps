@@ -1,0 +1,38 @@
+# Todas las rutas se interpretan desde la carpeta que contiene este archivo.
+[rutas]
+entrenamiento = "data/raw/lab1/entrenamiento.csv"
+prueba = "data/raw/lab1/prueba.csv"
+procesados = "data/processed"
+publicaciones = "data/processed/publicaciones"
+mlflow = "data/processed/mlflow"
+
+[periodos]
+inicio_ajuste = "2023-01"
+fin_ajuste = "2025-12"
+inicio_evaluacion = "2026-01"
+fin_evaluacion = "2026-06"
+
+[poblacion]
+destino = "Guatemala"
+unidad = "llegadas_por_mes"
+tipos_incluidos = ["Turista", "Excursionista"]
+paises_excluidos = ["Guatemala"]
+
+[modelo]
+nombre = "sarima"
+orden = [0, 1, 0]
+orden_estacional = [1, 1, 0, 12]
+transformacion = "log"
+
+[referencia]
+nombre = "mismo_mes_anio_anterior"
+rezago_meses = 12
+
+[columnas]
+fecha = "Fecha"
+anio = "Año"
+mes = "Mes cod"
+pais = "País"
+tipo = "Tipo de Viajero"
+valor = "Viajero"
+clave_registro = ["Fecha", "Vía", "Frontera", "País", "Tipo de Viajero", "Agrupación Residencia"]
