@@ -21,7 +21,7 @@ from typing import Any
 import pandas as pd
 
 from config import RUTA_CONFIGURACION, cargar_configuracion, columnas_requeridas
-from utils import afirmar, banner, cargar, guardar, guardar_json
+from utils import afirmar, banner, cargar, guardar, guardar_json, huella_archivo
 
 
 def ejecutar(ruta_configuracion: Path = RUTA_CONFIGURACION) -> dict[str, Any]:
@@ -62,9 +62,11 @@ def ejecutar(ruta_configuracion: Path = RUTA_CONFIGURACION) -> dict[str, Any]:
         "salida": rutas["ingesta"].relative_to(raiz).as_posix(),
         "codificacion_salida": "utf-8",
         "separador_salida": opciones["separador"],
+        "granularidad_fuente": opciones["granularidad_fuente"],
         "faltantes": "conservados como texto; no se aplicaron conversiones ni imputaciones",
     }
     guardar(unidos, rutas["ingesta"], separador=opciones["separador"])
+    reporte["sha256_salida"] = huella_archivo(rutas["ingesta"])
     guardar_json(reporte, rutas["reporte_ingesta"])
     return reporte
 
@@ -76,6 +78,14 @@ def main() -> None:
     try:
         ejecutar(argumentos.config)
     except (OSError, ValueError, TypeError, KeyError, UnicodeError) as error:
+        # Si la lectura impide llegar a la etapa 2, tambien queda un reporte de calidad.
+        from validacion import reporte_bloqueado
+
+        try:
+            configuracion = cargar_configuracion(argumentos.config)
+            guardar_json(reporte_bloqueado(str(error)), configuracion["rutas"]["reporte_validacion"])
+        except (OSError, ValueError, TypeError, KeyError) as error_reporte:
+            print(f"[FALLO] No se pudo guardar el reporte de calidad: {error_reporte}")
         parser.exit(1, f"[FALLO] Ingesta detenida: {error}\n")
 
 

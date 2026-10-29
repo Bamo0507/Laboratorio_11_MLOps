@@ -50,8 +50,7 @@ def main() -> None:
     print("[ok] Entorno preparado. Los datos y los modelos no se modificaron.")
 
 
-if __name__ == "__main__":
-    try:
-        main()
-    except (OSError, ValueError, subprocess.CalledProcessError) as error:
-        raise SystemExit(f"[FALLO] {error}") from error
+try:
+    main()
+except (OSError, ValueError, subprocess.CalledProcessError) as error:
+    raise SystemExit(f"[FALLO] {error}") from error

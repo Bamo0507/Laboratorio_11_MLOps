@@ -13,7 +13,7 @@ from typing import Any
 RAIZ = Path(__file__).resolve().parent.parent
 RUTA_CONFIGURACION = RAIZ / "configuracion.toml"
 PATRON_MES = re.compile(r"\d{4}-(0[1-9]|1[0-2])")
-SECCIONES = {"rutas", "ingesta", "periodos", "poblacion", "modelo", "referencia", "columnas"}
+SECCIONES = {"rutas", "ingesta", "calidad", "periodos", "poblacion", "modelo", "referencia", "columnas"}
 
 
 def resolver_ruta(raiz: Path, valor: str) -> Path:
@@ -56,7 +56,8 @@ def cargar_configuracion(ruta: Path | None = None) -> dict[str, Any]:
 
     raiz = ruta.parent
     rutas = configuracion["rutas"]
-    for clave in ("entrenamiento", "prueba", "procesados", "publicaciones", "mlflow", "ingesta", "reporte_ingesta"):
+    archivos_generados = ("ingesta", "reporte_ingesta", "validado", "reporte_validacion")
+    for clave in ("entrenamiento", "prueba", "procesados", "publicaciones", "mlflow", *archivos_generados):
         if clave not in rutas:
             raise ValueError(f"Falta la ruta {clave}.")
         rutas[clave] = resolver_ruta(raiz, rutas[clave])
@@ -66,12 +67,17 @@ def cargar_configuracion(ruta: Path | None = None) -> dict[str, Any]:
         raise ValueError("Entrenamiento y prueba deben ser archivos diferentes.")
     if any(entrada.is_relative_to(rutas["procesados"]) for entrada in entradas):
         raise ValueError("Los insumos no pueden estar en la carpeta de resultados.")
-    for clave in ("publicaciones", "mlflow", "ingesta", "reporte_ingesta"):
+    for clave in ("publicaciones", "mlflow", *archivos_generados):
         if not rutas[clave].is_relative_to(rutas["procesados"]):
             raise ValueError(f"La ruta {clave} debe estar dentro de procesados.")
-    salidas = (rutas["ingesta"], rutas["reporte_ingesta"])
-    if salidas[0] == salidas[1] or any(salida == rutas["procesados"] for salida in salidas):
-        raise ValueError("La ingesta y su reporte deben ser archivos diferentes.")
+    salidas = [rutas[clave] for clave in archivos_generados]
+    if len(set(salidas)) != len(salidas) or any(salida == rutas["procesados"] for salida in salidas):
+        raise ValueError("Las salidas deben ser archivos diferentes dentro de procesados.")
+    if any(a != b and (a.is_relative_to(b) or b.is_relative_to(a)) for a in salidas for b in salidas):
+        raise ValueError("Un archivo de salida no puede ser carpeta de otro archivo.")
+    for directorio in (rutas["publicaciones"], rutas["mlflow"]):
+        if any(s.is_relative_to(directorio) or directorio.is_relative_to(s) for s in salidas):
+            raise ValueError("Las salidas de etapas deben estar separadas de MLflow y publicaciones.")
 
     ingesta = configuracion["ingesta"]
     for clave in ("codificacion", "separador", "columna_origen"):
@@ -79,6 +85,35 @@ def cargar_configuracion(ruta: Path | None = None) -> dict[str, Any]:
             raise ValueError(f"ingesta.{clave} debe ser un texto no vacio.")
     if len(ingesta["separador"]) != 1:
         raise ValueError("El separador CSV debe tener un solo caracter.")
+    calidad = configuracion["calidad"]
+    if type(calidad.get("limite_ejemplos")) is not int or calidad["limite_ejemplos"] < 1:
+        raise ValueError("calidad.limite_ejemplos debe ser un entero positivo.")
+    if not isinstance(calidad.get("marcadores_ausencia"), list) or not all(
+        isinstance(valor, str) for valor in calidad["marcadores_ausencia"]
+    ):
+        raise ValueError("Los marcadores de ausencia deben ser una lista de textos.")
+    if not isinstance(calidad.get("formato_fecha"), str) or not calidad["formato_fecha"]:
+        raise ValueError("calidad.formato_fecha debe indicar el formato de las fechas.")
+    if not isinstance(calidad.get("tipos_fuente"), list) or not calidad["tipos_fuente"] or not all(
+        isinstance(valor, str) and valor for valor in calidad["tipos_fuente"]
+    ):
+        raise ValueError("calidad.tipos_fuente debe indicar las categorias del contrato de entrada.")
+    requeridas = columnas_requeridas(configuracion)
+    clave_registro = configuracion["columnas"]["clave_registro"]
+    clave_parcial = calidad.get("clave_revision_parcial")
+    if len(set(clave_registro)) != len(clave_registro):
+        raise ValueError("La clave de registro no puede repetir columnas.")
+    if not isinstance(clave_parcial, list) or not clave_parcial or not set(clave_parcial) < set(clave_registro):
+        raise ValueError("La clave parcial debe ser un subconjunto propio de la clave de registro.")
+    if ingesta["columna_origen"] in requeridas:
+        raise ValueError("La columna de origen debe ser diferente de las columnas de la fuente.")
+    for clave in ("tipos_incluidos", "paises_excluidos"):
+        valores = configuracion["poblacion"].get(clave)
+        if not isinstance(valores, list) or not valores or not all(isinstance(v, str) and v for v in valores):
+            raise ValueError(f"poblacion.{clave} debe ser una lista no vacia de textos.")
+    for clave in ("destino", "unidad"):
+        if not isinstance(configuracion["poblacion"].get(clave), str) or not configuracion["poblacion"][clave]:
+            raise ValueError(f"poblacion.{clave} debe ser un texto no vacio.")
 
     validar_periodos(configuracion["periodos"])
     modelo = configuracion["modelo"]

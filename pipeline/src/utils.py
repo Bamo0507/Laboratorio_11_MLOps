@@ -14,6 +14,14 @@ from typing import Any
 import pandas as pd
 
 
+def huella_archivo(ruta: Path) -> str:
+    resumen = hashlib.sha256()
+    with ruta.open("rb") as archivo:
+        for bloque in iter(lambda: archivo.read(1024 * 1024), b""):
+            resumen.update(bloque)
+    return resumen.hexdigest()
+
+
 def banner(titulo: str) -> None:
     print("=" * 60)
     print(titulo, flush=True)

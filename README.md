@@ -8,8 +8,8 @@ resultados aprobados con trazabilidad en MLflow.
 ## Estado actual
 
 El tablero heredado esta en `src/`. En `pipeline/` ya estan los CSV originales,
-la configuracion portable, la preparacion del entorno de Python y la ingesta.
-Los controles completos de datos, el modelado y la publicacion se implementaran despues.
+la configuracion portable, la preparacion del entorno, la ingesta y los seis
+controles de calidad. El modelado y la publicacion se implementaran despues.
 Actualmente el tablero sigue consultando los JSON del laboratorio 10.
 
 ## Estructura
@@ -25,6 +25,8 @@ pipeline/
     00_init.py                  Preparacion del entorno virtual
     config.py                   Lectura y validacion de configuracion
     01_ingesta.py               Lectura y union de los CSV originales
+    02_validacion.py            Ejecucion de los seis controles de calidad
+    validacion.py               Reglas de cada control y estructura del reporte
     utils.py                    Lectura, escritura y validaciones compartidas
     run_pipeline.py             Ejecucion de las etapas disponibles
   data/
@@ -84,7 +86,7 @@ Con el entorno activado, las etapas implementadas se ejecutan con un comando:
 python pipeline/src/run_pipeline.py
 ```
 
-Actualmente ejecuta solo la ingesta. Genera `pipeline/data/processed/01_ingesta.csv`
+Actualmente ejecuta ingesta y validacion. La ingesta genera `pipeline/data/processed/01_ingesta.csv`
 y `01_ingesta.json`, que registra los archivos leidos, sus huellas SHA-256 y los
 conteos de filas. Los valores originales se conservan como texto. La columna
 `archivo_origen` identifica el CSV de procedencia y no define la nueva particion
@@ -94,15 +96,23 @@ La ingesta se puede ejecutar por separado mediante
 `python pipeline/src/01_ingesta.py`. Si falta un archivo, una columna necesaria
 o los encabezados se repiten, se detiene antes de reemplazar su salida.
 
-Las pruebas de ingesta se ejecutan con el entorno activado:
+La validacion genera `pipeline/data/processed/02_validacion.json`. Si no hay
+errores criticos, tambien genera `02_validado.csv` conservando todos los valores
+y filas de la ingesta. Las advertencias quedan en el reporte y permiten continuar.
+Ante un error critico, el comando se detiene y no reemplaza el CSV validado previo.
+
+Las reglas de advertencia y detencion de cada control estan en
+[pipeline/CONTROLES_CALIDAD.md](pipeline/CONTROLES_CALIDAD.md).
+
+Las pruebas de ingesta y calidad se ejecutan con el entorno activado:
 
 ```bash
 python -m unittest discover -s pipeline/tests -v
 ```
 
-Utilizan archivos sinteticos temporales. Comprueban que se conserven los textos,
-que repetir la etapa produzca los mismos archivos y que un fallo no reemplace
-las salidas anteriores.
+Utilizan archivos sinteticos temporales. Comprueban preservacion de valores,
+repetibilidad, cobertura, duplicados, faltantes, tipos, valores y metodologia.
+Los fallos no deben reemplazar salidas anteriores ni archivos de publicacion.
 
 Las versiones de todas las dependencias estan fijadas en `requirements.txt`.
 `requirements.in` identifica las cuatro que utilizaremos directamente:
@@ -146,5 +156,6 @@ Conventional Commits y validan el frontend antes de cada commit.
 
 El detalle de configuracion y las etapas previstas estan en
 [pipeline/README.md](pipeline/README.md).
+Las reglas de calidad estan en [pipeline/CONTROLES_CALIDAD.md](pipeline/CONTROLES_CALIDAD.md).
 Los comandos de ejecucion completa, publicacion, MLflow y Docker se agregaran
 cuando esas partes esten implementadas y verificadas.

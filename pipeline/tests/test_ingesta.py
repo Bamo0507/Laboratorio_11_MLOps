@@ -107,7 +107,3 @@ class PruebasIngesta(unittest.TestCase):
         self.assertNotEqual(resultado.returncode, 0)
         self.assertIn("El pipeline se detuvo en 01_ingesta.py", resultado.stderr)
         self.comprobar_salida_conservada(anterior)
-
-
-if __name__ == "__main__":
-    unittest.main()

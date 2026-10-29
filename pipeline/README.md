@@ -1,9 +1,9 @@
 # Pipeline de llegadas mensuales a Guatemala
 
 El pipeline se construye por etapas. Actualmente estan disponibles los dos CSV
-de entrada, la carga de configuracion, el setup de Python y la etapa de ingesta.
-Todavia no se ejecutan los seis controles completos de datos, la preparacion,
-el ajuste, la evaluacion ni la publicacion.
+de entrada, la configuracion, el setup de Python, la ingesta y los seis controles
+de calidad. Todavia no se ejecutan la preparacion de la serie, el ajuste,
+la evaluacion predictiva ni la publicacion.
 
 ## Datos de entrada
 
@@ -53,7 +53,7 @@ Con el entorno activado, desde la raiz del repositorio:
 python pipeline/src/run_pipeline.py
 ```
 
-El orquestador ejecuta actualmente `01_ingesta.py`. Para ejecutar solo esa etapa:
+El orquestador ejecuta `01_ingesta.py` y `02_validacion.py`. Para ejecutar solo la ingesta:
 
 ```bash
 python pipeline/src/01_ingesta.py
@@ -83,13 +83,40 @@ division se construira despues con los periodos de `configuracion.toml`.
 
 Se comprueba que los archivos existan, tengan registros y columnas indispensables,
 no repitan encabezados y compartan las mismas columnas. Una lectura fallida no
-reemplaza el CSV de ingesta anterior. Estas comprobaciones estructurales no
-sustituyen los seis controles completos de calidad que se agregaran despues.
+reemplaza el CSV de ingesta anterior y genera un reporte de calidad bloqueado.
+Estas comprobaciones estructurales preceden a los seis controles de la etapa 2.
 
 El reporte guarda la huella SHA-256 de los mismos bytes utilizados para leer
 cada CSV, su tamano, columnas y filas. La huella permite identificar si el
 contenido del archivo cambio. Los archivos de salida se escriben primero en
 un temporal y se reemplazan al terminar, para evitar un CSV parcialmente escrito.
+
+## Etapa 2 implementada
+
+```text
+01_ingesta.csv + 01_ingesta.json + fuentes originales
+  -> src/02_validacion.py
+  -> data/processed/02_validacion.json
+  -> data/processed/02_validado.csv, solo si no hay errores criticos
+```
+
+| Etapa | Responsabilidad | Entrada | Salida |
+|---|---|---|---|
+| 02_validacion.py | Comprobar seis controles y trazabilidad | Ingesta, manifiesto y fuentes | Reporte de calidad y CSV validado |
+
+Las reglas detalladas y los casos que advierten o detienen la ejecucion estan en
+[CONTROLES_CALIDAD.md](CONTROLES_CALIDAD.md). La validacion no modifica datos
+originales, no imputa faltantes ni elimina coincidencias parciales. Un fallo
+critico conserva el CSV validado anterior y escribe un reporte rechazado.
+Las etapas siguientes deberan exigir un reporte apto y verificar su huella
+antes de consumir ese CSV. La validacion no autoriza la publicacion.
+
+Con el entorno activado se puede ejecutar solo esta etapa o las pruebas:
+
+```bash
+python pipeline/src/02_validacion.py
+python -m unittest discover -s pipeline/tests -v
+```
 
 ## Etapas previstas
 

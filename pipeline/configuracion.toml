@@ -7,11 +7,21 @@ publicaciones = "data/processed/publicaciones"
 mlflow = "data/processed/mlflow"
 ingesta = "data/processed/01_ingesta.csv"
 reporte_ingesta = "data/processed/01_ingesta.json"
+validado = "data/processed/02_validado.csv"
+reporte_validacion = "data/processed/02_validacion.json"
 
 [ingesta]
 codificacion = "utf-8-sig"
 separador = ","
 columna_origen = "archivo_origen"
+granularidad_fuente = "mensual"
+
+[calidad]
+formato_fecha = "%Y-%m-%d"
+marcadores_ausencia = ["", "NA", "NaN", "NULL", "None", "N/A", "sin dato"]
+limite_ejemplos = 5
+tipos_fuente = ["Turista", "Excursionista"]
+clave_revision_parcial = ["Fecha", "Vía", "Frontera", "País", "Tipo de Viajero"]
 
 [periodos]
 inicio_ajuste = "2023-01"
@@ -43,3 +53,4 @@ pais = "País"
 tipo = "Tipo de Viajero"
 valor = "Viajero"
 clave_registro = ["Fecha", "Vía", "Frontera", "País", "Tipo de Viajero", "Agrupación Residencia"]
+opcionales = ["pandemia", "Región", "Región dos", "Regiones OMT", "MCEO"]
