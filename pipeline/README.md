@@ -1,8 +1,8 @@
 # Pipeline de llegadas mensuales a Guatemala
 
 El pipeline se construye por etapas. Actualmente estan disponibles los dos CSV
-de entrada, la configuracion, el setup de Python, la ingesta y los seis controles
-de calidad. Todavia no se ejecutan la preparacion de la serie, el ajuste,
+de entrada, la configuracion, el setup de Python, la ingesta, los seis controles
+de calidad y la preparacion de la serie. Todavia no se ejecutan el ajuste,
 la evaluacion predictiva ni la publicacion.
 
 ## Datos de entrada
@@ -53,7 +53,7 @@ Con el entorno activado, desde la raiz del repositorio:
 python pipeline/src/run_pipeline.py
 ```
 
-El orquestador ejecuta `01_ingesta.py` y `02_validacion.py`. Para ejecutar solo la ingesta:
+El orquestador ejecuta ingesta, validacion y preparacion. Para ejecutar solo la ingesta:
 
 ```bash
 python pipeline/src/01_ingesta.py
@@ -117,6 +117,41 @@ Con el entorno activado se puede ejecutar solo esta etapa o las pruebas:
 python pipeline/src/02_validacion.py
 python -m unittest discover -s pipeline/tests -v
 ```
+
+## Etapa 3 implementada
+
+```text
+02_validado.csv + 02_validacion.json
+  -> src/03_preparacion.py
+  -> 03_serie_mensual.csv
+  -> 03_ajuste.csv + 03_evaluacion.csv
+  -> 03_preparacion.json
+```
+
+| Etapa | Responsabilidad | Entrada | Salida |
+|---|---|---|---|
+| 03_preparacion.py | Construir la serie sin residentes y separar periodos | Datos y reporte de calidad vigentes | Serie mensual, ajuste, evaluacion y reporte |
+
+Se seleccionan los tipos de visitante configurados y se excluyen residentes
+antes de sumar llegadas por mes. Los meses sin cobertura quedan sin dato y las
+cifras no se redondean. El reporte registra las filas excluidas, los periodos y
+las huellas de las salidas. Ver [codebook.md](codebook.md) para el diccionario.
+
+Antes de continuar, se exige un reporte apto y las huellas vigentes del CSV
+validado, las fuentes originales, la ingesta y la configuracion. Si cambia
+alguno, hay que repetir las etapas previas. Ante un rechazo se conservan los
+CSV preparados anteriores y se registra un reporte de preparacion rechazado.
+
+Para ejecutar solo esta etapa, con el entorno activado:
+
+```bash
+python pipeline/src/03_preparacion.py
+```
+
+Con la configuracion actual, el archivo de ajuste contiene 36 meses y el de
+evaluacion contiene seis. Las pruebas comprueban que modificar observaciones
+de evaluacion no altere el archivo de ajuste y que una copia en otra ubicacion
+produzca las mismas salidas.
 
 ## Etapas previstas
 

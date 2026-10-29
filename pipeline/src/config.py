@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import re
 import tomllib
 from datetime import date
@@ -13,7 +14,7 @@ from typing import Any
 RAIZ = Path(__file__).resolve().parent.parent
 RUTA_CONFIGURACION = RAIZ / "configuracion.toml"
 PATRON_MES = re.compile(r"\d{4}-(0[1-9]|1[0-2])")
-SECCIONES = {"rutas", "ingesta", "calidad", "periodos", "poblacion", "modelo", "referencia", "columnas"}
+SECCIONES = {"rutas", "ingesta", "calidad", "preparacion", "periodos", "poblacion", "modelo", "referencia", "columnas"}
 
 
 def resolver_ruta(raiz: Path, valor: str) -> Path:
@@ -56,7 +57,10 @@ def cargar_configuracion(ruta: Path | None = None) -> dict[str, Any]:
 
     raiz = ruta.parent
     rutas = configuracion["rutas"]
-    archivos_generados = ("ingesta", "reporte_ingesta", "validado", "reporte_validacion")
+    archivos_generados = (
+        "ingesta", "reporte_ingesta", "validado", "reporte_validacion",
+        "serie_mensual", "ajuste", "evaluacion", "reporte_preparacion",
+    )
     for clave in ("entrenamiento", "prueba", "procesados", "publicaciones", "mlflow", *archivos_generados):
         if clave not in rutas:
             raise ValueError(f"Falta la ruta {clave}.")
@@ -114,6 +118,10 @@ def cargar_configuracion(ruta: Path | None = None) -> dict[str, Any]:
     for clave in ("destino", "unidad"):
         if not isinstance(configuracion["poblacion"].get(clave), str) or not configuracion["poblacion"][clave]:
             raise ValueError(f"poblacion.{clave} debe ser un texto no vacio.")
+    for clave in ("tolerancia_relativa_suma", "tolerancia_absoluta_suma"):
+        valor = configuracion["preparacion"].get(clave)
+        if type(valor) not in (int, float) or not math.isfinite(valor) or valor < 0:
+            raise ValueError(f"preparacion.{clave} debe ser un numero finito no negativo.")
 
     validar_periodos(configuracion["periodos"])
     modelo = configuracion["modelo"]

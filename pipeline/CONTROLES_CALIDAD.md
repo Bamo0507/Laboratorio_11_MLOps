@@ -87,7 +87,8 @@ python pipeline/src/run_pipeline.py
 python -m unittest discover -s pipeline/tests -v
 ```
 
-El primer comando ejecuta ingesta y validacion. Para ejecutar solo la validacion
+El primer comando ejecuta las etapas disponibles, incluida la preparacion.
+Para ejecutar solo la validacion
 debe existir una ingesta y un manifiesto consistentes:
 
 ```bash

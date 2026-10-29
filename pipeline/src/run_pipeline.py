@@ -10,7 +10,7 @@ from pathlib import Path
 from config import RUTA_CONFIGURACION
 
 DIR_SRC = Path(__file__).resolve().parent
-ETAPAS = ["01_ingesta.py", "02_validacion.py"]
+ETAPAS = ["01_ingesta.py", "02_validacion.py", "03_preparacion.py"]
 
 
 def main() -> None:
@@ -24,7 +24,7 @@ def main() -> None:
         )
         if resultado.returncode:
             parser.exit(resultado.returncode, f"[FALLO] El pipeline se detuvo en {etapa}.\n")
-    print("[ok] Ingesta y validacion completadas. El modelado y la publicacion aun no se ejecutan.")
+    print("[ok] Ingesta, validacion y preparacion completadas. El modelado y la publicacion aun no se ejecutan.")
 
 
 main()

@@ -85,3 +85,11 @@ def guardar_json(datos: Any, ruta: Path) -> None:
         archivo.write("\n")
 
     _escribir_atomico(ruta, escribir)
+
+
+def cargar_json(ruta: Path) -> dict[str, Any]:
+    with ruta.open(encoding="utf-8") as archivo:
+        datos = json.load(archivo)
+    if not isinstance(datos, dict):
+        raise ValueError(f"{ruta.name} debe contener un objeto JSON.")
+    return datos

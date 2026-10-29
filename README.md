@@ -8,8 +8,8 @@ resultados aprobados con trazabilidad en MLflow.
 ## Estado actual
 
 El tablero heredado esta en `src/`. En `pipeline/` ya estan los CSV originales,
-la configuracion portable, la preparacion del entorno, la ingesta y los seis
-controles de calidad. El modelado y la publicacion se implementaran despues.
+la configuracion portable, el entorno, la ingesta, los seis controles de calidad
+y la preparacion de la serie mensual. El modelado y la publicacion se implementaran despues.
 Actualmente el tablero sigue consultando los JSON del laboratorio 10.
 
 ## Estructura
@@ -27,6 +27,7 @@ pipeline/
     01_ingesta.py               Lectura y union de los CSV originales
     02_validacion.py            Ejecucion de los seis controles de calidad
     validacion.py               Reglas de cada control y estructura del reporte
+    03_preparacion.py           Serie sin residentes y particiones temporales
     utils.py                    Lectura, escritura y validaciones compartidas
     run_pipeline.py             Ejecucion de las etapas disponibles
   data/
@@ -86,7 +87,7 @@ Con el entorno activado, las etapas implementadas se ejecutan con un comando:
 python pipeline/src/run_pipeline.py
 ```
 
-Actualmente ejecuta ingesta y validacion. La ingesta genera `pipeline/data/processed/01_ingesta.csv`
+Actualmente ejecuta ingesta, validacion y preparacion. La ingesta genera `pipeline/data/processed/01_ingesta.csv`
 y `01_ingesta.json`, que registra los archivos leidos, sus huellas SHA-256 y los
 conteos de filas. Los valores originales se conservan como texto. La columna
 `archivo_origen` identifica el CSV de procedencia y no define la nueva particion
@@ -104,7 +105,14 @@ Ante un error critico, el comando se detiene y no reemplaza el CSV validado prev
 Las reglas de advertencia y detencion de cada control estan en
 [pipeline/CONTROLES_CALIDAD.md](pipeline/CONTROLES_CALIDAD.md).
 
-Las pruebas de ingesta y calidad se ejecutan con el entorno activado:
+La preparacion exige que datos y configuracion coincidan con el reporte de calidad.
+Excluye residentes, suma por mes y separa las fechas de ajuste y evaluacion.
+Genera `03_serie_mensual.csv`, `03_ajuste.csv`, `03_evaluacion.csv` y el reporte
+`03_preparacion.json`, dentro de `pipeline/data/processed/`. No completa meses
+sin cobertura con cero ni utiliza la evaluacion para transformar el ajuste.
+El diccionario de estas salidas esta en [pipeline/codebook.md](pipeline/codebook.md).
+
+Las pruebas de ingesta, calidad y preparacion se ejecutan con el entorno activado:
 
 ```bash
 python -m unittest discover -s pipeline/tests -v

@@ -70,6 +70,8 @@ def ejecutar(ruta_configuracion: Path = RUTA_CONFIGURACION) -> dict[str, Any]:
 
     manifiesto, incidencias = trazabilidad(configuracion, raiz, datos, metadatos["sha256"])
     resultado = evaluar(datos, configuracion, metadatos["sha256"], incidencias, manifiesto)
+    resultado["sha256_configuracion"] = huella_archivo(Path(ruta_configuracion))
+    resultado["fuentes"] = manifiesto.get("fuentes", [])
     if resultado["apto_para_preparacion"]:
         guardar(datos, rutas["validado"], separador=configuracion["ingesta"]["separador"])
         resultado["sha256_validado"] = huella_archivo(rutas["validado"])

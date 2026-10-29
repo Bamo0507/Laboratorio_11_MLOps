@@ -9,6 +9,10 @@ ingesta = "data/processed/01_ingesta.csv"
 reporte_ingesta = "data/processed/01_ingesta.json"
 validado = "data/processed/02_validado.csv"
 reporte_validacion = "data/processed/02_validacion.json"
+serie_mensual = "data/processed/03_serie_mensual.csv"
+ajuste = "data/processed/03_ajuste.csv"
+evaluacion = "data/processed/03_evaluacion.csv"
+reporte_preparacion = "data/processed/03_preparacion.json"
 
 [ingesta]
 codificacion = "utf-8-sig"
@@ -22,6 +26,10 @@ marcadores_ausencia = ["", "NA", "NaN", "NULL", "None", "N/A", "sin dato"]
 limite_ejemplos = 5
 tipos_fuente = ["Turista", "Excursionista"]
 clave_revision_parcial = ["Fecha", "Vía", "Frontera", "País", "Tipo de Viajero"]
+
+[preparacion]
+tolerancia_relativa_suma = 1e-12
+tolerancia_absoluta_suma = 1e-6
 
 [periodos]
 inicio_ajuste = "2023-01"
