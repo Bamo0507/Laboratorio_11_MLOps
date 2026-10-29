@@ -1,73 +1,150 @@
-# Next.js Starter Template
+# Laboratorio 11 de MLOps
 
-This is a comprehensive starter template for modern web applications built with Next.js. It's designed to be used as a starting point for any new web project requiring Next.js, providing a solid foundation with essential development tools and best practices pre-configured.
+Este proyecto continua el tablero del laboratorio 10 sobre llegadas de turistas
+y excursionistas a Guatemala. El laboratorio 11 incorpora un pipeline de Python
+para preparar datos, ejecutar SARIMA, evaluar sus predicciones y publicar
+resultados aprobados con trazabilidad en MLflow.
 
-## What's Included
+## Estado actual
 
-- **Next.js 16.3** - App Router, Turbopack (default bundler for dev and build)
-- **React 19.3**
-- **TypeScript 7** - Native `tsc` for type checking, with TypeScript 6 kept side-by-side for tooling (see below)
-- **Tailwind CSS 4.3** - CSS-first config via `@tailwindcss/postcss`, no `tailwind.config`
-- **shadcn/ui** - `base-nova` style on [Base UI](https://base-ui.com) primitives, `cn` class merging, lucide icons
-- **ESLint 9** - Flat config with `eslint-config-next`
-- **Husky** - Git hooks for automated quality checks
-- **Commitlint** - Conventional commit message linting
+El tablero heredado esta en `src/`. En `pipeline/` ya estan los CSV originales,
+la configuracion portable, la preparacion del entorno de Python y la ingesta.
+Los controles completos de datos, el modelado y la publicacion se implementaran despues.
+Actualmente el tablero sigue consultando los JSON del laboratorio 10.
 
-## Requirements
+## Estructura
 
-- Node.js `>= 22.12` (required by commitlint 21)
-- pnpm 10 (pinned via `packageManager`)
+```text
+src/                            Tablero Next.js y datos del laboratorio 10
+pipeline/
+  configuracion.toml            Rutas, periodos y parametros
+  requirements.in               Dependencias directas
+  requirements.txt              Versiones fijadas, incluidas las indirectas
+  .python-version               Version de Python elegida
+  src/
+    00_init.py                  Preparacion del entorno virtual
+    config.py                   Lectura y validacion de configuracion
+    01_ingesta.py               Lectura y union de los CSV originales
+    utils.py                    Lectura, escritura y validaciones compartidas
+    run_pipeline.py             Ejecucion de las etapas disponibles
+  data/
+    raw/lab1/                   entrenamiento.csv y prueba.csv
+    processed/                  Resultados regenerables, fuera de Git
+  notebooks/                    Exploracion, fuera del flujo de ejecucion
+  README.md                     Detalle del pipeline
+```
 
-## Getting Started
+## Requisitos
 
-### Installation
+- Python 3.13 para el pipeline. Utilizamos la misma version menor en el equipo.
+- Node.js 22.12 o posterior y pnpm 10.33.0 para el tablero.
+- Git para clonar el repositorio privado.
+
+La instalacion inicial necesita Internet para descargar dependencias. Los CSV
+ya estan incluidos. No es necesario tener las carpetas de los laboratorios
+anteriores. No se deben editar los archivos de `data/raw/`.
+
+## Preparar el pipeline
+
+Ejecutar los comandos desde la raiz del repositorio.
+
+### macOS y Linux
 
 ```bash
-# Install dependencies
-pnpm install
+python3.13 pipeline/src/00_init.py
+source pipeline/.venv/bin/activate
+python pipeline/src/config.py
+```
 
-# Setup git hooks (required for pre-commit and commit-msg validation)
+### Windows con PowerShell
+
+```powershell
+py -3.13 pipeline/src/00_init.py
+.\pipeline\.venv\Scripts\Activate.ps1
+python pipeline/src/config.py
+```
+
+Si la terminal no permite activar el entorno, se puede usar directamente su Python:
+
+```powershell
+.\pipeline\.venv\Scripts\python.exe pipeline/src/config.py
+```
+
+`00_init.py` crea `pipeline/.venv/`, instala `requirements.txt` y comprueba que las
+dependencias no tengan conflictos. Si se ejecuta otra vez, reutiliza el entorno
+y comprueba la instalacion. No prepara datos ni entrena modelos.
+
+`config.py` muestra la configuracion y calcula las rutas desde la ubicacion del
+proyecto. No depende del nombre del usuario ni de la carpeta donde se clono.
+Este comando todavia no ejecuta el pipeline completo.
+
+Con el entorno activado, las etapas implementadas se ejecutan con un comando:
+
+```bash
+python pipeline/src/run_pipeline.py
+```
+
+Actualmente ejecuta solo la ingesta. Genera `pipeline/data/processed/01_ingesta.csv`
+y `01_ingesta.json`, que registra los archivos leidos, sus huellas SHA-256 y los
+conteos de filas. Los valores originales se conservan como texto. La columna
+`archivo_origen` identifica el CSV de procedencia y no define la nueva particion
+de ajuste y evaluacion, que se construira con las fechas configuradas.
+
+La ingesta se puede ejecutar por separado mediante
+`python pipeline/src/01_ingesta.py`. Si falta un archivo, una columna necesaria
+o los encabezados se repiten, se detiene antes de reemplazar su salida.
+
+Las pruebas de ingesta se ejecutan con el entorno activado:
+
+```bash
+python -m unittest discover -s pipeline/tests -v
+```
+
+Utilizan archivos sinteticos temporales. Comprueban que se conserven los textos,
+que repetir la etapa produzca los mismos archivos y que un fallo no reemplace
+las salidas anteriores.
+
+Las versiones de todas las dependencias estan fijadas en `requirements.txt`.
+`requirements.in` identifica las cuatro que utilizaremos directamente:
+
+| Paquete | Uso previsto |
+|---|---|
+| pandas | Leer CSV y construir la serie mensual |
+| NumPy | Logaritmos, exponenciales y calculos de error |
+| statsmodels | Ajustar SARIMA y generar predicciones |
+| MLflow | Registrar datos, configuracion, controles, metricas y archivos |
+
+El script instala dentro de `.venv/`, no en el Python global del sistema.
+Con el entorno activado, `python -m pip check` permite comprobar las dependencias.
+`deactivate` permite salir del entorno.
+
+## Ejecutar el tablero
+
+Desde la raiz del repositorio:
+
+```bash
+pnpm install --frozen-lockfile
 pnpm run setup:hooks
+pnpm dev
 ```
 
-### Adding UI components
+Abrir la direccion local que indique Next.js, normalmente
+[localhost:3000](http://localhost:3000).
+Los cambios de filtros solo afectan la visualizacion y no ejecutan modelos.
+
+## Comprobaciones del frontend
 
 ```bash
-pnpm dlx shadcn@latest add button
+pnpm run validate
+pnpm build
 ```
 
-Components are generated in `src/components/ui` using Base UI primitives (`@base-ui/react`). Theme tokens live in `src/app/globals.css`.
+`validate` ejecuta ESLint y la comprobacion de tipos. Los hooks utilizan
+Conventional Commits y validan el frontend antes de cada commit.
 
-## TypeScript setup
+## Documentacion
 
-TypeScript 7 does not ship a JavaScript compiler API yet, which `typescript-eslint` (used by `eslint-config-next`) and the Next.js editor plugin still need. Both versions are installed through npm aliases:
-
-| Package name | Resolves to | Used by |
-|---|---|---|
-| `@typescript/native` | `typescript@7` | `tsc` binary: `pnpm typecheck` and `next build` |
-| `typescript` | `@typescript/typescript6` | ESLint, shadcn CLI, editor (`tsc6` binary) |
-
-Once TypeScript 7.1 ships its API and `typescript-eslint` supports it, drop the alias and install `typescript@^7` directly.
-
-## Why ESLint 9
-
-`eslint-config-next` depends on `eslint-plugin-react`, `eslint-plugin-import` and `eslint-plugin-jsx-a11y`, which do not support ESLint 10 yet. Stay on ESLint 9 until `eslint-config-next` supports it.
-
-## Quality Assurance Features
-
-### Git Hooks (Husky)
-- **Pre-commit hook**: Runs linting and type checking before commits
-- **Commit-msg hook**: Validates commit messages using conventional commit format
-
-**Setup hooks after cloning:**
-```bash
-pnpm run setup:hooks
-# or manually:
-./setup-hooks.sh
-```
-
-### Scripts
-- `pnpm run validate` - Runs both linting and type checking
-- `pnpm run typecheck` - Generates Next.js route types, then runs TypeScript type checking
-- `pnpm run lint` - ESLint code linting
-- `pnpm run setup:hooks` - Setup Husky git hooks
+El detalle de configuracion y las etapas previstas estan en
+[pipeline/README.md](pipeline/README.md).
+Los comandos de ejecucion completa, publicacion, MLflow y Docker se agregaran
+cuando esas partes esten implementadas y verificadas.

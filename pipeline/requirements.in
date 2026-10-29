@@ -1,0 +1,5 @@
+# Dependencias directas del pipeline. requirements.txt fija tambien las indirectas.
+numpy==2.5.4
+pandas==3.1.0
+statsmodels==0.15.0
+mlflow==3.17.2

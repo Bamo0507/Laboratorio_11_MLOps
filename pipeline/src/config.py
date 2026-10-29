@@ -13,7 +13,7 @@ from typing import Any
 RAIZ = Path(__file__).resolve().parent.parent
 RUTA_CONFIGURACION = RAIZ / "configuracion.toml"
 PATRON_MES = re.compile(r"\d{4}-(0[1-9]|1[0-2])")
-SECCIONES = {"rutas", "periodos", "poblacion", "modelo", "referencia", "columnas"}
+SECCIONES = {"rutas", "ingesta", "periodos", "poblacion", "modelo", "referencia", "columnas"}
 
 
 def resolver_ruta(raiz: Path, valor: str) -> Path:
@@ -56,7 +56,7 @@ def cargar_configuracion(ruta: Path | None = None) -> dict[str, Any]:
 
     raiz = ruta.parent
     rutas = configuracion["rutas"]
-    for clave in ("entrenamiento", "prueba", "procesados", "publicaciones", "mlflow"):
+    for clave in ("entrenamiento", "prueba", "procesados", "publicaciones", "mlflow", "ingesta", "reporte_ingesta"):
         if clave not in rutas:
             raise ValueError(f"Falta la ruta {clave}.")
         rutas[clave] = resolver_ruta(raiz, rutas[clave])
@@ -66,9 +66,19 @@ def cargar_configuracion(ruta: Path | None = None) -> dict[str, Any]:
         raise ValueError("Entrenamiento y prueba deben ser archivos diferentes.")
     if any(entrada.is_relative_to(rutas["procesados"]) for entrada in entradas):
         raise ValueError("Los insumos no pueden estar en la carpeta de resultados.")
-    for clave in ("publicaciones", "mlflow"):
+    for clave in ("publicaciones", "mlflow", "ingesta", "reporte_ingesta"):
         if not rutas[clave].is_relative_to(rutas["procesados"]):
             raise ValueError(f"La ruta {clave} debe estar dentro de procesados.")
+    salidas = (rutas["ingesta"], rutas["reporte_ingesta"])
+    if salidas[0] == salidas[1] or any(salida == rutas["procesados"] for salida in salidas):
+        raise ValueError("La ingesta y su reporte deben ser archivos diferentes.")
+
+    ingesta = configuracion["ingesta"]
+    for clave in ("codificacion", "separador", "columna_origen"):
+        if not isinstance(ingesta.get(clave), str) or not ingesta[clave].strip():
+            raise ValueError(f"ingesta.{clave} debe ser un texto no vacio.")
+    if len(ingesta["separador"]) != 1:
+        raise ValueError("El separador CSV debe tener un solo caracter.")
 
     validar_periodos(configuracion["periodos"])
     modelo = configuracion["modelo"]
@@ -84,6 +94,16 @@ def cargar_configuracion(ruta: Path | None = None) -> dict[str, Any]:
     if type(rezago) is not int or rezago < 1:
         raise ValueError("El rezago de referencia debe ser un entero positivo.")
     return configuracion
+
+
+def columnas_requeridas(configuracion: dict[str, Any]) -> list[str]:
+    """Columnas necesarias para analizar la serie y comprobar la granularidad."""
+    columnas = configuracion["columnas"]
+    nombres = [columnas[k] for k in ("fecha", "anio", "mes", "pais", "tipo", "valor")]
+    nombres.extend(columnas["clave_registro"])
+    if any(not isinstance(nombre, str) or not nombre for nombre in nombres):
+        raise ValueError("Los nombres de columna deben ser textos no vacios.")
+    return list(dict.fromkeys(nombres))
 
 
 def main() -> None:

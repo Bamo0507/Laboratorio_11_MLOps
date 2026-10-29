@@ -5,6 +5,13 @@ prueba = "data/raw/lab1/prueba.csv"
 procesados = "data/processed"
 publicaciones = "data/processed/publicaciones"
 mlflow = "data/processed/mlflow"
+ingesta = "data/processed/01_ingesta.csv"
+reporte_ingesta = "data/processed/01_ingesta.json"
+
+[ingesta]
+codificacion = "utf-8-sig"
+separador = ","
+columna_origen = "archivo_origen"
 
 [periodos]
 inicio_ajuste = "2023-01"
