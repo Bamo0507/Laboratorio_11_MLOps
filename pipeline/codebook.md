@@ -68,3 +68,42 @@ en `configuracion.toml`. Son tolerancias de aritmetica de punto flotante, no
 permisos para perder o imputar llegadas.
 
 Esta etapa no publica estimaciones ni reemplaza los resultados del tablero.
+
+## Artefactos de ajuste SARIMA
+
+`04_modelo_sarima.pkl` conserva el resultado entrenado, incluidos sus parametros
+y el estado necesario para pronosticar sin volver a ajustar. Se genera solo
+con `03_ajuste.csv`, que actualmente contiene 36 observaciones. Su escala de
+trabajo es el logaritmo de las llegadas.
+
+`04_ajuste.json` documenta el periodo utilizado, configuracion y parametros
+aprendidos. En esta estructura SARIMA, `ar.S.L12` es el coeficiente
+autorregresivo estacional estimado y `sigma2` es la varianza estimada de las
+innovaciones en la escala transformada. Son parametros aprendidos con los datos,
+mientras que los ordenes p, d, q, P, D, Q y s se fijan antes del entrenamiento.
+
+Los indicadores AIC, BIC y log-verosimilitud describen el ajuste al entrenamiento.
+La precision frente a los seis meses reservados se medira en la etapa de
+evaluacion. Este reporte no aprueba una publicacion ni contiene errores de
+prediccion calculados con los valores reservados.
+
+## Comparacion fuera de muestra
+
+`05_comparacion.csv` se genera con el modelo ajustado, la serie mensual y los
+meses reservados. Todas las cantidades conservan decimales y se expresan en
+llegadas por mes.
+
+| Variable | Tipo | Descripcion | Valores validos / notas |
+| --- | --- | --- | --- |
+| fecha | string | Mes de evaluacion | AAAA-MM-01, enero a junio de 2026 |
+| observado | float | Llegadas reales del mes | Finito y positivo |
+| sarima | float | Exponencial del pronostico logaritmico | Derivada, finita y positiva, sin correccion de sesgo |
+| fecha_referencia | string | Mes utilizado por la referencia | Mismo mes del anio anterior, conocido al terminar el ajuste |
+| referencia | float | Llegadas observadas en fecha_referencia | Finito y positivo |
+| error_sarima | float | Pronostico SARIMA menos observado | Derivada, positivo indica sobreestimacion |
+| error_referencia | float | Referencia menos observado | Derivada, positivo indica sobreestimacion |
+
+`05_evaluacion.json` contiene MAE y RMSE de ambos metodos sobre los mismos meses,
+la regla configurada, su resultado y las huellas de entradas y salida. No se
+permiten faltantes en la comparacion ni se imputan. Superar la regla requiere
+errores estrictamente menores en ambas metricas. No autoriza publicaciones.

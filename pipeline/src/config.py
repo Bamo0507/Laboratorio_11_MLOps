@@ -14,7 +14,9 @@ from typing import Any
 RAIZ = Path(__file__).resolve().parent.parent
 RUTA_CONFIGURACION = RAIZ / "configuracion.toml"
 PATRON_MES = re.compile(r"\d{4}-(0[1-9]|1[0-2])")
-SECCIONES = {"rutas", "ingesta", "calidad", "preparacion", "periodos", "poblacion", "modelo", "referencia", "columnas"}
+SECCIONES = {"rutas", "ingesta", "calidad", "preparacion", "periodos", "poblacion", "modelo", "referencia", "columnas", "evaluacion"}
+COLUMNAS_SERIE = ("fecha", "viajeros", "registros", "conjunto")
+FORMATO_FECHA_SERIE = "%Y-%m-%d"
 
 
 def resolver_ruta(raiz: Path, valor: str) -> Path:
@@ -60,6 +62,7 @@ def cargar_configuracion(ruta: Path | None = None) -> dict[str, Any]:
     archivos_generados = (
         "ingesta", "reporte_ingesta", "validado", "reporte_validacion",
         "serie_mensual", "ajuste", "evaluacion", "reporte_preparacion",
+        "modelo_ajustado", "reporte_ajuste", "comparacion", "reporte_evaluacion",
     )
     for clave in ("entrenamiento", "prueba", "procesados", "publicaciones", "mlflow", *archivos_generados):
         if clave not in rutas:
@@ -125,6 +128,17 @@ def cargar_configuracion(ruta: Path | None = None) -> dict[str, Any]:
 
     validar_periodos(configuracion["periodos"])
     modelo = configuracion["modelo"]
+    if modelo.get("nombre") != "sarima" or modelo.get("transformacion") != "log":
+        raise ValueError("Esta implementacion utiliza SARIMA con transformacion logaritmica.")
+    if modelo.get("tendencia") not in ("n", "c", "t", "ct"):
+        raise ValueError("La tendencia debe ser n, c, t o ct.")
+    if modelo.get("metodo_optimizacion") != "lbfgs":
+        raise ValueError("El metodo de optimizacion implementado es lbfgs.")
+    if type(modelo.get("iteraciones_maximas")) is not int or modelo["iteraciones_maximas"] < 1:
+        raise ValueError("Las iteraciones maximas deben ser un entero positivo.")
+    for clave in ("exigir_estacionariedad", "exigir_invertibilidad"):
+        if type(modelo.get(clave)) is not bool:
+            raise ValueError(f"modelo.{clave} debe ser true o false.")
     for clave, longitud in (("orden", 3), ("orden_estacional", 4)):
         valores = modelo.get(clave)
         if not isinstance(valores, list) or len(valores) != longitud:
@@ -136,6 +150,10 @@ def cargar_configuracion(ruta: Path | None = None) -> dict[str, Any]:
     rezago = configuracion["referencia"].get("rezago_meses")
     if type(rezago) is not int or rezago < 1:
         raise ValueError("El rezago de referencia debe ser un entero positivo.")
+    if configuracion["evaluacion"].get("regla") != "mae_y_rmse_estrictamente_menores":
+        raise ValueError("La regla implementada exige MAE y RMSE estrictamente menores que la referencia.")
+    if configuracion["referencia"].get("nombre") != "mismo_mes_anio_anterior" or rezago != 12:
+        raise ValueError("La referencia implementada utiliza el mismo mes del anio anterior, con rezago 12.")
     return configuracion
 
 

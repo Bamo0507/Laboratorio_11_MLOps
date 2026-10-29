@@ -13,6 +13,10 @@ serie_mensual = "data/processed/03_serie_mensual.csv"
 ajuste = "data/processed/03_ajuste.csv"
 evaluacion = "data/processed/03_evaluacion.csv"
 reporte_preparacion = "data/processed/03_preparacion.json"
+modelo_ajustado = "data/processed/04_modelo_sarima.pkl"
+reporte_ajuste = "data/processed/04_ajuste.json"
+comparacion = "data/processed/05_comparacion.csv"
+reporte_evaluacion = "data/processed/05_evaluacion.json"
 
 [ingesta]
 codificacion = "utf-8-sig"
@@ -48,6 +52,15 @@ nombre = "sarima"
 orden = [0, 1, 0]
 orden_estacional = [1, 1, 0, 12]
 transformacion = "log"
+tendencia = "n"
+exigir_estacionariedad = true
+exigir_invertibilidad = true
+metodo_optimizacion = "lbfgs"
+iteraciones_maximas = 200
+
+# Regla fijada antes de calcular errores. El empate no supera la referencia.
+[evaluacion]
+regla = "mae_y_rmse_estrictamente_menores"
 
 [referencia]
 nombre = "mismo_mes_anio_anterior"

@@ -9,7 +9,9 @@ resultados aprobados con trazabilidad en MLflow.
 
 El tablero heredado esta en `src/`. En `pipeline/` ya estan los CSV originales,
 la configuracion portable, el entorno, la ingesta, los seis controles de calidad
-y la preparacion de la serie mensual. El modelado y la publicacion se implementaran despues.
+la preparacion de la serie mensual, el ajuste SARIMA y su evaluacion contra
+el mismo mes del anio anterior. El registro en MLflow y la publicacion se
+implementaran despues.
 Actualmente el tablero sigue consultando los JSON del laboratorio 10.
 
 ## Estructura
@@ -28,6 +30,7 @@ pipeline/
     02_validacion.py            Ejecucion de los seis controles de calidad
     validacion.py               Reglas de cada control y estructura del reporte
     03_preparacion.py           Serie sin residentes y particiones temporales
+    04_ajuste.py                Ajuste SARIMA y persistencia del modelo
     utils.py                    Lectura, escritura y validaciones compartidas
     run_pipeline.py             Ejecucion de las etapas disponibles
   data/
@@ -87,7 +90,8 @@ Con el entorno activado, las etapas implementadas se ejecutan con un comando:
 python pipeline/src/run_pipeline.py
 ```
 
-Actualmente ejecuta ingesta, validacion y preparacion. La ingesta genera `pipeline/data/processed/01_ingesta.csv`
+Actualmente ejecuta ingesta, validacion, preparacion, ajuste SARIMA y evaluacion.
+La ingesta genera `pipeline/data/processed/01_ingesta.csv`
 y `01_ingesta.json`, que registra los archivos leidos, sus huellas SHA-256 y los
 conteos de filas. Los valores originales se conservan como texto. La columna
 `archivo_origen` identifica el CSV de procedencia y no define la nueva particion
@@ -112,7 +116,13 @@ Genera `03_serie_mensual.csv`, `03_ajuste.csv`, `03_evaluacion.csv` y el reporte
 sin cobertura con cero ni utiliza la evaluacion para transformar el ajuste.
 El diccionario de estas salidas esta en [pipeline/codebook.md](pipeline/codebook.md).
 
-Las pruebas de ingesta, calidad y preparacion se ejecutan con el entorno activado:
+El ajuste utiliza unicamente los 36 meses de entrenamiento configurados. Guarda
+`04_modelo_sarima.pkl` y `04_ajuste.json` en `pipeline/data/processed/`. El reporte
+incluye parametros aprendidos, convergencia, advertencias, versiones y huellas.
+Un ajuste sin convergencia se rechaza y conserva el modelo anterior. La etapa
+siguiente calcula MAE y RMSE fuera de muestra. La publicacion sigue pendiente.
+
+Las pruebas de las etapas implementadas se ejecutan con el entorno activado:
 
 ```bash
 python -m unittest discover -s pipeline/tests -v
@@ -167,3 +177,15 @@ El detalle de configuracion y las etapas previstas estan en
 Las reglas de calidad estan en [pipeline/CONTROLES_CALIDAD.md](pipeline/CONTROLES_CALIDAD.md).
 Los comandos de ejecucion completa, publicacion, MLflow y Docker se agregaran
 cuando esas partes esten implementadas y verificadas.
+
+## Evaluacion de SARIMA
+
+La etapa `05_evaluacion.py` pronostica enero a junio de 2026 desde el cierre
+del ajuste en diciembre de 2025. Compara las llegadas observadas con SARIMA
+y con el mismo mes de 2025. Genera `05_comparacion.csv` y `05_evaluacion.json`
+en `pipeline/data/processed/`.
+
+La regla de `configuracion.toml` exige que MAE y RMSE de SARIMA sean menores
+que los de la referencia. Un empate no supera la regla. Evaluar correctamente
+no implica aprobar el modelo. Ningun resultado de esta etapa publica datos en
+el tablero. El comando del pipeline ya incluye esta evaluacion.

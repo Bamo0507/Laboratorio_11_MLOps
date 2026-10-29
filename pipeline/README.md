@@ -2,8 +2,8 @@
 
 El pipeline se construye por etapas. Actualmente estan disponibles los dos CSV
 de entrada, la configuracion, el setup de Python, la ingesta, los seis controles
-de calidad y la preparacion de la serie. Todavia no se ejecutan el ajuste,
-la evaluacion predictiva ni la publicacion.
+de calidad, la preparacion de la serie, el ajuste SARIMA y la evaluacion
+predictiva. El registro en MLflow y la publicacion siguen pendientes.
 
 ## Datos de entrada
 
@@ -53,7 +53,7 @@ Con el entorno activado, desde la raiz del repositorio:
 python pipeline/src/run_pipeline.py
 ```
 
-El orquestador ejecuta ingesta, validacion y preparacion. Para ejecutar solo la ingesta:
+El orquestador ejecuta ingesta, validacion, preparacion y ajuste. Para ejecutar solo la ingesta:
 
 ```bash
 python pipeline/src/01_ingesta.py
@@ -153,6 +153,69 @@ evaluacion contiene seis. Las pruebas comprueban que modificar observaciones
 de evaluacion no altere el archivo de ajuste y que una copia en otra ubicacion
 produzca las mismas salidas.
 
+## Etapa 4 implementada
+
+```text
+03_ajuste.csv + reportes vigentes
+  -> src/04_ajuste.py
+  -> 04_modelo_sarima.pkl
+  -> 04_ajuste.json
+```
+
+| Etapa | Responsabilidad | Entrada | Salida |
+|---|---|---|---|
+| 04_ajuste.py | Ajustar y guardar SARIMA con entrenamiento | Serie de ajuste y certificados vigentes | Modelo y reporte de ajuste |
+
+La etapa aplica el logaritmo a las llegadas del archivo de ajuste y utiliza
+los ordenes SARIMA definidos en la configuracion. No abre el CSV de evaluacion
+ni usa esas observaciones para estimar o seleccionar parametros. Si se cambia
+un insumo o la configuracion, primero deben repetirse las etapas previas.
+
+El modelo se guarda solo si converge y sus parametros e indicadores son finitos.
+Antes de reemplazar un modelo anterior, se vuelve a cargar el archivo nuevo y
+se exige igualdad exacta de parametros y del pronostico de comprobacion de un
+mes. Este pronostico interno solo comprueba la persistencia y no se compara
+con observaciones reservadas ni se publica.
+
+El reporte registra AIC, BIC y log-verosimilitud del ajuste. No son el MAE ni el
+RMSE de evaluacion. Tambien conserva las advertencias sin ocultarlas, las
+versiones de Python y librerias, el commit disponible, si hay cambios locales
+y las huellas de los scripts. Un fallo deja un reporte rechazado y conserva
+el archivo del modelo anterior.
+
+### Opciones del ajuste
+
+| Opcion en configuracion.toml | Uso |
+|---|---|
+| orden y orden_estacional | Estructura SARIMA acordada |
+| transformacion | Logaritmo de llegadas |
+| tendencia | n significa que no se agrega una tendencia deterministica |
+| exigir_estacionariedad | Restringe la parte autorregresiva a parametros estacionarios |
+| exigir_invertibilidad | Restringe la parte de media movil a parametros invertibles |
+| metodo_optimizacion | L-BFGS, utilizado para estimar los parametros |
+| iteraciones_maximas | Limite de iteraciones del optimizador, actualmente 200 |
+
+Estas restricciones se aplican al modelo transformado y diferenciado, no
+significan que la serie original de llegadas tenga nivel constante. El ajuste
+utilizado no realiza muestreo ni inicializacion aleatoria, por lo que no
+necesita semilla. Las pruebas sinteticas si fijan una semilla para generar sus
+propios datos de prueba.
+
+Para ejecutar solo esta etapa, con el entorno activado:
+
+```bash
+python pipeline/src/04_ajuste.py
+```
+
+Las pruebas comprueban recuperacion, repetibilidad numerica, independencia
+respecto de los valores de evaluacion y conservacion del modelo anterior ante
+fallos de convergencia o de escritura/recuperacion. La igualdad numerica no
+implica exigir archivos pickle identicos entre plataformas o versiones.
+
+Referencias de implementacion de statsmodels:
+[ajuste SARIMAX](https://www.statsmodels.org/stable/generated/statsmodels.tsa.statespace.sarimax.SARIMAX.fit.html)
+y [persistencia del modelo](https://www.statsmodels.org/stable/generated/statsmodels.tsa.statespace.sarimax.SARIMAXResults.save.html).
+
 ## Etapas previstas
 
 ```text
@@ -170,6 +233,53 @@ Cada etapa tendra su propio script y salida para poder revisar que ocurrio
 antes de avanzar. El orquestador las ejecutara con un comando y se detendra
 ante un fallo. MLflow registrara la ejecucion y sus archivos.
 
-Las versiones de las dependencias estan fijadas. Los umbrales de aceptacion se
-definiran antes de ejecutar la evaluacion. Esta configuracion inicial no
-autoriza publicaciones.
+Las versiones de las dependencias estan fijadas. La regla de desempeno se
+configura antes de ejecutar la evaluacion. Ninguna etapa actual autoriza
+publicaciones.
+
+## Etapa 5 de evaluacion
+
+```text
+04_modelo_sarima.pkl + 03_evaluacion.csv + 03_serie_mensual.csv + certificados
+  -> 05_evaluacion.py
+  -> 05_comparacion.csv + 05_evaluacion.json
+```
+
+| Etapa | Archivo | Responsabilidad | Entrada | Salida |
+| --- | --- | --- | --- | --- |
+| 5 | 05_evaluacion.py | Comparar errores con la referencia y aplicar la regla previa | Modelo, series y reportes vigentes | Comparacion mensual y reporte de desempeno |
+
+```bash
+python pipeline/src/05_evaluacion.py
+```
+
+El pipeline completo tambien ejecuta esta etapa. Si cambia la configuracion,
+se deben regenerar las etapas anteriores para que sus certificados coincidan.
+
+Se genera un pronostico de origen fijo desde diciembre de 2025 hasta junio de
+2026. No se reentrena ni se incorporan llegadas reales de 2026 entre pasos.
+La exponencial devuelve el pronostico logaritmico a llegadas, sin redondeo ni
+factor de reparto. Sin correccion de sesgo, este valor representa una mediana
+condicional y no la media aritmetica esperada.
+
+La referencia toma enero de 2025 para enero de 2026, febrero de 2025 para febrero
+de 2026, y asi sucesivamente. Ambos metodos se comparan contra las mismas seis
+observaciones, en llegadas por mes. MAE es el promedio de los errores absolutos.
+RMSE es la raiz del promedio de los errores al cuadrado y da mas peso a los
+meses con errores grandes.
+
+Antes de calcular errores se fijo `mae_y_rmse_estrictamente_menores` en la
+configuracion. SARIMA supera la regla solo si mejora ambas metricas. Los
+empates no pasan, incluso cuando la referencia tiene error cero. La regla no
+se cambia a partir de los resultados observados. Una comparacion de seis meses
+no demuestra que la mejora se mantenga en el futuro.
+
+Un resultado desfavorable completa la evaluacion con
+`supera_regla_desempeno = false`. Un archivo alterado o un error de calculo
+rechaza la ejecucion, conserva el CSV anterior y escribe un reporte rechazado.
+Los consumidores deben exigir reporte completado y huella del CSV coincidente.
+`publicacion_autorizada` permanece en `false`, incluso si se supera la regla.
+MLflow y el mecanismo de publicacion todavia no estan implementados.
+
+La generacion del horizonte utiliza
+[get_forecast de statsmodels](https://www.statsmodels.org/stable/generated/statsmodels.tsa.statespace.sarimax.SARIMAXResults.get_forecast.html).

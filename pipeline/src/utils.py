@@ -93,3 +93,17 @@ def cargar_json(ruta: Path) -> dict[str, Any]:
     if not isinstance(datos, dict):
         raise ValueError(f"{ruta.name} debe contener un objeto JSON.")
     return datos
+
+
+def guardar_binario(ruta: Path, escritor: Any) -> None:
+    """Permite escribir y comprobar un binario antes de reemplazar el anterior."""
+    ruta.parent.mkdir(parents=True, exist_ok=True)
+    descriptor, nombre = tempfile.mkstemp(prefix=f".{ruta.name}.", suffix=".tmp", dir=ruta.parent)
+    temporal = Path(nombre)
+    try:
+        with os.fdopen(descriptor, "w+b") as archivo:
+            escritor(archivo)
+        os.replace(temporal, ruta)
+    finally:
+        temporal.unlink(missing_ok=True)
+    print(f"[guardado] {ruta.name}", flush=True)
