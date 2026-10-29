@@ -10,7 +10,8 @@ resultados aprobados con trazabilidad en MLflow.
 El tablero heredado esta en `src/`. En `pipeline/` ya estan los CSV originales,
 la configuracion portable, el entorno, la ingesta, los seis controles de calidad
 la preparacion de la serie mensual, el ajuste SARIMA y su evaluacion contra
-el mismo mes del anio anterior. El registro en MLflow y la publicacion se
+el mismo mes del anio anterior, ademas de la exportacion de un candidato para
+revision. El registro en MLflow y la publicacion se
 implementaran despues.
 Actualmente el tablero sigue consultando los JSON del laboratorio 10.
 
@@ -90,7 +91,8 @@ Con el entorno activado, las etapas implementadas se ejecutan con un comando:
 python pipeline/src/run_pipeline.py
 ```
 
-Actualmente ejecuta ingesta, validacion, preparacion, ajuste SARIMA y evaluacion.
+Actualmente ejecuta ingesta, validacion, preparacion, ajuste SARIMA, evaluacion
+y exportacion candidata.
 La ingesta genera `pipeline/data/processed/01_ingesta.csv`
 y `01_ingesta.json`, que registra los archivos leidos, sus huellas SHA-256 y los
 conteos de filas. Los valores originales se conservan como texto. La columna
@@ -189,3 +191,29 @@ La regla de `configuracion.toml` exige que MAE y RMSE de SARIMA sean menores
 que los de la referencia. Un empate no supera la regla. Evaluar correctamente
 no implica aprobar el modelo. Ningun resultado de esta etapa publica datos en
 el tablero. El comando del pipeline ya incluye esta evaluacion.
+
+## Exportacion candidata
+
+La etapa `06_exportacion.py` prepara `06_candidato.json` y `06_exportacion.json`
+en `pipeline/data/processed/`. Reune las seis estimaciones evaluadas, sus
+metricas, la poblacion y las huellas de origen para revisarlas como un paquete.
+El comando del pipeline ya incluye esta etapa.
+
+El candidato conserva la decision de desempeno de la evaluacion. Si SARIMA no
+supera la referencia, queda marcado como `no_supera_regla`. No se publica ni se
+reemplazan los JSON del tablero. Tampoco se generan pronosticos para nuevos
+meses. MLflow y el mecanismo de publicacion siguen pendientes.
+
+## Preparar MLflow local
+
+Con el entorno Python activado, ejecutar desde la raiz:
+
+```bash
+python pipeline/src/seguimiento.py
+```
+
+Crea o recupera el experimento `laboratorio_11_turismo_guatemala` en SQLite.
+La base `mlflow.db` y la carpeta `artefactos` quedan en
+`pipeline/data/processed/mlflow/`, fuera de Git. Cada integrante conserva su
+historial local. Este primer paso solo prepara la conexion. El registro de
+metricas, modelos y ejecuciones se incorporara despues.

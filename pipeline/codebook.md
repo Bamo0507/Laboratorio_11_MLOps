@@ -107,3 +107,36 @@ llegadas por mes.
 la regla configurada, su resultado y las huellas de entradas y salida. No se
 permiten faltantes en la comparacion ni se imputan. Superar la regla requiere
 errores estrictamente menores en ambas metricas. No autoriza publicaciones.
+
+## Candidato para revision
+
+`06_candidato.json` empaqueta las estimaciones de `05_comparacion.csv` y los
+resultados de `05_evaluacion.json`. Conserva la poblacion nacional sin residentes,
+las mismas seis fechas y las cantidades sin redondear. No imputa ni transforma
+valores y no incorpora proyecciones posteriores a la evaluacion.
+
+| Campo | Tipo | Descripcion | Valores validos / notas |
+| --- | --- | --- | --- |
+| version_esquema | int | Version del contrato del candidato | 1 |
+| tipo | string | Contenido del paquete | estimaciones_evaluadas |
+| publicacion_autorizada | bool | Autorizacion de publicacion | Siempre false en esta etapa |
+| supera_regla_desempeno | bool | Resultado de la regla previa | Debe coincidir con las metricas |
+| estado_desempeno | string | Decision legible | supera_regla o no_supera_regla |
+| motivo | string | Explicacion de la decision | Desempeno insuficiente o publicacion pendiente |
+| poblacion | object | Destino, unidad y exclusiones | Copia de la configuracion |
+| periodo | object | Inicio, fin y cantidad de meses | Copia del periodo evaluado |
+| modelo | object | Configuracion del SARIMA | Sin reentrenamiento en esta etapa |
+| referencia | object | Metodo de comparacion | Mismo mes del anio anterior |
+| regla | object | Criterio previo de desempeno | MAE y RMSE estrictamente menores |
+| metricas | object | MAE y RMSE de ambos metodos | Mismas unidades y fechas |
+| estimaciones | array | Registros mensuales | Mismas variables que 05_comparacion.csv |
+| metodo | string | Forma de generar el horizonte | Origen fijo al cierre del ajuste |
+| transformacion_inversa | string | Interpretacion de la exponencial | Sin correccion de sesgo |
+| limitacion | string | Alcance de la evaluacion | Seis meses no garantizan desempeno futuro |
+| trazabilidad | object | Huellas SHA-256 | Configuracion, comparacion y reporte de evaluacion |
+
+`06_exportacion.json` certifica el estado de la etapa, el numero de estimaciones,
+la decision, las huellas de entrada, el codigo y la ruta y huella del candidato.
+Si la exportacion se rechaza, el candidato anterior puede seguir en disco.
+Solo debe consumirse cuando el reporte este completado y su huella coincida.
+Este esquema aun no es el contrato de entrada del tablero del laboratorio 10.

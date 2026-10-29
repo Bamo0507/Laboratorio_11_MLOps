@@ -14,9 +14,12 @@ from typing import Any
 RAIZ = Path(__file__).resolve().parent.parent
 RUTA_CONFIGURACION = RAIZ / "configuracion.toml"
 PATRON_MES = re.compile(r"\d{4}-(0[1-9]|1[0-2])")
-SECCIONES = {"rutas", "ingesta", "calidad", "preparacion", "periodos", "poblacion", "modelo", "referencia", "columnas", "evaluacion"}
+SECCIONES = {"rutas", "ingesta", "calidad", "preparacion", "periodos", "poblacion", "modelo", "referencia", "columnas", "evaluacion", "seguimiento"}
 COLUMNAS_SERIE = ("fecha", "viajeros", "registros", "conjunto")
+COLUMNAS_COMPARACION = ("fecha", "observado", "sarima", "fecha_referencia", "referencia", "error_sarima", "error_referencia")
 FORMATO_FECHA_SERIE = "%Y-%m-%d"
+ARCHIVO_BASE_MLFLOW = "mlflow.db"
+CARPETA_ARTEFACTOS_MLFLOW = "artefactos"
 
 
 def resolver_ruta(raiz: Path, valor: str) -> Path:
@@ -62,7 +65,7 @@ def cargar_configuracion(ruta: Path | None = None) -> dict[str, Any]:
     archivos_generados = (
         "ingesta", "reporte_ingesta", "validado", "reporte_validacion",
         "serie_mensual", "ajuste", "evaluacion", "reporte_preparacion",
-        "modelo_ajustado", "reporte_ajuste", "comparacion", "reporte_evaluacion",
+        "modelo_ajustado", "reporte_ajuste", "comparacion", "reporte_evaluacion", "candidato", "reporte_exportacion",
     )
     for clave in ("entrenamiento", "prueba", "procesados", "publicaciones", "mlflow", *archivos_generados):
         if clave not in rutas:
@@ -85,6 +88,13 @@ def cargar_configuracion(ruta: Path | None = None) -> dict[str, Any]:
     for directorio in (rutas["publicaciones"], rutas["mlflow"]):
         if any(s.is_relative_to(directorio) or directorio.is_relative_to(s) for s in salidas):
             raise ValueError("Las salidas de etapas deben estar separadas de MLflow y publicaciones.")
+
+    seguimiento = configuracion["seguimiento"]
+    if seguimiento.get("almacen") != "sqlite":
+        raise ValueError("El seguimiento local utiliza SQLite.")
+    experimento = seguimiento.get("experimento")
+    if not isinstance(experimento, str) or not experimento.strip():
+        raise ValueError("seguimiento.experimento debe ser un nombre no vacio.")
 
     ingesta = configuracion["ingesta"]
     for clave in ("codificacion", "separador", "columna_origen"):

@@ -17,6 +17,13 @@ modelo_ajustado = "data/processed/04_modelo_sarima.pkl"
 reporte_ajuste = "data/processed/04_ajuste.json"
 comparacion = "data/processed/05_comparacion.csv"
 reporte_evaluacion = "data/processed/05_evaluacion.json"
+candidato = "data/processed/06_candidato.json"
+reporte_exportacion = "data/processed/06_exportacion.json"
+
+# Historial local. El registro de ejecuciones se conectara en el siguiente paso.
+[seguimiento]
+almacen = "sqlite"
+experimento = "laboratorio_11_turismo_guatemala"
 
 [ingesta]
 codificacion = "utf-8-sig"

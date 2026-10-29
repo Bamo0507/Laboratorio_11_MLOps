@@ -3,7 +3,8 @@
 El pipeline se construye por etapas. Actualmente estan disponibles los dos CSV
 de entrada, la configuracion, el setup de Python, la ingesta, los seis controles
 de calidad, la preparacion de la serie, el ajuste SARIMA y la evaluacion
-predictiva. El registro en MLflow y la publicacion siguen pendientes.
+predictiva y la exportacion de estimaciones candidatas. El registro en MLflow
+y la publicacion siguen pendientes.
 
 ## Datos de entrada
 
@@ -283,3 +284,83 @@ MLflow y el mecanismo de publicacion todavia no estan implementados.
 
 La generacion del horizonte utiliza
 [get_forecast de statsmodels](https://www.statsmodels.org/stable/generated/statsmodels.tsa.statespace.sarimax.SARIMAXResults.get_forecast.html).
+
+## Etapa 6 de exportacion candidata
+
+```text
+05_comparacion.csv + 05_evaluacion.json + certificados anteriores
+  -> 06_exportacion.py
+  -> 06_candidato.json + 06_exportacion.json
+```
+
+| Etapa | Archivo | Responsabilidad | Entrada | Salida |
+| --- | --- | --- | --- | --- |
+| 6 | 06_exportacion.py | Empaquetar las estimaciones evaluadas para revision | Comparacion, evaluacion y certificados vigentes | Candidato JSON y reporte de exportacion |
+
+```bash
+python pipeline/src/06_exportacion.py
+```
+
+El orquestador incluye esta etapa. El candidato contiene las seis estimaciones
+ya evaluadas, las llegadas observadas, la referencia, los errores, las metricas,
+los periodos y la configuracion del modelo. No entrena otro modelo ni extiende
+el horizonte despues de junio de 2026. Sus fechas corresponden a evaluacion de
+observaciones conocidas, no a una nueva proyeccion futura.
+
+Se verifica que no hayan cambiado la comparacion, la evaluacion, el modelo,
+los reportes previos, los datos preparados, los CSV originales y la configuracion.
+Se vuelven a calcular las metricas desde el CSV para comprobar su coherencia
+con el reporte. La tolerancia numerica solo admite diferencias de serializacion.
+La regla de desempeno sigue utilizando desigualdades estrictas.
+
+Un desempeno desfavorable genera un candidato para auditoria marcado como
+`no_supera_regla`. No se sustituye SARIMA por la referencia ni se cambia el
+criterio de aceptacion. Un desempeno favorable queda marcado como `supera_regla`,
+pero tampoco autoriza publicar en esta etapa. Un insumo invalido rechaza la
+exportacion y conserva el candidato anterior. Los consumidores deben exigir
+un reporte completado y la huella del candidato coincidente.
+
+El candidato tiene un contrato propio y todavia no es un reemplazo directo de
+los JSON del tablero heredado. No agrega modelos, series, MAPE ni intervalos que
+no hayan sido calculados. Todo se guarda en `data/processed/`. El registro en
+MLflow y la publicacion de una version aprobada quedan para las etapas siguientes.
+
+## Seguimiento local con SQLite
+
+Se eligio SQLite para guardar el historial de MLflow en esta computadora.
+`configuracion.toml` declara `seguimiento.almacen = "sqlite"` y el experimento
+`laboratorio_11_turismo_guatemala`. Un experimento agrupa ejecuciones del mismo
+trabajo. Cada ejecucion tendra su propio identificador dentro de ese grupo.
+
+La carpeta configurada en `rutas.mlflow` es `data/processed/mlflow`. Alli se
+guarda `mlflow.db` para parametros, metricas y estados, y una carpeta
+`artefactos` para modelos y reportes. Estas rutas se resuelven desde la carpeta
+del pipeline, sin depender de la computadora ni del directorio de ejecucion.
+
+El auxiliar `src/seguimiento.py` conecta MLflow con SQLite y crea el experimento
+si no existe. Al repetirlo recupera el mismo experimento. MLflow ya esta incluido
+en las dependencias del entorno. Con el entorno activado se ejecuta desde la
+raiz del repositorio:
+
+```bash
+python pipeline/src/seguimiento.py
+```
+
+El comando muestra el nombre y el identificador del experimento. Crea la base
+y la carpeta de artefactos, pero no crea ejecuciones, no registra metricas y no
+vuelve a entrenar el modelo. Todavia no forma parte de `run_pipeline.py`, porque
+estamos comprobando la conexion antes de incorporar el registro completo.
+
+El cliente recibe explicitamente la direccion de la base local. Las variables
+`MLFLOW_TRACKING_URI` y `MLFLOW_REGISTRY_URI` del entorno no cambian ese destino.
+Un experimento eliminado se rechaza sin restaurarlo automaticamente.
+Si una base copiada declara otra ubicacion de artefactos, se detiene para evitar
+escribir archivos en una carpeta distinta. Para otra computadora, se prepara su
+propio historial desde el repositorio, sin copiar `data/processed/`.
+
+La creacion y recuperacion utilizan el
+[cliente de MLflow](https://mlflow.org/docs/latest/api_reference/python_api/mlflow.client.html#mlflow.client.MlflowClient.create_experiment).
+
+El historial y los artefactos generados quedan fuera de Git. Cada integrante
+tendra su propio historial local. Compartir el repositorio no sincroniza estas
+bases. SQLite no requiere instalar un servidor de base de datos separado.
