@@ -19,6 +19,7 @@ comparacion = "data/processed/05_comparacion.csv"
 reporte_evaluacion = "data/processed/05_evaluacion.json"
 candidato = "data/processed/06_candidato.json"
 reporte_exportacion = "data/processed/06_exportacion.json"
+reporte_publicacion = "data/processed/07_publicacion.json"
 
 # Historial local. El registro de ejecuciones se conectara en el siguiente paso.
 [seguimiento]

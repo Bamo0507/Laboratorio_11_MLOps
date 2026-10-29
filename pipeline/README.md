@@ -3,8 +3,8 @@
 El pipeline se construye por etapas. Actualmente estan disponibles los dos CSV
 de entrada, la configuracion, el setup de Python, la ingesta, los seis controles
 de calidad, la preparacion de la serie, el ajuste SARIMA y la evaluacion
-predictiva y la exportacion de estimaciones candidatas. El registro en MLflow
-y la publicacion siguen pendientes.
+predictiva, la exportacion candidata y la decision de publicacion. El registro
+de ejecuciones en MLflow y la integracion con el tablero siguen pendientes.
 
 ## Datos de entrada
 
@@ -280,7 +280,8 @@ Un resultado desfavorable completa la evaluacion con
 rechaza la ejecucion, conserva el CSV anterior y escribe un reporte rechazado.
 Los consumidores deben exigir reporte completado y huella del CSV coincidente.
 `publicacion_autorizada` permanece en `false`, incluso si se supera la regla.
-MLflow y el mecanismo de publicacion todavia no estan implementados.
+El registro de ejecuciones en MLflow y la integracion del tablero siguen
+pendientes. La etapa 7 implementa la decision de publicacion.
 
 La generacion del horizonte utiliza
 [get_forecast de statsmodels](https://www.statsmodels.org/stable/generated/statsmodels.tsa.statespace.sarimax.SARIMAXResults.get_forecast.html).
@@ -323,7 +324,8 @@ un reporte completado y la huella del candidato coincidente.
 El candidato tiene un contrato propio y todavia no es un reemplazo directo de
 los JSON del tablero heredado. No agrega modelos, series, MAPE ni intervalos que
 no hayan sido calculados. Todo se guarda en `data/processed/`. El registro en
-MLflow y la publicacion de una version aprobada quedan para las etapas siguientes.
+La etapa 7 implementa la decision de publicacion. El registro en MLflow y la
+integracion con el tablero siguen pendientes.
 
 ## Seguimiento local con SQLite
 
@@ -364,3 +366,71 @@ La creacion y recuperacion utilizan el
 El historial y los artefactos generados quedan fuera de Git. Cada integrante
 tendra su propio historial local. Compartir el repositorio no sincroniza estas
 bases. SQLite no requiere instalar un servidor de base de datos separado.
+
+## Etapa 7 de publicacion controlada
+
+```text
+06_candidato.json + 06_exportacion.json + certificados anteriores
+  -> 07_publicacion.py
+  -> 07_publicacion.json
+  -> si se aprueba, publicaciones/versiones/<version>.json
+  -> activacion atomica de publicaciones/vigente.json
+```
+
+| Etapa | Archivo | Responsabilidad | Entrada | Salida |
+| --- | --- | --- | --- | --- |
+| 7 | 07_publicacion.py | Activar solo una version aprobada | Candidato, exportacion y certificados vigentes | Reporte de decision y version aprobada si corresponde |
+
+```bash
+python pipeline/src/07_publicacion.py
+```
+
+El orquestador ya incluye esta etapa. Al modificar la configuracion se deben
+regenerar las etapas anteriores, porque las huellas certifican su contenido.
+
+La publicacion exige que sigan vigentes los datos originales, los reportes,
+la configuracion y los resultados intermedios. Se recalculan los controles de
+coherencia de la etapa 6 y se compara todo el contenido del candidato con los
+resultados certificados. El archivo candidato conserva su estado pendiente.
+La autorizacion solo aparece en la version aprobada.
+
+Si SARIMA no supera MAE y RMSE de la referencia, la decision es `no_publicado`.
+Esto completa correctamente el paso de decision, sin activar estimaciones. Un
+archivo alterado, un bloqueo de otro escritor o un error de escritura rechaza
+la ejecucion. Ninguno de estos casos reemplaza una version vigente valida.
+
+Las versiones aprobadas contienen las estimaciones, destino, unidad, periodo,
+metricas y configuracion, junto con la fecha de generacion y el identificador
+local de la exportacion. Todavia no hay un run de MLflow asociado. Ese enlace
+se agregara al implementar el registro de ejecuciones. El identificador y la
+fecha son metadatos nuevos por exportacion, no componentes aleatorios del
+modelo. La equivalencia de resultados se comprueba sobre las estimaciones y
+metricas, no sobre la igualdad de estos identificadores.
+
+La version se identifica mediante la huella combinada del candidato y el
+reporte de exportacion. Cada version se guarda sin sobrescribir versiones
+anteriores. Repetir la publicacion del mismo candidato certificado conserva
+la misma version. Una nueva exportacion tiene otro identificador y puede
+generar una nueva version aun con estimaciones equivalentes.
+
+`publicacion.consultar_vigente` solo consulta el indicador aprobado y verifica
+la huella de la version. No consulta candidatos como alternativa. Si el indicador
+no existe devuelve `None`, que representa estimaciones no disponibles. Si existe
+pero su contenido o su version estan corruptos, se genera un error.
+
+Se guarda primero la version, luego el reporte y finalmente se activa el
+indicador con un temporal y reemplazo atomico. El indicador es la fuente de
+verdad para saber que version esta activa. Si el proceso se interrumpe antes
+de activarlo, puede quedar una version guardada sin activar o un reporte que
+describa una activacion aun no realizada. Reejecutar el mismo paso permite
+completarla sin sobrescribir el contenido de la version.
+
+Un archivo `.publicacion.lock` evita dos escritores simultaneos. Si un proceso
+se termina abruptamente puede dejar ese bloqueo. Solo se debe retirarlo despues
+de comprobar que no queda un proceso de publicacion en ejecucion. El comando
+no elimina bloqueos de otros escritores.
+
+Estas versiones siguen en `data/processed/` y fuera de Git. La conexion del
+indicador con el tablero es un paso posterior. El tablero heredado todavia usa
+los JSON del laboratorio 10. Tampoco se ha implementado aun un comando de
+restauracion, aunque las versiones anteriores se conservan para ese paso.

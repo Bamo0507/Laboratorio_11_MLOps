@@ -20,6 +20,9 @@ COLUMNAS_COMPARACION = ("fecha", "observado", "sarima", "fecha_referencia", "ref
 FORMATO_FECHA_SERIE = "%Y-%m-%d"
 ARCHIVO_BASE_MLFLOW = "mlflow.db"
 CARPETA_ARTEFACTOS_MLFLOW = "artefactos"
+ARCHIVO_VIGENTE = "vigente.json"
+CARPETA_VERSIONES = "versiones"
+ARCHIVO_BLOQUEO_PUBLICACION = ".publicacion.lock"
 
 
 def resolver_ruta(raiz: Path, valor: str) -> Path:
@@ -65,7 +68,7 @@ def cargar_configuracion(ruta: Path | None = None) -> dict[str, Any]:
     archivos_generados = (
         "ingesta", "reporte_ingesta", "validado", "reporte_validacion",
         "serie_mensual", "ajuste", "evaluacion", "reporte_preparacion",
-        "modelo_ajustado", "reporte_ajuste", "comparacion", "reporte_evaluacion", "candidato", "reporte_exportacion",
+        "modelo_ajustado", "reporte_ajuste", "comparacion", "reporte_evaluacion", "candidato", "reporte_exportacion", "reporte_publicacion",
     )
     for clave in ("entrenamiento", "prueba", "procesados", "publicaciones", "mlflow", *archivos_generados):
         if clave not in rutas:
@@ -88,6 +91,9 @@ def cargar_configuracion(ruta: Path | None = None) -> dict[str, Any]:
     for directorio in (rutas["publicaciones"], rutas["mlflow"]):
         if any(s.is_relative_to(directorio) or directorio.is_relative_to(s) for s in salidas):
             raise ValueError("Las salidas de etapas deben estar separadas de MLflow y publicaciones.")
+
+    if rutas["mlflow"].is_relative_to(rutas["publicaciones"]) or rutas["publicaciones"].is_relative_to(rutas["mlflow"]):
+        raise ValueError("MLflow y publicaciones deben utilizar carpetas separadas.")
 
     seguimiento = configuracion["seguimiento"]
     if seguimiento.get("almacen") != "sqlite":

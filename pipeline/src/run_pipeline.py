@@ -10,7 +10,7 @@ from pathlib import Path
 from config import RUTA_CONFIGURACION
 
 DIR_SRC = Path(__file__).resolve().parent
-ETAPAS = ["01_ingesta.py", "02_validacion.py", "03_preparacion.py", "04_ajuste.py", "05_evaluacion.py", "06_exportacion.py"]
+ETAPAS = ["01_ingesta.py", "02_validacion.py", "03_preparacion.py", "04_ajuste.py", "05_evaluacion.py", "06_exportacion.py", "07_publicacion.py"]
 
 
 def main() -> None:
@@ -24,7 +24,7 @@ def main() -> None:
         )
         if resultado.returncode:
             parser.exit(resultado.returncode, f"[FALLO] El pipeline se detuvo en {etapa}.\n")
-    print("[ok] Ingesta, validacion, preparacion, ajuste, evaluacion y exportacion candidata completados. El registro en MLflow y la publicacion siguen pendientes.")
+    print("[ok] Ingesta, validacion, preparacion, ajuste, evaluacion, exportacion y decision de publicacion completados. El registro de ejecuciones en MLflow y la integracion con el tablero siguen pendientes.")
 
 
 main()

@@ -140,3 +140,39 @@ la decision, las huellas de entrada, el codigo y la ruta y huella del candidato.
 Si la exportacion se rechaza, el candidato anterior puede seguir en disco.
 Solo debe consumirse cuando el reporte este completado y su huella coincida.
 Este esquema aun no es el contrato de entrada del tablero del laboratorio 10.
+
+## Version aprobada y decision de publicacion
+
+`06_exportacion.json` incluye ahora `id_ejecucion_local` (UUID de la exportacion)
+y `fecha_generacion` (fecha y hora UTC con zona horaria). Es un identificador
+local, pendiente de vincularse a una ejecucion de MLflow.
+
+`07_publicacion.json` registra el estado `publicado`, `no_publicado` o
+`rechazado`. Cuando la decision puede completarse incluye el identificador local,
+las huellas del candidato y del reporte de exportacion, la version anterior,
+la version vigente, el motivo y si hay estimaciones aprobadas disponibles.
+Un rechazo por error incluye su causa y no autoriza publicaciones.
+
+`publicaciones/vigente.json` contiene `version`, `archivo`, `sha256` y
+`fecha_generacion`. La ruta es relativa a `publicaciones` y apunta a una version
+en `versiones/`. La huella debe coincidir antes de consumir sus valores.
+
+Cada version aprobada conserva el contenido del candidato y agrega `version`,
+`id_ejecucion_local`, `tipo_identificador` y `fecha_generacion`. Su autorizacion
+es `true`. El motivo indica que supero calidad, integridad y desempeno.
+Cada registro mensual incorpora los siguientes campos adicionales.
+
+| Campo | Tipo | Descripcion | Valores validos / notas |
+| --- | --- | --- | --- |
+| destino | string | Destino de las llegadas | Guatemala |
+| unidad | string | Unidad del valor estimado | llegadas_por_mes |
+| valor | float | Estimacion autorizada | Igual al pronostico SARIMA certificado |
+| version_procedimiento | string | Version que conserva configuracion y trazabilidad | SHA-256 de la version |
+| id_ejecucion_local | string | Identificador de la exportacion que produjo el candidato | UUID, todavia no es un run de MLflow |
+| fecha_generacion | string | Momento de generacion de la exportacion | ISO 8601 en UTC |
+
+No se cambia la poblacion ni se imputan, redondean o recalculan estimaciones.
+Una version rechazada por desempeno no genera una version aprobada. Si nunca
+hubo una aprobacion, no existe el indicador y no hay estimaciones aprobadas
+para consultar. Los JSON heredados del tablero no se consideran automaticamente
+versiones aprobadas de este pipeline.

@@ -15,6 +15,8 @@ Ejecutar: python pipeline/src/06_exportacion.py
 from __future__ import annotations
 
 import argparse
+from datetime import datetime, timezone
+from uuid import uuid4
 from importlib import import_module
 from pathlib import Path
 from typing import Any
@@ -103,6 +105,7 @@ def ejecutar(ruta_configuracion: Path = RUTA_CONFIGURACION) -> dict[str, Any]:
         afirmar(recuperado == candidato, "el candidato exportado conserva exactamente su contenido")
         reporte = {
             "etapa": "06_exportacion", "estado": "completada", "publicacion_autorizada": False,
+            "id_ejecucion_local": uuid4().hex, "fecha_generacion": datetime.now(timezone.utc).isoformat(),
             "supera_regla_desempeno": supera, "estimaciones": len(datos),
             "sha256_configuracion": huella_archivo(ruta_configuracion), "entradas": entradas,
             "candidato": {"ruta": rutas["candidato"].relative_to(raiz).as_posix(), "sha256": huella_archivo(rutas["candidato"])},

@@ -8,11 +8,11 @@ resultados aprobados con trazabilidad en MLflow.
 ## Estado actual
 
 El tablero heredado esta en `src/`. En `pipeline/` ya estan los CSV originales,
-la configuracion portable, el entorno, la ingesta, los seis controles de calidad
+la configuracion portable, el entorno, la ingesta, los seis controles de calidad,
 la preparacion de la serie mensual, el ajuste SARIMA y su evaluacion contra
 el mismo mes del anio anterior, ademas de la exportacion de un candidato para
-revision. El registro en MLflow y la publicacion se
-implementaran despues.
+revision y la decision de publicacion controlada. El registro de ejecuciones en
+MLflow y la lectura de versiones aprobadas desde el tablero siguen pendientes.
 Actualmente el tablero sigue consultando los JSON del laboratorio 10.
 
 ## Estructura
@@ -92,7 +92,7 @@ python pipeline/src/run_pipeline.py
 ```
 
 Actualmente ejecuta ingesta, validacion, preparacion, ajuste SARIMA, evaluacion
-y exportacion candidata.
+exportacion candidata y decision de publicacion.
 La ingesta genera `pipeline/data/processed/01_ingesta.csv`
 y `01_ingesta.json`, que registra los archivos leidos, sus huellas SHA-256 y los
 conteos de filas. Los valores originales se conservan como texto. La columna
@@ -122,7 +122,7 @@ El ajuste utiliza unicamente los 36 meses de entrenamiento configurados. Guarda
 `04_modelo_sarima.pkl` y `04_ajuste.json` en `pipeline/data/processed/`. El reporte
 incluye parametros aprendidos, convergencia, advertencias, versiones y huellas.
 Un ajuste sin convergencia se rechaza y conserva el modelo anterior. La etapa
-siguiente calcula MAE y RMSE fuera de muestra. La publicacion sigue pendiente.
+siguiente calcula MAE y RMSE fuera de muestra. La etapa 7 decide la publicacion.
 
 Las pruebas de las etapas implementadas se ejecutan con el entorno activado:
 
@@ -177,8 +177,8 @@ Conventional Commits y validan el frontend antes de cada commit.
 El detalle de configuracion y las etapas previstas estan en
 [pipeline/README.md](pipeline/README.md).
 Las reglas de calidad estan en [pipeline/CONTROLES_CALIDAD.md](pipeline/CONTROLES_CALIDAD.md).
-Los comandos de ejecucion completa, publicacion, MLflow y Docker se agregaran
-cuando esas partes esten implementadas y verificadas.
+El pipeline incluye la decision de publicacion. El registro de ejecuciones en
+MLflow, la integracion del tablero y los comandos Docker siguen pendientes.
 
 ## Evaluacion de SARIMA
 
@@ -202,7 +202,8 @@ El comando del pipeline ya incluye esta etapa.
 El candidato conserva la decision de desempeno de la evaluacion. Si SARIMA no
 supera la referencia, queda marcado como `no_supera_regla`. No se publica ni se
 reemplazan los JSON del tablero. Tampoco se generan pronosticos para nuevos
-meses. MLflow y el mecanismo de publicacion siguen pendientes.
+meses. La etapa 7 decide si se puede activar una version. El registro en MLflow
+y la integracion con el tablero siguen pendientes.
 
 ## Preparar MLflow local
 
@@ -217,3 +218,23 @@ La base `mlflow.db` y la carpeta `artefactos` quedan en
 `pipeline/data/processed/mlflow/`, fuera de Git. Cada integrante conserva su
 historial local. Este primer paso solo prepara la conexion. El registro de
 metricas, modelos y ejecuciones se incorporara despues.
+
+## Publicacion controlada
+
+`07_publicacion.py` forma parte de `run_pipeline.py`. Comprueba la calidad,
+la integridad del candidato y el resultado de desempeno antes de activar una
+version. Un candidato que no supera la referencia termina como `no_publicado`.
+Un insumo invalido detiene el flujo como error. En ambos casos se conserva la
+version vigente, si existe.
+
+Las versiones aprobadas se guardan en
+`pipeline/data/processed/publicaciones/versiones/`. El archivo `vigente.json`
+indica cual consultar y contiene su huella SHA-256. Si no existe ese archivo,
+la consulta devuelve que no hay estimaciones aprobadas disponibles. El reporte
+`pipeline/data/processed/07_publicacion.json` registra la decision.
+
+Cada exportacion tiene un identificador local y una fecha UTC. Se conservan en
+la version publicada junto con el destino, la unidad y las estimaciones. Este
+identificador todavia no es un run de MLflow. La vinculacion con MLflow y la
+adaptacion del tablero heredado se implementaran despues. El tablero aun
+consulta los JSON del laboratorio 10 y no utiliza este indicador.
