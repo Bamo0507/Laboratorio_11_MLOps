@@ -173,6 +173,8 @@ def cargar_configuracion(ruta: Path | None = None) -> dict[str, Any]:
         raise ValueError("El rezago de referencia debe ser un entero positivo.")
     if configuracion["evaluacion"].get("regla") != "mae_y_rmse_estrictamente_menores":
         raise ValueError("La regla implementada exige MAE y RMSE estrictamente menores que la referencia.")
+    if type(configuracion["evaluacion"].get("observaciones_comparables")) is not bool:
+        raise ValueError("evaluacion.observaciones_comparables debe ser true o false.")
     if configuracion["referencia"].get("nombre") != "mismo_mes_anio_anterior" or rezago != 12:
         raise ValueError("La referencia implementada utiliza el mismo mes del anio anterior, con rezago 12.")
     return configuracion

@@ -69,8 +69,9 @@ Si una lectura falla durante la ingesta, se registra el problema estructural y
 los otros controles quedan como no evaluados. No se inventan resultados.
 
 `apto_para_preparacion` habilita la siguiente etapa. No autoriza publicar.
-`publicacion_autorizada` permanece en falso porque la aceptacion predictiva
-todavia no se ha implementado. Un fallo deja un reporte rechazado y conserva
+`publicacion_autorizada` permanece en falso en este reporte porque la calidad
+por si sola no autoriza publicar. La evaluacion predictiva se realiza en la
+etapa 5 y la decision conjunta de publicacion en la etapa 7. Un fallo deja un reporte rechazado y conserva
 el CSV validado anterior, que no debe reutilizarse ignorando ese rechazo.
 
 La validacion comprueba la huella de la ingesta, el manifiesto, las huellas de
@@ -87,7 +88,8 @@ python pipeline/src/run_pipeline.py
 python -m unittest discover -s pipeline/tests -v
 ```
 
-El primer comando ejecuta las etapas disponibles, incluidos preparacion y ajuste.
+El primer comando ejecuta las siete etapas, incluida la decision de publicacion,
+y conserva los resultados de cada ejecucion en MLflow.
 Para ejecutar solo la validacion
 debe existir una ingesta y un manifiesto consistentes:
 

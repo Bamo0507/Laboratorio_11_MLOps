@@ -446,3 +446,27 @@ comandos de verificacion y consulta estan en [EJERCICIO_4.md](EJERCICIO_4.md).
 
 La implementacion utiliza el
 [cliente de MLflow](https://mlflow.org/docs/latest/api_reference/python_api/mlflow.client.html).
+
+## Ejercicio 5 completo
+
+La etapa de evaluacion ahora registra el corte del modelo, los meses reservados,
+los horizontes y los meses usados por la referencia. Tambien diferencia la
+comparabilidad interna de la base academica de una reconstruccion de la
+informacion historicamente disponible. No hay versiones publicadas de la base
+para enero y febrero de 2026 ni un historial de revisiones que permita afirmar
+esa reconstruccion en tiempo real.
+
+La configuracion declara `evaluacion.observaciones_comparables`. Si es `false`,
+la etapa 5 se detiene sin producir nuevas metricas. La declaracion no sustituye
+la revision de procedencia. La misma poblacion, unidad, frecuencia y cobertura
+siguen siendo condiciones necesarias para evaluar.
+
+`05_evaluacion.json` incluye `protocolo_temporal`, `comparabilidad` y
+`diagnostico`. `07_publicacion.json` incluye `criterios_aceptacion` al completar
+la decision. Una falla anterior no se presenta como un criterio verificado.
+La regla predictiva definida antes de evaluar se conserva sin cambios.
+
+Las pruebas cambian los valores reservados y comprueban que los pronosticos no
+cambien. Tambien comprueban que una ejecucion sin observaciones comparables
+falle antes de calcular errores y que MLflow no reciba metricas predictivas.
+El detalle de los puntos 5.1 a 5.5 esta en [EJERCICIO_5.md](EJERCICIO_5.md).

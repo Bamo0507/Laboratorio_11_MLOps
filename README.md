@@ -271,3 +271,20 @@ python pipeline/src/seguimiento.py --interfaz
 La interfaz queda en [127.0.0.1:5000](http://127.0.0.1:5000).
 Se detiene con Ctrl+C. El detalle de los requisitos, los archivos registrados,
 las tolerancias y la entrega esta en [pipeline/EJERCICIO_4.md](pipeline/EJERCICIO_4.md).
+
+## Ejercicio 5 de evaluacion y aceptacion
+
+La evaluacion reserva enero a junio de 2026 y utiliza solo enero de 2023 a
+diciembre de 2025 para ajustar SARIMA. El reporte identifica los meses ocultos,
+el corte temporal y las limitaciones para reconstruir la informacion que
+estaba publicada en enero y febrero de 2026.
+
+`evaluacion.observaciones_comparables` declara la comparabilidad interna de los
+valores de la base academica. Si es `false`, la evaluacion se detiene sin
+calcular ni registrar errores predictivos. No se trata de una certificacion de
+cifras oficiales. Las fuentes originales no se modifican.
+
+La publicacion exige calidad, integridad, observaciones comparables y mejora
+estricta de MAE y RMSE frente al mismo mes del anio anterior. SARIMA no supera
+la referencia y sigue sin publicarse. La justificacion de los umbrales, los
+resultados y las limitaciones estan en [pipeline/EJERCICIO_5.md](pipeline/EJERCICIO_5.md).

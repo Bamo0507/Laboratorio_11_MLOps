@@ -32,6 +32,7 @@ evaluacion = import_module("05_evaluacion")
 
 def verificar_entradas(configuracion: dict[str, Any], ruta_configuracion: Path) -> tuple[dict[str, Any], pd.DataFrame]:
     rutas = configuracion["rutas"]
+    afirmar(configuracion["evaluacion"]["observaciones_comparables"] is True, "las observaciones siguen declaradas comparables")
     raiz = ruta_configuracion.resolve().parent
     reporte = cargar_json(rutas["reporte_evaluacion"])
     afirmar(reporte.get("estado") == "completada", "la evaluacion termino correctamente")
@@ -99,6 +100,9 @@ def ejecutar(ruta_configuracion: Path = RUTA_CONFIGURACION, id_ejecucion_mlflow:
             "regla": evaluada["regla"], "metricas": evaluada["metricas"],
             "metodo": evaluada["metodo"], "transformacion_inversa": evaluada["transformacion_inversa"],
             "limitacion": evaluada["limitacion"],
+            "protocolo_temporal": evaluada["protocolo_temporal"],
+            "comparabilidad": evaluada["comparabilidad"],
+            "diagnostico": evaluada["diagnostico"],
             "estimaciones": datos.to_dict(orient="records"),
             "trazabilidad": {"sha256_configuracion": huella_archivo(ruta_configuracion), "entradas": entradas},
         }

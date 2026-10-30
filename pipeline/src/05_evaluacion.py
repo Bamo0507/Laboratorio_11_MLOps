@@ -45,12 +45,43 @@ def supera_regla(sarima: dict[str, float], referencia: dict[str, float]) -> bool
     return all(sarima[metrica] < referencia[metrica] for metrica in ("mae", "rmse"))
 
 
+def pronosticar(modelo: Any, fechas: pd.DatetimeIndex) -> np.ndarray:
+    """Recibe solo el modelo entrenado y las fechas, nunca los valores ocultos."""
+    ultimo_ajuste = pd.DatetimeIndex(modelo.model.data.dates)[-1]
+    afirmar(bool((fechas > ultimo_ajuste).all()), "todos los meses pronosticados son posteriores al ajuste")
+    horizonte = pd.date_range(ultimo_ajuste + pd.offsets.MonthBegin(), fechas[-1], freq="MS")
+    pronostico_log = modelo.get_forecast(steps=len(horizonte)).predicted_mean
+    afirmar(pd.DatetimeIndex(pronostico_log.index).equals(horizonte), "el pronostico conserva la frecuencia mensual")
+    with np.errstate(over="raise", invalid="raise", under="ignore"):
+        return np.exp(pronostico_log.reindex(fechas).to_numpy(dtype=float))
+
+
+def diagnosticar(observado: np.ndarray, sarima: np.ndarray, referencia: np.ndarray, resultados: dict) -> dict:
+    error_sarima, error_referencia = sarima - observado, referencia - observado
+    absoluto_sarima, absoluto_referencia = np.abs(error_sarima), np.abs(error_referencia)
+    return {
+        "sesgo_medio_sarima": float(np.mean(error_sarima)),
+        "meses_sobreestimados_sarima": int((error_sarima > 0).sum()),
+        "meses_subestimados_sarima": int((error_sarima < 0).sum()),
+        "meses_con_menor_error_sarima": int((absoluto_sarima < absoluto_referencia).sum()),
+        "meses_con_menor_error_referencia": int((absoluto_referencia < absoluto_sarima).sum()),
+        "meses_con_error_igual": int((absoluto_sarima == absoluto_referencia).sum()),
+        "aumento_relativo_error_frente_referencia": {
+            nombre: (resultados["sarima"][nombre] / resultados["referencia"][nombre] - 1)
+            if resultados["referencia"][nombre] > 0 else None for nombre in ("mae", "rmse")
+        },
+        "nota": "El aumento relativo compara errores agregados, no es MAPE. Si la referencia tiene error cero se informa null, sin dividir entre cero.",
+    }
+
+
 def ejecutar(ruta_configuracion: Path = RUTA_CONFIGURACION) -> dict[str, Any]:
     configuracion = cargar_configuracion(ruta_configuracion)
     rutas = configuracion["rutas"]
     raiz = Path(ruta_configuracion).resolve().parent
     banner("Etapa 5: evaluacion contra referencia")
     try:
+        afirmar(configuracion["evaluacion"]["observaciones_comparables"] is True,
+                "hay observaciones declaradas comparables; sin ellas no se calculan errores")
         datos_ajuste, meta_ajuste = cargar(rutas["ajuste"], "utf-8", configuracion["ingesta"]["separador"])
         preparacion = ajuste.exigir_preparacion(configuracion, ruta_configuracion, meta_ajuste["sha256"])
         reporte_ajuste = cargar_json(rutas["reporte_ajuste"])
@@ -78,12 +109,8 @@ def ejecutar(ruta_configuracion: Path = RUTA_CONFIGURACION) -> dict[str, Any]:
         modelo = SARIMAXResults.load(rutas["modelo_ajustado"])
         afirmar(modelo.nobs == len(serie_ajuste) and pd.DatetimeIndex(modelo.model.data.dates).equals(serie_ajuste.index), "el modelo conserva las fechas de entrenamiento")
         afirmar(np.array_equal(np.asarray(modelo.model.endog).ravel(), serie_ajuste.to_numpy()), "el modelo conserva los valores de entrenamiento")
-        # Se pronostican tambien los meses intermedios si se configura una separacion temporal.
-        horizonte = pd.date_range(serie_ajuste.index[-1] + pd.offsets.MonthBegin(), fechas[-1], freq="MS")
-        pronostico_log = modelo.get_forecast(steps=len(horizonte)).predicted_mean
-        afirmar(pd.DatetimeIndex(pronostico_log.index).equals(horizonte), "el pronostico conserva la frecuencia mensual")
-        with np.errstate(over="raise", invalid="raise", under="ignore"):
-            predicciones = np.exp(pronostico_log.reindex(fechas).to_numpy(dtype=float))
+        # Los valores reservados solo se utilizan despues para medir el error.
+        predicciones = pronosticar(modelo, fechas)
         fechas_referencia = fechas - pd.DateOffset(months=configuracion["referencia"]["rezago_meses"])
         afirmar(bool((fechas_referencia <= serie_ajuste.index[-1]).all()), "la referencia solo utiliza meses conocidos al terminar el ajuste")
         referencia = pd.to_numeric(tablas["serie_mensual"].reindex(fechas_referencia)["viajeros"], errors="raise").to_numpy(dtype=float)
@@ -103,6 +130,26 @@ def ejecutar(ruta_configuracion: Path = RUTA_CONFIGURACION) -> dict[str, Any]:
             "etapa": "05_evaluacion", "estado": "completada", "publicacion_autorizada": False,
             "supera_regla_desempeno": aprobado, "regla": configuracion["evaluacion"],
             "metricas": resultados, "unidad": configuracion["poblacion"]["unidad"],
+            "protocolo_temporal": {
+                "corte_modelo": serie_ajuste.index[-1].strftime("%Y-%m"),
+                "observaciones_ajuste": len(serie_ajuste),
+                "meses_ocultos_al_ajuste": fechas.strftime("%Y-%m").tolist(),
+                "horizontes_meses": [int((f.year - serie_ajuste.index[-1].year) * 12 + f.month - serie_ajuste.index[-1].month) for f in fechas],
+                "meses_referencia": fechas_referencia.strftime("%Y-%m").tolist(),
+                "valores_evaluacion_en_ajuste": False,
+            },
+            "comparabilidad": {
+                "observaciones_comparables": True,
+                "alcance": "Comparabilidad interna de los totales mensuales reportados por la base academica, con la misma poblacion nacional sin residentes y unidad.",
+                "reproduce_disponibilidad_historica": False,
+                "limitaciones": [
+                    "No se dispone de versiones de la base tal como estaba publicada en enero y febrero de 2026.",
+                    "No se conocen fechas de publicacion ni revisiones de cada observacion; el corte temporal no garantiza disponibilidad en tiempo real.",
+                    "Las cifras son estimaciones expandidas de uso academico, no cifras oficiales ni un contraste con un conteo institucional independiente.",
+                    "La ventana desde 2023 evita mezclar el cambio de fuente anterior, pero no demuestra estabilidad metodologica futura.",
+                ],
+            },
+            "diagnostico": diagnosticar(observado, predicciones, referencia, resultados),
             "periodo": {"inicio": periodos["inicio_evaluacion"], "fin": periodos["fin_evaluacion"], "meses": len(fechas)},
             "metodo": "Pronostico de origen fijo desde el fin del ajuste. Sin reentrenamiento ni incorporacion de observaciones de evaluacion.",
             "transformacion_inversa": "Exponencial directa del pronostico logaritmico, sin correccion de sesgo. Representa una mediana condicional, no la media aritmetica esperada.",

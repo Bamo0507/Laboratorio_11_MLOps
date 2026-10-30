@@ -72,6 +72,9 @@ iteraciones_maximas = 200
 # Regla fijada antes de calcular errores. El empate no supera la referencia.
 [evaluacion]
 regla = "mae_y_rmse_estrictamente_menores"
+# Comparabilidad interna de los valores reportados en la base academica.
+# Cambiar a false si no hay observaciones comparables. No certifica cifras oficiales.
+observaciones_comparables = true
 
 [referencia]
 nombre = "mismo_mes_anio_anterior"

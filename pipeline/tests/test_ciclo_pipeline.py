@@ -54,3 +54,17 @@ class PruebasCicloPipeline(unittest.TestCase):
         self.assertIn(self.config["columnas"]["valor"], segundo.data.tags["error_causa"])
         self.assertEqual(segundo.data.tags["publicacion"], "no_evaluada")
         self.assertEqual(segundo.data.metrics, {})
+
+    def test_sin_observaciones_comparables_mlflow_no_recibe_metricas(self):
+        self.ruta_config.write_text(self.ruta_config.read_text().replace("observaciones_comparables = true", "observaciones_comparables = false"))
+        resultado = self.ejecutar_comando()
+        self.assertNotEqual(resultado.returncode, 0)
+        with redirect_stdout(StringIO()):
+            cliente, experimento = conectar(self.config)
+        run = cliente.search_runs([experimento.experiment_id])[0]
+        self.assertEqual(run.info.status, "FAILED")
+        self.assertEqual(run.data.tags["etapa_actual"], "05_evaluacion.py")
+        self.assertEqual(run.data.tags["etapa.04_ajuste.py.estado"], "completada")
+        self.assertFalse(run.data.metrics)
+        self.assertEqual(run.data.tags["publicacion"], "no_evaluada")
+        self.assertIn("sin ellas no se calculan errores", run.data.tags["error_causa"])

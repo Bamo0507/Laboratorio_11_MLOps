@@ -53,6 +53,7 @@ class PruebasPublicacion(unittest.TestCase):
         self.preparar(False)
         reporte = self.ejecutar()
         self.assertEqual(reporte["estado"], "no_publicado")
+        self.assertEqual(reporte["criterios_aceptacion"], {"calidad": True, "integridad": True, "observaciones_comparables": True, "desempeno": False})
         self.assertFalse(reporte["estimaciones_disponibles"])
         self.assertFalse(self.ruta_vigente().exists())
         self.assertIsNone(self.vigente())
@@ -62,6 +63,7 @@ class PruebasPublicacion(unittest.TestCase):
         reporte = self.ejecutar()
         version = self.vigente()
         self.assertTrue(reporte["publicacion_autorizada"])
+        self.assertTrue(all(reporte["criterios_aceptacion"].values()))
         self.assertEqual(reporte["version_vigente"], version["version"])
         self.assertEqual(len(version["estimaciones"]), 6)
         for fila in version["estimaciones"]:

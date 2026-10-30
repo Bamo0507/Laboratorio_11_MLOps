@@ -46,7 +46,7 @@ def verificar_candidato(configuracion: dict[str, Any], ruta_configuracion: Path)
     for campo, esperado in (("poblacion", configuracion["poblacion"]), ("modelo", configuracion["modelo"]),
                             ("referencia", configuracion["referencia"]), ("estimaciones", datos.to_dict(orient="records"))):
         afirmar(candidato.get(campo) == esperado, f"{campo}: el candidato conserva los datos certificados")
-    for campo in ("periodo", "regla", "metricas", "metodo", "transformacion_inversa", "limitacion"):
+    for campo in ("periodo", "regla", "metricas", "metodo", "transformacion_inversa", "limitacion", "protocolo_temporal", "comparabilidad", "diagnostico"):
         afirmar(candidato.get(campo) == evaluada[campo], f"{campo}: coincide con la evaluacion")
     decision = evaluada["supera_regla_desempeno"]
     afirmar(type(candidato.get("supera_regla_desempeno")) is bool and candidato["supera_regla_desempeno"] == decision
@@ -79,6 +79,9 @@ def ejecutar(ruta_configuracion: Path = RUTA_CONFIGURACION) -> dict[str, Any]:
                          "version_anterior": anterior["version"] if anterior else None,
                          "version_vigente": anterior["version"] if anterior else None,
                          "motivo": "SARIMA no supera la regla de desempeno.",
+                         "criterios_aceptacion": {"calidad": True, "integridad": True,
+                                                 "observaciones_comparables": True,
+                                                 "desempeno": candidato["supera_regla_desempeno"]},
                          "estimaciones_disponibles": anterior is not None}
             indicador = None
             if candidato["supera_regla_desempeno"]:

@@ -96,7 +96,7 @@ llegadas por mes.
 | Variable | Tipo | Descripcion | Valores validos / notas |
 | --- | --- | --- | --- |
 | fecha | string | Mes de evaluacion | AAAA-MM-01, enero a junio de 2026 |
-| observado | float | Llegadas reales del mes | Finito y positivo |
+| observado | float | Llegadas reportadas en la base academica para el mes | Finito y positivo |
 | sarima | float | Exponencial del pronostico logaritmico | Derivada, finita y positiva, sin correccion de sesgo |
 | fecha_referencia | string | Mes utilizado por la referencia | Mismo mes del anio anterior, conocido al terminar el ajuste |
 | referencia | float | Llegadas observadas en fecha_referencia | Finito y positivo |
@@ -190,3 +190,30 @@ diferencias observadas. Tambien contiene un fallo controlado y la consulta de
 los parametros, metricas, etiquetas y archivos de los tres runs. Los valores
 predictivos del run que fallo antes de evaluar no se completan con ceros ni
 con metricas de una corrida anterior. Su conjunto de metricas queda vacio.
+
+## Protocolo y decision de aceptacion
+
+La evaluacion incorpora los siguientes campos en `05_evaluacion.json`.
+
+| Campo | Tipo | Descripcion |
+| --- | --- | --- |
+| protocolo_temporal | object | Ultimo mes utilizado para ajustar, cantidad de observaciones de ajuste, meses ocultos, horizontes y meses de referencia |
+| comparabilidad | object | Comparabilidad interna de los valores academicos y limitaciones para reconstruir la informacion historica |
+| diagnostico | object | Sesgo medio, meses sobreestimados o subestimados y cantidad de meses con menor error por metodo |
+| diagnostico.aumento_relativo_error_frente_referencia | object | Comparacion de MAE y RMSE agregados. No es MAPE. Se informa null si el error de referencia es cero |
+
+La comparabilidad declarada debe ser verdadera antes de calcular errores. No
+se calculan errores para meses sin observaciones comparables ni se rellenan
+sus metricas con cero. La ausencia historica de datos o revisiones no se
+interpreta como evidencia de disponibilidad en tiempo real.
+
+`07_publicacion.json` incluye `criterios_aceptacion` al completar la decision.
+Contiene `calidad`, `integridad`, `observaciones_comparables` y `desempeno`.
+Calidad e integridad solo se marcan como verificadas despues de comprobar los
+certificados y el contenido del candidato. Si falla una verificacion antes de
+la decision, el reporte se rechaza sin inventar estos resultados.
+
+El candidato y cualquier version aprobada conservan tambien `protocolo_temporal`,
+`comparabilidad` y `diagnostico`. La etapa de publicacion exige que coincidan con
+el reporte de evaluacion certificado. Estas descripciones no se descartan al
+empaquetar el resultado para el tablero.
