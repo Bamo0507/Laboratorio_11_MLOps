@@ -23,7 +23,7 @@ const PREGUNTAS: Record<string, string[]> = {
     "¿Cambiaron los países de los que más llegan visitantes por aire, antes y después de la pandemia?",
   ],
   "/temporadas": ["¿En qué meses del año llegan más visitantes y cambia según el continente?"],
-  "/pronosticos": ["¿Qué tan confiables son los pronósticos de llegadas y cuál se equivoca menos?"],
+  "/pronosticos": ["¿Qué estimaciones de llegadas están aprobadas y cuánto se equivocan al compararlas con los datos?"],
 }
 
 const INTERACCIONES: { icono: LucideIcon; titulo: string; texto: string }[] = [

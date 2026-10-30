@@ -12,8 +12,9 @@ la configuracion portable, el entorno, la ingesta, los seis controles de calidad
 la preparacion de la serie mensual, el ajuste SARIMA y su evaluacion contra
 el mismo mes del anio anterior, ademas de la exportacion de un candidato para
 revision y la decision de publicacion controlada. MLflow ya registra el inicio, las etapas y el cierre de cada ejecucion. Se registran tambien codigo, fuentes, parametros, controles, metricas y archivos.
-La lectura de versiones aprobadas desde el tablero sigue pendiente.
-Actualmente el tablero sigue consultando los JSON del laboratorio 10.
+Pronosticos consulta solo versiones aprobadas del pipeline. Las secciones
+descriptivas conservan los JSON del laboratorio 10. Si no hay una version
+aprobada, la seccion de estimaciones informa que no esta disponible.
 
 ## Estructura
 
@@ -177,7 +178,8 @@ Conventional Commits y validan el frontend antes de cada commit.
 El detalle de configuracion y las etapas previstas estan en
 [pipeline/README.md](pipeline/README.md).
 Las reglas de calidad estan en [pipeline/CONTROLES_CALIDAD.md](pipeline/CONTROLES_CALIDAD.md).
-El pipeline incluye la decision de publicacion. La integracion del tablero y los comandos Docker siguen pendientes.
+El pipeline incluye la decision de publicacion y el tablero consulta versiones
+aprobadas. Los comandos Docker siguen pendientes.
 
 ## Evaluacion de SARIMA
 
@@ -202,7 +204,8 @@ El candidato conserva la decision de desempeno de la evaluacion. Si SARIMA no
 supera la referencia, queda marcado como `no_supera_regla`. No se publica ni se
 reemplazan los JSON del tablero. Tampoco se generan pronosticos para nuevos
 meses. La etapa 7 decide si se puede activar una version. MLflow registra la
-ejecucion y sus archivos. La integracion con el tablero sigue pendiente.
+ejecucion y sus archivos. El tablero consulta la version aprobada mediante
+`vigente.json`.
 
 ## Preparar MLflow local
 
@@ -235,8 +238,8 @@ la consulta devuelve que no hay estimaciones aprobadas disponibles. El reporte
 Cada exportacion tiene un identificador local y una fecha UTC. Se conservan en
 la version publicada junto con el destino, la unidad y las estimaciones. Este
 identificador local se conserva junto con el run de MLflow que registra el
-orquestador. La adaptacion del tablero heredado sigue pendiente. El tablero aun
-consulta los JSON del laboratorio 10 y no utiliza este indicador.
+orquestador. Pronosticos consulta este indicador y verifica el archivo aprobado
+en cada solicitud, sin recurrir a los pronosticos del laboratorio 10.
 
 ## Ejercicio 4 de MLflow
 
@@ -288,3 +291,41 @@ La publicacion exige calidad, integridad, observaciones comparables y mejora
 estricta de MAE y RMSE frente al mismo mes del anio anterior. SARIMA no supera
 la referencia y sigue sin publicarse. La justificacion de los umbrales, los
 resultados y las limitaciones estan en [pipeline/EJERCICIO_5.md](pipeline/EJERCICIO_5.md).
+
+## Ejercicio 6 de integracion con el tablero
+
+La pagina `/pronosticos` lee `vigente.json` y el archivo de version que este
+indica en `pipeline/data/processed/publicaciones/`. La lectura ocurre en el
+servidor, con verificacion de la huella, la aprobacion, los metadatos mensuales,
+la cobertura y las metricas. El navegador recibe solo los datos necesarios
+para consultar el resultado. No ejecuta Python ni vuelve a ajustar modelos.
+
+La vista aprobada muestra observado y estimado con lineas distintas y una tabla,
+la fecha de generacion, MAE, RMSE y el periodo evaluado. Explica el significado
+del error y las limitaciones academicas sin mostrar parametros ni IDs tecnicos.
+El boton Consultar actualizacion vuelve a leer la version aprobada.
+
+Si no existe un indicador, muestra Estimaciones no disponibles. Una actualizacion
+rechazada no modifica el indicador anterior. Si los archivos aprobados no pueden
+verificarse, se informa una indisponibilidad temporal. No se muestran candidatos
+ni se utilizan los pronosticos heredados como alternativa.
+
+La ruta predeterminada es relativa al repositorio. Si se cambia
+`rutas.publicaciones` en el TOML, se debe configurar la misma carpeta para Next.js
+con `TURISMO_PUBLICACIONES_DIR`. Esta variable solo se usa en el servidor y puede
+contener una ruta relativa al repositorio, sin rutas personales en el codigo.
+
+Las comprobaciones del lector y el frontend se ejecutan con:
+
+```bash
+pnpm test:publicaciones
+pnpm run validate
+pnpm build --webpack
+```
+
+La compilacion de produccion se verifico con Webpack. Turbopack encontro una
+restriccion de este entorno al abrir el proceso interno de CSS. No se cambiaron
+los estilos ni las fuentes para evitar esa restriccion.
+
+El detalle del contrato y la evidencia estan en
+[pipeline/EJERCICIO_6.md](pipeline/EJERCICIO_6.md).

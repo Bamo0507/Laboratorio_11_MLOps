@@ -139,7 +139,8 @@ valores y no incorpora proyecciones posteriores a la evaluacion.
 la decision, las huellas de entrada, el codigo y la ruta y huella del candidato.
 Si la exportacion se rechaza, el candidato anterior puede seguir en disco.
 Solo debe consumirse cuando el reporte este completado y su huella coincida.
-Este esquema aun no es el contrato de entrada del tablero del laboratorio 10.
+El tablero no consume este candidato. Lee una version aprobada que incorpora
+los metadatos de publicacion.
 
 ## Version aprobada y decision de publicacion
 
@@ -217,3 +218,22 @@ El candidato y cualquier version aprobada conservan tambien `protocolo_temporal`
 `comparabilidad` y `diagnostico`. La etapa de publicacion exige que coincidan con
 el reporte de evaluacion certificado. Estas descripciones no se descartan al
 empaquetar el resultado para el tablero.
+
+## Contrato para el tablero
+
+La version aprobada y cada fila de `estimaciones` incluyen `id_ejecucion`,
+ademas de `id_ejecucion_local` e `id_ejecucion_mlflow`. Se utiliza el ID de MLflow
+si el orquestador registro la exportacion y, en caso contrario, el ID local.
+`tipo_identificador` distingue ambos casos. No se inventa un run para una
+publicacion individual.
+
+El archivo aprobado conserva por fila `destino`, `fecha`, `valor`, `unidad`,
+`id_ejecucion`, `fecha_generacion` y `version_procedimiento`. El periodo global
+se conserva en `periodo`. La fecha mensual usa AAAA-MM-01, la fecha de generacion
+incluye zona horaria y la unidad es llegadas_por_mes.
+
+El servidor de Next.js verifica estos campos, la aprobacion, las huellas, la
+cobertura y la correspondencia de las metricas. Solo envia al navegador destino,
+fecha de generacion, periodo, MAE y RMSE y los pares observado-estimado por mes.
+Los detalles del procedimiento permanecen en el archivo aprobado y en MLflow.
+Las cantidades se redondean unicamente al mostrarlas, sin modificar el archivo.

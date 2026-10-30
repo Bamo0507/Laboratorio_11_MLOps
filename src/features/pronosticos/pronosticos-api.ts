@@ -1,12 +1,14 @@
-import metricas from "@/data/pronosticos/metricas.json"
-import predicciones from "@/data/pronosticos/predicciones.json"
+import "server-only"
 
-import type { Metrica, Prediccion } from "./types"
+import { carpetaPublicaciones, leerPublicacionAprobada } from "./publicaciones"
+import type { EstadoPronosticos } from "./types"
 
-export async function getPredicciones(): Promise<Prediccion[]> {
-  return predicciones as Prediccion[]
-}
-
-export async function getMetricas(): Promise<Metrica[]> {
-  return metricas as Metrica[]
+export async function getPronosticosPublicados(): Promise<EstadoPronosticos> {
+  try {
+    const datos = await leerPublicacionAprobada(carpetaPublicaciones())
+    return datos ? { estado: "disponible", datos } : { estado: "no_disponible", motivo: "sin_version_aprobada" }
+  } catch (error) {
+    console.error("No se pudo verificar la version aprobada de estimaciones.", error)
+    return { estado: "no_disponible", motivo: "lectura_invalida" }
+  }
 }

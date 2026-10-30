@@ -5,7 +5,7 @@ de entrada, la configuracion, el setup de Python, la ingesta, los seis controles
 de calidad, la preparacion de la serie, el ajuste SARIMA y la evaluacion
 predictiva, la exportacion candidata y la decision de publicacion. El registro
 en MLflow ya incluye codigo, fuentes, configuracion, parametros, controles,
-metricas y archivos. La integracion con el tablero sigue pendiente.
+metricas y archivos. Pronosticos ya consulta las versiones aprobadas.
 
 ## Datos de entrada
 
@@ -281,8 +281,8 @@ Un resultado desfavorable completa la evaluacion con
 rechaza la ejecucion, conserva el CSV anterior y escribe un reporte rechazado.
 Los consumidores deben exigir reporte completado y huella del CSV coincidente.
 `publicacion_autorizada` permanece en `false`, incluso si se supera la regla.
-MLflow conserva las ejecuciones y sus resultados. La integracion del tablero
-sigue pendiente. La etapa 7 implementa la decision de publicacion.
+MLflow conserva las ejecuciones y sus resultados. El tablero consulta la
+version aprobada. La etapa 7 implementa la decision de publicacion.
 
 La generacion del horizonte utiliza
 [get_forecast de statsmodels](https://www.statsmodels.org/stable/generated/statsmodels.tsa.statespace.sarimax.SARIMAXResults.get_forecast.html).
@@ -322,11 +322,11 @@ pero tampoco autoriza publicar en esta etapa. Un insumo invalido rechaza la
 exportacion y conserva el candidato anterior. Los consumidores deben exigir
 un reporte completado y la huella del candidato coincidente.
 
-El candidato tiene un contrato propio y todavia no es un reemplazo directo de
-los JSON del tablero heredado. No agrega modelos, series, MAPE ni intervalos que
+El candidato conserva un contrato propio. El tablero lee unicamente una
+version aprobada, que agrega los metadatos de publicacion. No agrega modelos, series, MAPE ni intervalos que
 no hayan sido calculados. Todo se guarda en `data/processed/` y se conserva
 como archivos del run. La etapa 7 implementa la decision de publicacion. La
-integracion con el tablero sigue pendiente.
+consulta de versiones aprobadas desde el tablero esta implementada.
 
 ## Seguimiento local con SQLite
 
@@ -432,10 +432,11 @@ se termina abruptamente puede dejar ese bloqueo. Solo se debe retirarlo despues
 de comprobar que no queda un proceso de publicacion en ejecucion. El comando
 no elimina bloqueos de otros escritores.
 
-Estas versiones siguen en `data/processed/` y fuera de Git. La conexion del
-indicador con el tablero es un paso posterior. El tablero heredado todavia usa
-los JSON del laboratorio 10. Tampoco se ha implementado aun un comando de
-restauracion, aunque las versiones anteriores se conservan para ese paso.
+Estas versiones siguen en `data/processed/` y fuera de Git. La seccion
+Pronosticos del tablero consulta el indicador aprobado. No utiliza el candidato
+como alternativa ni las predicciones del laboratorio 10. El comando de
+restauracion se implementara en el ejercicio 7; las versiones anteriores se
+conservan para ese paso.
 
 ## Ejercicio 4 de registro completo
 
@@ -470,3 +471,21 @@ Las pruebas cambian los valores reservados y comprueban que los pronosticos no
 cambien. Tambien comprueban que una ejecucion sin observaciones comparables
 falle antes de calcular errores y que MLflow no reciba metricas predictivas.
 El detalle de los puntos 5.1 a 5.5 esta en [EJERCICIO_5.md](EJERCICIO_5.md).
+
+## Ejercicio 6 de lectura de versiones aprobadas
+
+La pagina de pronosticos utiliza `src/features/pronosticos/publicaciones.ts`
+para verificar el indicador y leer el resultado aprobado desde el servidor.
+No invoca scripts del pipeline. Las rutas se configuran mediante
+`TURISMO_PUBLICACIONES_DIR` para el tablero, con la misma carpeta de
+`rutas.publicaciones` del pipeline. La ruta predeterminada funciona al clonar
+el repositorio y ejecutar Next.js desde su raiz.
+
+Cada version aprobada incorpora `id_ejecucion` y cada registro mensual lo repite,
+adicionalmente a los identificadores local y de MLflow ya existentes. Se usa
+el run de MLflow cuando esta disponible y el identificador local cuando la
+publicacion se realiza de forma individual. El tipo de identificador queda
+registrado en el archivo. El frontend no muestra esos detalles tecnicos.
+
+El contrato, los estados de la interfaz y las comprobaciones estan en
+[EJERCICIO_6.md](EJERCICIO_6.md).

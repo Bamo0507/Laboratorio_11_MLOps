@@ -1,6 +1,10 @@
 """Publicacion condicionada, versiones inmutables y conservacion ante fallos."""
 
 import unittest
+import json
+import shutil
+import subprocess
+from pathlib import Path
 from contextlib import redirect_stdout
 from io import StringIO
 from unittest.mock import patch
@@ -71,6 +75,7 @@ class PruebasPublicacion(unittest.TestCase):
             self.assertEqual(fila["unidad"], "llegadas_por_mes")
             self.assertEqual(fila["valor"], fila["sarima"])
             self.assertEqual(fila["id_ejecucion_local"], version["id_ejecucion_local"])
+            self.assertEqual(fila["id_ejecucion"], version["id_ejecucion"])
         anterior = huella_archivo(self.ruta_vigente())
         self.ejecutar()
         self.assertEqual(anterior, huella_archivo(self.ruta_vigente()))
@@ -154,3 +159,19 @@ class PruebasPublicacion(unittest.TestCase):
         guardar_json(indicador, self.ruta_vigente())
         with self.assertRaises(ValueError):
             self.vigente()
+
+    @unittest.skipUnless(shutil.which("node"), "La comprobacion del lector del tablero requiere Node.js")
+    def test_version_generada_por_python_es_compatible_con_el_lector_del_tablero(self):
+        self.preparar()
+        self.ejecutar()
+        lector = Path(__file__).resolve().parents[2] / "src/features/pronosticos/publicaciones.ts"
+        comando = [shutil.which("node"), "--experimental-strip-types", "--input-type=module", "-e",
+                   "const {leerPublicacionAprobada}=await import(process.argv[1]); console.log(JSON.stringify(await leerPublicacionAprobada(process.argv[2])));",
+                   lector.as_uri(), str(self.config["rutas"]["publicaciones"])]
+        resultado = subprocess.run(comando, capture_output=True, text=True, encoding="utf-8", check=False)
+        self.assertEqual(resultado.returncode, 0, resultado.stderr)
+        datos = json.loads(resultado.stdout)
+        self.assertEqual(datos["destino"], "Guatemala")
+        self.assertEqual(len(datos["estimaciones"]), 6)
+        self.assertNotIn("id_ejecucion", datos)
+        self.assertEqual(datos["metricas"], self.vigente()["metricas"]["sarima"])

@@ -14,7 +14,8 @@
     "typecheck": "next typegen && tsc --noEmit",
     "validate": "pnpm run lint && pnpm run typecheck",
     "prepare": "husky",
-    "setup:hooks": "bash setup-hooks.sh"
+    "setup:hooks": "bash setup-hooks.sh",
+    "test:publicaciones": "node --experimental-strip-types --test tests/publicaciones.test.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.8.0",

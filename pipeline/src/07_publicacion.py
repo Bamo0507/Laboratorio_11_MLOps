@@ -89,11 +89,13 @@ def ejecutar(ruta_configuracion: Path = RUTA_CONFIGURACION) -> dict[str, Any]:
                 contenido = {**candidato, "publicacion_autorizada": True, "version": version,
                              "id_ejecucion_local": exportada["id_ejecucion_local"], "id_ejecucion_mlflow": exportada.get("id_ejecucion_mlflow"),
                              "tipo_identificador": "mlflow" if exportada.get("id_ejecucion_mlflow") else "exportacion_local",
+                             "id_ejecucion": exportada.get("id_ejecucion_mlflow") or exportada["id_ejecucion_local"],
                              "fecha_generacion": exportada["fecha_generacion"],
                              "motivo": "Controles de calidad, integridad y desempeno superados.",
                              "estimaciones": [{**fila, "destino": configuracion["poblacion"]["destino"],
                                                "unidad": configuracion["poblacion"]["unidad"],
                                                "valor": fila["sarima"], "version_procedimiento": version,
+                                               "id_ejecucion": exportada.get("id_ejecucion_mlflow") or exportada["id_ejecucion_local"],
                                                "id_ejecucion_local": exportada["id_ejecucion_local"], "id_ejecucion_mlflow": exportada.get("id_ejecucion_mlflow"),
                                                "fecha_generacion": exportada["fecha_generacion"]}
                                               for fila in candidato["estimaciones"]]}

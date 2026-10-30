@@ -22,3 +22,23 @@ export type Metrica = {
   rmse: number
   mape: number
 }
+
+/** Datos minimos de una version aprobada para su consulta directiva. */
+export type EstimacionPublicada = {
+  fecha: string
+  observado: number
+  valor: number
+}
+
+export type PronosticoPublicado = {
+  destino: string
+  fechaGeneracion: string
+  periodo: { inicio: string; fin: string; meses: number }
+  metricas: { mae: number; rmse: number }
+  estimaciones: EstimacionPublicada[]
+  demostracion: boolean
+}
+
+export type EstadoPronosticos =
+  | { estado: "disponible"; datos: PronosticoPublicado }
+  | { estado: "no_disponible"; motivo: "sin_version_aprobada" | "lectura_invalida" }
