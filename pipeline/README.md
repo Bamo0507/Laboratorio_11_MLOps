@@ -4,7 +4,8 @@ El pipeline se construye por etapas. Actualmente estan disponibles los dos CSV
 de entrada, la configuracion, el setup de Python, la ingesta, los seis controles
 de calidad, la preparacion de la serie, el ajuste SARIMA y la evaluacion
 predictiva, la exportacion candidata y la decision de publicacion. El registro
-de ejecuciones en MLflow y la integracion con el tablero siguen pendientes.
+en MLflow ya incluye codigo, fuentes, configuracion, parametros, controles,
+metricas y archivos. La integracion con el tablero sigue pendiente.
 
 ## Datos de entrada
 
@@ -280,8 +281,8 @@ Un resultado desfavorable completa la evaluacion con
 rechaza la ejecucion, conserva el CSV anterior y escribe un reporte rechazado.
 Los consumidores deben exigir reporte completado y huella del CSV coincidente.
 `publicacion_autorizada` permanece en `false`, incluso si se supera la regla.
-El registro de ejecuciones en MLflow y la integracion del tablero siguen
-pendientes. La etapa 7 implementa la decision de publicacion.
+MLflow conserva las ejecuciones y sus resultados. La integracion del tablero
+sigue pendiente. La etapa 7 implementa la decision de publicacion.
 
 La generacion del horizonte utiliza
 [get_forecast de statsmodels](https://www.statsmodels.org/stable/generated/statsmodels.tsa.statespace.sarimax.SARIMAXResults.get_forecast.html).
@@ -323,9 +324,9 @@ un reporte completado y la huella del candidato coincidente.
 
 El candidato tiene un contrato propio y todavia no es un reemplazo directo de
 los JSON del tablero heredado. No agrega modelos, series, MAPE ni intervalos que
-no hayan sido calculados. Todo se guarda en `data/processed/`. El registro en
-La etapa 7 implementa la decision de publicacion. El registro en MLflow y la
-integracion con el tablero siguen pendientes.
+no hayan sido calculados. Todo se guarda en `data/processed/` y se conserva
+como archivos del run. La etapa 7 implementa la decision de publicacion. La
+integracion con el tablero sigue pendiente.
 
 ## Seguimiento local con SQLite
 
@@ -350,8 +351,9 @@ python pipeline/src/seguimiento.py
 
 El comando muestra el nombre y el identificador del experimento. Crea la base
 y la carpeta de artefactos, pero no crea ejecuciones, no registra metricas y no
-vuelve a entrenar el modelo. Todavia no forma parte de `run_pipeline.py`, porque
-estamos comprobando la conexion antes de incorporar el registro completo.
+vuelve a entrenar el modelo. El orquestador utiliza esta misma conexion para
+crear una ejecucion por cada invocacion del pipeline. El comando auxiliar solo
+prepara el experimento.
 
 El cliente recibe explicitamente la direccion de la base local. Las variables
 `MLFLOW_TRACKING_URI` y `MLFLOW_REGISTRY_URI` del entorno no cambian ese destino.
@@ -401,8 +403,8 @@ la ejecucion. Ninguno de estos casos reemplaza una version vigente valida.
 
 Las versiones aprobadas contienen las estimaciones, destino, unidad, periodo,
 metricas y configuracion, junto con la fecha de generacion y el identificador
-local de la exportacion. Todavia no hay un run de MLflow asociado. Ese enlace
-se agregara al implementar el registro de ejecuciones. El identificador y la
+local de la exportacion y el run de MLflow cuando se ejecuta el orquestador.
+La exportacion individual sin orquestador conserva solo el identificador local. El identificador y la
 fecha son metadatos nuevos por exportacion, no componentes aleatorios del
 modelo. La equivalencia de resultados se comprueba sobre las estimaciones y
 metricas, no sobre la igualdad de estos identificadores.
@@ -434,3 +436,13 @@ Estas versiones siguen en `data/processed/` y fuera de Git. La conexion del
 indicador con el tablero es un paso posterior. El tablero heredado todavia usa
 los JSON del laboratorio 10. Tampoco se ha implementado aun un comando de
 restauracion, aunque las versiones anteriores se conservan para ese paso.
+
+## Ejercicio 4 de registro completo
+
+El orquestador crea un run antes de la ingesta. `registro_mlflow.py` conserva
+los resultados de cada etapa despues de que esta termina, junto con su salida
+de consola. Una evaluacion no realizada no genera metricas. Los detalles y los
+comandos de verificacion y consulta estan en [EJERCICIO_4.md](EJERCICIO_4.md).
+
+La implementacion utiliza el
+[cliente de MLflow](https://mlflow.org/docs/latest/api_reference/python_api/mlflow.client.html).

@@ -1,30 +1,21 @@
-"""Ejecuta en orden las etapas implementadas y se detiene ante el primer fallo."""
-
-from __future__ import annotations
+"""Ejecuta el pipeline y registra datos, codigo, parametros y resultados en MLflow."""
 
 import argparse
 import subprocess
-import sys
 from pathlib import Path
 
+from mlflow.exceptions import MlflowException
+
 from config import RUTA_CONFIGURACION
+from orquestacion import ejecutar
 
-DIR_SRC = Path(__file__).resolve().parent
-ETAPAS = ["01_ingesta.py", "02_validacion.py", "03_preparacion.py", "04_ajuste.py", "05_evaluacion.py", "06_exportacion.py", "07_publicacion.py"]
-
-
-def main() -> None:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--config", type=Path, default=RUTA_CONFIGURACION)
-    argumentos = parser.parse_args()
-    for etapa in ETAPAS:
-        resultado = subprocess.run(
-            [sys.executable, str(DIR_SRC / etapa), "--config", str(argumentos.config.resolve())],
-            check=False,
-        )
-        if resultado.returncode:
-            parser.exit(resultado.returncode, f"[FALLO] El pipeline se detuvo en {etapa}.\n")
-    print("[ok] Ingesta, validacion, preparacion, ajuste, evaluacion, exportacion y decision de publicacion completados. El registro de ejecuciones en MLflow y la integracion con el tablero siguen pendientes.")
-
-
-main()
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--config", type=Path, default=RUTA_CONFIGURACION)
+argumentos = parser.parse_args()
+try:
+    identificador = ejecutar(argumentos.config)
+except (OSError, ValueError, TypeError, KeyError, MlflowException, subprocess.CalledProcessError) as error:
+    if isinstance(error, subprocess.CalledProcessError):
+        parser.exit(1, f"[FALLO] El pipeline se detuvo en {error.cmd[0]}.\n")
+    parser.exit(1, f"[FALLO] No se pudo completar el pipeline: {error}\n")
+print(f"[ok] Pipeline registrado en MLflow: {identificador}. La decision de publicacion se conserva por separado del estado de ejecucion.")

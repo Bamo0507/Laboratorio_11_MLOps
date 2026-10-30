@@ -56,6 +56,8 @@ def verificar_candidato(configuracion: dict[str, Any], ruta_configuracion: Path)
             "la trazabilidad del candidato coincide con los certificados")
     afirmar(reporte["estimaciones"] == len(datos), "el numero de estimaciones coincide con la exportacion")
     UUID(reporte["id_ejecucion_local"])
+    if reporte.get("id_ejecucion_mlflow") is not None:
+        UUID(reporte["id_ejecucion_mlflow"])
     fecha = datetime.fromisoformat(reporte["fecha_generacion"])
     afirmar(fecha.tzinfo is not None, "la fecha de generacion incluye zona horaria")
     return candidato, reporte
@@ -71,7 +73,7 @@ def ejecutar(ruta_configuracion: Path = RUTA_CONFIGURACION) -> dict[str, Any]:
         with bloqueo(rutas["publicaciones"]):
             anterior = consultar_vigente(rutas["publicaciones"])
             resultado = {"etapa": "07_publicacion", "estado": "no_publicado", "publicacion_autorizada": False,
-                         "id_ejecucion_local": exportada["id_ejecucion_local"],
+                         "id_ejecucion_local": exportada["id_ejecucion_local"], "id_ejecucion_mlflow": exportada.get("id_ejecucion_mlflow"),
                          "sha256_candidato": huella_archivo(rutas["candidato"]),
                          "sha256_reporte_exportacion": huella_archivo(rutas["reporte_exportacion"]),
                          "version_anterior": anterior["version"] if anterior else None,
@@ -82,14 +84,14 @@ def ejecutar(ruta_configuracion: Path = RUTA_CONFIGURACION) -> dict[str, Any]:
             if candidato["supera_regla_desempeno"]:
                 version = hashlib.sha256((resultado["sha256_candidato"] + resultado["sha256_reporte_exportacion"]).encode()).hexdigest()
                 contenido = {**candidato, "publicacion_autorizada": True, "version": version,
-                             "id_ejecucion_local": exportada["id_ejecucion_local"],
-                             "tipo_identificador": "exportacion_local_pendiente_de_vincular_a_mlflow",
+                             "id_ejecucion_local": exportada["id_ejecucion_local"], "id_ejecucion_mlflow": exportada.get("id_ejecucion_mlflow"),
+                             "tipo_identificador": "mlflow" if exportada.get("id_ejecucion_mlflow") else "exportacion_local",
                              "fecha_generacion": exportada["fecha_generacion"],
                              "motivo": "Controles de calidad, integridad y desempeno superados.",
                              "estimaciones": [{**fila, "destino": configuracion["poblacion"]["destino"],
                                                "unidad": configuracion["poblacion"]["unidad"],
                                                "valor": fila["sarima"], "version_procedimiento": version,
-                                               "id_ejecucion_local": exportada["id_ejecucion_local"],
+                                               "id_ejecucion_local": exportada["id_ejecucion_local"], "id_ejecucion_mlflow": exportada.get("id_ejecucion_mlflow"),
                                                "fecha_generacion": exportada["fecha_generacion"]}
                                               for fila in candidato["estimaciones"]]}
                 indicador = preparar_version(rutas["publicaciones"], contenido)

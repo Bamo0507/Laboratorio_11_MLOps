@@ -145,7 +145,7 @@ Este esquema aun no es el contrato de entrada del tablero del laboratorio 10.
 
 `06_exportacion.json` incluye ahora `id_ejecucion_local` (UUID de la exportacion)
 y `fecha_generacion` (fecha y hora UTC con zona horaria). Es un identificador
-local, pendiente de vincularse a una ejecucion de MLflow.
+local y se conserva junto con `id_ejecucion_mlflow` cuando ejecuta el orquestador.
 
 `07_publicacion.json` registra el estado `publicado`, `no_publicado` o
 `rechazado`. Cuando la decision puede completarse incluye el identificador local,
@@ -168,7 +168,7 @@ Cada registro mensual incorpora los siguientes campos adicionales.
 | unidad | string | Unidad del valor estimado | llegadas_por_mes |
 | valor | float | Estimacion autorizada | Igual al pronostico SARIMA certificado |
 | version_procedimiento | string | Version que conserva configuracion y trazabilidad | SHA-256 de la version |
-| id_ejecucion_local | string | Identificador de la exportacion que produjo el candidato | UUID, todavia no es un run de MLflow |
+| id_ejecucion_local | string | Identificador de la exportacion que produjo el candidato | UUID local, adicional al identificador de MLflow |
 | fecha_generacion | string | Momento de generacion de la exportacion | ISO 8601 en UTC |
 
 No se cambia la poblacion ni se imputan, redondean o recalculan estimaciones.
@@ -176,3 +176,17 @@ Una version rechazada por desempeno no genera una version aprobada. Si nunca
 hubo una aprobacion, no existe el indicador y no hay estimaciones aprobadas
 para consultar. Los JSON heredados del tablero no se consideran automaticamente
 versiones aprobadas de este pipeline.
+
+## Identificacion en MLflow
+
+`06_exportacion.json` y `07_publicacion.json` incorporan `id_ejecucion_mlflow`
+cuando interviene el orquestador. La version publicada y cada registro mensual
+conservan el mismo campo. En una exportacion individual sin run su valor es
+nulo y no se inventa una ejecucion. Los identificadores locales siguen siendo
+validos como referencia de la exportacion.
+
+`evidencia_mlflow.json` identifica dos corridas completas, sus tolerancias y las
+diferencias observadas. Tambien contiene un fallo controlado y la consulta de
+los parametros, metricas, etiquetas y archivos de los tres runs. Los valores
+predictivos del run que fallo antes de evaluar no se completan con ceros ni
+con metricas de una corrida anterior. Su conjunto de metricas queda vacio.

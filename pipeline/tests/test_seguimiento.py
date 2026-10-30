@@ -12,7 +12,7 @@ from unittest.mock import patch
 RAIZ = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(RAIZ / "src"))
 from config import ARCHIVO_BASE_MLFLOW, CARPETA_ARTEFACTOS_MLFLOW, cargar_configuracion
-from seguimiento import conectar
+from seguimiento import conectar, registrar_ejecucion
 
 
 class PruebasSeguimiento(unittest.TestCase):
@@ -63,3 +63,38 @@ class PruebasSeguimiento(unittest.TestCase):
         cliente.create_experiment(self.config["seguimiento"]["experimento"], artifact_location=(self.raiz / "otra").as_uri())
         with self.assertRaisesRegex(ValueError, "carpeta local configurada"):
             self.conectar()
+
+    def test_inicio_y_cierre_sin_metricas_inventadas(self):
+        with redirect_stdout(StringIO()), registrar_ejecucion(self.config) as registro:
+            registro.iniciar_etapa("01_ingesta.py")
+            registro.completar_etapa("01_ingesta.py")
+        run = registro.cliente.get_run(registro.id_ejecucion)
+        self.assertEqual(run.info.status, "FINISHED")
+        self.assertIsNotNone(run.info.end_time)
+        self.assertGreaterEqual(run.info.end_time, run.info.start_time)
+        self.assertEqual(run.data.tags["etapa.01_ingesta.py.estado"], "completada")
+        self.assertEqual(run.data.tags["publicacion"], "no_evaluada")
+        self.assertEqual(run.data.metrics, {})
+
+    def test_fallo_registra_causa_y_etapa_sin_declarar_completada(self):
+        with redirect_stdout(StringIO()), self.assertRaisesRegex(ValueError, "fecha invalida"):
+            with registrar_ejecucion(self.config) as registro:
+                registro.iniciar_etapa("01_ingesta.py")
+                registro.completar_etapa("01_ingesta.py")
+                registro.iniciar_etapa("02_validacion.py")
+                raise ValueError("fecha invalida")
+        run = registro.cliente.get_run(registro.id_ejecucion)
+        self.assertEqual(run.info.status, "FAILED")
+        self.assertEqual(run.data.tags["error_causa"], "fecha invalida")
+        self.assertEqual(run.data.tags["etapa.02_validacion.py.estado"], "fallida")
+        self.assertEqual(run.data.tags["etapas_completadas"], '["01_ingesta.py"]')
+        self.assertEqual(run.data.metrics, {})
+
+    def test_interrupcion_se_identifica_como_killed(self):
+        with redirect_stdout(StringIO()), self.assertRaises(KeyboardInterrupt):
+            with registrar_ejecucion(self.config) as registro:
+                registro.iniciar_etapa("01_ingesta.py")
+                raise KeyboardInterrupt("interrupcion de prueba")
+        run = registro.cliente.get_run(registro.id_ejecucion)
+        self.assertEqual(run.info.status, "KILLED")
+        self.assertEqual(run.data.tags["etapa.01_ingesta.py.estado"], "interrumpida")

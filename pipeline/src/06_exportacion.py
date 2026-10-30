@@ -16,7 +16,7 @@ from __future__ import annotations
 
 import argparse
 from datetime import datetime, timezone
-from uuid import uuid4
+from uuid import UUID, uuid4
 from importlib import import_module
 from pathlib import Path
 from typing import Any
@@ -78,10 +78,12 @@ def verificar_entradas(configuracion: dict[str, Any], ruta_configuracion: Path) 
     return reporte, datos
 
 
-def ejecutar(ruta_configuracion: Path = RUTA_CONFIGURACION) -> dict[str, Any]:
+def ejecutar(ruta_configuracion: Path = RUTA_CONFIGURACION, id_ejecucion_mlflow: str | None = None) -> dict[str, Any]:
     configuracion = cargar_configuracion(ruta_configuracion)
     rutas = configuracion["rutas"]
     raiz = Path(ruta_configuracion).resolve().parent
+    if id_ejecucion_mlflow is not None:
+        UUID(id_ejecucion_mlflow)
     banner("Etapa 6: exportacion candidata")
     try:
         evaluada, datos = verificar_entradas(configuracion, Path(ruta_configuracion))
@@ -105,7 +107,7 @@ def ejecutar(ruta_configuracion: Path = RUTA_CONFIGURACION) -> dict[str, Any]:
         afirmar(recuperado == candidato, "el candidato exportado conserva exactamente su contenido")
         reporte = {
             "etapa": "06_exportacion", "estado": "completada", "publicacion_autorizada": False,
-            "id_ejecucion_local": uuid4().hex, "fecha_generacion": datetime.now(timezone.utc).isoformat(),
+            "id_ejecucion_local": uuid4().hex, "id_ejecucion_mlflow": id_ejecucion_mlflow, "fecha_generacion": datetime.now(timezone.utc).isoformat(),
             "supera_regla_desempeno": supera, "estimaciones": len(datos),
             "sha256_configuracion": huella_archivo(ruta_configuracion), "entradas": entradas,
             "candidato": {"ruta": rutas["candidato"].relative_to(raiz).as_posix(), "sha256": huella_archivo(rutas["candidato"])},
@@ -123,9 +125,10 @@ def ejecutar(ruta_configuracion: Path = RUTA_CONFIGURACION) -> dict[str, Any]:
 def main() -> None:
     parser = argparse.ArgumentParser(description="Exportar estimaciones evaluadas sin publicarlas.")
     parser.add_argument("--config", type=Path, default=RUTA_CONFIGURACION)
+    parser.add_argument("--id-ejecucion-mlflow", default=None)
     argumentos = parser.parse_args()
     try:
-        ejecutar(argumentos.config)
+        ejecutar(argumentos.config, argumentos.id_ejecucion_mlflow)
     except (OSError, ValueError, TypeError, KeyError, RuntimeError, FloatingPointError) as error:
         parser.exit(1, f"[FALLO] Exportacion detenida: {error}\n")
 

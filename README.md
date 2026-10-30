@@ -11,8 +11,8 @@ El tablero heredado esta en `src/`. En `pipeline/` ya estan los CSV originales,
 la configuracion portable, el entorno, la ingesta, los seis controles de calidad,
 la preparacion de la serie mensual, el ajuste SARIMA y su evaluacion contra
 el mismo mes del anio anterior, ademas de la exportacion de un candidato para
-revision y la decision de publicacion controlada. El registro de ejecuciones en
-MLflow y la lectura de versiones aprobadas desde el tablero siguen pendientes.
+revision y la decision de publicacion controlada. MLflow ya registra el inicio, las etapas y el cierre de cada ejecucion. Se registran tambien codigo, fuentes, parametros, controles, metricas y archivos.
+La lectura de versiones aprobadas desde el tablero sigue pendiente.
 Actualmente el tablero sigue consultando los JSON del laboratorio 10.
 
 ## Estructura
@@ -177,8 +177,7 @@ Conventional Commits y validan el frontend antes de cada commit.
 El detalle de configuracion y las etapas previstas estan en
 [pipeline/README.md](pipeline/README.md).
 Las reglas de calidad estan en [pipeline/CONTROLES_CALIDAD.md](pipeline/CONTROLES_CALIDAD.md).
-El pipeline incluye la decision de publicacion. El registro de ejecuciones en
-MLflow, la integracion del tablero y los comandos Docker siguen pendientes.
+El pipeline incluye la decision de publicacion. La integracion del tablero y los comandos Docker siguen pendientes.
 
 ## Evaluacion de SARIMA
 
@@ -202,8 +201,8 @@ El comando del pipeline ya incluye esta etapa.
 El candidato conserva la decision de desempeno de la evaluacion. Si SARIMA no
 supera la referencia, queda marcado como `no_supera_regla`. No se publica ni se
 reemplazan los JSON del tablero. Tampoco se generan pronosticos para nuevos
-meses. La etapa 7 decide si se puede activar una version. El registro en MLflow
-y la integracion con el tablero siguen pendientes.
+meses. La etapa 7 decide si se puede activar una version. MLflow registra la
+ejecucion y sus archivos. La integracion con el tablero sigue pendiente.
 
 ## Preparar MLflow local
 
@@ -216,8 +215,8 @@ python pipeline/src/seguimiento.py
 Crea o recupera el experimento `laboratorio_11_turismo_guatemala` en SQLite.
 La base `mlflow.db` y la carpeta `artefactos` quedan en
 `pipeline/data/processed/mlflow/`, fuera de Git. Cada integrante conserva su
-historial local. Este primer paso solo prepara la conexion. El registro de
-metricas, modelos y ejecuciones se incorporara despues.
+historial local. Este comando solo prepara la conexion. El orquestador registra
+las metricas, el modelo y los archivos cuando ejecuta las etapas.
 
 ## Publicacion controlada
 
@@ -235,6 +234,40 @@ la consulta devuelve que no hay estimaciones aprobadas disponibles. El reporte
 
 Cada exportacion tiene un identificador local y una fecha UTC. Se conservan en
 la version publicada junto con el destino, la unidad y las estimaciones. Este
-identificador todavia no es un run de MLflow. La vinculacion con MLflow y la
-adaptacion del tablero heredado se implementaran despues. El tablero aun
+identificador local se conserva junto con el run de MLflow que registra el
+orquestador. La adaptacion del tablero heredado sigue pendiente. El tablero aun
 consulta los JSON del laboratorio 10 y no utiliza este indicador.
+
+## Ejercicio 4 de MLflow
+
+Cada invocacion de `python pipeline/src/run_pipeline.py` crea un run que conserva
+commit de Git, huellas de los scripts y fuentes, configuracion, periodos,
+parametros, seis controles, metricas, estimaciones y modelo guardado. Se copian
+los scripts realmente ejecutados para identificar tambien los cambios locales
+que todavia no pertenecen al commit. Los archivos y registros son locales.
+
+Una corrida completada queda en `FINISHED`, aunque el candidato no sea aprobado
+para publicacion. Un error queda en `FAILED` con la etapa, la causa y su salida.
+Si el flujo no llega a evaluar, el run no recibe metricas predictivas.
+
+Para repetir la demostracion completa con los datos actuales:
+
+```bash
+python pipeline/src/evidencia_mlflow.py --verificar
+```
+
+Ejecuta dos corridas completas con los mismos datos y configuracion, compara
+los archivos y metricas guardados en MLflow y provoca un fallo en una copia
+temporal. El reporte queda en `pipeline/data/processed/evidencia_mlflow.json` y
+en los archivos de evidencia de los tres runs. Los CSV originales no cambian.
+
+Para consultar los registros sin volver a ejecutar modelos:
+
+```bash
+python pipeline/src/evidencia_mlflow.py
+python pipeline/src/seguimiento.py --interfaz
+```
+
+La interfaz queda en [127.0.0.1:5000](http://127.0.0.1:5000).
+Se detiene con Ctrl+C. El detalle de los requisitos, los archivos registrados,
+las tolerancias y la entrega esta en [pipeline/EJERCICIO_4.md](pipeline/EJERCICIO_4.md).

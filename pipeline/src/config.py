@@ -68,7 +68,7 @@ def cargar_configuracion(ruta: Path | None = None) -> dict[str, Any]:
     archivos_generados = (
         "ingesta", "reporte_ingesta", "validado", "reporte_validacion",
         "serie_mensual", "ajuste", "evaluacion", "reporte_preparacion",
-        "modelo_ajustado", "reporte_ajuste", "comparacion", "reporte_evaluacion", "candidato", "reporte_exportacion", "reporte_publicacion",
+        "modelo_ajustado", "reporte_ajuste", "comparacion", "reporte_evaluacion", "candidato", "reporte_exportacion", "reporte_publicacion", "evidencia_mlflow",
     )
     for clave in ("entrenamiento", "prueba", "procesados", "publicaciones", "mlflow", *archivos_generados):
         if clave not in rutas:
@@ -101,6 +101,11 @@ def cargar_configuracion(ruta: Path | None = None) -> dict[str, Any]:
     experimento = seguimiento.get("experimento")
     if not isinstance(experimento, str) or not experimento.strip():
         raise ValueError("seguimiento.experimento debe ser un nombre no vacio.")
+
+    for clave in ("tolerancia_relativa", "tolerancia_absoluta"):
+        valor = seguimiento.get(clave)
+        if type(valor) not in (int, float) or not math.isfinite(valor) or valor < 0:
+            raise ValueError(f"seguimiento.{clave} debe ser finita y no negativa.")
 
     ingesta = configuracion["ingesta"]
     for clave in ("codificacion", "separador", "columna_origen"):

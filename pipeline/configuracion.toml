@@ -20,11 +20,14 @@ reporte_evaluacion = "data/processed/05_evaluacion.json"
 candidato = "data/processed/06_candidato.json"
 reporte_exportacion = "data/processed/06_exportacion.json"
 reporte_publicacion = "data/processed/07_publicacion.json"
+evidencia_mlflow = "data/processed/evidencia_mlflow.json"
 
-# Historial local. El registro de ejecuciones se conectara en el siguiente paso.
+# Historial local y tolerancias para comparar ejecuciones.
 [seguimiento]
 almacen = "sqlite"
 experimento = "laboratorio_11_turismo_guatemala"
+tolerancia_relativa = 1e-12
+tolerancia_absoluta = 1e-8
 
 [ingesta]
 codificacion = "utf-8-sig"
