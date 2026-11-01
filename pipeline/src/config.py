@@ -14,7 +14,7 @@ from typing import Any
 RAIZ = Path(__file__).resolve().parent.parent
 RUTA_CONFIGURACION = RAIZ / "configuracion.toml"
 PATRON_MES = re.compile(r"\d{4}-(0[1-9]|1[0-2])")
-SECCIONES = {"rutas", "ingesta", "calidad", "preparacion", "periodos", "poblacion", "modelo", "referencia", "columnas", "evaluacion", "seguimiento"}
+SECCIONES = {"rutas", "ingesta", "calidad", "preparacion", "periodos", "poblacion", "modelo", "referencia", "columnas", "evaluacion", "seguimiento", "monitoreo"}
 COLUMNAS_SERIE = ("fecha", "viajeros", "registros", "conjunto")
 COLUMNAS_COMPARACION = ("fecha", "observado", "sarima", "fecha_referencia", "referencia", "error_sarima", "error_referencia")
 FORMATO_FECHA_SERIE = "%Y-%m-%d"
@@ -69,8 +69,9 @@ def cargar_configuracion(ruta: Path | None = None) -> dict[str, Any]:
         "ingesta", "reporte_ingesta", "validado", "reporte_validacion",
         "serie_mensual", "ajuste", "evaluacion", "reporte_preparacion",
         "modelo_ajustado", "reporte_ajuste", "comparacion", "reporte_evaluacion", "candidato", "reporte_exportacion", "reporte_publicacion", "evidencia_mlflow",
+        "reporte_monitoreo", "evidencia_recuperacion",
     )
-    for clave in ("entrenamiento", "prueba", "procesados", "publicaciones", "mlflow", *archivos_generados):
+    for clave in ("entrenamiento", "prueba", "procesados", "publicaciones", "mlflow", "registros", *archivos_generados):
         if clave not in rutas:
             raise ValueError(f"Falta la ruta {clave}.")
         rutas[clave] = resolver_ruta(raiz, rutas[clave])
@@ -80,7 +81,7 @@ def cargar_configuracion(ruta: Path | None = None) -> dict[str, Any]:
         raise ValueError("Entrenamiento y prueba deben ser archivos diferentes.")
     if any(entrada.is_relative_to(rutas["procesados"]) for entrada in entradas):
         raise ValueError("Los insumos no pueden estar en la carpeta de resultados.")
-    for clave in ("publicaciones", "mlflow", *archivos_generados):
+    for clave in ("publicaciones", "mlflow", "registros", *archivos_generados):
         if not rutas[clave].is_relative_to(rutas["procesados"]):
             raise ValueError(f"La ruta {clave} debe estar dentro de procesados.")
     salidas = [rutas[clave] for clave in archivos_generados]
@@ -88,12 +89,18 @@ def cargar_configuracion(ruta: Path | None = None) -> dict[str, Any]:
         raise ValueError("Las salidas deben ser archivos diferentes dentro de procesados.")
     if any(a != b and (a.is_relative_to(b) or b.is_relative_to(a)) for a in salidas for b in salidas):
         raise ValueError("Un archivo de salida no puede ser carpeta de otro archivo.")
-    for directorio in (rutas["publicaciones"], rutas["mlflow"]):
+    for directorio in (rutas["publicaciones"], rutas["mlflow"], rutas["registros"]):
         if any(s.is_relative_to(directorio) or directorio.is_relative_to(s) for s in salidas):
             raise ValueError("Las salidas de etapas deben estar separadas de MLflow y publicaciones.")
 
-    if rutas["mlflow"].is_relative_to(rutas["publicaciones"]) or rutas["publicaciones"].is_relative_to(rutas["mlflow"]):
-        raise ValueError("MLflow y publicaciones deben utilizar carpetas separadas.")
+    carpetas = [rutas[clave] for clave in ("mlflow", "publicaciones", "registros")]
+    if any(a.is_relative_to(b) for i, a in enumerate(carpetas) for j, b in enumerate(carpetas) if i != j):
+        raise ValueError("MLflow, publicaciones y registros deben utilizar carpetas separadas.")
+    if type(configuracion.get("datos_sinteticos", False)) is not bool:
+        raise ValueError("datos_sinteticos debe ser true o false.")
+    umbral = configuracion["monitoreo"].get("variacion_interanual_maxima")
+    if type(umbral) not in (int, float) or not math.isfinite(umbral) or umbral <= 0:
+        raise ValueError("monitoreo.variacion_interanual_maxima debe ser un numero positivo.")
 
     seguimiento = configuracion["seguimiento"]
     if seguimiento.get("almacen") != "sqlite":

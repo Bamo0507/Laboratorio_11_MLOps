@@ -435,8 +435,7 @@ no elimina bloqueos de otros escritores.
 Estas versiones siguen en `data/processed/` y fuera de Git. La seccion
 Pronosticos del tablero consulta el indicador aprobado. No utiliza el candidato
 como alternativa ni las predicciones del laboratorio 10. El comando de
-restauracion se implementara en el ejercicio 7; las versiones anteriores se
-conservan para ese paso.
+restauracion esta en `src/restaurar.py`; ver [EJERCICIO_7.md](EJERCICIO_7.md).
 
 ## Ejercicio 4 de registro completo
 
@@ -489,3 +488,17 @@ registrado en el archivo. El frontend no muestra esos detalles tecnicos.
 
 El contrato, los estados de la interfaz y las comprobaciones estan en
 [EJERCICIO_6.md](EJERCICIO_6.md).
+
+## Etapa 8 de monitoreo y restauracion
+
+```text
+fuentes + reportes 01, 02 y 05 + candidato + version vigente + monitoreo anterior
+  -> src/08_monitoreo.py
+  -> data/processed/08_monitoreo.json
+```
+
+El orquestador ejecuta esta etapa despues de la publicacion. Sus alertas piden
+revision y no cambian la version vigente. Cada ejecucion deja ademas
+`data/processed/registros/<fecha>_<run>.json`, tambien guardado en MLflow como
+`ejecucion/registro.json`. `src/restaurar.py` lista y reactiva versiones
+aprobadas. El detalle esta en [EJERCICIO_7.md](EJERCICIO_7.md).

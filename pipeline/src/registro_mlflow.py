@@ -20,6 +20,7 @@ SALIDAS = {
     "05_evaluacion.py": ("comparacion", "reporte_evaluacion"),
     "06_exportacion.py": ("candidato", "reporte_exportacion"),
     "07_publicacion.py": ("reporte_publicacion",),
+    "08_monitoreo.py": ("reporte_monitoreo",),
 }
 
 
@@ -40,7 +41,7 @@ def registrar_inicio(registro: Any, configuracion: dict, ruta_configuracion: Pat
     cliente.log_artifact(run_id, str(ruta_configuracion), "configuracion")
     # La copia normalizada tiene un nombre estable aunque se use --config con otro nombre.
     cliente.log_dict(run_id, {k: v for k, v in configuracion.items() if k != "rutas"}, "configuracion/parametros.json")
-    for seccion in ("modelo", "periodos", "poblacion", "referencia", "evaluacion", "preparacion", "calidad", "seguimiento"):
+    for seccion in ("modelo", "periodos", "poblacion", "referencia", "evaluacion", "preparacion", "calidad", "seguimiento", "monitoreo"):
         for clave, valor in configuracion[seccion].items():
             cliente.log_param(run_id, f"{seccion}.{clave}", json.dumps(valor, ensure_ascii=False) if isinstance(valor, (list, dict, bool)) else valor)
     fuentes = []
@@ -102,6 +103,11 @@ def registrar_etapa(registro: Any, configuracion: dict, etapa: str) -> None:
             from config import ARCHIVO_VIGENTE
             indicador = cargar_json(rutas["publicaciones"] / ARCHIVO_VIGENTE)
             guardar_archivo(registro, rutas["publicaciones"] / indicador["archivo"], "publicacion")
+    elif etapa == "08_monitoreo.py":
+        reporte = cargar_json(rutas["reporte_monitoreo"])
+        registro.cliente.set_tag(registro.id_ejecucion, "monitoreo.estado", reporte["estado"])
+        for verificacion in reporte["verificaciones"]:
+            registro.cliente.set_tag(registro.id_ejecucion, f"monitoreo.{verificacion['codigo']}", verificacion["estado"])
 
 
 def registrar_fallo_etapa(registro: Any, configuracion: dict, etapa: str, anterior: tuple | None) -> None:

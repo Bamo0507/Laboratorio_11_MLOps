@@ -91,6 +91,7 @@ def ejecutar(ruta_configuracion: Path = RUTA_CONFIGURACION) -> dict[str, Any]:
                              "tipo_identificador": "mlflow" if exportada.get("id_ejecucion_mlflow") else "exportacion_local",
                              "id_ejecucion": exportada.get("id_ejecucion_mlflow") or exportada["id_ejecucion_local"],
                              "fecha_generacion": exportada["fecha_generacion"],
+                             "datos_sinteticos": configuracion.get("datos_sinteticos", False),
                              "motivo": "Controles de calidad, integridad y desempeno superados.",
                              "estimaciones": [{**fila, "destino": configuracion["poblacion"]["destino"],
                                                "unidad": configuracion["poblacion"]["unidad"],

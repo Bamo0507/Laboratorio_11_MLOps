@@ -1,5 +1,6 @@
 """Seguimiento del orquestador real con datos sinteticos y un fallo controlado."""
 
+import json
 import os
 import subprocess
 import sys
@@ -54,6 +55,13 @@ class PruebasCicloPipeline(unittest.TestCase):
         self.assertIn(self.config["columnas"]["valor"], segundo.data.tags["error_causa"])
         self.assertEqual(segundo.data.tags["publicacion"], "no_evaluada")
         self.assertEqual(segundo.data.metrics, {})
+        registros = [json.loads(r.read_text()) for r in sorted(self.config["rutas"]["registros"].glob("*.json"))]
+        self.assertEqual([r["estado"] for r in registros], ["completada", "fallida"])
+        self.assertEqual(registros[0]["etapas_completadas"][-1], "08_monitoreo.py")
+        self.assertEqual(registros[1]["publicacion"]["estado"], "no_evaluada")
+        self.assertIn(self.config["columnas"]["valor"], registros[1]["errores"][0])
+        self.assertEqual(segundo.data.tags.get("monitoreo.estado"), None)
+        self.assertIn(primero.data.tags["monitoreo.estado"], ("con_alertas", "sin_alertas"))
 
     def test_sin_observaciones_comparables_mlflow_no_recibe_metricas(self):
         self.ruta_config.write_text(self.ruta_config.read_text().replace("observaciones_comparables = true", "observaciones_comparables = false"))

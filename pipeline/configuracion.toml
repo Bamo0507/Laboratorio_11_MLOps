@@ -1,3 +1,6 @@
+# true solo en copias de demostracion con datos sinteticos; el tablero lo advierte.
+datos_sinteticos = false
+
 # Todas las rutas se interpretan desde la carpeta que contiene este archivo.
 [rutas]
 entrenamiento = "data/raw/lab1/entrenamiento.csv"
@@ -21,6 +24,9 @@ candidato = "data/processed/06_candidato.json"
 reporte_exportacion = "data/processed/06_exportacion.json"
 reporte_publicacion = "data/processed/07_publicacion.json"
 evidencia_mlflow = "data/processed/evidencia_mlflow.json"
+reporte_monitoreo = "data/processed/08_monitoreo.json"
+evidencia_recuperacion = "data/processed/evidencia_recuperacion.json"
+registros = "data/processed/registros"
 
 # Historial local y tolerancias para comparar ejecuciones.
 [seguimiento]
@@ -75,6 +81,11 @@ regla = "mae_y_rmse_estrictamente_menores"
 # Comparabilidad interna de los valores reportados en la base academica.
 # Cambiar a false si no hay observaciones comparables. No certifica cifras oficiales.
 observaciones_comparables = true
+
+# Alertas para revision; no bloquean la publicacion.
+# |estimacion / mismo mes del anio anterior - 1|. El p95 historico fue 0.27 en 2012-2019 y 0.33 en 2024-2025.
+[monitoreo]
+variacion_interanual_maxima = 0.30
 
 [referencia]
 nombre = "mismo_mes_anio_anterior"
