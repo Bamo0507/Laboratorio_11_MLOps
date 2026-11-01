@@ -15,12 +15,18 @@ revision y la decision de publicacion controlada. MLflow ya registra el inicio, 
 Pronosticos consulta solo versiones aprobadas del pipeline. Las secciones
 descriptivas conservan los JSON del laboratorio 10. Si no hay una version
 aprobada, la seccion de estimaciones informa que no esta disponible.
+Cada ejecucion deja un registro propio y termina con una etapa de monitoreo.
+Las versiones aprobadas se pueden restaurar con un comando. El tablero, MLflow
+y el pipeline se levantan con Docker Compose.
 
 ## Estructura
 
 ```text
 src/                            Tablero Next.js y datos del laboratorio 10
+Dockerfile                      Imagen del tablero
+compose.yaml                    Tablero, MLflow y pipeline con Docker
 pipeline/
+  Dockerfile                    Imagen del pipeline y de la interfaz de MLflow
   configuracion.toml            Rutas, periodos y parametros
   requirements.in               Dependencias directas
   requirements.txt              Versiones fijadas, incluidas las indirectas
@@ -35,6 +41,9 @@ pipeline/
     04_ajuste.py                Ajuste SARIMA y persistencia del modelo
     utils.py                    Lectura, escritura y validaciones compartidas
     run_pipeline.py             Ejecucion de las etapas disponibles
+    08_monitoreo.py             Alertas de actualizacion, calidad y resultados
+    restaurar.py                Lista y reactiva versiones aprobadas
+    evidencia_recuperacion.py   Prueba controlada de fallo y recuperacion
   data/
     raw/lab1/                   entrenamiento.csv y prueba.csv
     processed/                  Resultados regenerables, fuera de Git
@@ -179,7 +188,10 @@ El detalle de configuracion y las etapas previstas estan en
 [pipeline/README.md](pipeline/README.md).
 Las reglas de calidad estan en [pipeline/CONTROLES_CALIDAD.md](pipeline/CONTROLES_CALIDAD.md).
 El pipeline incluye la decision de publicacion y el tablero consulta versiones
-aprobadas. Los comandos Docker siguen pendientes.
+aprobadas. El monitoreo y la recuperacion estan en
+[pipeline/EJERCICIO_7.md](pipeline/EJERCICIO_7.md). La ejecucion con Docker esta
+en [Ejecutar con Docker](#ejecutar-con-docker) y su verificacion en
+[pipeline/EJERCICIO_8.md](pipeline/EJERCICIO_8.md).
 
 ## Evaluacion de SARIMA
 
@@ -329,3 +341,152 @@ los estilos ni las fuentes para evitar esa restriccion.
 
 El detalle del contrato y la evidencia estan en
 [pipeline/EJERCICIO_6.md](pipeline/EJERCICIO_6.md).
+
+## Ejercicio 7 de monitoreo y recuperacion
+
+`run_pipeline.py` agrega la etapa `08_monitoreo.py` y guarda un registro por
+ejecucion en `pipeline/data/processed/registros/`. El monitoreo alerta sobre
+actualizacion, calidad y resultados sin bloquear la publicacion. Con los datos
+reales alerta que no existe una version aprobada.
+
+```bash
+python pipeline/src/08_monitoreo.py
+python pipeline/src/restaurar.py --listar
+python pipeline/src/restaurar.py --version <identificador>
+python pipeline/src/evidencia_recuperacion.py
+```
+
+La prueba de recuperacion usa datos sinteticos en una carpeta separada. Publica
+dos versiones, provoca una clave duplicada, corrige el problema y restaura la
+primera version. No modifica los CSV ni las publicaciones reales. El detalle
+esta en [pipeline/EJERCICIO_7.md](pipeline/EJERCICIO_7.md).
+
+## Ejecutar con Docker
+
+### Requisitos previos
+
+- Docker Desktop o Docker Engine con Docker Compose v2.
+- Git para clonar el repositorio. El pipeline registra el commit montando
+  `.git` en solo lectura. Una copia descargada sin `.git` se detiene al iniciar.
+- Internet solo para construir las imagenes la primera vez.
+
+No se necesita Python, Node.js ni pnpm en la computadora.
+
+### Datos institucionales
+
+Los CSV se leen desde `pipeline/data/raw/lab1/` y se montan en solo lectura.
+No se copian a las imagenes. Para usar otra carpeta, se define
+`DATOS_INSTITUCIONALES` con una ruta que contenga `lab1/entrenamiento.csv` y
+`lab1/prueba.csv`.
+
+### Configuracion inicial
+
+Los periodos, parametros y umbrales siguen en `pipeline/configuracion.toml`.
+Si se cambia ese archivo o el codigo, se reconstruye la imagen del pipeline.
+Las variables siguientes son opcionales. Se pueden exportar en la terminal o
+escribir en un archivo `.env` junto a `compose.yaml`, que queda fuera de Git.
+
+| Variable | Valor predeterminado | Uso |
+| --- | --- | --- |
+| DATOS_INSTITUCIONALES | ./pipeline/data/raw | Carpeta de los CSV de entrada |
+| RESULTADOS | ./pipeline/data/docker | Resultados, registros, MLflow y versiones |
+| PUERTO_TABLERO | 3000 | Puerto local del tablero |
+| PUERTO_MLFLOW | 5000 | Puerto local de MLflow |
+| TURISMO_PUBLICACIONES_DIR | pipeline/data/processed/publicaciones | Publicaciones que lee el tablero |
+
+En macOS, AirPlay suele ocupar el puerto 5000. En ese caso se usa
+`PUERTO_MLFLOW=5001`. Los puertos solo se publican en `127.0.0.1`.
+
+### Construir e iniciar
+
+Desde la raiz del repositorio:
+
+```bash
+docker compose build
+```
+
+```bash
+docker compose up -d
+```
+
+`up` inicia el tablero y MLflow. No ejecuta modelos.
+
+### Ejecutar el pipeline
+
+```bash
+docker compose run --rm pipeline
+```
+
+Ejecuta las ocho etapas y crea un run en MLflow. Espera a que MLflow este
+listo para no crear la base SQLite dos veces. Otros comandos utiles:
+
+```bash
+docker compose run --rm pipeline python -m unittest discover -s pipeline/tests
+```
+
+```bash
+docker compose run --rm pipeline python pipeline/src/evidencia_mlflow.py --verificar
+```
+
+### Acceso
+
+- Tablero: [127.0.0.1:3000](http://127.0.0.1:3000). Las estimaciones estan en Pronosticos.
+- MLflow: [127.0.0.1:5000](http://127.0.0.1:5000), experimento `laboratorio_11_turismo_guatemala`.
+
+### Registros y resultados
+
+`pipeline/data/docker/` en la computadora corresponde a
+`/app/pipeline/data/processed` dentro de los contenedores.
+
+| Ruta en pipeline/data/docker | Contenido |
+| --- | --- |
+| 01_ingesta.json a 08_monitoreo.json | Reportes de cada etapa |
+| registros/ | Un registro JSON por ejecucion |
+| mlflow/ | Base SQLite y artefactos de MLflow |
+| publicaciones/versiones/ | Versiones aprobadas, sin sobrescribir |
+| publicaciones/vigente.json | Version que consulta el tablero |
+
+Los registros de los servicios se consultan con `docker compose logs mlflow tablero`.
+Esta carpeta es distinta de `pipeline/data/processed/`, que usa la ejecucion
+local. MLflow guarda rutas absolutas de artefactos y no se deben mezclar ambos
+historiales.
+
+### Detener los servicios
+
+```bash
+docker compose down
+```
+
+Elimina los contenedores. Los resultados, MLflow y las versiones permanecen en
+`pipeline/data/docker/` y se recuperan con `docker compose up -d`.
+
+### Restaurar una version
+
+```bash
+docker compose run --rm --no-deps pipeline python pipeline/src/restaurar.py --listar
+```
+
+```bash
+docker compose run --rm --no-deps pipeline python pipeline/src/restaurar.py --version <identificador>
+```
+
+Se acepta un prefijo unico de al menos 6 caracteres. La restauracion solo
+cambia `vigente.json`. El tablero la muestra en la siguiente consulta o con
+el boton Consultar actualizacion.
+
+### Prueba de recuperacion con el tablero
+
+```bash
+docker compose run --rm pipeline python pipeline/src/evidencia_recuperacion.py
+```
+
+```bash
+TURISMO_PUBLICACIONES_DIR=pipeline/data/processed/demo_recuperacion/data/processed/publicaciones docker compose up -d tablero
+```
+
+En PowerShell se define antes `$env:TURISMO_PUBLICACIONES_DIR`. El tablero
+muestra la version restaurada con la advertencia de datos sinteticos. Para
+volver a las publicaciones reales se ejecuta `docker compose up -d tablero` sin
+esa variable. Para restaurar otra version de la prueba se agrega
+`--config pipeline/data/processed/demo_recuperacion/configuracion.toml` al
+comando de restauracion.

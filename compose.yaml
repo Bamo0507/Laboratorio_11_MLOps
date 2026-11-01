@@ -1,0 +1,41 @@
+# Tablero e interfaz de MLflow con `docker compose up -d`; pipeline con `docker compose run --rm pipeline`.
+# Los datos institucionales y los resultados se montan desde el equipo; no se copian a las imagenes.
+# Los puertos solo se publican en localhost.
+
+x-pipeline: &pipeline
+  build: ./pipeline
+  image: laboratorio11-pipeline
+  volumes:
+    - ${DATOS_INSTITUCIONALES:-./pipeline/data/raw}:/app/pipeline/data/raw:ro
+    - ${RESULTADOS:-./pipeline/data/docker}:/app/pipeline/data/processed
+    - ./.git:/app/.git:ro
+
+services:
+  pipeline:
+    <<: *pipeline
+    profiles: [pipeline]
+    # Espera a que MLflow cree la base SQLite para no migrarla dos veces en paralelo.
+    depends_on:
+      mlflow:
+        condition: service_healthy
+
+  mlflow:
+    <<: *pipeline
+    command: [python, pipeline/src/seguimiento.py, --interfaz, --host, 0.0.0.0]
+    ports: ["127.0.0.1:${PUERTO_MLFLOW:-5000}:5000"]
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:5000/health')"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+    restart: unless-stopped
+
+  tablero:
+    build: .
+    image: laboratorio11-tablero
+    environment:
+      TURISMO_PUBLICACIONES_DIR: ${TURISMO_PUBLICACIONES_DIR:-pipeline/data/processed/publicaciones}
+    volumes:
+      - ${RESULTADOS:-./pipeline/data/docker}:/app/pipeline/data/processed:ro
+    ports: ["127.0.0.1:${PUERTO_TABLERO:-3000}:3000"]
+    restart: unless-stopped

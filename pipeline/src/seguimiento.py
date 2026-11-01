@@ -123,6 +123,7 @@ def main() -> None:
     parser.add_argument("--config", type=Path, default=RUTA_CONFIGURACION)
     parser.add_argument("--interfaz", action="store_true", help="Abre el servicio local para consultar los runs en el navegador.")
     parser.add_argument("--puerto", type=int, default=5000)
+    parser.add_argument("--host", default="127.0.0.1", help="Use 0.0.0.0 solo dentro de un contenedor con el puerto publicado en localhost.")
     argumentos = parser.parse_args()
     try:
         ejecutar(argumentos.config)
@@ -131,9 +132,9 @@ def main() -> None:
                 raise ValueError("El puerto debe estar entre 1 y 65535.")
             configuracion = cargar_configuracion(argumentos.config)
             base = configuracion["rutas"]["mlflow"] / ARCHIVO_BASE_MLFLOW
-            print(f"[ok] Interfaz local en http://127.0.0.1:{argumentos.puerto}. Detener con Ctrl+C.", flush=True)
+            print(f"[ok] Interfaz local en http://{argumentos.host}:{argumentos.puerto}. Detener con Ctrl+C.", flush=True)
             subprocess.run([sys.executable, "-m", "mlflow", "server", "--backend-store-uri", f"sqlite:///{base.as_posix()}",
-                            "--host", "127.0.0.1", "--port", str(argumentos.puerto)], check=True)
+                            "--host", argumentos.host, "--port", str(argumentos.puerto)], check=True)
     except (OSError, ValueError, TypeError, KeyError, MlflowException, subprocess.CalledProcessError) as error:
         parser.exit(1, f"[FALLO] No se pudo preparar MLflow: {error}\n")
 

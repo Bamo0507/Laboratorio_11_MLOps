@@ -1,0 +1,13 @@
+.git
+.next
+node_modules
+pipeline
+tests
+.husky
+.idea
+*.tsbuildinfo
+next-env.d.ts
+Dockerfile
+compose.yaml
+.dockerignore
+.env*
